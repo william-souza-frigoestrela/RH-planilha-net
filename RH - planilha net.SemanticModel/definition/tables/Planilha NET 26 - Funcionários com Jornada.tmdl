@@ -51,7 +51,7 @@ table 'Planilha NET 26 - Funcionários com Jornada'
 
 	column DATAADMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: fd0b85b6-44c2-45cf-b353-34404fd0e5d9
 		summarizeBy: none
 		sourceColumn: DATAADMISSAO
@@ -78,7 +78,7 @@ table 'Planilha NET 26 - Funcionários com Jornada'
 
 	column DATAMUDANCA
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 505f5a10-bf11-4b9a-a087-bdaa6009b3d2
 		summarizeBy: none
 		sourceColumn: DATAMUDANCA

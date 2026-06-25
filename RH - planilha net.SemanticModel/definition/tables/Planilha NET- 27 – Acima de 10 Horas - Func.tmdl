@@ -75,7 +75,7 @@ table 'Planilha NET- 27 – Acima de 10 Horas - Func'
 
 	column DATAREFERENCIA
 		dataType: dateTime
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: 5596344f-0620-448c-a258-b6cef23f0944
 		summarizeBy: none
 		sourceColumn: DATAREFERENCIA

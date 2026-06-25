@@ -54,7 +54,7 @@ table 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'
 
 	column DATADEMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 7be58ca1-cd42-4d4b-a9c8-b31bdc700458
 		summarizeBy: none
 		sourceColumn: DATADEMISSAO
