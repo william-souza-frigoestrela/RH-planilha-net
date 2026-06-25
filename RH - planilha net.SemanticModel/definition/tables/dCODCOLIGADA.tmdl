@@ -13,7 +13,7 @@ table dCODCOLIGADA
 		mode: import
 		source =
 				let
-				    Fonte = #"Planilha NET 26 - Funcionários com Jornada",
+				    Fonte = #"Planilha NET 25 - Funcionários com batida",
 				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"CODCOLIGADA"}),
 				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas")
 				in

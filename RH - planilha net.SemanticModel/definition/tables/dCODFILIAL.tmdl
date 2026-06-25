@@ -13,7 +13,7 @@ table dCODFILIAL
 		mode: import
 		source =
 				let
-				    Fonte = #"Planilha NET 26 - Funcionários com Jornada",
+				    Fonte = #"Planilha NET 25 - Funcionários com batida",
 				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"CODFILIAL"}),
 				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas")
 				in

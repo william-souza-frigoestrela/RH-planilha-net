@@ -23,11 +23,11 @@
                       "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
                     }
                   },
-                  "Property": "CHAPA"
+                  "Property": "NOME_SECAO"
                 }
               },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.CHAPA",
-              "nativeQueryRef": "CHAPA",
+              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.NOME_SECAO",
+              "nativeQueryRef": "NOME_SECAO",
               "active": true
             }
           ]
@@ -69,6 +69,47 @@
                   }
                 }
               }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "p",
+                    "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "p"
+                                }
+                              },
+                              "Property": "NOME_SECAO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'001.002.04.02.002 - ABATE 2º TURNO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
             }
           }
         }
@@ -86,7 +127,7 @@
             "singleSelect": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

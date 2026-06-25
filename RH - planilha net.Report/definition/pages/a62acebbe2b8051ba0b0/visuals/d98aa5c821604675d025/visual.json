@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "d98aa5c821604675d025",
   "position": {
-    "x": 39.31086142322097,
-    "y": 116.01498127340824,
+    "x": 39.203675344563557,
+    "y": 218.5604900459418,
     "z": 0,
-    "height": 554.187265917603,
-    "width": 1198.5018726591761,
+    "height": 445.94180704441044,
+    "width": 1194.7320061255743,
     "tabOrder": 0
   },
   "visual": {
@@ -23,48 +23,6 @@
                       "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
-                  "Property": "CODCOLIGADA"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODCOLIGADA",
-              "nativeQueryRef": "CODCOLIGADA"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "CODFILIAL"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "CHAPA"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CHAPA",
-              "nativeQueryRef": "CHAPA"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
                   "Property": "NOME"
                 }
               },
@@ -73,143 +31,31 @@
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "SECAO"
+                  "Property": "Total_Saldo_Positivo"
                 }
               },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SECAO",
-              "nativeQueryRef": "SECAO"
+              "queryRef": "Medidas.Total_Saldo_Positivo",
+              "nativeQueryRef": "Total_Saldo_Positivo"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "DATAADMISSAO"
+                  "Property": "Total_Saldo_Negativo"
                 }
               },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.DATAADMISSAO",
-              "nativeQueryRef": "DATAADMISSAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "DATADEMISSAO"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.DATADEMISSAO",
-              "nativeQueryRef": "DATADEMISSAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "CODTIPO"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODTIPO",
-              "nativeQueryRef": "CODTIPO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "CODSITUACAO"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODSITUACAO",
-              "nativeQueryRef": "CODSITUACAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "HORA_EXTRA"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.HORA_EXTRA",
-              "nativeQueryRef": "HORA_EXTRA"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "ATRASO"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.ATRASO",
-              "nativeQueryRef": "ATRASO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "FALTA"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.FALTA",
-              "nativeQueryRef": "FALTA"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "SALDO_GERAL_POSITIVO"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SALDO_GERAL_POSITIVO",
-              "nativeQueryRef": "SALDO_GERAL_POSITIVO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "SALDO_GERAL_NEGATIVO"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SALDO_GERAL_NEGATIVO",
-              "nativeQueryRef": "SALDO_GERAL_NEGATIVO"
+              "queryRef": "Medidas.Total_Saldo_Negativo",
+              "nativeQueryRef": "Total_Saldo_Negativo"
             }
           ]
         }
@@ -623,6 +469,20 @@
           },
           "selector": {
             "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.OBSERVACAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "304.8768432154659D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.NOME"
           }
         }
       ],

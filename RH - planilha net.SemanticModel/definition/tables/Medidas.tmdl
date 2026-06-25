@@ -6,6 +6,55 @@ table Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Qtd faltas' = COUNTROWS('Planilha NET- 4 – Faltas')
+		formatString: 0
+		lineageTag: 5975bb6c-3498-478e-920d-464ebdb7c37a
+
+	measure 'Qtd HE acima 10H' = COUNTROWS('Planilha NET- 27 – Acima de 10 Horas - Valor')
+		formatString: 0
+		lineageTag: cf515c32-2efb-4c47-abd4-94762f1c3345
+
+	measure Total_Saldo_Positivo =
+			
+			VAR MinutosPositivos = SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])
+			VAR Horas = TRUNC(MinutosPositivos / 60)
+			VAR Minutos = MOD(MinutosPositivos, 60)
+			RETURN
+			    IF(ISBLANK(MinutosPositivos), "00:00", FORMAT(Horas, "00") & ":" & FORMAT(Minutos, "00"))
+		lineageTag: 1596ab93-a5b6-4892-9a3e-17b81aeb88a8
+
+	measure Total_Saldo_Negativo =
+			
+			VAR MinutosNegativos = SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])
+			VAR ValorAbsoluto = ABS(MinutosNegativos)
+			VAR Horas = TRUNC(ValorAbsoluto / 60)
+			VAR Minutos = MOD(ValorAbsoluto, 60)
+			RETURN
+			    IF(ISBLANK(MinutosNegativos), "00:00", "-" & FORMAT(Horas, "00") & ":" & FORMAT(Minutos, "00"))
+		lineageTag: 0931e136-d8ae-4427-9df0-cc822f83a03c
+
+	measure Qtd_Funcionarios_Saldo_Positivo =
+			
+			COUNTROWS(
+			    FILTER(
+			        VALUES('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
+			        CALCULATE(SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])) > 0
+			    )
+			)
+		formatString: 0
+		lineageTag: 9062065b-6272-4c94-8ae5-d37e8a6c3a3b
+
+	measure Qtd_Funcionarios_Saldo_Negativo =
+			
+			COUNTROWS(
+			    FILTER(
+			        VALUES('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
+			        CALCULATE(SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])) < 0
+			    )
+			)
+		formatString: 0
+		lineageTag: 5de009b8-83dd-4953-8577-d0b9181b9780
+
 	column Column
 		isHidden
 		formatString: 0
