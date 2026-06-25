@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "5705fe659a549e4a3641",
+  "name": "fe84b21edc8767a9dcd0",
   "position": {
-    "x": 598.79828326180257,
-    "y": 23.805436337625178,
-    "z": 2000,
-    "height": 70.500715307582254,
-    "width": 158.39771101573675,
-    "tabOrder": 2000
+    "x": 366.26217228464418,
+    "y": 24.928838951310862,
+    "z": 1000,
+    "height": 69.992509363295881,
+    "width": 159.16104868913857,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "dCODCOLIGADA"
                     }
                   },
-                  "Property": "CODFILIAL"
+                  "Property": "CODCOLIGADA"
                 }
               },
-              "queryRef": "dCODFILIAL.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL",
+              "queryRef": "dCODCOLIGADA.CODCOLIGADA",
+              "nativeQueryRef": "CODCOLIGADA",
               "active": true
             }
           ]
