@@ -51,7 +51,7 @@ table 'Planilha NET- 4 – Faltas'
 
 	column DATAADMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 100e0efd-6276-42fb-9dd4-873a4b999c6b
 		summarizeBy: none
 		sourceColumn: DATAADMISSAO
@@ -62,7 +62,7 @@ table 'Planilha NET- 4 – Faltas'
 
 	column DATADEMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 29b1642f-c7ff-4c71-8886-b0027f14c255
 		summarizeBy: none
 		sourceColumn: DATADEMISSAO
