@@ -2,14 +2,6 @@ relationship 77c3b3f7-2055-1b51-ca6b-7e2e521ab534
 	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.CODCOLIGADA
 	toColumn: dCODCOLIGADA.CODCOLIGADA
 
-relationship 2034a19a-5d82-acb1-3042-74d4a72173bb
-	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Func'.CODCOLIGADA
-	toColumn: dCODCOLIGADA.CODCOLIGADA
-
-relationship 8eeef561-2682-4b7c-caec-4fbbacf7434f
-	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Top Dias'.CODCOLIGADA
-	toColumn: dCODCOLIGADA.CODCOLIGADA
-
 relationship fbd138ad-dbaa-e4bf-6463-bdcda9146884
 	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.CODCOLIGADA
 	toColumn: dCODCOLIGADA.CODCOLIGADA
@@ -22,14 +14,6 @@ relationship 22cf0a99-6100-7a49-b985-df1a253f2d73
 	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.CODFILIAL
 	toColumn: dCODFILIAL.CODFILIAL
 
-relationship 025cb86b-b2de-1cbd-55ef-0073a0360730
-	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Func'.CODFILIAL
-	toColumn: dCODFILIAL.CODFILIAL
-
-relationship 4edec7e5-c749-d557-dee0-7a02d9674cea
-	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Top Dias'.CODFILIAL
-	toColumn: dCODFILIAL.CODFILIAL
-
 relationship 9eef3bcd-aa08-d1de-937c-ee5618fbdca8
 	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.CODFILIAL
 	toColumn: dCODFILIAL.CODFILIAL
@@ -39,10 +23,22 @@ relationship 0b4b4a19-329f-63cc-bf24-4c6ecd628049
 	toColumn: dCODFILIAL.CODFILIAL
 
 relationship efda14bd-8cac-7684-cc66-c3394ea8e83b
-	fromColumn: 'Planilha NET 26 - Funcionários com Jornada'.CODCOLIGADA
+	fromColumn: 'Planilha NET 25 - Funcionários com batida'.CODCOLIGADA
 	toColumn: dCODCOLIGADA.CODCOLIGADA
 
 relationship 582f2b75-84af-94a3-7979-7ae19c3fe3da
-	fromColumn: 'Planilha NET 26 - Funcionários com Jornada'.CODFILIAL
+	fromColumn: 'Planilha NET 25 - Funcionários com batida'.CODFILIAL
 	toColumn: dCODFILIAL.CODFILIAL
+
+relationship AutoDetected_95d540fe-7755-4975-bc8f-f0299499670c
+	fromColumn: 'Planilha NET 18 - Hora extra dia'.CODCOLIGADA
+	toColumn: dCODCOLIGADA.CODCOLIGADA
+
+relationship AutoDetected_1b14e117-53c4-4a4d-9319-9239c66bc361
+	fromColumn: 'Planilha NET 18 - Hora extra dia'.CODFILIAL
+	toColumn: dCODFILIAL.CODFILIAL
+
+relationship c26eb914-5334-81d2-16ca-a06a37f1d513
+	fromColumn: 'Planilha NET- 4 – Faltas'.DATA
+	toColumn: dCalendario.Date
 

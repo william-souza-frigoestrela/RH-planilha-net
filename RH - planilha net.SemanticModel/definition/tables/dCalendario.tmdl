@@ -2,7 +2,7 @@ table dCalendario
 	lineageTag: ea316fd7-0e83-4318-83dd-f03bf5991763
 
 	column Date
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: faac5812-a6a0-46e9-9b1f-1f5331c8807b
 		summarizeBy: none
 		isNameInferred
@@ -21,7 +21,7 @@ table dCalendario
 	column Ano2
 		formatString: 0
 		lineageTag: 92922da6-26e6-4ed2-9e9f-5b875ffcce95
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Ano2]
 
@@ -54,7 +54,7 @@ table dCalendario
 	column 'Trim num'
 		formatString: 0
 		lineageTag: 158ca48e-cfd8-4ecc-a494-c5dcdd82c4c4
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Trim num]
 
@@ -71,7 +71,7 @@ table dCalendario
 	column 'Mês num'
 		formatString: 0
 		lineageTag: 6ea56739-bbe3-4e87-8c59-d45668fd374e
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Mês num]
 
@@ -96,7 +96,7 @@ table dCalendario
 	column Dia
 		formatString: 0
 		lineageTag: 4cb0dce2-f125-4cb8-9f3c-7ff811e2e738
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Dia]
 
@@ -105,7 +105,7 @@ table dCalendario
 	column 'Dia da semana'
 		formatString: 0
 		lineageTag: 5ee1d01c-4047-4d36-be78-82af5a5314c2
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Dia da semana]
 
@@ -122,7 +122,7 @@ table dCalendario
 	column 'Semana num'
 		formatString: 0
 		lineageTag: 4e7c9452-2fef-4806-bc30-7ba6164da5db
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Semana num]
 
@@ -163,7 +163,7 @@ table dCalendario
 	column 'Ano móvel'
 		formatString: 0
 		lineageTag: d3501b06-2c3e-4b43-aab5-860dbb468c3a
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Ano móvel]
 
@@ -172,7 +172,7 @@ table dCalendario
 	column 'Trim. móvel'
 		formatString: 0
 		lineageTag: 46af496f-85f1-445a-9970-2576e0b835ea
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Trim. móvel]
 
@@ -181,7 +181,7 @@ table dCalendario
 	column 'Mês móvel'
 		formatString: 0
 		lineageTag: 6c8ae12a-a428-4f65-9616-b2c99e2028b7
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Mês móvel]
 
@@ -190,7 +190,7 @@ table dCalendario
 	column 'Semana móvel'
 		formatString: 0
 		lineageTag: 707b4c2c-5745-40a3-830f-f204a6667dbe
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Semana móvel]
 
@@ -199,7 +199,7 @@ table dCalendario
 	column 'Dia movel'
 		formatString: 0
 		lineageTag: e2bbe528-2659-4ada-b86b-0a4598a95852
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Dia movel]
 

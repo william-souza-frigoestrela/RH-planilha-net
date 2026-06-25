@@ -23,11 +23,11 @@
                       "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
-                  "Property": "CHAPA"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CHAPA",
-              "nativeQueryRef": "CHAPA",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SECAO",
+              "nativeQueryRef": "SECAO",
               "active": true
             }
           ]
@@ -68,6 +68,54 @@
                     }
                   }
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "p",
+                    "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "p"
+                                }
+                              },
+                              "Property": "SECAO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'001.001.01.06.001 - INCLUSAO ESCRITA FISCAL'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'001.001.01.06.002 - CONFERENCIA ESCRITA FISCAL'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }

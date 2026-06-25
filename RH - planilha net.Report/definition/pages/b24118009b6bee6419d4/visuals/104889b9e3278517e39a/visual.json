@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "104889b9e3278517e39a",
   "position": {
-    "x": 39.31086142322097,
-    "y": 116.01498127340824,
+    "x": 39.203675344563557,
+    "y": 320.49004594180707,
     "z": 0,
-    "height": 554.187265917603,
-    "width": 1198.5018726591761,
+    "height": 349.89280245022974,
+    "width": 1187.8713629402757,
     "tabOrder": 0
   },
   "visual": {
@@ -15,48 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "CODCOLIGADA"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.CODCOLIGADA",
-              "nativeQueryRef": "CODCOLIGADA"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "CODFILIAL"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "CHAPA"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.CHAPA",
-              "nativeQueryRef": "CHAPA"
-            },
             {
               "field": {
                 "Column": {
@@ -98,48 +56,6 @@
               },
               "queryRef": "Planilha NET- 4 – Faltas.SECAO",
               "nativeQueryRef": "SECAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "DATAADMISSAO"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.DATAADMISSAO",
-              "nativeQueryRef": "DATAADMISSAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "DATADEMISSAO"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.DATADEMISSAO",
-              "nativeQueryRef": "DATADEMISSAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "CODTIPO"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.CODTIPO",
-              "nativeQueryRef": "CODTIPO"
             },
             {
               "field": {
@@ -581,6 +497,62 @@
           },
           "selector": {
             "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.OBSERVACAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "298.91624537244655D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET- 4 – Faltas.NOME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "262.10837900530726D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET- 4 – Faltas.FUNCAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "348.78325851247143D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET- 4 – Faltas.SECAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "149.70937777627836D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET- 4 – Faltas.SITUACAO"
           }
         }
       ],

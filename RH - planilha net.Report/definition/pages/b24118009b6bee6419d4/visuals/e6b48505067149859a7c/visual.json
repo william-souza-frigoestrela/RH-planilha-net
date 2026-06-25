@@ -23,11 +23,11 @@
                       "Entity": "Planilha NET- 4 – Faltas"
                     }
                   },
-                  "Property": "CHAPA"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "Planilha NET- 4 – Faltas.CHAPA",
-              "nativeQueryRef": "CHAPA",
+              "queryRef": "Planilha NET- 4 – Faltas.SECAO",
+              "nativeQueryRef": "SECAO",
               "active": true
             }
           ]

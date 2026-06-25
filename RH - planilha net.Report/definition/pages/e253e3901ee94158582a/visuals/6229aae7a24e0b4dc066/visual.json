@@ -4,10 +4,10 @@
   "position": {
     "x": 862.41825095057038,
     "y": 25.307984790874524,
-    "z": 3001,
+    "z": 4000,
     "height": 70.083650190114071,
     "width": 271.57414448669203,
-    "tabOrder": 3001
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "slicer",
@@ -100,7 +100,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Trablhou mais de 10:00 e foi embora'"
+                                "Value": "'Trablhou mais de 10:00'"
                               }
                             }
                           ]

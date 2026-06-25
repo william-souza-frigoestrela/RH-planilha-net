@@ -20,63 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
-                    }
-                  },
-                  "Property": "CODCOLIGADA"
-                }
-              },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODCOLIGADA",
-              "nativeQueryRef": "CODCOLIGADA"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
-                    }
-                  },
-                  "Property": "CODFILIAL"
-                }
-              },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
-                    }
-                  },
-                  "Property": "CODSECAO"
-                }
-              },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODSECAO",
-              "nativeQueryRef": "CODSECAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
-                    }
-                  },
-                  "Property": "CHAPA"
-                }
-              },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CHAPA",
-              "nativeQueryRef": "CHAPA"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
                   "Property": "NOME"
@@ -90,84 +34,154 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "DATAADMISSAO"
+                  "Property": "FUNCAO"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.DATAADMISSAO",
-              "nativeQueryRef": "DATAADMISSAO"
+              "queryRef": "Planilha NET 25 - Funcionários com batida.FUNCAO",
+              "nativeQueryRef": "FUNCAO"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "CODTIPO"
+                  "Property": "DATAREFERENCIA"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODTIPO",
-              "nativeQueryRef": "CODTIPO"
+              "queryRef": "Planilha NET 25 - Funcionários com batida.DATAREFERENCIA",
+              "nativeQueryRef": "DATAREFERENCIA"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "CODSITUACAO"
+                  "Property": "ENT1"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODSITUACAO",
-              "nativeQueryRef": "CODSITUACAO"
+              "queryRef": "Planilha NET 25 - Funcionários com batida.ENT1",
+              "nativeQueryRef": "ENT1"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "DATAMUDANCA"
+                  "Property": "SAI1"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.DATAMUDANCA",
-              "nativeQueryRef": "DATAMUDANCA"
+              "queryRef": "Planilha NET 25 - Funcionários com batida.SAI1",
+              "nativeQueryRef": "SAI1"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "JORNADA"
+                  "Property": "ENT2"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.JORNADA",
-              "nativeQueryRef": "JORNADA"
+              "queryRef": "Planilha NET 25 - Funcionários com batida.ENT2",
+              "nativeQueryRef": "ENT2"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "DESC_JORNADA"
+                  "Property": "SAI2"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.DESC_JORNADA",
-              "nativeQueryRef": "DESC_JORNADA"
+              "queryRef": "Planilha NET 25 - Funcionários com batida.SAI2",
+              "nativeQueryRef": "SAI2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "ENT3"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.ENT3",
+              "nativeQueryRef": "ENT3"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "SAI3"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.SAI3",
+              "nativeQueryRef": "SAI3"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "HORAS_TRAB"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.HORAS_TRAB",
+              "nativeQueryRef": "HORAS_TRAB"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "HORA_EXTRA"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.HORA_EXTRA",
+              "nativeQueryRef": "HORA_EXTRA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "ATRASO"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.ATRASO",
+              "nativeQueryRef": "ATRASO"
             }
           ]
         }
@@ -179,13 +193,13 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                    "Entity": "Planilha NET 25 - Funcionários com batida"
                   }
                 },
-                "Property": "CODCOLIGADA"
+                "Property": "DATAREFERENCIA"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -598,6 +612,48 @@
           },
           "selector": {
             "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.OBSERVACAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "298.2349194531186D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET 26 - Funcionários com Jornada.NOME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "125.034483552749D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET 25 - Funcionários com batida.DATAREFERENCIA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "271.3546807332203D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET 25 - Funcionários com batida.FUNCAO"
           }
         }
       ],
