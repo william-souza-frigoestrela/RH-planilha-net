@@ -1,0 +1,26 @@
+table Medidas
+	lineageTag: 170cedcf-a8b2-4ecf-a449-acfd70f565b4
+
+	measure 'Valor HE' = SUM('Planilha NET- 27 – Acima de 10 Horas - Valor'[VALOR_HORAS_EXTRAS])
+		lineageTag: 67bfedd3-b7e1-4e3e-a63e-97889d28a034
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: 620f7e22-301a-4327-8619-b6e9313191ec
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = fbaf4a9d0ac44d98a05f3a43a8a7d755
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+
