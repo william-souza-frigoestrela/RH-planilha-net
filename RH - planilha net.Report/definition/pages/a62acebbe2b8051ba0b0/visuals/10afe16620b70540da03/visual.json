@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "5705fe659a549e4a3641",
+  "name": "10afe16620b70540da03",
   "position": {
-    "x": 598.79828326180257,
-    "y": 23.805436337625178,
-    "z": 2000,
-    "height": 70.500715307582254,
-    "width": 158.39771101573675,
-    "tabOrder": 2000
+    "x": 683.625468164794,
+    "y": 24.928838951310862,
+    "z": 3000,
+    "height": 69.992509363295881,
+    "width": 158.20224719101122,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
-                  "Property": "CODFILIAL"
+                  "Property": "CHAPA"
                 }
               },
-              "queryRef": "dCODFILIAL.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CHAPA",
+              "nativeQueryRef": "CHAPA",
               "active": true
             }
           ]

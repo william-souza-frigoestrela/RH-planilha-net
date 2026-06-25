@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "5705fe659a549e4a3641",
+  "name": "f402a0d32ed5bd5169b0",
   "position": {
-    "x": 598.79828326180257,
-    "y": 23.805436337625178,
-    "z": 2000,
-    "height": 70.500715307582254,
-    "width": 158.39771101573675,
-    "tabOrder": 2000
+    "x": 849.498127340824,
+    "y": 24.928838951310862,
+    "z": 4000,
+    "height": 69.992509363295881,
+    "width": 159.16104868913857,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
-                  "Property": "CODFILIAL"
+                  "Property": "CODSITUACAO"
                 }
               },
-              "queryRef": "dCODFILIAL.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODSITUACAO",
+              "nativeQueryRef": "CODSITUACAO",
               "active": true
             }
           ]
@@ -68,6 +68,47 @@
                     }
                   }
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "p",
+                    "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "p"
+                                }
+                              },
+                              "Property": "CODSITUACAO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'A'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }

@@ -4,10 +4,10 @@
   "position": {
     "x": 408.35479256080112,
     "y": 23.805436337625178,
-    "z": 1,
+    "z": 1000,
     "height": 70.500715307582254,
     "width": 159.31330472103002,
-    "tabOrder": 1
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -232,23 +232,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "be4f6e18933b937de59e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCODCOLIGADA"
-              }
-            },
-            "Property": "CODCOLIGADA"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

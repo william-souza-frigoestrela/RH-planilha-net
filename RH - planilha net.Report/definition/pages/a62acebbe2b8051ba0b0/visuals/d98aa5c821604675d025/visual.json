@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "14e44a87e952a33a302c",
+  "name": "d98aa5c821604675d025",
   "position": {
-    "x": 39.370529327610868,
-    "y": 116.28040057224605,
+    "x": 39.31086142322097,
+    "y": 116.01498127340824,
     "z": 0,
-    "height": 553.934191702432,
-    "width": 1216.8240343347638,
+    "height": 554.187265917603,
+    "width": 1198.5018726591761,
     "tabOrder": 0
   },
   "visual": {
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "CODCOLIGADA"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODCOLIGADA",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODCOLIGADA",
               "nativeQueryRef": "CODCOLIGADA"
             },
             {
@@ -34,13 +34,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "CODFILIAL"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODFILIAL",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODFILIAL",
               "nativeQueryRef": "CODFILIAL"
             },
             {
@@ -48,27 +48,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
-                    }
-                  },
-                  "Property": "CODSECAO"
-                }
-              },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODSECAO",
-              "nativeQueryRef": "CODSECAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "CHAPA"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CHAPA",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CHAPA",
               "nativeQueryRef": "CHAPA"
             },
             {
@@ -76,13 +62,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "NOME"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.NOME",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.NOME",
               "nativeQueryRef": "NOME"
             },
             {
@@ -90,13 +76,27 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SECAO",
+              "nativeQueryRef": "SECAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "DATAADMISSAO"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.DATAADMISSAO",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.DATAADMISSAO",
               "nativeQueryRef": "DATAADMISSAO"
             },
             {
@@ -104,13 +104,27 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                    }
+                  },
+                  "Property": "DATADEMISSAO"
+                }
+              },
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.DATADEMISSAO",
+              "nativeQueryRef": "DATADEMISSAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "CODTIPO"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODTIPO",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODTIPO",
               "nativeQueryRef": "CODTIPO"
             },
             {
@@ -118,13 +132,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "CODSITUACAO"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.CODSITUACAO",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.CODSITUACAO",
               "nativeQueryRef": "CODSITUACAO"
             },
             {
@@ -132,62 +146,73 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
-                  "Property": "DATAMUDANCA"
+                  "Property": "HORA_EXTRA"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.DATAMUDANCA",
-              "nativeQueryRef": "DATAMUDANCA"
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.HORA_EXTRA",
+              "nativeQueryRef": "HORA_EXTRA"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
-                  "Property": "JORNADA"
+                  "Property": "ATRASO"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.JORNADA",
-              "nativeQueryRef": "JORNADA"
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.ATRASO",
+              "nativeQueryRef": "ATRASO"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 26 - Funcionários com Jornada"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
-                  "Property": "DESC_JORNADA"
+                  "Property": "FALTA"
                 }
               },
-              "queryRef": "Planilha NET 26 - Funcionários com Jornada.DESC_JORNADA",
-              "nativeQueryRef": "DESC_JORNADA"
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.FALTA",
+              "nativeQueryRef": "FALTA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                    }
+                  },
+                  "Property": "SALDO_GERAL_POSITIVO"
+                }
+              },
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SALDO_GERAL_POSITIVO",
+              "nativeQueryRef": "SALDO_GERAL_POSITIVO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                    }
+                  },
+                  "Property": "SALDO_GERAL_NEGATIVO"
+                }
+              },
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SALDO_GERAL_NEGATIVO",
+              "nativeQueryRef": "SALDO_GERAL_NEGATIVO"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Planilha NET 26 - Funcionários com Jornada"
-                  }
-                },
-                "Property": "CODCOLIGADA"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {

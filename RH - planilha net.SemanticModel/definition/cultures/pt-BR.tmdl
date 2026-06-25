@@ -3184,19 +3184,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "NOMEREDUZIDO"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "EMPRESA": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dcevpb_solicitacaotempoaprovacao.dtasolicitacao": {
 			      "Definition": {
@@ -3205,19 +3193,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "DTASOLICITACAO"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "DATA SOLICITAÇÃO": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dcevpb_solicitacaotempoaprovacao.dtaaprovacaopedido": {
 			      "Definition": {
@@ -3226,19 +3202,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "DTAAPROVACAOPEDIDO"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "DATA APROVAÇÃO": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dcevpb_solicitacaotempoaprovacao.nrosolicitacao": {
 			      "Definition": {
@@ -3247,19 +3211,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "NROSOLICITACAO"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "NRO SOLICITAÇÃO": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dcevpb_solicitacaotempoaprovacao.seqproduto": {
 			      "Definition": {
@@ -3268,19 +3220,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "SEQPRODUTO"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "COD PRODUTO": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dcevpb_solicitacaotempoaprovacao.descricao": {
 			      "Definition": {
@@ -3289,19 +3229,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "DESCRICAO"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "PRODUTO": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dcevpb_solicitacaotempoaprovacao.nome": {
 			      "Definition": {
@@ -3310,19 +3238,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "NOME"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "COMPRADOR": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dprioridade.desc_prioridade": {
 			      "Definition": {
@@ -3331,19 +3247,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "DESC_PRIORIDADE"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "PRIORIDADE": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    }
 			  },
 			  "Relationships": {
