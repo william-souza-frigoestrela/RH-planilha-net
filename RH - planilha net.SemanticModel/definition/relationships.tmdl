@@ -1,0 +1,23 @@
+relationship AutoDetected_2e906873-7018-42c7-8e51-bd4c3fd3d0f6
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Top Dias'.CODFILIAL-CHAPA
+	toColumn: 'Planilha NET 26 - Funcionários com Jornada'.CODFILIAL-CHAPA
+
+relationship AutoDetected_13e60f6a-26f1-442a-940c-3d87bef2eb0f
+	fromColumn: 'Planilha NET- 4 – Faltas'.CODFILIAL-CHAPA
+	toColumn: 'Planilha NET 26 - Funcionários com Jornada'.CODFILIAL-CHAPA
+
+relationship AutoDetected_c6c810f6-0664-45ad-9048-7684c95d0018
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.CODFILIAL-CHAPA
+	toColumn: 'Planilha NET 26 - Funcionários com Jornada'.CODFILIAL-CHAPA
+
+relationship AutoDetected_1fefe9ab-9788-436f-be2f-fdd6828ade09
+	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Func'.CODFILIAL-CHAPA
+	toColumn: 'Planilha NET 26 - Funcionários com Jornada'.CODFILIAL-CHAPA
+
+relationship AutoDetected_9831f7f7-1431-468f-aed9-bf5d98ba1352
+	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.CODFILIAL-CHAPA
+	toColumn: 'Planilha NET 26 - Funcionários com Jornada'.CODFILIAL-CHAPA
+

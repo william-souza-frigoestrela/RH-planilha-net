@@ -1,0 +1,122 @@
+table 'Planilha NET- 4 – Faltas'
+	lineageTag: 455df675-a460-4ea2-a8d9-912076b5bf73
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: c04a9fc0-b8e2-462d-b990-cad778bc7553
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: 972c371c-dcb1-46c5-9a5a-bd2d803e3351
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: f52bbc5b-fcb8-4a29-a97e-588fe4ba6607
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: aa26fdff-7a9e-4848-957c-c8535e267a7a
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: 7a375cfc-cb11-4bfe-978a-391c082bd02a
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: c2dc880d-c710-4c9c-9202-43e768d3268a
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAADMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 100e0efd-6276-42fb-9dd4-873a4b999c6b
+		summarizeBy: none
+		sourceColumn: DATAADMISSAO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DATADEMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 29b1642f-c7ff-4c71-8886-b0027f14c255
+		summarizeBy: none
+		sourceColumn: DATADEMISSAO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CODTIPO
+		dataType: string
+		lineageTag: 4e13726e-d9a1-497b-b8bb-44234bccc422
+		summarizeBy: none
+		sourceColumn: CODTIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: 5524ca0c-8099-43c0-ae7e-41836a86302d
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 03408e2f-354f-4147-b105-bd880669eca0
+		summarizeBy: none
+		sourceColumn: DATA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CODFILIAL-CHAPA
+		dataType: string
+		lineageTag: b615ad3c-19b2-4778-bf33-e2bef49bdb3e
+		summarizeBy: none
+		sourceColumn: CODFILIAL-CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Planilha NET- 4 – Faltas' = m
+		mode: import
+		source =
+				let
+				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT A.CODCOLIGADA,#(lf)       B.CODFILIAL,#(lf)       A.CHAPA,#(lf)       B.NOME,#(lf)       D.NOME AS FUNCAO,#(lf)       C.DESCRICAO AS SECAO,#(lf)       B.DATAADMISSAO,#(lf)       B.DATADEMISSAO,#(lf)       B.CODTIPO,#(lf)       (SELECT E.DESCRICAO FROM PCODSITUACAO@RM E WHERE E.CODCLIENTE = B.CODSITUACAO) AS SITUACAO,#(lf)       A.DATA#(lf)FROM AAFHTFUN@RM A, PFUNC@RM B, PSECAO@RM C, PFUNCAO@RM D#(lf)WHERE A.CODCOLIGADA = B.CODCOLIGADA#(lf)  AND A.CHAPA       = B.CHAPA#(lf)  AND B.CODCOLIGADA = C.CODCOLIGADA#(lf)  AND B.CODSECAO    = C.CODIGO#(lf)  AND B.CODCOLIGADA = D.CODCOLIGADA#(lf)  AND B.CODFUNCAO   = D.CODIGO#(lf)  #(lf)  -- Lógica do sistema RM para aceitar ""0"" e trazer todas as estruturas#(lf)  AND A.CODCOLIGADA BETWEEN 0 AND 999#(lf)  AND B.CODFILIAL   BETWEEN 0 AND 999#(lf)  AND B.CODSECAO    BETWEEN '0' AND 'ZZZZZZZZZZZZ'#(lf)  #(lf)  -- Período dinâmico protegido (Últimos 10 dias)#(lf)  AND A.DATA BETWEEN TRUNC(SYSDATE) - 10 AND TRUNC(SYSDATE)#(lf)  #(lf)  -- Mantendo a regra original de trazer apenas registros com faltas#(lf)  AND A.FALTA       > 0#(lf)ORDER BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, A.DATA"]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}, {"DATA", type date}}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text)
+				in
+				    #"Coluna Mesclada Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

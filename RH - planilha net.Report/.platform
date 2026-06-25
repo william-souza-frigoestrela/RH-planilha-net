@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "RH - planilha net"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fad5a91c-300f-4dc7-8dd9-540fed0a7bfa"
+  }
+}

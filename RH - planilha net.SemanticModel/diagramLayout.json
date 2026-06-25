@@ -1,0 +1,111 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 491.17197264411766,
+            "y": 689.16390899982
+          },
+          "nodeIndex": "Planilha NET 26 - Funcionários com Jornada",
+          "nodeLineageTag": "c2f08de6-f508-4102-a920-eee2f5b3d2c4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 367.87469309207682,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET- 4 – Faltas",
+          "nodeLineageTag": "455df675-a460-4ea2-a8d9-912076b5bf73",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1264.0665457052821,
+            "y": 44.546735521608639
+          },
+          "nodeIndex": "dCalendario",
+          "nodeLineageTag": "ea316fd7-0e83-4318-83dd-f03bf5991763",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 766.03067801842735,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Top Dias",
+          "size": {
+            "height": 288.91199776686676,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1548.0665457052821,
+            "y": 344.58195449991
+          },
+          "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Func",
+          "nodeLineageTag": "647e33bf-830c-4f19-9dcd-e50010189c8d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1832.0665457052821,
+            "y": 344.58195449991
+          },
+          "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+          "nodeLineageTag": "ce56e30c-6d95-4356-8022-69b6e76c8c50",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 70.95554390096882,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

@@ -1,0 +1,91 @@
+table 'Planilha NET- 27 – Acima de 10 Horas - Top Dias'
+	lineageTag: 4212c04f-4322-4a0d-a56a-86d7692ded13
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: c8a21f09-e7aa-4c26-8c1a-7b465d565b8c
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: 12e026ff-fe3d-4018-88d2-b6b260c49d94
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 665be6c6-24fe-4e50-940f-a901c4197414
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 5f95daec-2d4c-422c-8f13-765aacf38496
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSITUACAO
+		dataType: string
+		lineageTag: 0cc3e71e-1ad9-4b43-bafa-a03c4e11dbc3
+		summarizeBy: none
+		sourceColumn: CODSITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME_SECAO
+		dataType: string
+		lineageTag: 5ff17594-a05f-4514-880d-0d22fa662b47
+		summarizeBy: none
+		sourceColumn: NOME_SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: a95e2c56-d917-40ef-b4cd-b651ec278ccd
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUANT_DIA
+		dataType: double
+		lineageTag: e86e4a4f-0440-41a8-8b00-12e954bdb09f
+		summarizeBy: sum
+		sourceColumn: QUANT_DIA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CODFILIAL-CHAPA
+		dataType: string
+		lineageTag: caba19b8-4932-4a09-8301-ae801432017d
+		summarizeBy: none
+		sourceColumn: CODFILIAL-CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Planilha NET- 27 – Acima de 10 Horas - Top Dias' = m
+		mode: import
+		source =
+				let
+				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT CODCOLIGADA,#(lf)       CODFILIAL,#(lf)       CHAPA,#(lf)       NOME,#(lf)       CODSITUACAO,#(lf)       NOME_SECAO,#(lf)       FUNCAO,#(lf)       QUANT_DIA#(lf)FROM (#(lf)SELECT ROW_NUMBER() OVER(ORDER BY SUM(DIA) DESC) AS NRO_LINHA,#(lf)       CODCOLIGADA,#(lf)       CODFILIAL,#(lf)       CHAPA,#(lf)       NOME,#(lf)       CODSITUACAO,#(lf)       NOME_SECAO,#(lf)       FUNCAO,#(lf)       SUM(DIA) AS QUANT_DIA#(lf)FROM (#(lf)SELECT A.CODCOLIGADA,#(lf)       B.CODFILIAL,#(lf)       A.CHAPA,#(lf)       B.NOME,#(lf)       B.CODSITUACAO,#(lf)       D.DESCRICAO AS NOME_SECAO,#(lf)       C.NOME AS FUNCAO,#(lf)       A.DATA,#(lf)       A.HTRAB,#(lf)       CASE WHEN A.HTRAB > 600 THEN 1 ELSE 0 END AS DIA#(lf)FROM AAFHTFUN@RM A, PFUNC@RM B, PFUNCAO@RM C, PSECAO@RM D#(lf) WHERE A.CODCOLIGADA   = B.CODCOLIGADA#(lf)   AND A.CHAPA         = B.CHAPA#(lf)   AND B.CODCOLIGADA   = C.CODCOLIGADA#(lf)   AND B.CODFUNCAO     = C.CODIGO#(lf)   AND B.CODCOLIGADA   = D.CODCOLIGADA#(lf)   AND B.CODSECAO      = D.CODIGO#(lf)   #(lf)   -- Lógica do sistema RM: Se o parâmetro é 0, o BETWEEN varre de 0 até o limite máximo#(lf)   AND B.CODCOLIGADA BETWEEN 0 AND 999#(lf)   AND B.CODFILIAL   BETWEEN 0 AND 999#(lf)   AND B.CODSECAO    BETWEEN '0' AND 'ZZZZZZZZZZZZ'#(lf)   #(lf)   -- Período dinâmico protegido (Últimos 10 dias)#(lf)   AND A.DATA BETWEEN TRUNC(SYSDATE) - 10 AND TRUNC(SYSDATE)#(lf)#(lf)) X#(lf)WHERE HTRAB > 600#(lf)GROUP BY CODCOLIGADA, CODFILIAL, CHAPA, NOME, CODSITUACAO, NOME_SECAO, FUNCAO#(lf)#(lf)) Q#(lf)ORDER BY NRO_LINHA"]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text)
+				in
+				    #"Coluna Mesclada Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

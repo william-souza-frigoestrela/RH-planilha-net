@@ -1,0 +1,46 @@
+expression 'Erros em Planilha NET- 27 – Acima de 10 Horas - Func' =
+		let
+		Fonte = #"Planilha NET- 27 – Acima de 10 Horas - Func",
+		  #"Incompatibilidades de Tipo Detectadas" = let
+		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Fonte, Table.ColumnsOfType(Fonte, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+		    fieldNames = Record.FieldNames(recordTypeFields),
+		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "O tipo do valor não corresponde ao tipo da coluna.", Detail = v], fieldTypes{i}})
+		in
+		    Table.TransformColumns(Fonte, pairs),
+		  #"Índice Adicionado" = Table.AddIndexColumn(#"Incompatibilidades de Tipo Detectadas", "Número da Linha" ,1),
+		  #"Erros Mantidos" = Table.SelectRowsWithErrors(#"Índice Adicionado", {"CODCOLIGADA", "CODFILIAL", "CHAPA", "NOME", "CODSITUACAO", "FUNCAO", "NOME_SECAO", "COD_JORNADA", "DESC_JORNADA", "DATAREFERENCIA", "DIA_DA_SEMANA", "ENT1", "SAI1", "ENT2", "SAI2", "ENT3", "SAI3", "ENT4", "SAI4", "HORAS_TRAB", "STATUS", "CODFILIAL-CHAPA"}),
+		  #"Colunas Reordenadas" = Table.ReorderColumns(#"Erros Mantidos", {"Número da Linha", "CODCOLIGADA", "CODFILIAL", "CHAPA", "NOME", "CODSITUACAO", "FUNCAO", "NOME_SECAO", "COD_JORNADA", "DESC_JORNADA", "DATAREFERENCIA", "DIA_DA_SEMANA", "ENT1", "SAI1", "ENT2", "SAI2", "ENT3", "SAI3", "ENT4", "SAI4", "HORAS_TRAB", "STATUS", "CODFILIAL-CHAPA"})
+		in
+		  #"Colunas Reordenadas"
+	lineageTag: 2dc74710-9f90-41e6-9a8b-2d7df6407d03
+	queryGroup: 'Erros na Consulta - 25/06/2026 08:24:13'
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression 'Erros em Planilha NET- 27 – Acima de 10 Horas - Valor' =
+		let
+		Fonte = #"Planilha NET- 27 – Acima de 10 Horas - Valor",
+		  #"Incompatibilidades de Tipo Detectadas" = let
+		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Fonte, Table.ColumnsOfType(Fonte, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+		    fieldNames = Record.FieldNames(recordTypeFields),
+		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "O tipo do valor não corresponde ao tipo da coluna.", Detail = v], fieldTypes{i}})
+		in
+		    Table.TransformColumns(Fonte, pairs),
+		  #"Índice Adicionado" = Table.AddIndexColumn(#"Incompatibilidades de Tipo Detectadas", "Número da Linha" ,1),
+		  #"Erros Mantidos" = Table.SelectRowsWithErrors(#"Índice Adicionado", {"CODCOLIGADA", "CODFILIAL", "CHAPA", "NOME", "CODSITUACAO", "FUNCAO", "NOME_SECAO", "COD_JORNADA", "DESC_JORNADA", "DATAREFERENCIA", "DIA_DA_SEMANA", "ENT1", "SAI1", "ENT2", "SAI2", "ENT3", "SAI3", "ENT4", "SAI4", "HORAS_BASE", "HORAS_TRAB", "HORAS_EXTRAS", "VALOR_HORAS_EXTRAS", "STATUS", "CODFILIAL-CHAPA"}),
+		  #"Colunas Reordenadas" = Table.ReorderColumns(#"Erros Mantidos", {"Número da Linha", "CODCOLIGADA", "CODFILIAL", "CHAPA", "NOME", "CODSITUACAO", "FUNCAO", "NOME_SECAO", "COD_JORNADA", "DESC_JORNADA", "DATAREFERENCIA", "DIA_DA_SEMANA", "ENT1", "SAI1", "ENT2", "SAI2", "ENT3", "SAI3", "ENT4", "SAI4", "HORAS_BASE", "HORAS_TRAB", "HORAS_EXTRAS", "VALOR_HORAS_EXTRAS", "STATUS", "CODFILIAL-CHAPA"})
+		in
+		  #"Colunas Reordenadas"
+	lineageTag: d709500a-cdba-443f-878e-a43fb2e2cdde
+	queryGroup: 'Erros na Consulta - 25/06/2026 08:24:13'
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
