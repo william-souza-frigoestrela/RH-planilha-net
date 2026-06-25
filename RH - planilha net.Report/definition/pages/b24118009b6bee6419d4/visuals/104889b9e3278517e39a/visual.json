@@ -1,0 +1,683 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "104889b9e3278517e39a",
+  "position": {
+    "x": 39.31086142322097,
+    "y": 116.01498127340824,
+    "z": 0,
+    "height": 554.187265917603,
+    "width": 1198.5018726591761,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "CODCOLIGADA"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.CODCOLIGADA",
+              "nativeQueryRef": "CODCOLIGADA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "CODFILIAL"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.CODFILIAL",
+              "nativeQueryRef": "CODFILIAL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "CHAPA"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.CHAPA",
+              "nativeQueryRef": "CHAPA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "NOME"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.NOME",
+              "nativeQueryRef": "NOME"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "FUNCAO"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.FUNCAO",
+              "nativeQueryRef": "FUNCAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.SECAO",
+              "nativeQueryRef": "SECAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "DATAADMISSAO"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.DATAADMISSAO",
+              "nativeQueryRef": "DATAADMISSAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "DATADEMISSAO"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.DATADEMISSAO",
+              "nativeQueryRef": "DATADEMISSAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "CODTIPO"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.CODTIPO",
+              "nativeQueryRef": "CODTIPO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "SITUACAO"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.SITUACAO",
+              "nativeQueryRef": "SITUACAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "DATA"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.DATA",
+              "nativeQueryRef": "DATA"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#252934'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#343845'"
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'fitToContent'"
+                }
+              }
+            },
+            "defaultColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Medidas"
+                                    }
+                                  },
+                                  "Property": "Destaque Maior Variacao"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "1D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#a38600'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Medidas.Spend - Var LY"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dClusters.CLUSTERS"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "335.85301321077117D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.FORNECEDOR"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "484.3926655822128D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.DESCRICAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "114D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dEmpresa.NOMEREDUZIDO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "129.5859993944889D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.DTASOLICITACAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "137.51750454297664D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.DTAAPROVACAOPEDIDO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "119D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.NROSOLICITACAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "95D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.SEQPRODUTO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "67D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.UNIDADE"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "93D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(DCEVPB_SOLICITACAOTEMPOAPROVACAO.QUANTIDADE)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "291D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.SOLICITANTE"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "207D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.GRUPO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "233D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.SUBGRUPO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "122D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dPrioridade.DESC_PRIORIDADE"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "285D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.NOME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "1172D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DCEVPB_SOLICITACAOTEMPOAPROVACAO.OBSERVACAO"
+          }
+        }
+      ],
+      "accessibility": [
+        {
+          "properties": {
+            "rowWithReferenceText": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
