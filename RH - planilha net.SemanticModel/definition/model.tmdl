@@ -26,6 +26,7 @@ ref table 'Planilha NET- 27 – Acima de 10 Horas - Func'
 ref table 'Planilha NET- 27 – Acima de 10 Horas - Valor'
 ref table dCODCOLIGADA
 ref table dCODFILIAL
+ref table Medidas
 
 ref cultureInfo pt-BR
 
