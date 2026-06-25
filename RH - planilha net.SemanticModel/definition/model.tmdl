@@ -13,7 +13,7 @@ queryGroup 'Erros na Consulta - 25/06/2026 08:24:13'
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["Planilha NET- 27 – Acima de 10 Horas - Top Dias","Planilha NET- 4 – Faltas","Planilha NET – 2 – Saldo de Banco de Horas – saldo_data","Planilha NET 26 - Funcionários com Jornada","Planilha NET- 27 – Acima de 10 Horas - Func","Planilha NET- 27 – Acima de 10 Horas - Valor","Erros em Planilha NET- 27 – Acima de 10 Horas - Func","Erros em Planilha NET- 27 – Acima de 10 Horas - Valor"]
+annotation PBI_QueryOrder = ["Planilha NET- 27 – Acima de 10 Horas - Top Dias","Planilha NET- 4 – Faltas","Planilha NET – 2 – Saldo de Banco de Horas – saldo_data","Planilha NET 26 - Funcionários com Jornada","Planilha NET- 27 – Acima de 10 Horas - Func","Planilha NET- 27 – Acima de 10 Horas - Valor","Erros em Planilha NET- 27 – Acima de 10 Horas - Func","Erros em Planilha NET- 27 – Acima de 10 Horas - Valor","dCODCOLIGADA","dCODFILIAL"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -24,6 +24,8 @@ ref table 'Planilha NET 26 - Funcionários com Jornada'
 ref table dCalendario
 ref table 'Planilha NET- 27 – Acima de 10 Horas - Func'
 ref table 'Planilha NET- 27 – Acima de 10 Horas - Valor'
+ref table dCODCOLIGADA
+ref table dCODFILIAL
 
 ref cultureInfo pt-BR
 

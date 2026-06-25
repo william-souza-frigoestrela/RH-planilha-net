@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 491.17197264411766,
-            "y": 689.16390899982
+            "x": 1762.0815714355942,
+            "y": 0
           },
           "nodeIndex": "Planilha NET 26 - Funcionários com Jornada",
           "nodeLineageTag": "c2f08de6-f508-4102-a920-eee2f5b3d2c4",
@@ -19,11 +19,11 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
-            "x": 367.87469309207682,
+            "x": 298.81736887737094,
             "y": 0
           },
           "nodeIndex": "Planilha NET- 4 – Faltas",
@@ -32,12 +32,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 1264.0665457052821,
-            "y": 44.546735521608639
+            "x": 1550.2093409181521,
+            "y": 961.957623
           },
           "nodeIndex": "dCalendario",
           "nodeLineageTag": "ea316fd7-0e83-4318-83dd-f03bf5991763",
@@ -45,19 +45,20 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 766.03067801842735,
+            "x": 618.05069755834336,
             "y": 0
           },
           "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Top Dias",
+          "nodeLineageTag": "4212c04f-4322-4a0d-a56a-86d7692ded13",
           "size": {
             "height": 288.91199776686676,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         },
         {
           "location": {
@@ -65,16 +66,17 @@
             "y": 0
           },
           "nodeIndex": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+          "nodeLineageTag": "f9686605-3ffa-47fb-a760-c1c755b9be1f",
           "size": {
             "height": 300,
-            "width": 234
+            "width": 249.944049
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
-            "x": 1548.0665457052821,
-            "y": 344.58195449991
+            "x": 939.23462609807916,
+            "y": 0
           },
           "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Func",
           "nodeLineageTag": "647e33bf-830c-4f19-9dcd-e50010189c8d",
@@ -82,12 +84,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 6
         },
         {
           "location": {
-            "x": 1832.0665457052821,
-            "y": 344.58195449991
+            "x": 1255.6492884845738,
+            "y": 0
           },
           "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Valor",
           "nodeLineageTag": "ce56e30c-6d95-4356-8022-69b6e76c8c50",
@@ -95,11 +97,37 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 780.17359778529362,
+            "y": 951.47597892307931
+          },
+          "nodeIndex": "dCODCOLIGADA",
+          "nodeLineageTag": "e4c8329e-3f8f-47c4-a550-962639f1a6b5",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 372.5653188054975,
+            "y": 967.53876271449576
+          },
+          "nodeIndex": "dCODFILIAL",
+          "nodeLineageTag": "23f390f4-ac47-483c-8ab3-66a77995a9f3",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 9
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 70.95554390096882,
+      "zoomValue": 56.447393005377741,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

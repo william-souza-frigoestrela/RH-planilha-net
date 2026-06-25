@@ -1,0 +1,25 @@
+table dCODFILIAL
+	lineageTag: 23f390f4-ac47-483c-8ab3-66a77995a9f3
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: 10de8ccb-f52f-411c-9a0b-42e7d476889f
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCODFILIAL = m
+		mode: import
+		source =
+				let
+				    Fonte = #"Planilha NET 26 - Funcionários com Jornada",
+				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"CODFILIAL"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas")
+				in
+				    #"Duplicatas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
