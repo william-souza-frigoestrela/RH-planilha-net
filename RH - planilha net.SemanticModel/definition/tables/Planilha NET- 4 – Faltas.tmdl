@@ -89,7 +89,7 @@ table 'Planilha NET- 4 – Faltas'
 
 	column DATA
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 03408e2f-354f-4147-b105-bd880669eca0
 		summarizeBy: none
 		sourceColumn: DATA
