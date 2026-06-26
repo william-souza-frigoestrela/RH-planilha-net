@@ -1,0 +1,93 @@
+table FPBI_DEPARTAMENTO
+	lineageTag: 987dcbc8-7389-4ffd-88d5-0e3e8705b122
+
+	column CODCOLIGADA
+		dataType: double
+		lineageTag: 72fe8f66-b90e-4bc0-a26b-675c780a87ea
+		summarizeBy: sum
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CODFILIAL
+		dataType: double
+		lineageTag: ea86dd30-6bdf-474b-a6bc-61fcb238d473
+		summarizeBy: sum
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CODIGO
+		dataType: string
+		lineageTag: 5f4b8924-cc9f-496a-8df3-87684151d77a
+		summarizeBy: none
+		sourceColumn: CODIGO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESCRICAO
+		dataType: string
+		lineageTag: afe41156-3c03-4cf9-85b4-a12443834849
+		summarizeBy: none
+		sourceColumn: DESCRICAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODDEPARTAMENTO
+		dataType: string
+		lineageTag: f93aa74f-d47e-4137-8c3e-0e6e34ed8823
+		summarizeBy: none
+		sourceColumn: CODDEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSETOR
+		dataType: string
+		lineageTag: ce340007-9b00-496e-8c5a-90663d5378ac
+		summarizeBy: none
+		sourceColumn: CODSETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 5e37c2e3-4cfb-4dd0-841a-9ea66657dd32
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: 9ea82a83-12eb-4c92-963c-3ada9d93376e
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 667dca4d-b827-4864-9300-8697520560d2
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FPBI_DEPARTAMENTO = m
+		mode: import
+		source =
+				let
+				    Fonte = Oracle.Database("rm", [HierarchicalNavigation=true]),
+				    RM = Fonte{[Schema="RM"]}[Data],
+				    FPBI_DEPARTAMENTO1 = RM{[Name="FPBI_DEPARTAMENTO"]}[Data]
+				in
+				    FPBI_DEPARTAMENTO1
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

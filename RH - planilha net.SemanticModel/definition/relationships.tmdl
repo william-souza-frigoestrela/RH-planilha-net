@@ -42,3 +42,19 @@ relationship c26eb914-5334-81d2-16ca-a06a37f1d513
 	fromColumn: 'Planilha NET- 4 – Faltas'.DATA
 	toColumn: dCalendario.Date
 
+relationship 768062d7-1e5b-0d5c-e401-917f31706681
+	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.SECAO
+	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
+
+relationship 1a9fdca2-3611-30e4-9106-7d9b3a850e3b
+	fromColumn: 'Planilha NET 25 - Funcionários com batida'.NOME_SECAO
+	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
+
+relationship 4ec9780f-e2c7-6505-1d83-f5f8b4215384
+	fromColumn: 'Planilha NET- 4 – Faltas'.SECAO
+	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
+
+relationship 4f06d2ed-3464-1276-2119-e017fe2e14ab
+	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.NOME_SECAO
+	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
+

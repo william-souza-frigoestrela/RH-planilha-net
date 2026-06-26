@@ -3,6 +3,7 @@ model Model
 	defaultPowerBIDataSourceVersion: powerBI_V3
 	sourceQueryCulture: pt-BR
 	dataAccessOptions
+		fastCombine
 		legacyRedirects
 		returnErrorValuesAsNull
 
@@ -13,7 +14,7 @@ queryGroup 'Erros na Consulta - 25/06/2026 08:24:13'
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["Planilha NET- 4 – Faltas","Planilha NET – 2 – Saldo de Banco de Horas – saldo_data","Planilha NET 25 - Funcionários com batida","Planilha NET- 27 – Acima de 10 Horas - Valor","dCODCOLIGADA","dCODFILIAL","Planilha NET 18 - Hora extra dia"]
+annotation PBI_QueryOrder = ["Planilha NET- 4 – Faltas","Planilha NET – 2 – Saldo de Banco de Horas – saldo_data","Planilha NET 25 - Funcionários com batida","Planilha NET- 27 – Acima de 10 Horas - Valor","dCODCOLIGADA","dCODFILIAL","Planilha NET 18 - Hora extra dia","FPBI_DEPARTAMENTO"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -26,6 +27,7 @@ ref table dCODCOLIGADA
 ref table dCODFILIAL
 ref table Medidas
 ref table 'Planilha NET 18 - Hora extra dia'
+ref table FPBI_DEPARTAMENTO
 
 ref cultureInfo pt-BR
 

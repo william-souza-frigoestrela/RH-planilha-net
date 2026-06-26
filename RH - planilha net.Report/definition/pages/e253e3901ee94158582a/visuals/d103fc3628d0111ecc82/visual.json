@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "8838cb9082dd0950c1e3",
+  "name": "d103fc3628d0111ecc82",
   "position": {
-    "x": 366.26217228464418,
-    "y": 24.928838951310862,
-    "z": 1000,
-    "height": 69.992509363295881,
-    "width": 159.16104868913857,
-    "tabOrder": 1000
+    "x": 461.33935289691493,
+    "y": 25.041384499623778,
+    "z": 5002,
+    "height": 70.308502633559058,
+    "width": 223.44620015048909,
+    "tabOrder": 5002
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODCOLIGADA"
+                      "Entity": "dCODFILIAL"
                     }
                   },
-                  "Property": "CODCOLIGADA"
+                  "Property": "FILIAL"
                 }
               },
-              "queryRef": "dCODCOLIGADA.CODCOLIGADA",
-              "nativeQueryRef": "CODCOLIGADA",
+              "queryRef": "dCODFILIAL.FILIAL",
+              "nativeQueryRef": "FILIAL",
               "active": true
             }
           ]
@@ -230,6 +230,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "FILIAL",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

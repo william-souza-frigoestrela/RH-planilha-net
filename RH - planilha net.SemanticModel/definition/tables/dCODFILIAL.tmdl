@@ -9,6 +9,47 @@ table dCODFILIAL
 
 		annotation SummarizationSetBy = Automatic
 
+	column FILIAL = ```
+			
+			SWITCH (
+			    dCODFILIAL[CODFILIAL],
+			    "1", "1 - ADM ESTRELA",
+			    "2", "2 - INDUSTRIA ESTRELA",
+			    "4", "4 - TUPÃ",
+			    "8", "8 - BOUTIQUE ESTRELA",
+			    "12", "12 - RONDONOPOLIS",
+			    "18", "18 - VALINHOS",
+			    "20", "20 - SERRA",
+			    "27", "27 - SÃO PAULO",
+			    "29", "29 - BOUTIQUE SJRP",
+			    "100", "100 - ALIMENTOS ESTRELA",
+			    "104", "104 - SÃO LUIZ GONZAGA",
+			    "105", "105 - IJUI",
+			    "6", "6 - VADÃO TRANSPORTE",
+			    "69", "69 - RADIO ALVORADA",
+			    "72", "72 - OESTE GRAXARIA",
+			    "985", "985 - AGROPECUARIA TURBILHAO",
+			    "980", "980 - TABOADO RAÇÃO",
+			    "94", "94 - VEREDA",
+			    "99", "99 - VALE DO SOL",
+			    "75", "75 - CHACARA RECREIO",
+			    "77", "77 - FAZENDA TURBILHÃO",
+			    "78", "78 - FAZENDA VITÓRIA",
+			    "79", "79 - FAZENDA VISTA ALEGRE",
+			    "80", "80 - CHACARA BOIADEIRO",
+			    "83", "83 - FAZENDA TABOADO",
+			    "89", "89 - JOIA DA PONTE",
+			    "91", "91 - SITIO SOL",
+			    "200", "200 - ESTRELA MERCANTIL",
+			    "997", "997 - AGROPECUARIA TURBILHÃO", 
+			    "OUTROS"
+			)
+			```
+		lineageTag: a00be789-7625-430f-9561-019a6a0ceea5
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition dCODFILIAL = m
 		mode: import
 		source =

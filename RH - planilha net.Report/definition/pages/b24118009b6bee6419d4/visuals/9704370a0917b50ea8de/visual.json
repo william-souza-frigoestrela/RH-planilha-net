@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "fbdef81b4045b1b41217",
+  "name": "9704370a0917b50ea8de",
   "position": {
-    "x": 525.4232209737828,
-    "y": 24.928838951310862,
-    "z": 2000,
-    "height": 69.992509363295881,
-    "width": 158.20224719101122,
-    "tabOrder": 2000
+    "x": 706.49963154016223,
+    "y": 25.467943994104644,
+    "z": 3003,
+    "height": 70.7442888725129,
+    "width": 291.46647015475315,
+    "tabOrder": 3003
   },
   "visual": {
     "visualType": "slicer",
@@ -20,15 +20,45 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "CODFILIAL"
+                  "Property": "DEPARTAMENTO"
                 }
               },
-              "queryRef": "dCODFILIAL.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL",
+              "queryRef": "FPBI_DEPARTAMENTO.DEPARTAMENTO",
+              "nativeQueryRef": "DEPARTAMENTO",
               "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SETOR"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
+              "nativeQueryRef": "SETOR",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
+              "nativeQueryRef": "SECAO",
+              "active": false
             }
           ]
         }

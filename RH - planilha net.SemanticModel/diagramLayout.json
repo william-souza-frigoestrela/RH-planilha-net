@@ -19,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 4
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 5
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 300,
             "width": 249.944049
           },
-          "zIndex": 5
+          "zIndex": 6
         },
         {
           "location": {
@@ -96,7 +96,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -108,12 +108,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 2330.081571435594,
-            "y": 430.9788115
+            "x": 771.10789143559418,
+            "y": 0
           },
           "nodeIndex": "Planilha NET 18 - Hora extra dia",
           "nodeLineageTag": "bbdde433-ebda-4a69-9e83-9f8b97fd04ac",
@@ -121,7 +121,20 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1149.0006244355939,
+            "y": 626.96474100000012
+          },
+          "nodeIndex": "FPBI_DEPARTAMENTO",
+          "nodeLineageTag": "987dcbc8-7389-4ffd-88d5-0e3e8705b122",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 10
         }
       ],
       "name": "Todas as tabelas",

@@ -51,20 +51,6 @@
                       "Entity": "Planilha NET- 4 – Faltas"
                     }
                   },
-                  "Property": "SECAO"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.SECAO",
-              "nativeQueryRef": "SECAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
                   "Property": "SITUACAO"
                 }
               },
@@ -87,6 +73,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Planilha NET- 4 – Faltas"
+                  }
+                },
+                "Property": "DATA"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {
@@ -525,20 +528,6 @@
           },
           "selector": {
             "metadata": "Planilha NET- 4 – Faltas.FUNCAO"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "348.78325851247143D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Planilha NET- 4 – Faltas.SECAO"
           }
         },
         {

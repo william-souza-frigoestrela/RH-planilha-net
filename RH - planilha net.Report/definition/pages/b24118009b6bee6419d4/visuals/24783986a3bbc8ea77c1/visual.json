@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "e6b48505067149859a7c",
+  "name": "24783986a3bbc8ea77c1",
   "position": {
-    "x": 683.625468164794,
-    "y": 24.928838951310862,
-    "z": 3000,
-    "height": 69.992509363295881,
-    "width": 158.20224719101122,
-    "tabOrder": 3000
+    "x": 461.33935289691493,
+    "y": 25.041384499623778,
+    "z": 3002,
+    "height": 70.308502633559058,
+    "width": 223.44620015048909,
+    "tabOrder": 3002
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
+                      "Entity": "dCODFILIAL"
                     }
                   },
-                  "Property": "SECAO"
+                  "Property": "FILIAL"
                 }
               },
-              "queryRef": "Planilha NET- 4 – Faltas.SECAO",
-              "nativeQueryRef": "SECAO",
+              "queryRef": "dCODFILIAL.FILIAL",
+              "nativeQueryRef": "FILIAL",
               "active": true
             }
           ]
@@ -230,6 +230,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "FILIAL",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }
