@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "6193c2162124950b34bb",
+  "name": "f23e9dba13caa37da74e",
   "position": {
-    "x": 962.85020242914982,
-    "y": 24.874493927125506,
-    "z": 1000,
+    "x": 325.44129554655871,
+    "y": 95.352226720647778,
+    "z": 5004,
     "height": 70.477732793522264,
-    "width": 131.62753036437246,
-    "tabOrder": 1000
+    "width": 366.89878542510121,
+    "tabOrder": 5004
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
+                      "Entity": "dCalendario"
                     }
                   },
-                  "Property": "SITUACAO"
+                  "Property": "Data"
                 }
               },
-              "queryRef": "Planilha NET- 4 – Faltas.SITUACAO",
-              "nativeQueryRef": "SITUACAO",
+              "queryRef": "dCalendario.Data",
+              "nativeQueryRef": "Data",
               "active": true
             }
           ]
@@ -75,8 +75,8 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "p",
-                    "Entity": "Planilha NET- 4 – Faltas",
+                    "Name": "d",
+                    "Entity": "dCalendario",
                     "Type": 0
                   }
                 ],
@@ -89,10 +89,10 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "p"
+                                  "Source": "d"
                                 }
                               },
-                              "Property": "SITUACAO"
+                              "Property": "Data"
                             }
                           }
                         ],
@@ -100,7 +100,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Ativo'"
+                                "Value": "'Ontem'"
                               }
                             }
                           ]
@@ -127,7 +127,7 @@
             "singleSelect": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -272,20 +272,25 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Data",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "55d51e72fbf6eb02284b",
+        "name": "035176e384fe86107d4e",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET- 4 – Faltas"
+                "Entity": "dCalendario"
               }
             },
-            "Property": "SITUACAO"
+            "Property": "Data"
           }
         },
         "type": "Categorical"
