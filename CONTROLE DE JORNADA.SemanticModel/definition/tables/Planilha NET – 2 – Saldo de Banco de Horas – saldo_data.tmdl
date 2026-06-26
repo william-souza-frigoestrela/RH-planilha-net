@@ -160,56 +160,7 @@ table 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'
 		mode: import
 		source = ```
 				let
-				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="
-				        -- buscando saldo de bh atualizado até d-1 e trazendo desligados dos ultimos 60 dias
-				
-				        SELECT CODCOLIGADA, CODFILIAL, CHAPA, NOME, SECAO,
-				               DATAADMISSAO, DATADEMISSAO, CODTIPO, CODSITUACAO,
-				               
-				               -- Trazendo os valores brutos em minutos inteiros para permitir somas brutas no BI
-				               HORA_EXTRA AS MINUTOS_HORA_EXTRA,
-				               ATRASO AS MINUTOS_ATRASO,
-				               FALTA AS MINUTOS_FALTA,
-				               
-				               -- Separando o Saldo Geral Bruto em Minutos Positivos e Negativos
-				               CASE WHEN SALDO_GERAL >= 0 THEN SALDO_GERAL ELSE 0 END AS MINUTOS_SALDO_POSITIVO,
-				               CASE WHEN SALDO_GERAL < 0  THEN SALDO_GERAL ELSE 0 END AS MINUTOS_SALDO_NEGATIVO
-				        FROM (
-				            SELECT A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, C.DESCRICAO AS SECAO,
-				                   B.DATAADMISSAO, B.DATADEMISSAO, B.CODTIPO, B.CODSITUACAO,
-				                   SUM(A.EXTRAFAIXA1 + A.EXTRAFAIXA2 + A.EXTRAFAIXA3 + A.EXTRAFAIXA4 + A.EXTRAFAIXA5 + A.EXTRACOMP1 + A.EXTRACOMP2 + A.EXTRADESC1 + A.EXTRADESC2 + A.EXTRAFER1 + A.EXTRAFER2) AS HORA_EXTRA,
-				                   SUM(A.ATRASO) AS ATRASO,
-				                   SUM(A.FALTA) AS FALTA,
-				                   SUM(A.EXTRAFAIXA1 + A.EXTRAFAIXA2 + A.EXTRAFAIXA3 + A.EXTRAFAIXA4 + A.EXTRAFAIXA5 + A.EXTRACOMP1 + A.EXTRACOMP2 + A.EXTRADESC1 + A.EXTRADESC2 + A.EXTRAFER1 + A.EXTRAFER2 - A.FALTA - A.ATRASO) AS SALDO_GERAL
-				            FROM ABANCOHORFUN@RM A, PFUNC@RM B, PSECAO@RM C
-				            WHERE A.CODCOLIGADA = B.CODCOLIGADA
-				              AND A.CHAPA       = B.CHAPA
-				              AND B.CODCOLIGADA = C.CODCOLIGADA
-				              AND B.CODSECAO    = C.CODIGO
-				              
-				              -- Lógica do sistema RM para aceitar '0' e trazer todas as estruturas
-				              AND A.CODCOLIGADA BETWEEN 0 AND 999
-				              AND B.CODFILIAL   BETWEEN 0 AND 999
-				              
-				              -- Regra para demitidos (traz ativos ou quem foi demitido nos últimos 60 dias)
-				              AND (B.CODSITUACAO  <> 'D'
-				              OR  (B.CODSITUACAO   = 'D'
-				              AND  B.DATADEMISSAO >= TRUNC(SYSDATE) - 60 ))
-				              
-				              -- Traz todo o saldo acumulado no passado até o dia de ontem (D-1)
-				              AND A.DATA <= TRUNC(SYSDATE) - 1
-				              
-				              -- Filtro de chapa aberto dinamicamente para quem já estava admitido até ontem
-				              AND A.CHAPA IN (SELECT H.CHAPA
-				                              FROM PFUNC@RM H
-				                              WHERE H.CODCOLIGADA = B.CODCOLIGADA
-				                                AND H.CHAPA       = B.CHAPA
-				                                AND H.CODSITUACAO = B.CODSITUACAO
-				                                AND H.DATAADMISSAO <= TRUNC(SYSDATE) - 1)
-				            GROUP BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, C.DESCRICAO, B.DATAADMISSAO, B.DATADEMISSAO, B.CODTIPO, B.CODSITUACAO
-				        ) 
-				        ORDER BY CODCOLIGADA, CODFILIAL, CHAPA
-				    "]),
+				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="#(lf)        -- buscando saldo de bh atualizado até d-1 e trazendo desligados dos ultimos 60 dias#(lf)#(lf)        SELECT CODCOLIGADA, CODFILIAL, CHAPA, NOME, SECAO,#(lf)               DATAADMISSAO, DATADEMISSAO, CODTIPO, CODSITUACAO,#(lf)               #(lf)               -- Trazendo os valores brutos em minutos inteiros para permitir somas brutas no BI#(lf)               HORA_EXTRA AS MINUTOS_HORA_EXTRA,#(lf)               ATRASO AS MINUTOS_ATRASO,#(lf)               FALTA AS MINUTOS_FALTA,#(lf)               #(lf)               -- Separando o Saldo Geral Bruto em Minutos Positivos e Negativos#(lf)               CASE WHEN SALDO_GERAL >= 0 THEN SALDO_GERAL ELSE 0 END AS MINUTOS_SALDO_POSITIVO,#(lf)               CASE WHEN SALDO_GERAL < 0  THEN SALDO_GERAL ELSE 0 END AS MINUTOS_SALDO_NEGATIVO#(lf)        FROM (#(lf)            SELECT A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, C.DESCRICAO AS SECAO,#(lf)                   B.DATAADMISSAO, B.DATADEMISSAO, B.CODTIPO, B.CODSITUACAO,#(lf)                   SUM(A.EXTRAFAIXA1 + A.EXTRAFAIXA2 + A.EXTRAFAIXA3 + A.EXTRAFAIXA4 + A.EXTRAFAIXA5 + A.EXTRACOMP1 + A.EXTRACOMP2 + A.EXTRADESC1 + A.EXTRADESC2 + A.EXTRAFER1 + A.EXTRAFER2) AS HORA_EXTRA,#(lf)                   SUM(A.ATRASO) AS ATRASO,#(lf)                   SUM(A.FALTA) AS FALTA,#(lf)                   SUM(A.EXTRAFAIXA1 + A.EXTRAFAIXA2 + A.EXTRAFAIXA3 + A.EXTRAFAIXA4 + A.EXTRAFAIXA5 + A.EXTRACOMP1 + A.EXTRACOMP2 + A.EXTRADESC1 + A.EXTRADESC2 + A.EXTRAFER1 + A.EXTRAFER2 - A.FALTA - A.ATRASO) AS SALDO_GERAL#(lf)            FROM ABANCOHORFUN@RM A, PFUNC@RM B, PSECAO@RM C#(lf)            WHERE A.CODCOLIGADA = B.CODCOLIGADA#(lf)              AND A.CHAPA       = B.CHAPA#(lf)              AND B.CODCOLIGADA = C.CODCOLIGADA#(lf)              AND B.CODSECAO    = C.CODIGO#(lf)              #(lf)              -- Lógica do sistema RM para aceitar '0' e trazer todas as estruturas#(lf)              AND A.CODCOLIGADA BETWEEN 0 AND 999#(lf)              AND B.CODFILIAL   BETWEEN 0 AND 999#(lf)              #(lf)              -- Regra para demitidos (traz ativos ou quem foi demitido nos últimos 60 dias)#(lf)              AND (B.CODSITUACAO  <> 'D'#(lf)              OR  (B.CODSITUACAO   = 'D'#(lf)              AND  B.DATADEMISSAO >= TRUNC(SYSDATE) - 60 ))#(lf)              #(lf)              -- Traz todo o saldo acumulado no passado até o dia de ontem (D-1)#(lf)              AND A.DATA <= TRUNC(SYSDATE) - 1#(lf)              #(lf)              -- Filtro de chapa aberto dinamicamente para quem já estava admitido até ontem#(lf)              AND A.CHAPA IN (SELECT H.CHAPA#(lf)                              FROM PFUNC@RM H#(lf)                              WHERE H.CODCOLIGADA = B.CODCOLIGADA#(lf)                                AND H.CHAPA       = B.CHAPA#(lf)                                AND H.CODSITUACAO = B.CODSITUACAO#(lf)                                AND H.DATAADMISSAO <= TRUNC(SYSDATE) - 1)#(lf)            GROUP BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, C.DESCRICAO, B.DATAADMISSAO, B.DATADEMISSAO, B.CODTIPO, B.CODSITUACAO#(lf)        ) #(lf)        ORDER BY CODCOLIGADA, CODFILIAL, CHAPA#(lf)    "]),
 				
 				
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{

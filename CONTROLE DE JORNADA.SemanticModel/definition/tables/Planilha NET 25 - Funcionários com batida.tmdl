@@ -1,0 +1,320 @@
+table 'Planilha NET 25 - Funcionários com batida'
+	lineageTag: c2f08de6-f508-4102-a920-eee2f5b3d2c4
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 925ca6d2-7707-4d17-939c-04f4b6e0e14e
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: 617dc9f4-66a1-4e80-aa6b-daae263370ef
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: e03e6d22-592e-41c1-936d-888b9a7bfae0
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 8315dfc4-a32b-493c-9470-d834402c765b
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSITUACAO
+		dataType: string
+		lineageTag: a594df7d-b6c9-41e5-bba3-45a0dab2d59d
+		summarizeBy: none
+		sourceColumn: CODSITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column JORNADA
+		dataType: string
+		lineageTag: cea1200b-5ad8-4357-b614-3ce6cf8f1cb9
+		summarizeBy: none
+		sourceColumn: JORNADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: e63ee118-c8e5-4983-81db-5eb2350d8997
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME_SECAO
+		dataType: string
+		lineageTag: 00c9ebed-7074-4be4-bc1c-3e4405d05461
+		summarizeBy: none
+		sourceColumn: NOME_SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAREFERENCIA
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 761ef011-8317-49fc-ac2a-bc84986686ac
+		summarizeBy: none
+		sourceColumn: DATAREFERENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DIA_DA_SEMANA
+		dataType: string
+		lineageTag: f475a2fb-b039-4a7b-b3fe-44704d81b654
+		summarizeBy: none
+		sourceColumn: DIA_DA_SEMANA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ENT1
+		dataType: string
+		lineageTag: a25288fd-cd94-4cb1-8a43-4cc6f833d284
+		summarizeBy: none
+		sourceColumn: ENT1
+
+		annotation SummarizationSetBy = Automatic
+
+	column SAI1
+		dataType: string
+		lineageTag: 64838c4d-e84b-4705-99c8-0bc48d1addb2
+		summarizeBy: none
+		sourceColumn: SAI1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ENT2
+		dataType: string
+		lineageTag: 82413d5b-72fe-4f50-8cae-2efc5bd300bf
+		summarizeBy: none
+		sourceColumn: ENT2
+
+		annotation SummarizationSetBy = Automatic
+
+	column SAI2
+		dataType: string
+		lineageTag: 2d855db0-776a-411f-b626-4793d33b0380
+		summarizeBy: none
+		sourceColumn: SAI2
+
+		annotation SummarizationSetBy = Automatic
+
+	column ENT3
+		dataType: string
+		lineageTag: 78853b74-f7d8-45bd-98b6-d3226045d0f5
+		summarizeBy: none
+		sourceColumn: ENT3
+
+		annotation SummarizationSetBy = Automatic
+
+	column SAI3
+		dataType: string
+		lineageTag: b33c5809-b997-4ffe-8e36-6e922eb423b9
+		summarizeBy: none
+		sourceColumn: SAI3
+
+		annotation SummarizationSetBy = Automatic
+
+	column HORAS_TRAB
+		dataType: string
+		lineageTag: 2aa2c7b9-e3cf-4b46-b7ef-153eed4c4f49
+		summarizeBy: none
+		sourceColumn: HORAS_TRAB
+
+		annotation SummarizationSetBy = Automatic
+
+	column HORA_EXTRA
+		dataType: string
+		lineageTag: e68f45e5-04c4-4cab-91c0-21e96b651fbd
+		summarizeBy: none
+		sourceColumn: HORA_EXTRA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADICIONAL
+		dataType: string
+		lineageTag: f904e483-8c79-4cd6-acc3-a7ef674376fd
+		summarizeBy: none
+		sourceColumn: ADICIONAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ATRASO
+		dataType: string
+		lineageTag: 5698ac62-740d-4ccc-8d2c-52e0198cf2bf
+		summarizeBy: none
+		sourceColumn: ATRASO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUANT_BATIDAS
+		dataType: double
+		lineageTag: 7eaaa250-e366-49e4-86e5-b3ca0b901ae0
+		summarizeBy: sum
+		sourceColumn: QUANT_BATIDAS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ABONO
+		dataType: string
+		lineageTag: 047d73a1-6f42-47db-af20-f7acdf823f4b
+		summarizeBy: none
+		sourceColumn: ABONO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC_ABONO1
+		dataType: string
+		lineageTag: 828dbe69-21d3-4101-a29e-fb9f65360f79
+		summarizeBy: none
+		sourceColumn: DESC_ABONO1
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC_ABONO2
+		dataType: string
+		lineageTag: 476b0787-2534-414d-96df-922823f0913b
+		summarizeBy: none
+		sourceColumn: DESC_ABONO2
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEM_INTERVALO
+		dataType: string
+		lineageTag: 95de68e8-bdae-4d74-b98f-5269d55eca49
+		summarizeBy: none
+		sourceColumn: SEM_INTERVALO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DECIMA_HORA
+		dataType: string
+		lineageTag: 7107607b-7655-4e77-b448-8961a180dd12
+		summarizeBy: none
+		sourceColumn: DECIMA_HORA
+
+		annotation SummarizationSetBy = Automatic
+
+	column HE_50
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: a2f573fd-ca17-42f3-a2f7-ba337a81910c
+		summarizeBy: none
+		sourceColumn: HE_50
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column HE_50_VALOR
+		dataType: double
+		lineageTag: 845daadb-e935-43ce-bf02-78a9f51d7b59
+		summarizeBy: sum
+		sourceColumn: HE_50_VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HE_100
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: d39355e8-cdb0-4ce7-a44c-2b68cb0d27c5
+		summarizeBy: none
+		sourceColumn: HE_100
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column HE_100_VALOR
+		dataType: double
+		lineageTag: 04013ff8-4eda-45a0-ad7f-c522afccc107
+		summarizeBy: sum
+		sourceColumn: HE_100_VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HE_TOTAL
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: f1021bfd-7eb4-4357-bbc5-0f7f6366ab0b
+		summarizeBy: none
+		sourceColumn: HE_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column HE_TOTAL_VALOR
+		dataType: double
+		lineageTag: 3f2cbe2f-11e8-4bf4-a20c-3339cbe09320
+		summarizeBy: sum
+		sourceColumn: HE_TOTAL_VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: b484e48c-f85a-4257-be4a-2efce0c2bfa7
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: ea71dd63-7c14-42b9-a289-3e6ccc4026ec
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 76303893-ab6e-46d0-b6f2-afd7d96af087
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Planilha NET 25 - Funcionários com batida' = m
+		mode: import
+		source =
+				let
+				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT CODCOLIGADA,#(lf)       CODFILIAL,#(lf)       CHAPA,#(lf)       NOME,#(lf)       CODSITUACAO,#(lf)       FUNCAO,#(lf)       NOME_SECAO,#(lf)       DATAREFERENCIA,#(lf)       DIA_DA_SEMANA,#(lf)       ENT1,#(lf)       SAI1,#(lf)       ENT2,#(lf)       SAI2,#(lf)       ENT3,#(lf)       SAI3,#(lf)       HORAS_TRAB,#(lf)       JORNADA,#(lf)       HORA_EXTRA,#(lf)       ADICIONAL,#(lf)       ATRASO,#(lf)       QUANT_BATIDAS,#(lf)       CASE WHEN LENGTH(CAST(TRUNC((ABONO/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((ABONO/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((ABONO/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((ABONO - (TRUNC((ABONO/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((ABONO - (TRUNC((ABONO/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((ABONO - (TRUNC((ABONO/60), 0) * 60)) AS VARCHAR(2)) END AS ABONO,#(lf)       (SELECT K.DESCRICAO FROM AABONO@RM K WHERE K.CODCOLIGADA = Q.CODCOLIGADA AND K.CODIGO = Q.COD_ABONO1) AS DESC_ABONO1,#(lf)       (SELECT K.DESCRICAO FROM AABONO@RM K WHERE K.CODCOLIGADA = Q.CODCOLIGADA AND K.CODIGO = Q.COD_ABONO2) AS DESC_ABONO2,#(lf)       SEM_INTERVALO,#(lf)       DECIMA_HORA#(lf)FROM (#(lf)    SELECT CODCOLIGADA,#(lf)           CODFILIAL,#(lf)           CHAPA,#(lf)           NOME,#(lf)           CODSITUACAO,#(lf)           FUNCAO,#(lf)           NOME_SECAO,#(lf)           DATAREFERENCIA,#(lf)           CASE#(lf)              WHEN TO_CHAR(DATAREFERENCIA, 'D') = '1' THEN 'DOM'#(lf)              WHEN TO_CHAR(DATAREFERENCIA, 'D') = '2' THEN 'SEG'#(lf)              WHEN TO_CHAR(DATAREFERENCIA, 'D') = '3' THEN 'TER'#(lf)              WHEN TO_CHAR(DATAREFERENCIA, 'D') = '4' THEN 'QUA'#(lf)              WHEN TO_CHAR(DATAREFERENCIA, 'D') = '5' THEN 'QUI'#(lf)              WHEN TO_CHAR(DATAREFERENCIA, 'D') = '6' THEN 'SEX'#(lf)           ELSE#(lf)              'SAB'#(lf)           END AS DIA_DA_SEMANA,#(lf)           ENT1,#(lf)           SAI1,#(lf)           ENT2,#(lf)           SAI2,#(lf)           ENT3,#(lf)           SAI3,#(lf)           CASE WHEN LENGTH(CAST(TRUNC((HORAS_TRAB/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((HORAS_TRAB/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((HORAS_TRAB/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((HORAS_TRAB - (TRUNC((HORAS_TRAB/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((HORAS_TRAB - (TRUNC((HORAS_TRAB/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((HORAS_TRAB - (TRUNC((HORAS_TRAB/60), 0) * 60)) AS VARCHAR(2)) END AS HORAS_TRAB,#(lf)           CASE WHEN LENGTH(CAST(TRUNC((JORNADA/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((JORNADA/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((JORNADA/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((JORNADA - (TRUNC((JORNADA/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((JORNADA - (TRUNC((JORNADA/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((JORNADA - (TRUNC((JORNADA/60), 0) * 60)) AS VARCHAR(2)) END AS JORNADA,#(lf)           CASE WHEN LENGTH(CAST(TRUNC((HORA_EXTRA/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((HORA_EXTRA/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((HORA_EXTRA/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((HORA_EXTRA - (TRUNC((HORA_EXTRA/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((HORA_EXTRA - (TRUNC((HORA_EXTRA/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((HORA_EXTRA - (TRUNC((HORA_EXTRA/60), 0) * 60)) AS VARCHAR(2)) END AS HORA_EXTRA,#(lf)           CASE WHEN LENGTH(CAST(TRUNC((ADICIONAL/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((ADICIONAL/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((ADICIONAL/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((ADICIONAL - (TRUNC((ADICIONAL/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((ADICIONAL - (TRUNC((ADICIONAL/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((ADICIONAL - (TRUNC((ADICIONAL/60), 0) * 60)) AS VARCHAR(2)) END AS ADICIONAL,       #(lf)           CASE WHEN LENGTH(CAST(TRUNC((ATRASO/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((ATRASO/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((ATRASO/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((ATRASO - (TRUNC((ATRASO/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((ATRASO - (TRUNC((ATRASO/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((ATRASO - (TRUNC((ATRASO/60), 0) * 60)) AS VARCHAR(2)) END AS ATRASO,#(lf)           QUANT_BATIDAS,#(lf)           NVL((SELECT SUM(J.HORAFIM - J.HORAINICIO) FROM AABONFUN@RM J WHERE J.CODCOLIGADA = T.CODCOLIGADA AND J.CHAPA = T.CHAPA AND J.DATA = T.DATAREFERENCIA), 0) AS ABONO,#(lf)           (SELECT MAX(DISTINCT (J.CODABONO)) FROM AABONFUN@RM J WHERE J.CODCOLIGADA = T.CODCOLIGADA AND J.CHAPA = T.CHAPA AND J.DATA = T.DATAREFERENCIA) AS COD_ABONO1,#(lf)           (SELECT MIN(DISTINCT (J.CODABONO)) FROM AABONFUN@RM J WHERE J.CODCOLIGADA = T.CODCOLIGADA AND J.CHAPA = T.CHAPA AND J.DATA = T.DATAREFERENCIA) AS COD_ABONO2,#(lf)           CASE#(lf)              WHEN HORAS_TRAB > 360 AND QUANT_BATIDAS > 2 AND CASE WHEN SAI1S > ENT1S THEN SAI1S - ENT1S ELSE 1440 + SAI1S - ENT1S END > 360 THEN 'SIM'#(lf)              WHEN HORAS_TRAB > 360 AND QUANT_BATIDAS = 2 THEN 'SIM'#(lf)           ELSE#(lf)              'NÃO'#(lf)           END AS SEM_INTERVALO,#(lf)           CASE#(lf)              WHEN HORAS_TRAB >= 600 AND JORNADA <= 600 THEN 'SIM'#(lf)              WHEN HORAS_TRAB >= 670 AND JORNADA >= 670 THEN 'SIM'#(lf)           ELSE#(lf)              'NÃO'#(lf)           END AS DECIMA_HORA#(lf)    FROM (#(lf)        SELECT CODCOLIGADA,#(lf)               CODFILIAL,#(lf)               CHAPA,#(lf)               NOME,#(lf)               CODSITUACAO,#(lf)               FUNCAO,#(lf)               NOME_SECAO,#(lf)               DATAREFERENCIA,#(lf)               ENT1 AS ENT1S,#(lf)               SAI1 AS SAI1S,#(lf)               CASE WHEN QUANT_BATIDAS BETWEEN 1 AND 6 THEN (CASE WHEN LENGTH(CAST(TRUNC((ENT1/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((ENT1/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((ENT1/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((ENT1 - (TRUNC((ENT1/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((ENT1 - (TRUNC((ENT1/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((ENT1 - (TRUNC((ENT1/60), 0) * 60)) AS VARCHAR(2)) END) END AS ENT1,#(lf)               CASE WHEN QUANT_BATIDAS BETWEEN 2 AND 6 THEN (CASE WHEN LENGTH(CAST(TRUNC((SAI1/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((SAI1/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((SAI1/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((SAI1 - (TRUNC((SAI1/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((SAI1 - (TRUNC((SAI1/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((SAI1 - (TRUNC((SAI1/60), 0) * 60)) AS VARCHAR(2)) END) END AS SAI1,#(lf)               CASE WHEN QUANT_BATIDAS BETWEEN 3 AND 6 THEN (CASE WHEN LENGTH(CAST(TRUNC((ENT2/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((ENT2/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((ENT2/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((ENT2 - (TRUNC((ENT2/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((ENT2 - (TRUNC((ENT2/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((ENT2 - (TRUNC((ENT2/60), 0) * 60)) AS VARCHAR(2)) END) END AS ENT2,#(lf)               CASE WHEN QUANT_BATIDAS BETWEEN 4 AND 6 THEN (CASE WHEN LENGTH(CAST(TRUNC((SAI2/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((SAI2/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((SAI2/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((SAI2 - (TRUNC((SAI2/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((SAI2 - (TRUNC((SAI2/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((SAI2 - (TRUNC((SAI2/60), 0) * 60)) AS VARCHAR(2)) END) END AS SAI2,#(lf)               CASE WHEN QUANT_BATIDAS BETWEEN 5 AND 6 THEN (CASE WHEN LENGTH(CAST(TRUNC((ENT3/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((ENT3/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((ENT3/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((ENT3 - (TRUNC((ENT3/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((ENT3 - (TRUNC((ENT3/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((ENT3 - (TRUNC((ENT3/60), 0) * 60)) AS VARCHAR(2)) END) END AS ENT3,#(lf)               CASE WHEN QUANT_BATIDAS = 6 THEN (CASE WHEN LENGTH(CAST(TRUNC((SAI3/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((SAI3/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((SAI3/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((SAI3 - (TRUNC((SAI3/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((SAI3 - (TRUNC((SAI3/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((SAI3 - (TRUNC((SAI3/60), 0) * 60)) AS VARCHAR(2)) END) END AS SAI3,#(lf)               (SELECT J.HTRAB FROM AAFHTFUN@RM J WHERE J.CODCOLIGADA = W.CODCOLIGADA AND J.CHAPA = W.CHAPA AND J.DATA = W.DATAREFERENCIA) AS HORAS_TRAB,#(lf)               (SELECT J.BASE FROM AAFHTFUN@RM J WHERE J.CODCOLIGADA = W.CODCOLIGADA AND J.CHAPA = W.CHAPA AND J.DATA = W.DATAREFERENCIA) AS JORNADA,#(lf)               (SELECT J.EXTRAEXECUTADO FROM AAFHTFUN@RM J WHERE J.CODCOLIGADA = W.CODCOLIGADA AND J.CHAPA = W.CHAPA AND J.DATA = W.DATAREFERENCIA) AS HORA_EXTRA,#(lf)               (SELECT J.ADICIONAL FROM AAFHTFUN@RM J WHERE J.CODCOLIGADA = W.CODCOLIGADA AND J.CHAPA = W.CHAPA AND J.DATA = W.DATAREFERENCIA) AS ADICIONAL,#(lf)               (SELECT J.ATRASO FROM AAFHTFUN@RM J WHERE J.CODCOLIGADA = W.CODCOLIGADA AND J.CHAPA = W.CHAPA AND J.DATA = W.DATAREFERENCIA) AS ATRASO,#(lf)               QUANT_BATIDAS#(lf)        FROM (#(lf)            SELECT CODCOLIGADA,#(lf)                   CODFILIAL,#(lf)                   CHAPA,#(lf)                   NOME,#(lf)                   CODSITUACAO,#(lf)                   FUNCAO,#(lf)                   NOME_SECAO,#(lf)                   DATAREFERENCIA,#(lf)                   SUM(CASE WHEN SEQUENCIA = 1 THEN BATIDA ELSE 0 END) AS ENT1,#(lf)                   SUM(CASE WHEN SEQUENCIA = 2 THEN BATIDA ELSE 0 END) AS SAI1,#(lf)                   SUM(CASE WHEN SEQUENCIA = 3 THEN BATIDA ELSE 0 END) AS ENT2,#(lf)                   SUM(CASE WHEN SEQUENCIA = 4 THEN BATIDA ELSE 0 END) AS SAI2,#(lf)                   SUM(CASE WHEN SEQUENCIA = 5 THEN BATIDA ELSE 0 END) AS ENT3,#(lf)                   SUM(CASE WHEN SEQUENCIA = 6 THEN BATIDA ELSE 0 END) AS SAI3,#(lf)                   COUNT(QTDE_BATIDA) AS QUANT_BATIDAS#(lf)            FROM (#(lf)                SELECT ROW_NUMBER() OVER(PARTITION BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, CASE WHEN A.DATAREFERENCIA IS NOT NULL THEN A.DATAREFERENCIA ELSE A.DATA END ORDER BY A.CHAPA, CASE WHEN A.DATAREFERENCIA IS NOT NULL THEN A.DATAREFERENCIA ELSE A.DATA END, A.DATA, A.BATIDA) SEQUENCIA,#(lf)                       A.CODCOLIGADA,#(lf)                       B.CODFILIAL,#(lf)                       A.CHAPA,#(lf)                       B.CODHORARIO,#(lf)                       B.NOME,#(lf)                       B.CODSITUACAO,#(lf)                       D.DESCRICAO AS NOME_SECAO,#(lf)                       C.NOME AS FUNCAO,#(lf)                       A.DATA,#(lf)                       CASE WHEN A.DATAREFERENCIA IS NOT NULL THEN A.DATAREFERENCIA ELSE A.DATA END AS DATAREFERENCIA,#(lf)                       (SELECT G.DESCRICAO#(lf)                        FROM PFHSTHOR@RM E, AHORARIO@RM G#(lf)                        WHERE E.CODCOLIGADA = A.CODCOLIGADA#(lf)                          AND E.CHAPA       = A.CHAPA#(lf)                          AND E.CODCOLIGADA = G.CODCOLIGADA#(lf)                          AND E.CODHORARIO  = G.CODIGO#(lf)                          AND E.DTMUDANCA   = (SELECT MAX(F.DTMUDANCA)#(lf)                                               FROM PFHSTHOR@RM F#(lf)                                               WHERE F.CODCOLIGADA = A.CODCOLIGADA#(lf)                                                 AND F.CHAPA       = A.CHAPA#(lf)                                                 AND F.DTMUDANCA  <= CASE WHEN A.DATAREFERENCIA IS NOT NULL THEN A.DATAREFERENCIA ELSE A.DATA END )) AS HORARIO_BASE,#(lf)                       A.BATIDA,#(lf)                       1 AS QTDE_BATIDA#(lf)                FROM ABATFUN@RM A, PFUNC@RM B, PFUNCAO@RM C, PSECAO@RM D#(lf)                WHERE A.CODCOLIGADA   = B.CODCOLIGADA#(lf)                  AND A.CHAPA         = B.CHAPA#(lf)                  AND B.CODCOLIGADA   = C.CODCOLIGADA#(lf)                  AND B.CODFUNCAO     = C.CODIGO#(lf)                  AND B.CODCOLIGADA   = D.CODCOLIGADA#(lf)                  AND B.CODSECAO      = D.CODIGO#(lf)                  AND B.CODCOLIGADA BETWEEN 0 AND 999#(lf)                  AND B.CODFILIAL   BETWEEN 0 AND 999#(lf)                  AND B.CODSECAO    BETWEEN '0' AND 'ZZZZZZZZZZZZ'#(lf)                  AND (A.DATA BETWEEN TRUNC(SYSDATE) - 10 AND TRUNC(SYSDATE)#(lf)                  OR   A.DATAREFERENCIA BETWEEN TRUNC(SYSDATE) - 60 AND TRUNC(SYSDATE))#(lf)            ) X#(lf)            GROUP BY CODCOLIGADA, CODFILIAL, CHAPA, NOME, CODSITUACAO, FUNCAO, NOME_SECAO, DATAREFERENCIA, HORARIO_BASE#(lf)        ) W#(lf)    ) T#(lf)) Q#(lf)ORDER BY CODCOLIGADA, CODFILIAL, CHAPA, DATAREFERENCIA"]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATAREFERENCIA", type date}}),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Tipo Alterado", {"CODFILIAL", "CHAPA", "DATAREFERENCIA"}, #"Planilha NET 18 - Hora extra dia", {"CODFILIAL", "CHAPA", "DATA"}, "Planilha NET 18 - Hora extra dia", JoinKind.LeftOuter),
+				    #"Planilha NET 18 - Hora extra dia Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "Planilha NET 18 - Hora extra dia", {"HE_50", "HE_50_VALOR", "HE_100", "HE_100_VALOR", "HE_TOTAL", "HE_TOTAL_VALOR"}, {"HE_50", "HE_50_VALOR", "HE_100", "HE_100_VALOR", "HE_TOTAL", "HE_TOTAL_VALOR"}),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"Planilha NET 18 - Hora extra dia Expandido", {"NOME_SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO"})
+				in
+				    #"FPBI_DEPARTAMENTO Expandido"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Exception
+
