@@ -83,6 +83,7 @@ table dCalendario
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Mês nome]
+		sortByColumn: 'Mês num'
 
 		annotation SummarizationSetBy = Automatic
 

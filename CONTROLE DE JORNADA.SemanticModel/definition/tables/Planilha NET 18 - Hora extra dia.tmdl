@@ -155,6 +155,22 @@ table 'Planilha NET 18 - Hora extra dia'
 
 		annotation SummarizationSetBy = Automatic
 
+	column COLIGADA
+		dataType: string
+		lineageTag: e7a18ba0-9424-4c9a-ac57-79a206578d58
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FILIAL
+		dataType: string
+		lineageTag: 5f75fb42-a8c3-408f-a572-966c5c1ba68f
+		summarizeBy: none
+		sourceColumn: FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Planilha NET 18 - Hora extra dia' = m
 		mode: import
 		source =
@@ -163,9 +179,11 @@ table 'Planilha NET 18 - Hora extra dia'
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATA", type date}, {"HE_50", type time}, {"HE_100", type time}, {"HE_TOTAL", type time}}),
 				    #"Consultas Mescladas" = Table.NestedJoin(#"Tipo Alterado", {"CODSECAO"}, FPBI_DEPARTAMENTO, {"CODIGO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
 				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"}),
-				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text)
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"COLIGADA_FILIAL"}, dFilial, {"ID_FILIAL"}, "dFilial", JoinKind.LeftOuter),
+				    #"dFilial Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "dFilial", {"COLIGADA", "FILIAL"}, {"COLIGADA", "FILIAL"})
 				in
-				    #"Coluna Mesclada Inserida"
+				    #"dFilial Expandido"
 
 	annotation PBI_NavigationStepName = Navegação
 

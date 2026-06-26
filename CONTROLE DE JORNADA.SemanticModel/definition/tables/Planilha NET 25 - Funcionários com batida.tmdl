@@ -309,6 +309,22 @@ table 'Planilha NET 25 - Funcionários com batida'
 
 		annotation SummarizationSetBy = Automatic
 
+	column COLIGADA
+		dataType: string
+		lineageTag: f4b63683-0b93-4b9e-a13b-4358196bf30f
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FILIAL
+		dataType: string
+		lineageTag: f79969e7-df9c-4475-b2fd-6f3c716ad5c8
+		summarizeBy: none
+		sourceColumn: FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Planilha NET 25 - Funcionários com batida' = m
 		mode: import
 		source =
@@ -321,9 +337,11 @@ table 'Planilha NET 25 - Funcionários com batida'
 				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO"}),
 				    #"Valor Substituído" = Table.ReplaceValue(#"FPBI_DEPARTAMENTO Expandido",null,#time(0, 0, 0),Replacer.ReplaceValue,{"HE_50", "HE_100", "HE_TOTAL"}),
 				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído",null,0,Replacer.ReplaceValue,{"HE_50_VALOR", "HE_100_VALOR", "HE_TOTAL_VALOR"}),
-				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Valor Substituído1", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text)
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Valor Substituído1", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text),
+				    #"Consultas Mescladas2" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"COLIGADA_FILIAL"}, dFilial, {"ID_FILIAL"}, "dFilial", JoinKind.LeftOuter),
+				    #"dFilial Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas2", "dFilial", {"COLIGADA", "FILIAL"}, {"COLIGADA", "FILIAL"})
 				in
-				    #"Coluna Mesclada Inserida"
+				    #"dFilial Expandido"
 
 	annotation PBI_NavigationStepName = Navegação
 

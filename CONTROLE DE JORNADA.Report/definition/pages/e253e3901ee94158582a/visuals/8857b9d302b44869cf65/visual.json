@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "9704370a0917b50ea8de",
+  "name": "8857b9d302b44869cf65",
   "position": {
-    "x": 633.26315789473688,
-    "y": 24.874493927125506,
-    "z": 3003,
-    "height": 70.477732793522264,
-    "width": 329.58704453441294,
-    "tabOrder": 3003
+    "x": 325.64231738035267,
+    "y": 24.718723761544922,
+    "z": 5007,
+    "height": 70.931989924433253,
+    "width": 366.48194794290515,
+    "tabOrder": 5007
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
                     }
                   },
-                  "Property": "DEPARTAMENTO"
+                  "Property": "COLIGADA"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.DEPARTAMENTO",
-              "nativeQueryRef": "DEPARTAMENTO",
+              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.COLIGADA",
+              "nativeQueryRef": "COLIGADA",
               "active": true
             },
             {
@@ -35,139 +35,24 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
                     }
                   },
-                  "Property": "SETOR"
+                  "Property": "FILIAL"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
-              "nativeQueryRef": "SETOR",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
-                    }
-                  },
-                  "Property": "SECAO"
-                }
-              },
-              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
-              "nativeQueryRef": "SECAO",
-              "active": true
+              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.FILIAL",
+              "nativeQueryRef": "FILIAL",
+              "active": false
             }
           ]
         }
       }
     },
-    "expansionStates": [
-      {
-        "roles": [
-          "Values"
-        ],
-        "levels": [
-          {
-            "queryRefs": [
-              "FPBI_DEPARTAMENTO.DEPARTAMENTO"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
-                    }
-                  },
-                  "Property": "DEPARTAMENTO"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "FPBI_DEPARTAMENTO.SETOR"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
-                    }
-                  },
-                  "Property": "SETOR"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "FPBI_DEPARTAMENTO.SECAO"
-            ],
-            "isCollapsed": true,
-            "isPinned": true
-          }
-        ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "' ADMINISTRACAO'"
-                  }
-                }
-              ],
-              "isToggled": true,
-              "children": [
-                {
-                  "identityValues": [
-                    {
-                      "Literal": {
-                        "Value": "' ADMINISTRACAO'"
-                      }
-                    }
-                  ],
-                  "isToggled": true
-                }
-              ]
-            }
-          ]
-        }
-      }
-    ],
     "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -274,6 +159,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -346,43 +244,29 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1dc0f1dc8eab707beead",
+        "name": "85c69c11409dca3039cb",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
               }
             },
-            "Property": "DEPARTAMENTO"
+            "Property": "COLIGADA"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "5c872c22da013dcf0f14",
+        "name": "188f5dd371f3534ae57e",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
               }
             },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "bcf361e6da9727f7c2f3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
+            "Property": "FILIAL"
           }
         },
         "type": "Categorical"

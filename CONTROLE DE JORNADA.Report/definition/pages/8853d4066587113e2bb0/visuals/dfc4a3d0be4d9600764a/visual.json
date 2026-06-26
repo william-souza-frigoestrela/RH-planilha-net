@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "9704370a0917b50ea8de",
+  "name": "dfc4a3d0be4d9600764a",
   "position": {
-    "x": 633.26315789473688,
-    "y": 24.874493927125506,
-    "z": 3003,
-    "height": 70.477732793522264,
-    "width": 329.58704453441294,
-    "tabOrder": 3003
+    "x": 370.78085642317382,
+    "y": 24.718723761544922,
+    "z": 2005,
+    "height": 70.931989924433253,
+    "width": 299.84886649874056,
+    "tabOrder": 2005
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "DEPARTAMENTO"
+                  "Property": "COLIGADA"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.DEPARTAMENTO",
-              "nativeQueryRef": "DEPARTAMENTO",
+              "queryRef": "Planilha NET 25 - Funcionários com batida.COLIGADA",
+              "nativeQueryRef": "COLIGADA",
               "active": true
             },
             {
@@ -35,29 +35,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "SETOR"
+                  "Property": "FILIAL"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
-              "nativeQueryRef": "SETOR",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
-                    }
-                  },
-                  "Property": "SECAO"
-                }
-              },
-              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
-              "nativeQueryRef": "SECAO",
+              "queryRef": "Planilha NET 25 - Funcionários com batida.FILIAL",
+              "nativeQueryRef": "FILIAL",
               "active": true
             }
           ]
@@ -72,7 +57,7 @@
         "levels": [
           {
             "queryRefs": [
-              "FPBI_DEPARTAMENTO.DEPARTAMENTO"
+              "Planilha NET 25 - Funcionários com batida.COLIGADA"
             ],
             "isCollapsed": true,
             "identityKeys": [
@@ -80,10 +65,10 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "DEPARTAMENTO"
+                  "Property": "COLIGADA"
                 }
               }
             ],
@@ -91,26 +76,7 @@
           },
           {
             "queryRefs": [
-              "FPBI_DEPARTAMENTO.SETOR"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
-                    }
-                  },
-                  "Property": "SETOR"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "FPBI_DEPARTAMENTO.SECAO"
+              "Planilha NET 25 - Funcionários com batida.FILIAL"
             ],
             "isCollapsed": true,
             "isPinned": true
@@ -122,52 +88,20 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "' ADMINISTRACAO'"
+                    "Value": "'1 - FRIGOESTRELA'"
                   }
                 }
               ],
-              "isToggled": true,
-              "children": [
-                {
-                  "identityValues": [
-                    {
-                      "Literal": {
-                        "Value": "' ADMINISTRACAO'"
-                      }
-                    }
-                  ],
-                  "isToggled": true
-                }
-              ]
+              "isToggled": true
             }
           ]
         }
       }
     ],
     "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -274,6 +208,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -346,43 +293,29 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1dc0f1dc8eab707beead",
+        "name": "ba8df1d4b37fa8d10d24",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
+                "Entity": "Planilha NET 25 - Funcionários com batida"
               }
             },
-            "Property": "DEPARTAMENTO"
+            "Property": "COLIGADA"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "5c872c22da013dcf0f14",
+        "name": "6d0c77444ba41f2305ea",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
+                "Entity": "Planilha NET 25 - Funcionários com batida"
               }
             },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "bcf361e6da9727f7c2f3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
+            "Property": "FILIAL"
           }
         },
         "type": "Categorical"

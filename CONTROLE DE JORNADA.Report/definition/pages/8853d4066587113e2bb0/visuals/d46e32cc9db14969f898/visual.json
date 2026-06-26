@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "0dec84097175c4583e78",
+  "name": "d46e32cc9db14969f898",
   "position": {
-    "x": 1105.8785425101214,
-    "y": 24.874493927125506,
-    "z": 3004,
-    "height": 70.477732793522264,
-    "width": 149.24696356275302,
-    "tabOrder": 3004
+    "x": 1072.8267477203649,
+    "y": 25.288753799392097,
+    "z": 2004,
+    "height": 69.057750759878417,
+    "width": 182.85714285714286,
+    "tabOrder": 2004
   },
   "visual": {
     "visualType": "slicer",
@@ -43,12 +43,61 @@
               },
               "queryRef": "dCalendario.Data",
               "nativeQueryRef": "Data",
-              "active": false
+              "active": true
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "dCalendario.Mês nome"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dCalendario"
+                    }
+                  },
+                  "Property": "Mês nome"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "dCalendario.Data"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'Mês atual'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
     "objects": {
       "data": [
         {
@@ -394,7 +443,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "d262e885386da0a815ec",
+        "name": "434f896a7e74535d768c",
         "field": {
           "Column": {
             "Expression": {
@@ -408,7 +457,7 @@
         "type": "Categorical"
       },
       {
-        "name": "abb9d1f984d2a2b8e490",
+        "name": "e6834e0f373fd6544358",
         "field": {
           "Column": {
             "Expression": {
