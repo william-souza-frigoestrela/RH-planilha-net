@@ -2003,82 +2003,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_CODCOLIGADA": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "dCODCOLIGADA"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "d CODCOLIGADA": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "dCODCOLIGADA": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "d_CODCOLIGADA.codcoligada": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "dCODCOLIGADA",
-			          "ConceptualProperty": "CODCOLIGADA"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "codcoligada": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "d_CODFILIAL": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "dCODFILIAL"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "d CODFILIAL": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "dCODFILIAL": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "d_CODFILIAL.codfilial": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "dCODFILIAL",
-			          "ConceptualProperty": "CODFILIAL"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "codfilial": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "planilha_NET_25__funcionários_com_batida.datareferencia": {
 			      "Definition": {
 			        "Binding": {
@@ -3453,7 +3377,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Total_Saldo_Positivo"
+			          "ConceptualProperty": "Saldo Positivo"
 			        }
 			      },
 			      "State": "Generated",
@@ -3496,7 +3420,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Total_Saldo_Negativo"
+			          "ConceptualProperty": "Saldo Negativo"
 			        }
 			      },
 			      "State": "Generated",
@@ -4463,38 +4387,6 @@ cultureInfo pt-BR
 			      "Terms": [
 			        {
 			          "secao": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "d_CODCOLIGADA.coligada": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "dCODCOLIGADA",
-			          "ConceptualProperty": "COLIGADA"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "coligada": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "d_CODFILIAL.filial": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "dCODFILIAL",
-			          "ConceptualProperty": "FILIAL"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "filial": {
 			            "State": "Generated"
 			          }
 			        }
@@ -6726,72 +6618,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "planilha_NET_25__funcionários_com_batidas_have_datareferencias"
-			        }
-			      ]
-			    },
-			    "d_CODFILIAL_has_codfilial": {
-			      "Binding": {
-			        "ConceptualEntity": "dCODFILIAL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_CODFILIAL": {
-			          "Target": {
-			            "Entity": "d_CODFILIAL"
-			          }
-			        },
-			        "d_CODFILIAL.codfilial": {
-			          "Target": {
-			            "Entity": "d_CODFILIAL.codfilial"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_CODFILIAL"
-			            },
-			            "Object": {
-			              "Role": "d_CODFILIAL.codfilial"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_CODFILIALs_have_codfilials"
-			        }
-			      ]
-			    },
-			    "d_CODCOLIGADA_has_codcoligada": {
-			      "Binding": {
-			        "ConceptualEntity": "dCODCOLIGADA"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_CODCOLIGADA": {
-			          "Target": {
-			            "Entity": "d_CODCOLIGADA"
-			          }
-			        },
-			        "d_CODCOLIGADA.codcoligada": {
-			          "Target": {
-			            "Entity": "d_CODCOLIGADA.codcoligada"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_CODCOLIGADA"
-			            },
-			            "Object": {
-			              "Role": "d_CODCOLIGADA.codcoligada"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_CODCOLIGADAs_have_codcoligadas"
 			        }
 			      ]
 			    },
@@ -9036,72 +8862,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "planilha_NET_4__faltas_have_chapa"
-			        }
-			      ]
-			    },
-			    "d_CODCOLIGADA_has_coligada": {
-			      "Binding": {
-			        "ConceptualEntity": "dCODCOLIGADA"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_CODCOLIGADA": {
-			          "Target": {
-			            "Entity": "d_CODCOLIGADA"
-			          }
-			        },
-			        "d_CODCOLIGADA.coligada": {
-			          "Target": {
-			            "Entity": "d_CODCOLIGADA.coligada"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_CODCOLIGADA"
-			            },
-			            "Object": {
-			              "Role": "d_CODCOLIGADA.coligada"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_CODCOLIGADAs_have_coligadas"
-			        }
-			      ]
-			    },
-			    "d_CODFILIAL_has_filial": {
-			      "Binding": {
-			        "ConceptualEntity": "dCODFILIAL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_CODFILIAL": {
-			          "Target": {
-			            "Entity": "d_CODFILIAL"
-			          }
-			        },
-			        "d_CODFILIAL.filial": {
-			          "Target": {
-			            "Entity": "d_CODFILIAL.filial"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_CODFILIAL"
-			            },
-			            "Object": {
-			              "Role": "d_CODFILIAL.filial"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_CODFILIALs_have_filial"
 			        }
 			      ]
 			    },

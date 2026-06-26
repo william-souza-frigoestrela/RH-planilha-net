@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "d103fc3628d0111ecc82",
+  "name": "dfc4a3d0be4d9600764a",
   "position": {
-    "x": 461.33935289691493,
-    "y": 25.041384499623778,
-    "z": 5002,
-    "height": 70.308502633559058,
-    "width": 223.44620015048909,
-    "tabOrder": 5002
+    "x": 370.78085642317382,
+    "y": 24.718723761544922,
+    "z": 2005,
+    "height": 70.931989924433253,
+    "width": 299.84886649874056,
+    "tabOrder": 2005
   },
   "visual": {
     "visualType": "slicer",
@@ -20,13 +20,28 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "COLIGADA"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.COLIGADA",
+              "nativeQueryRef": "COLIGADA",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
                   "Property": "FILIAL"
                 }
               },
-              "queryRef": "dCODFILIAL.FILIAL",
+              "queryRef": "Planilha NET 25 - Funcionários com batida.FILIAL",
               "nativeQueryRef": "FILIAL",
               "active": true
             }
@@ -34,30 +49,59 @@
         }
       }
     },
-    "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Planilha NET 25 - Funcionários com batida.COLIGADA"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "COLIGADA"
                 }
               }
-            }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Planilha NET 25 - Funcionários com batida.FILIAL"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
           }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
         }
-      ],
+      }
+    ],
+    "objects": {
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -164,6 +208,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -231,11 +288,38 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "FILIAL",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ba8df1d4b37fa8d10d24",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6d0c77444ba41f2305ea",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "FILIAL"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

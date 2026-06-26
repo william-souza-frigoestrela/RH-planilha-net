@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Total_Saldo_Negativo"
+                  "Property": "Saldo Negativo"
                 }
               },
               "queryRef": "Medidas.Saldo BH negativo",
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Total_Saldo_Negativo"
+                "Property": "Saldo Negativo"
               }
             },
             "direction": "Ascending"

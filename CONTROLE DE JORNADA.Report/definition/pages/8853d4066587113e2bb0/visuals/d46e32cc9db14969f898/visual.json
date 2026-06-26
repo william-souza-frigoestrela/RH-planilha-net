@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "2854e9fc7c9de6380736",
+  "name": "d46e32cc9db14969f898",
   "position": {
-    "x": 710.995951417004,
-    "y": 24.874493927125506,
-    "z": 5003,
-    "height": 70.477732793522264,
-    "width": 418.72064777327932,
-    "tabOrder": 5003
+    "x": 1072.8267477203649,
+    "y": 25.288753799392097,
+    "z": 2004,
+    "height": 69.057750759878417,
+    "width": 182.85714285714286,
+    "tabOrder": 2004
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "dCalendario"
                     }
                   },
-                  "Property": "DEPARTAMENTO"
+                  "Property": "Mês nome"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.DEPARTAMENTO",
-              "nativeQueryRef": "DEPARTAMENTO",
+              "queryRef": "dCalendario.Mês nome",
+              "nativeQueryRef": "Mês nome",
               "active": true
             },
             {
@@ -35,30 +35,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "dCalendario"
                     }
                   },
-                  "Property": "SETOR"
+                  "Property": "Data"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
-              "nativeQueryRef": "SETOR",
+              "queryRef": "dCalendario.Data",
+              "nativeQueryRef": "Data",
               "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
-                    }
-                  },
-                  "Property": "SECAO"
-                }
-              },
-              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
-              "nativeQueryRef": "SECAO",
-              "active": false
             }
           ]
         }
@@ -72,7 +57,7 @@
         "levels": [
           {
             "queryRefs": [
-              "FPBI_DEPARTAMENTO.DEPARTAMENTO"
+              "dCalendario.Mês nome"
             ],
             "isCollapsed": true,
             "identityKeys": [
@@ -80,10 +65,10 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
+                      "Entity": "dCalendario"
                     }
                   },
-                  "Property": "DEPARTAMENTO"
+                  "Property": "Mês nome"
                 }
               }
             ],
@@ -91,26 +76,7 @@
           },
           {
             "queryRefs": [
-              "FPBI_DEPARTAMENTO.SETOR"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FPBI_DEPARTAMENTO"
-                    }
-                  },
-                  "Property": "SETOR"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "FPBI_DEPARTAMENTO.SECAO"
+              "dCalendario.Data"
             ],
             "isCollapsed": true,
             "isPinned": true
@@ -122,7 +88,7 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "' ADMINISTRACAO'"
+                    "Value": "'Mês atual'"
                   }
                 }
               ],
@@ -166,6 +132,144 @@
                     }
                   }
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "dCalendario",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "Mês nome"
+                            }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "Data"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Mês atual'"
+                              }
+                            },
+                            {
+                              "Literal": {
+                                "Value": "'Ontem'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "Annotations": {
+                      "filterExpressionMetadata": {
+                        "expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dCalendario"
+                                }
+                              },
+                              "Property": "Mês nome"
+                            }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dCalendario"
+                                }
+                              },
+                              "Property": "Data"
+                            }
+                          }
+                        ],
+                        "decomposedIdentities": {
+                          "values": [
+                            [
+                              {
+                                "0": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'Mês atual'"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "1": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'Ontem'"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          ],
+                          "columns": [
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dCalendario"
+                                    }
+                                  },
+                                  "Property": "Mês nome"
+                                }
+                              }
+                            },
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dCalendario"
+                                    }
+                                  },
+                                  "Property": "Data"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "valueMap": [
+                          {
+                            "0": "Mês atual",
+                            "1": "Ontem"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }
@@ -330,7 +434,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "DEPARTAMENTO",
+      "groupName": "Data",
       "fieldChanges": true,
       "filterChanges": true
     },
@@ -339,43 +443,29 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "f2884cbaeca7baae6822",
+        "name": "434f896a7e74535d768c",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
+                "Entity": "dCalendario"
               }
             },
-            "Property": "DEPARTAMENTO"
+            "Property": "Data"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "ec7312086acb917aa442",
+        "name": "e6834e0f373fd6544358",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
+                "Entity": "dCalendario"
               }
             },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c661cc240d9848d8857f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
+            "Property": "Mês nome"
           }
         },
         "type": "Categorical"

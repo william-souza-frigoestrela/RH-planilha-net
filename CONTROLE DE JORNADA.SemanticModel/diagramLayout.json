@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 142.20910336968947,
         "y": 0
       },
       "nodes": [
@@ -16,23 +16,25 @@
           "nodeIndex": "Planilha NET- 4 – Faltas",
           "nodeLineageTag": "455df675-a460-4ea2-a8d9-912076b5bf73",
           "size": {
-            "height": 300,
+            "height": 176,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 4,
+          "expandedHeight": 300
         },
         {
           "location": {
-            "x": 106.38712591815212,
-            "y": 627.13259399999993
+            "x": 69.524450536292647,
+            "y": 689.04261382249
           },
           "nodeIndex": "dCalendario",
           "nodeLineageTag": "ea316fd7-0e83-4318-83dd-f03bf5991763",
           "size": {
-            "height": 200,
+            "height": 104,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 9,
+          "expandedHeight": 200
         },
         {
           "location": {
@@ -42,10 +44,11 @@
           "nodeIndex": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
           "nodeLineageTag": "f9686605-3ffa-47fb-a760-c1c755b9be1f",
           "size": {
-            "height": 300,
+            "height": 152,
             "width": 249.944049
           },
-          "zIndex": 6
+          "zIndex": 5,
+          "expandedHeight": 300
         },
         {
           "location": {
@@ -58,33 +61,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 7
-        },
-        {
-          "location": {
-            "x": 773.08735378529366,
-            "y": 634.36655992307931
-          },
-          "nodeIndex": "dCODCOLIGADA",
-          "nodeLineageTag": "e4c8329e-3f8f-47c4-a550-962639f1a6b5",
-          "size": {
-            "height": 104,
-            "width": 234
-          },
-          "zIndex": 8
-        },
-        {
-          "location": {
-            "x": 423.94058780549756,
-            "y": 646.88622171449572
-          },
-          "nodeIndex": "dCODFILIAL",
-          "nodeLineageTag": "23f390f4-ac47-483c-8ab3-66a77995a9f3",
-          "size": {
-            "height": 104,
-            "width": 234
-          },
-          "zIndex": 9
+          "zIndex": 6
         },
         {
           "location": {
@@ -105,10 +82,11 @@
           },
           "nodeIndex": "Planilha NET 25 - Funcionários com batida",
           "size": {
-            "height": 300,
+            "height": 176,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 2,
+          "expandedHeight": 300
         },
         {
           "location": {
@@ -118,10 +96,11 @@
           "nodeIndex": "Planilha NET 18 - Hora extra dia",
           "nodeLineageTag": "bbdde433-ebda-4a69-9e83-9f8b97fd04ac",
           "size": {
-            "height": 300,
+            "height": 128,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 3,
+          "expandedHeight": 300
         },
         {
           "location": {
@@ -131,14 +110,28 @@
           "nodeIndex": "FPBI_DEPARTAMENTO",
           "nodeLineageTag": "987dcbc8-7389-4ffd-88d5-0e3e8705b122",
           "size": {
-            "height": 296,
+            "height": 104,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 7,
+          "expandedHeight": 296
+        },
+        {
+          "location": {
+            "x": 472.52215953176449,
+            "y": 658.1076314345504
+          },
+          "nodeIndex": "dFilial",
+          "nodeLineageTag": "d4645265-f0d2-4c4e-ba56-91f0a4cf298a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 8
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 56.447393005377741,
+      "zoomValue": 63.287087723234073,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
