@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Total_Saldo_Positivo"
+                  "Property": "Saldo Positivo"
                 }
               },
               "queryRef": "Medidas.Saldo BH positivo",
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Total_Saldo_Positivo"
+                "Property": "Saldo Positivo"
               }
             },
             "direction": "Ascending"

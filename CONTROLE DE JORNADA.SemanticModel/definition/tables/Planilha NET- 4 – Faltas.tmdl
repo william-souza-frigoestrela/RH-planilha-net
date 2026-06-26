@@ -130,6 +130,14 @@ table 'Planilha NET- 4 – Faltas'
 
 		annotation SummarizationSetBy = Automatic
 
+	column COLIGADA_FILIAL
+		dataType: string
+		lineageTag: ca14e34f-63d0-4931-a7c3-1b92d6ad5d82
+		summarizeBy: none
+		sourceColumn: COLIGADA_FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Planilha NET- 4 – Faltas' = m
 		mode: import
 		source =
@@ -138,9 +146,10 @@ table 'Planilha NET- 4 – Faltas'
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}, {"DATA", type date}}),
 				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
 				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
-				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"})
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"}),
+				    #"Coluna Mesclada Inserida1" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text)
 				in
-				    #"FPBI_DEPARTAMENTO Expandido"
+				    #"Coluna Mesclada Inserida1"
 
 	annotation PBI_NavigationStepName = Navegação
 
