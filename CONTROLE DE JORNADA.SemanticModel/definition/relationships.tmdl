@@ -42,3 +42,7 @@ relationship f6304710-67d3-3dd9-a333-c7a3d772a11d
 	fromColumn: 'Planilha NET- 4 – Faltas'.COLIGADA_FILIAL
 	toColumn: dFilial.ID_FILIAL
 
+relationship 3e616d1c-e7da-9d5c-867c-c50b30d10c9f
+	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.DATAREFERENCIA
+	toColumn: dCalendario.Date
+

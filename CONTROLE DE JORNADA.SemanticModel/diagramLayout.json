@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 142.20910336968947,
         "y": 0
       },
       "nodes": [
@@ -19,13 +19,13 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 5,
+          "zIndex": 4,
           "expandedHeight": 300
         },
         {
           "location": {
-            "x": 0,
-            "y": 659.02069199999994
+            "x": 69.524450536292647,
+            "y": 689.04261382249
           },
           "nodeIndex": "dCalendario",
           "nodeLineageTag": "ea316fd7-0e83-4318-83dd-f03bf5991763",
@@ -33,7 +33,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 10,
+          "zIndex": 9,
           "expandedHeight": 200
         },
         {
@@ -47,7 +47,7 @@
             "height": 152,
             "width": 249.944049
           },
-          "zIndex": 6,
+          "zIndex": 5,
           "expandedHeight": 300
         },
         {
@@ -58,11 +58,10 @@
           "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Valor",
           "nodeLineageTag": "ce56e30c-6d95-4356-8022-69b6e76c8c50",
           "size": {
-            "height": 152,
+            "height": 300,
             "width": 234
           },
-          "zIndex": 7,
-          "expandedHeight": 300
+          "zIndex": 6
         },
         {
           "location": {
@@ -74,7 +73,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 1
         },
         {
           "location": {
@@ -86,7 +85,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 3,
+          "zIndex": 2,
           "expandedHeight": 300
         },
         {
@@ -100,7 +99,7 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 4,
+          "zIndex": 3,
           "expandedHeight": 300
         },
         {
@@ -114,26 +113,13 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 9,
+          "zIndex": 7,
           "expandedHeight": 296
         },
         {
           "location": {
-            "x": 488.20837143559413,
-            "y": 657.08127800000022
-          },
-          "nodeIndex": "Dim_Filiais",
-          "nodeLineageTag": "4364d9da-787d-4ede-9778-b42260e32e82",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
-            "x": 190.39284025067218,
-            "y": 932.74679179667578
+            "x": 472.52215953176449,
+            "y": 658.1076314345504
           },
           "nodeIndex": "dFilial",
           "nodeLineageTag": "d4645265-f0d2-4c4e-ba56-91f0a4cf298a",
@@ -141,11 +127,11 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 8
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 40.052554724883208,
+      "zoomValue": 63.287087723234073,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
