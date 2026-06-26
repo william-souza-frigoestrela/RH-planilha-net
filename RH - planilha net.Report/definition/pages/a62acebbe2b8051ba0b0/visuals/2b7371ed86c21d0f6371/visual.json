@@ -4,10 +4,10 @@
   "position": {
     "x": 1045.1901565995527,
     "y": 105.95078299776287,
-    "z": 4003,
+    "z": 7000,
     "height": 81.133482475764353,
     "width": 199.49291573452649,
-    "tabOrder": 4003
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -269,6 +269,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

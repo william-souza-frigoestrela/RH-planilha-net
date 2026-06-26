@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "5705fe659a549e4a3641",
+  "name": "495ccc15a1f5a2826915",
   "position": {
-    "x": 598.79828326180257,
-    "y": 23.805436337625178,
-    "z": 2000,
-    "height": 70.500715307582254,
-    "width": 158.39771101573675,
-    "tabOrder": 2000
+    "x": 234.08866995073893,
+    "y": 24.827586206896552,
+    "z": 3001,
+    "height": 70.049261083743843,
+    "width": 226.99507389162562,
+    "tabOrder": 3001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "dCODCOLIGADA"
                     }
                   },
-                  "Property": "CODFILIAL"
+                  "Property": "COLIGADA"
                 }
               },
-              "queryRef": "dCODFILIAL.CODFILIAL",
-              "nativeQueryRef": "CODFILIAL",
+              "queryRef": "dCODCOLIGADA.COLIGADA",
+              "nativeQueryRef": "COLIGADA",
               "active": true
             }
           ]
@@ -230,6 +230,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "COLIGADA",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

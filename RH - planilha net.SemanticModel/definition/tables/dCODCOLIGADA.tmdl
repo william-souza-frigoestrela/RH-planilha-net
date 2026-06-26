@@ -9,6 +9,28 @@ table dCODCOLIGADA
 
 		annotation SummarizationSetBy = Automatic
 
+	column COLIGADA = ```
+			
+			    SWITCH(dCODCOLIGADA[CODCOLIGADA], 
+			    "1", "1 - FRIGOESTRELA",
+			    "2", "2 - ALIMENTOS ESTRELA",
+			    "3", "3 - VADÃO TRANSPORTE",
+			    "4", "4 - RADIO ALVORADA",
+			    "5", "5 - OESTE GRAXARIA",
+			    "6", "6 - ESTRELA MERCANTIL",
+			    "10", "10 - AGROPECUARIA TURBILHAO",
+			    "12", "12 - TABOADO RAÇÃO",
+			    "13", "13 - ETIVALDO VADAO GOMES",
+			    "14", "14 - ETIVALDO GOMES FILHO",
+			    "15", "15 - ICARA MOLINA GOMES",
+			    "CADASTRAR COLIGADA"
+			)
+			```
+		lineageTag: be2e4fdf-cb38-428f-adf3-99f8bc1adbd3
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition dCODCOLIGADA = m
 		mode: import
 		source =

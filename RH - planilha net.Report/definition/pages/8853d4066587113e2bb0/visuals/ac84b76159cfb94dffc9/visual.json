@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "8fd4f5f0c366a5db0909",
+  "name": "ac84b76159cfb94dffc9",
   "position": {
-    "x": 408.35479256080112,
-    "y": 23.805436337625178,
-    "z": 1000,
-    "height": 70.500715307582254,
-    "width": 159.31330472103002,
-    "tabOrder": 1000
+    "x": 853.647752394989,
+    "y": 23.581429624170969,
+    "z": 2001,
+    "height": 70.7442888725129,
+    "width": 345.23212969786294,
+    "tabOrder": 2001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,20 +20,129 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODCOLIGADA"
+                      "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "CODCOLIGADA"
+                  "Property": "DEPARTAMENTO"
                 }
               },
-              "queryRef": "dCODCOLIGADA.CODCOLIGADA",
-              "nativeQueryRef": "CODCOLIGADA",
+              "queryRef": "FPBI_DEPARTAMENTO.DEPARTAMENTO",
+              "nativeQueryRef": "DEPARTAMENTO",
               "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SETOR"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
+              "nativeQueryRef": "SETOR",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
+              "nativeQueryRef": "SECAO",
+              "active": false
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.DEPARTAMENTO"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "DEPARTAMENTO"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.SETOR"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SETOR"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.SECAO"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' ADMINISTRACAO'"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' ADMINISTRACAO'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
     "objects": {
       "data": [
         {

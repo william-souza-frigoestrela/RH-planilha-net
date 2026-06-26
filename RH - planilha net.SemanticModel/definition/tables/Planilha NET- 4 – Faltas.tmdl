@@ -106,15 +106,41 @@ table 'Planilha NET- 4 – Faltas'
 
 		annotation SummarizationSetBy = Automatic
 
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: d6f577e3-bf2f-42ce-887e-130d98a710f7
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: 9218b608-0060-4916-850e-3d15102268bc
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SECAO.1'
+		dataType: string
+		lineageTag: d091c8c0-5c72-48f2-a692-09434d1e53cc
+		summarizeBy: none
+		sourceColumn: SECAO.1
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Planilha NET- 4 – Faltas' = m
 		mode: import
 		source =
 				let
 				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT A.CODCOLIGADA,#(lf)       B.CODFILIAL,#(lf)       A.CHAPA,#(lf)       B.NOME,#(lf)       D.NOME AS FUNCAO,#(lf)       C.DESCRICAO AS SECAO,#(lf)       B.DATAADMISSAO,#(lf)       B.DATADEMISSAO,#(lf)       B.CODTIPO,#(lf)       (SELECT E.DESCRICAO FROM PCODSITUACAO@RM E WHERE E.CODCLIENTE = B.CODSITUACAO) AS SITUACAO,#(lf)       A.DATA#(lf)FROM AAFHTFUN@RM A, PFUNC@RM B, PSECAO@RM C, PFUNCAO@RM D#(lf)WHERE A.CODCOLIGADA = B.CODCOLIGADA#(lf)  AND A.CHAPA       = B.CHAPA#(lf)  AND B.CODCOLIGADA = C.CODCOLIGADA#(lf)  AND B.CODSECAO    = C.CODIGO#(lf)  AND B.CODCOLIGADA = D.CODCOLIGADA#(lf)  AND B.CODFUNCAO   = D.CODIGO#(lf)  #(lf)  -- Lógica do sistema RM para aceitar ""0"" e trazer todas as estruturas#(lf)  AND A.CODCOLIGADA BETWEEN 0 AND 999#(lf)  AND B.CODFILIAL   BETWEEN 0 AND 999#(lf)  AND B.CODSECAO    BETWEEN '0' AND 'ZZZZZZZZZZZZ'#(lf)  #(lf)  -- Período dinâmico protegido (Últimos 10 dias)#(lf)  AND A.DATA BETWEEN TRUNC(SYSDATE) - 10 AND TRUNC(SYSDATE)#(lf)  #(lf)  -- Mantendo a regra original de trazer apenas registros com faltas#(lf)  AND A.FALTA       > 0#(lf)ORDER BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, A.DATA"]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}, {"DATA", type date}}),
-				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text)
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"})
 				in
-				    #"Coluna Mesclada Inserida"
+				    #"FPBI_DEPARTAMENTO Expandido"
 
 	annotation PBI_NavigationStepName = Navegação
 

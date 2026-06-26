@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "10afe16620b70540da03",
   "position": {
-    "x": 683.625468164794,
-    "y": 24.928838951310862,
+    "x": 683.64532019704438,
+    "y": 24.827586206896552,
     "z": 3000,
-    "height": 69.992509363295881,
-    "width": 158.20224719101122,
+    "height": 70.049261083743843,
+    "width": 313.89162561576353,
     "tabOrder": 3000
   },
   "visual": {
@@ -20,15 +20,45 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "DEPARTAMENTO"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.DEPARTAMENTO",
+              "nativeQueryRef": "DEPARTAMENTO",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SETOR"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
+              "nativeQueryRef": "SETOR",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
                   "Property": "SECAO"
                 }
               },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.SECAO",
+              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
               "nativeQueryRef": "SECAO",
-              "active": true
+              "active": false
             }
           ]
         }
@@ -68,54 +98,6 @@
                     }
                   }
                 }
-              }
-            },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "p",
-                    "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "p"
-                                }
-                              },
-                              "Property": "SECAO"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'001.001.01.06.001 - INCLUSAO ESCRITA FISCAL'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'001.001.01.06.002 - CONFERENCIA ESCRITA FISCAL'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
               }
             }
           }
@@ -278,6 +260,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "DEPARTAMENTO",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

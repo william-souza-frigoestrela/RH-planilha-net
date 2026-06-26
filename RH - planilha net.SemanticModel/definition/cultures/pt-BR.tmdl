@@ -421,6 +421,9 @@ cultureInfo pt-BR
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "secao": {
@@ -4273,17 +4276,1799 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medidas.spend_cy": {
+			    "planilha_NET_4__falta.departamento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Spend CY"
+			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualProperty": "DEPARTAMENTO"
 			        }
 			      },
-			      "State": "Generated"
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_4__falta.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_4__falta.secao_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualProperty": "SECAO.1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao.1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualProperty": "SECAO.1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao.1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET 25 - Funcionários com batida",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET 25 - Funcionários com batida",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET 25 - Funcionários com batida",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_27__acima_de_10_horas__valor.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_27__acima_de_10_horas__valor.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_27__acima_de_10_horas__valor.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_CODCOLIGADA.coligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCODCOLIGADA",
+			          "ConceptualProperty": "COLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_CODFILIAL.filial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCODFILIAL",
+			          "ConceptualProperty": "FILIAL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filial": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET 18 - Hora extra dia",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET 18 - Hora extra dia",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia.secao_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planilha NET 18 - Hora extra dia",
+			          "ConceptualProperty": "SECAO.1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao.1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fpbi departamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FPBI_DEPARTAMENTO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.codfilial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "CODFILIAL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codfilial": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "CODIGO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.descricao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "DESCRICAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descricao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.coddepartamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "CODDEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coddepartamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.codsetor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "CODSETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsetor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.setor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "SETOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "setor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fpbi_departamento.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FPBI_DEPARTAMENTO",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "planilha_NET_27__acima_de_10_horas__valor_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_27__acima_de_10_horas__valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor"
+			          }
+			        },
+			        "planilha_NET_27__acima_de_10_horas__valor.secao": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_27__acima_de_10_horas__valor_have_secaos"
+			        }
+			      ]
+			    },
+			    "planilha_NET_27__acima_de_10_horas__valor_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_27__acima_de_10_horas__valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor"
+			          }
+			        },
+			        "planilha_NET_27__acima_de_10_horas__valor.setor": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_27__acima_de_10_horas__valor_have_setors"
+			        }
+			      ]
+			    },
+			    "planilha_NET_27__acima_de_10_horas__valor_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_27__acima_de_10_horas__valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor"
+			          }
+			        },
+			        "planilha_NET_27__acima_de_10_horas__valor.departamento": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_27__acima_de_10_horas__valor_have_departamentos"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.secao": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_secaos"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.setor": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_setors"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.departamento": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_departamentos"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_secao_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao_1": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_secao_1"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.setor": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_setors"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.departamento": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_departamentos"
+			        }
+			      ]
+			    },
+			    "planilha_NET_4__falta_has_secao_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_4__falta": {
+			          "Target": {
+			            "Entity": "planilha_NET_4__falta"
+			          }
+			        },
+			        "planilha_NET_4__falta.secao_1": {
+			          "Target": {
+			            "Entity": "planilha_NET_4__falta.secao_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_4__falta"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_4__falta.secao_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_4__faltas_have_secao_1"
+			        }
+			      ]
+			    },
+			    "planilha_NET_4__falta_has_setor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_4__falta": {
+			          "Target": {
+			            "Entity": "planilha_NET_4__falta"
+			          }
+			        },
+			        "planilha_NET_4__falta.setor": {
+			          "Target": {
+			            "Entity": "planilha_NET_4__falta.setor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_4__falta"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_4__falta.setor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_4__faltas_have_setors"
+			        }
+			      ]
+			    },
+			    "planilha_NET_4__falta_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_4__falta": {
+			          "Target": {
+			            "Entity": "planilha_NET_4__falta"
+			          }
+			        },
+			        "planilha_NET_4__falta.departamento": {
+			          "Target": {
+			            "Entity": "planilha_NET_4__falta.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_4__falta"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_4__falta.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_4__faltas_have_departamentos"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_he_total_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.he_total_valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.he_total_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.he_total_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_he_total_valor"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_he_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.he_total": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.he_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.he_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_he_total"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_he_100_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.he_100_valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.he_100_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.he_100_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_he_100_valor"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_he_100": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.he_100": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.he_100"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.he_100"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_he_100"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_he_50_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.he_50_valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.he_50_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.he_50_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_he_50_valor"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_he_50": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.he_50": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.he_50"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.he_50"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_he_50"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.data": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_data"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.nome": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_nome"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.chapa": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_chapa"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.secao": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_secaos"
+			        }
+			      ]
+			    },
+			    "planilha_NET_18__hora_extra_dia_has_codsecao": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_18__hora_extra_dia": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia"
+			          }
+			        },
+			        "planilha_NET_18__hora_extra_dia.codsecao": {
+			          "Target": {
+			            "Entity": "planilha_NET_18__hora_extra_dia.codsecao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_18__hora_extra_dia"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_18__hora_extra_dia.codsecao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_18__hora_extra_dias_have_codsecaos"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_qtd_funcionarios_saldo_negativo": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "medida.qtd_funcionarios_saldo_negativo": {
+			          "Target": {
+			            "Entity": "medida.qtd_funcionarios_saldo_negativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_funcionarios_saldo_negativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_qtd_funcionarios_saldo_negativo"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_qtd_funcionarios_saldo_positivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "medida.qtd_funcionarios_saldo_positivo": {
+			          "Target": {
+			            "Entity": "medida.qtd_funcionarios_saldo_positivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_funcionarios_saldo_positivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_qtd_funcionarios_saldo_positivo"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_total_saldo_negativo": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "medida.total_saldo_negativo": {
+			          "Target": {
+			            "Entity": "medida.total_saldo_negativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "medida.total_saldo_negativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_total_saldo_negativo"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_total_saldo_positivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "medida.total_saldo_positivo": {
+			          "Target": {
+			            "Entity": "medida.total_saldo_positivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "medida.total_saldo_positivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_total_saldo_positivo"
+			        }
+			      ]
+			    },
+			    "planilha_NET_27__acima_de_10_horas__valor_has_medida_qtd_HE_acima_10H": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_27__acima_de_10_horas__valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor"
+			          }
+			        },
+			        "medida.qtd_HE_acima_10H": {
+			          "Target": {
+			            "Entity": "medida.qtd_HE_acima_10H"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_HE_acima_10H"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_27__acima_de_10_horas__valor_have_qtd_HE_acima_10H"
+			        }
+			      ]
+			    },
+			    "planilha_NET_4__falta_has_medida_qtd_faltas": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_4__falta": {
+			          "Target": {
+			            "Entity": "planilha_NET_4__falta"
+			          }
+			        },
+			        "medida.qtd_faltas": {
+			          "Target": {
+			            "Entity": "medida.qtd_faltas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_4__falta"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_faltas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_4__faltas_have_qtd_faltas"
+			        }
+			      ]
+			    },
+			    "planilha_NET_27__acima_de_10_horas__valor_has_medida_valor_HE": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_27__acima_de_10_horas__valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_27__acima_de_10_horas__valor"
+			          }
+			        },
+			        "medida.valor_HE": {
+			          "Target": {
+			            "Entity": "medida.valor_HE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_27__acima_de_10_horas__valor"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_HE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_27__acima_de_10_horas__valor_have_valor_HE"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_he_total_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.he_total_valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.he_total_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.he_total_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_total_valor"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_he_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.he_total": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.he_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.he_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_total"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_he_100_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.he_100_valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.he_100_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.he_100_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_100_valor"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_he_100": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.he_100": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.he_100"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.he_100"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_100"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_he_50_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.he_50_valor": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.he_50_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.he_50_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_50_valor"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_he_50": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.he_50": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.he_50"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.he_50"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_50"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_decima_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.decima_hora": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.decima_hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.decima_hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_decima_horas"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_sem_intervalo": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.sem_intervalo": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.sem_intervalo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.sem_intervalo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_sem_intervalos"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_desc_abono_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.desc_abono_2": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.desc_abono_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.desc_abono_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_desc_abono_2"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_desc_abono_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.desc_abono_1": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.desc_abono_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.desc_abono_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_desc_abono_1"
+			        }
+			      ]
+			    },
+			    "planilha_NET_25__funcionários_com_batida_has_abono": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET_25__funcionários_com_batida": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			          }
+			        },
+			        "planilha_NET_25__funcionários_com_batida.abono": {
+			          "Target": {
+			            "Entity": "planilha_NET_25__funcionários_com_batida.abono"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET_25__funcionários_com_batida"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET_25__funcionários_com_batida.abono"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET_25__funcionários_com_batidas_have_abonos"
+			        }
+			      ]
+			    },
 			    "planilha_NET_25__funcionários_com_batida_has_quant_batida": {
 			      "Binding": {
 			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
@@ -6858,39 +8643,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_secao": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
-			          "Target": {
-			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			          }
-			        },
-			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao": {
-			          "Target": {
-			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_secaos"
-			        }
-			      ]
-			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_nome": {
 			      "Binding": {
 			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
@@ -7287,20 +9039,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "planilha_NET_25__funcionários_com_batida_has_abono": {
+			    "d_CODCOLIGADA_has_coligada": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			        "ConceptualEntity": "dCODCOLIGADA"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
+			        "d_CODCOLIGADA": {
 			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			            "Entity": "d_CODCOLIGADA"
 			          }
 			        },
-			        "planilha_NET_25__funcionários_com_batida.abono": {
+			        "d_CODCOLIGADA.coligada": {
 			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.abono"
+			            "Entity": "d_CODCOLIGADA.coligada"
 			          }
 			        }
 			      },
@@ -7308,32 +9060,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
+			              "Role": "d_CODCOLIGADA"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.abono"
+			              "Role": "d_CODCOLIGADA.coligada"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_abonos"
+			          "ID": "d_CODCOLIGADAs_have_coligadas"
 			        }
 			      ]
 			    },
-			    "planilha_NET_25__funcionários_com_batida_has_desc_abono_1": {
+			    "d_CODFILIAL_has_filial": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
+			        "ConceptualEntity": "dCODFILIAL"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
+			        "d_CODFILIAL": {
 			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
+			            "Entity": "d_CODFILIAL"
 			          }
 			        },
-			        "planilha_NET_25__funcionários_com_batida.desc_abono_1": {
+			        "d_CODFILIAL.filial": {
 			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.desc_abono_1"
+			            "Entity": "d_CODFILIAL.filial"
 			          }
 			        }
 			      },
@@ -7341,547 +9093,19 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
+			              "Role": "d_CODFILIAL"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.desc_abono_1"
+			              "Role": "d_CODFILIAL.filial"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_desc_abono_1"
+			          "ID": "d_CODFILIALs_have_filial"
 			        }
 			      ]
 			    },
-			    "planilha_NET_25__funcionários_com_batida_has_desc_abono_2": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.desc_abono_2": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.desc_abono_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.desc_abono_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_desc_abono_2"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_sem_intervalo": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.sem_intervalo": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.sem_intervalo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.sem_intervalo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_sem_intervalos"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_decima_hora": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.decima_hora": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.decima_hora"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.decima_hora"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_decima_horas"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_he_50": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.he_50": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.he_50"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.he_50"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_50"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_he_50_valor": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.he_50_valor": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.he_50_valor"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.he_50_valor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_50_valor"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_he_100": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.he_100": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.he_100"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.he_100"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_100"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_he_100_valor": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.he_100_valor": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.he_100_valor"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.he_100_valor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_100_valor"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_he_total": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.he_total": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.he_total"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.he_total"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_total"
-			        }
-			      ]
-			    },
-			    "planilha_NET_25__funcionários_com_batida_has_he_total_valor": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 25 - Funcionários com batida"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_25__funcionários_com_batida": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida"
-			          }
-			        },
-			        "planilha_NET_25__funcionários_com_batida.he_total_valor": {
-			          "Target": {
-			            "Entity": "planilha_NET_25__funcionários_com_batida.he_total_valor"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_25__funcionários_com_batida"
-			            },
-			            "Object": {
-			              "Role": "planilha_NET_25__funcionários_com_batida.he_total_valor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_25__funcionários_com_batidas_have_he_total_valor"
-			        }
-			      ]
-			    },
-			    "planilha_NET_27__acima_de_10_horas__valor_has_medida_valor_HE": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_27__acima_de_10_horas__valor": {
-			          "Target": {
-			            "Entity": "planilha_NET_27__acima_de_10_horas__valor"
-			          }
-			        },
-			        "medida.valor_HE": {
-			          "Target": {
-			            "Entity": "medida.valor_HE"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_27__acima_de_10_horas__valor"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_HE"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_27__acima_de_10_horas__valor_have_valor_HE"
-			        }
-			      ]
-			    },
-			    "planilha_NET_4__falta_has_medida_qtd_faltas": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_4__falta": {
-			          "Target": {
-			            "Entity": "planilha_NET_4__falta"
-			          }
-			        },
-			        "medida.qtd_faltas": {
-			          "Target": {
-			            "Entity": "medida.qtd_faltas"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_4__falta"
-			            },
-			            "Object": {
-			              "Role": "medida.qtd_faltas"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_4__faltas_have_qtd_faltas"
-			        }
-			      ]
-			    },
-			    "planilha_NET_27__acima_de_10_horas__valor_has_medida_qtd_HE_acima_10H": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET_27__acima_de_10_horas__valor": {
-			          "Target": {
-			            "Entity": "planilha_NET_27__acima_de_10_horas__valor"
-			          }
-			        },
-			        "medida.qtd_HE_acima_10H": {
-			          "Target": {
-			            "Entity": "medida.qtd_HE_acima_10H"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET_27__acima_de_10_horas__valor"
-			            },
-			            "Object": {
-			              "Role": "medida.qtd_HE_acima_10H"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET_27__acima_de_10_horas__valor_have_qtd_HE_acima_10H"
-			        }
-			      ]
-			    },
-			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_total_saldo_positivo": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
-			          "Target": {
-			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			          }
-			        },
-			        "medida.total_saldo_positivo": {
-			          "Target": {
-			            "Entity": "medida.total_saldo_positivo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			            },
-			            "Object": {
-			              "Role": "medida.total_saldo_positivo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_total_saldo_positivo"
-			        }
-			      ]
-			    },
-			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_total_saldo_negativo": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
-			          "Target": {
-			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			          }
-			        },
-			        "medida.total_saldo_negativo": {
-			          "Target": {
-			            "Entity": "medida.total_saldo_negativo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			            },
-			            "Object": {
-			              "Role": "medida.total_saldo_negativo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_total_saldo_negativo"
-			        }
-			      ]
-			    },
-			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_qtd_funcionarios_saldo_positivo": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
-			          "Target": {
-			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			          }
-			        },
-			        "medida.qtd_funcionarios_saldo_positivo": {
-			          "Target": {
-			            "Entity": "medida.qtd_funcionarios_saldo_positivo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			            },
-			            "Object": {
-			              "Role": "medida.qtd_funcionarios_saldo_positivo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_qtd_funcionarios_saldo_positivo"
-			        }
-			      ]
-			    },
-			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_qtd_funcionarios_saldo_negativo": {
-			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
-			          "Target": {
-			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			          }
-			        },
-			        "medida.qtd_funcionarios_saldo_negativo": {
-			          "Target": {
-			            "Entity": "medida.qtd_funcionarios_saldo_negativo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
-			            },
-			            "Object": {
-			              "Role": "medida.qtd_funcionarios_saldo_negativo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_qtd_funcionarios_saldo_negativo"
-			        }
-			      ]
-			    },
-			    "planilha_NET_18__hora_extra_dia_has_codsecao": {
+			    "planilha_NET_18__hora_extra_dia_has_departamento": {
 			      "Binding": {
 			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
 			      },
@@ -7892,9 +9116,9 @@ cultureInfo pt-BR
 			            "Entity": "planilha_NET_18__hora_extra_dia"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.codsecao": {
+			        "planilha_NET_18__hora_extra_dia.departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.codsecao"
+			            "Entity": "planilha_NET_18__hora_extra_dia.departamento"
 			          }
 			        }
 			      },
@@ -7905,16 +9129,16 @@ cultureInfo pt-BR
 			              "Role": "planilha_NET_18__hora_extra_dia"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.codsecao"
+			              "Role": "planilha_NET_18__hora_extra_dia.departamento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_codsecaos"
+			          "ID": "planilha_NET_18__hora_extra_dias_have_departamentos"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_secao": {
+			    "planilha_NET_18__hora_extra_dia_has_setor": {
 			      "Binding": {
 			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
 			      },
@@ -7925,9 +9149,9 @@ cultureInfo pt-BR
 			            "Entity": "planilha_NET_18__hora_extra_dia"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.secao": {
+			        "planilha_NET_18__hora_extra_dia.setor": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.secao"
+			            "Entity": "planilha_NET_18__hora_extra_dia.setor"
 			          }
 			        }
 			      },
@@ -7938,16 +9162,16 @@ cultureInfo pt-BR
 			              "Role": "planilha_NET_18__hora_extra_dia"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.secao"
+			              "Role": "planilha_NET_18__hora_extra_dia.setor"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_secaos"
+			          "ID": "planilha_NET_18__hora_extra_dias_have_setors"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_chapa": {
+			    "planilha_NET_18__hora_extra_dia_has_secao_1": {
 			      "Binding": {
 			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
 			      },
@@ -7958,9 +9182,9 @@ cultureInfo pt-BR
 			            "Entity": "planilha_NET_18__hora_extra_dia"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.chapa": {
+			        "planilha_NET_18__hora_extra_dia.secao_1": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.chapa"
+			            "Entity": "planilha_NET_18__hora_extra_dia.secao_1"
 			          }
 			        }
 			      },
@@ -7971,29 +9195,29 @@ cultureInfo pt-BR
 			              "Role": "planilha_NET_18__hora_extra_dia"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.chapa"
+			              "Role": "planilha_NET_18__hora_extra_dia.secao_1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_chapa"
+			          "ID": "planilha_NET_18__hora_extra_dias_have_secao_1"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_nome": {
+			    "fpbi_departamento_has_codcoligada": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.nome": {
+			        "fpbi_departamento.codcoligada": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.nome"
+			            "Entity": "fpbi_departamento.codcoligada"
 			          }
 			        }
 			      },
@@ -8001,32 +9225,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.nome"
+			              "Role": "fpbi_departamento.codcoligada"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_nome"
+			          "ID": "fpbi_departamentos_have_codcoligadas"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_data": {
+			    "fpbi_departamento_has_codfilial": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.data": {
+			        "fpbi_departamento.codfilial": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.data"
+			            "Entity": "fpbi_departamento.codfilial"
 			          }
 			        }
 			      },
@@ -8034,32 +9258,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.data"
+			              "Role": "fpbi_departamento.codfilial"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_data"
+			          "ID": "fpbi_departamentos_have_codfilials"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_he_50": {
+			    "fpbi_departamento_has_codigo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.he_50": {
+			        "fpbi_departamento.codigo": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.he_50"
+			            "Entity": "fpbi_departamento.codigo"
 			          }
 			        }
 			      },
@@ -8067,32 +9291,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.he_50"
+			              "Role": "fpbi_departamento.codigo"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_he_50"
+			          "ID": "fpbi_departamentos_have_codigos"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_he_50_valor": {
+			    "fpbi_departamento_has_descricao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.he_50_valor": {
+			        "fpbi_departamento.descricao": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.he_50_valor"
+			            "Entity": "fpbi_departamento.descricao"
 			          }
 			        }
 			      },
@@ -8100,32 +9324,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.he_50_valor"
+			              "Role": "fpbi_departamento.descricao"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_he_50_valor"
+			          "ID": "fpbi_departamentos_have_descricaos"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_he_100": {
+			    "fpbi_departamento_has_coddepartamento": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.he_100": {
+			        "fpbi_departamento.coddepartamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.he_100"
+			            "Entity": "fpbi_departamento.coddepartamento"
 			          }
 			        }
 			      },
@@ -8133,32 +9357,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.he_100"
+			              "Role": "fpbi_departamento.coddepartamento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_he_100"
+			          "ID": "fpbi_departamentos_have_coddepartamentos"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_he_100_valor": {
+			    "fpbi_departamento_has_codsetor": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.he_100_valor": {
+			        "fpbi_departamento.codsetor": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.he_100_valor"
+			            "Entity": "fpbi_departamento.codsetor"
 			          }
 			        }
 			      },
@@ -8166,32 +9390,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.he_100_valor"
+			              "Role": "fpbi_departamento.codsetor"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_he_100_valor"
+			          "ID": "fpbi_departamentos_have_codsetors"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_he_total": {
+			    "fpbi_departamento_has_departamento": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.he_total": {
+			        "fpbi_departamento.departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.he_total"
+			            "Entity": "fpbi_departamento.departamento"
 			          }
 			        }
 			      },
@@ -8199,32 +9423,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.he_total"
+			              "Role": "fpbi_departamento.departamento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_he_total"
+			          "ID": "fpbi_departamentos_have_departamentos"
 			        }
 			      ]
 			    },
-			    "planilha_NET_18__hora_extra_dia_has_he_total_valor": {
+			    "fpbi_departamento_has_setor": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET 18 - Hora extra dia"
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "planilha_NET_18__hora_extra_dia": {
+			        "fpbi_departamento": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia"
+			            "Entity": "fpbi_departamento"
 			          }
 			        },
-			        "planilha_NET_18__hora_extra_dia.he_total_valor": {
+			        "fpbi_departamento.setor": {
 			          "Target": {
-			            "Entity": "planilha_NET_18__hora_extra_dia.he_total_valor"
+			            "Entity": "fpbi_departamento.setor"
 			          }
 			        }
 			      },
@@ -8232,15 +9456,48 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "planilha_NET_18__hora_extra_dia"
+			              "Role": "fpbi_departamento"
 			            },
 			            "Object": {
-			              "Role": "planilha_NET_18__hora_extra_dia.he_total_valor"
+			              "Role": "fpbi_departamento.setor"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "planilha_NET_18__hora_extra_dias_have_he_total_valor"
+			          "ID": "fpbi_departamentos_have_setors"
+			        }
+			      ]
+			    },
+			    "fpbi_departamento_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "FPBI_DEPARTAMENTO"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fpbi_departamento": {
+			          "Target": {
+			            "Entity": "fpbi_departamento"
+			          }
+			        },
+			        "fpbi_departamento.secao": {
+			          "Target": {
+			            "Entity": "fpbi_departamento.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fpbi_departamento"
+			            },
+			            "Object": {
+			              "Role": "fpbi_departamento.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fpbi_departamentos_have_secaos"
 			        }
 			      ]
 			    },
@@ -8478,6 +9735,52 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_CODFILIALs_have_planilha_NET__2__saldo_de_banco_de_horas__saldo_datas"
+			        }
+			      ]
+			    },
+			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_fpbi_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
+			          "Target": {
+			            "Entity": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			          }
+			        },
+			        "fpbi_departamento": {
+			          "Target": {
+			            "Entity": "fpbi_departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            },
+			            "Object": {
+			              "Role": "fpbi_departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "planilha_NET__2__saldo_de_banco_de_horas__saldo_datas_have_fpbi_departamentos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fpbi_departamento"
+			            },
+			            "Object": {
+			              "Role": "planilha_NET__2__saldo_de_banco_de_horas__saldo_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fpbi_departamentos_have_planilha_NET__2__saldo_de_banco_de_horas__saldo_datas"
 			        }
 			      ]
 			    },

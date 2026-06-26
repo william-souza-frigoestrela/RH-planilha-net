@@ -132,6 +132,30 @@ table 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'
 
 		annotation SummarizationSetBy = Automatic
 
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 7ff61bfc-fb36-4a73-9179-557da198d20e
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: 94b1a11c-b546-4535-85df-42c7f8903770
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SECAO.1'
+		dataType: string
+		lineageTag: c2a152c4-68a3-4291-b328-a259ed38c508
+		summarizeBy: none
+		sourceColumn: SECAO.1
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data' = m
 		mode: import
 		source = ```
@@ -201,9 +225,11 @@ table 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'
 				        {"MINUTOS_SALDO_NEGATIVO", Int64.Type}
 				    }),
 				
-				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text)
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"})
 				in
-				    #"Coluna Mesclada Inserida"
+				    #"FPBI_DEPARTAMENTO Expandido"
 				```
 
 	annotation PBI_NavigationStepName = Navegação
