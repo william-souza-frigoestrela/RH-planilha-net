@@ -93,84 +93,68 @@ table 'Planilha NET- 27 – Acima de 10 Horas - Valor'
 		annotation SummarizationSetBy = Automatic
 
 	column ENT1
-		dataType: double
+		dataType: string
 		lineageTag: 0acf6103-9b7f-492a-857e-793fdd27910d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: ENT1
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column SAI1
-		dataType: double
+		dataType: string
 		lineageTag: 497f3500-d7f8-4f07-b409-b31ff581aeb9
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: SAI1
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column ENT2
-		dataType: double
+		dataType: string
 		lineageTag: 7f6cf386-2a07-486f-bf28-5ebaedd77a50
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: ENT2
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column SAI2
-		dataType: double
+		dataType: string
 		lineageTag: 34eff8c0-edc1-4c81-8072-f394a07d7198
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: SAI2
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column ENT3
-		dataType: double
+		dataType: string
 		lineageTag: 7152e66e-29b5-480e-8883-06b05df6c923
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: ENT3
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column SAI3
-		dataType: double
+		dataType: string
 		lineageTag: 9bac2b2e-2a35-45c6-a9c0-abb4ad51b6c1
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: SAI3
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column ENT4
-		dataType: double
+		dataType: string
 		lineageTag: 9159c577-c6bf-4f1e-aa86-5d955fe896c3
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: ENT4
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column SAI4
-		dataType: double
+		dataType: string
 		lineageTag: 4966beb9-9af6-49fc-a027-fec0e34d0a14
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: SAI4
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column HORAS_BASE
 		dataType: string
@@ -252,20 +236,31 @@ table 'Planilha NET- 27 – Acima de 10 Horas - Valor'
 
 		annotation SummarizationSetBy = Automatic
 
+	column COLIGADA_FILIAL
+		dataType: string
+		lineageTag: 21b24ac5-cf12-4af2-8ff4-4b269ae2abc9
+		summarizeBy: none
+		sourceColumn: COLIGADA_FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Planilha NET- 27 – Acima de 10 Horas - Valor' = m
 		mode: import
-		source =
+		source = ```
 				let
-				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT CODCOLIGADA,#(lf)       CODFILIAL,#(lf)       CHAPA,#(lf)       NOME,#(lf)       CODSITUACAO,#(lf)       FUNCAO,#(lf)       NOME_SECAO,#(lf)       COD_JORNADA,#(lf)       DESC_JORNADA,#(lf)       DATAREFERENCIA,#(lf)       DIA_DA_SEMANA,#(lf)       ENT1,#(lf)       SAI1,#(lf)       ENT2,#(lf)       SAI2,#(lf)       ENT3,#(lf)       SAI3,#(lf)       ENT4,#(lf)       SAI4,#(lf)       LPAD(TRUNC(HORAS_BASE/60), 2, '0') || ':' || LPAD(MOD(HORAS_BASE, 60), 2, '0') AS HORAS_BASE,#(lf)       LPAD(TRUNC(HORAS_TRAB/60), 2, '0') || ':' || LPAD(MOD(HORAS_TRAB, 60), 2, '0') AS HORAS_TRAB,#(lf)       LPAD(TRUNC(HORAS_EXTRAS/60), 2, '0') || ':' || LPAD(MOD(HORAS_EXTRAS, 60), 2, '0') AS HORAS_EXTRAS,#(lf)       VALOR_HORAS_EXTRAS,#(lf)       STATUS#(lf)FROM (#(lf)    SELECT T.CODCOLIGADA, T.CODFILIAL, T.CHAPA, T.NOME, T.CODSITUACAO, T.FUNCAO, T.NOME_SECAO, T.DATAREFERENCIA, T.HORAS_BASE, T.HORAS_TRAB, T.SALARIO_HORA, T.QUANT_BATIDAS,#(lf)           T.ENT1, T.SAI1, T.ENT2, T.SAI2, T.ENT3, T.SAI3, T.ENT4, T.SAI4,#(lf)           CASE WHEN T.HORAS_TRAB > T.HORAS_BASE THEN (T.HORAS_TRAB - T.HORAS_BASE) ELSE 0 END AS HORAS_EXTRAS,#(lf)           CASE WHEN T.HORAS_TRAB > T.HORAS_BASE THEN ((((T.HORAS_TRAB - T.HORAS_BASE) / 60) * T.SALARIO_HORA) * 1.50) ELSE 0 END AS VALOR_HORAS_EXTRAS,#(lf)           CASE TO_CHAR(T.DATAREFERENCIA, 'D')#(lf)              WHEN '1' THEN 'DOM' WHEN '2' THEN 'SEG' WHEN '3' THEN 'TER' WHEN '4' THEN 'QUA'#(lf)              WHEN '5' THEN 'QUI' WHEN '6' THEN 'SEX' ELSE 'SAB'#(lf)           END AS DIA_DA_SEMANA,#(lf)           CASE#(lf)              WHEN T.HORAS_TRAB > 600 AND T.QUANT_BATIDAS > 2 THEN 'Trablhou mais de 10:00'#(lf)              WHEN T.HORAS_TRAB > 600 AND T.QUANT_BATIDAS = 2 THEN 'Trablhou mais de 10:00 e foi embora'#(lf)              ELSE 'OK'#(lf)           END AS STATUS,#(lf)           -- Buscando o código da jornada de forma segura na projeção interna#(lf)           (SELECT J.CODHORARIO #(lf)            FROM AJORNADAFUN@RM J #(lf)            WHERE J.CODCOLIGADA = T.CODCOLIGADA #(lf)              AND J.CHAPA = T.CHAPA #(lf)              AND J.DATAMUDANCA = (SELECT MAX(K.DATAMUDANCA) FROM AJORNADAFUN@RM K WHERE K.CODCOLIGADA = J.CODCOLIGADA AND K.CHAPA = J.CHAPA AND K.DATAMUDANCA <= T.DATAREFERENCIA)) AS COD_JORNADA,#(lf)           -- Buscando a descrição da jornada de forma segura na projeção interna#(lf)           (SELECT M.DESCRICAO #(lf)            FROM AJORNADAFUN@RM J#(lf)            JOIN AHORARIOJORNADA@RM M ON J.CODCOLIGADA = M.CODCOLIGADA AND J.CODHORARIO = M.CODHORARIO#(lf)            WHERE J.CODCOLIGADA = T.CODCOLIGADA #(lf)              AND J.CHAPA = T.CHAPA #(lf)              AND J.DATAMUDANCA = (SELECT MAX(K.DATAMUDANCA) FROM AJORNADAFUN@RM K WHERE K.CODCOLIGADA = J.CODCOLIGADA AND K.CHAPA = J.CHAPA AND K.DATAMUDANCA <= T.DATAREFERENCIA)) AS DESC_JORNADA#(lf)    FROM (#(lf)        SELECT W.CODCOLIGADA, W.CODFILIAL, W.CHAPA, W.NOME, W.CODSITUACAO, W.FUNCAO, W.NOME_SECAO, W.DATAREFERENCIA, W.SALARIO_HORA, W.QUANT_BATIDAS,#(lf)               W.ENT1, W.SAI1, W.ENT2, W.SAI2, W.ENT3, W.SAI3, W.ENT4, W.SAI4,#(lf)               H.HTRAB AS HORAS_TRAB,#(lf)               H.BASE AS HORAS_BASE#(lf)        FROM (#(lf)            SELECT X.CODCOLIGADA, X.CODFILIAL, X.CHAPA, X.NOME, X.CODSITUACAO, X.FUNCAO, X.NOME_SECAO, X.DATAREFERENCIA, X.SALARIO_HORA,#(lf)                   COUNT(X.QTDE_BATIDA) AS QUANT_BATIDAS,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 1 THEN X.BATIDA END) AS ENT1,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 2 THEN X.BATIDA END) AS SAI1,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 3 THEN X.BATIDA END) AS ENT2,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 4 THEN X.BATIDA END) AS SAI2,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 5 THEN X.BATIDA END) AS ENT3,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 6 THEN X.BATIDA END) AS SAI3,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 7 THEN X.BATIDA END) AS ENT4,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 8 THEN X.BATIDA END) AS SAI4#(lf)            FROM (#(lf)                SELECT ROW_NUMBER() OVER(PARTITION BY A.CHAPA, NVL(A.DATAREFERENCIA, A.DATA) ORDER BY A.DATA, A.BATIDA) SEQUENCIA,#(lf)                       A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, B.CODSITUACAO, D.DESCRICAO AS NOME_SECAO, C.NOME AS FUNCAO,#(lf)                       (B.SALARIO / (B.JORNADAMENSAL / 60)) AS SALARIO_HORA,#(lf)                       NVL(A.DATAREFERENCIA, A.DATA) AS DATAREFERENCIA,#(lf)                       A.BATIDA, 1 AS QTDE_BATIDA#(lf)                FROM ABATFUN@RM A#(lf)                JOIN PFUNC@RM B ON A.CODCOLIGADA = B.CODCOLIGADA AND A.CHAPA = B.CHAPA#(lf)                JOIN PFUNCAO@RM C ON B.CODCOLIGADA = C.CODCOLIGADA AND B.CODFUNCAO = C.CODIGO#(lf)                JOIN PSECAO@RM D ON B.CODCOLIGADA = D.CODCOLIGADA AND B.CODSECAO = D.CODIGO#(lf)                WHERE B.CODCOLIGADA BETWEEN 0 AND 999#(lf)                  AND B.CODFILIAL BETWEEN 0 AND 999#(lf)                  AND (A.DATA >= TRUNC(SYSDATE) - 60 OR A.DATAREFERENCIA >= TRUNC(SYSDATE) - 60)#(lf)            ) X#(lf)            GROUP BY X.CODCOLIGADA, X.CODFILIAL, X.CHAPA, X.NOME, X.CODSITUACAO, X.FUNCAO, X.NOME_SECAO, X.DATAREFERENCIA, X.SALARIO_HORA#(lf)        ) W#(lf)        JOIN AAFHTFUN@RM H ON H.CODCOLIGADA = W.CODCOLIGADA AND H.CHAPA = W.CHAPA AND H.DATA = W.DATAREFERENCIA#(lf)        WHERE H.HTRAB > 600 #(lf)    ) T#(lf)) Q#(lf)WHERE COD_JORNADA <> '0009'#(lf)ORDER BY CODCOLIGADA, CODFILIAL, CHAPA, DATAREFERENCIA"]),
+				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT Q.CODCOLIGADA,#(lf)       Q.CODFILIAL,#(lf)       Q.CHAPA,#(lf)       Q.NOME,#(lf)       Q.CODSITUACAO,#(lf)       Q.FUNCAO,#(lf)       Q.NOME_SECAO,#(lf)       Q.COD_JORNADA,#(lf)       Q.DESC_JORNADA,#(lf)       Q.DATAREFERENCIA,#(lf)       Q.DIA_DA_SEMANA,#(lf)       -- Aplicação das máscaras de texto no bloco final garantindo compatibilidade com a tabela 25#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 1 THEN LPAD(TRUNC(Q.E1/60), 2, '0') || ':' || LPAD(MOD(Q.E1, 60), 2, '0') END AS ENT1,#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 2 THEN LPAD(TRUNC(Q.S1/60), 2, '0') || ':' || LPAD(MOD(Q.S1, 60), 2, '0') END AS SAI1,#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 3 THEN LPAD(TRUNC(Q.E2/60), 2, '0') || ':' || LPAD(MOD(Q.E2, 60), 2, '0') END AS ENT2,#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 4 THEN LPAD(TRUNC(Q.S2/60), 2, '0') || ':' || LPAD(MOD(Q.S2, 60), 2, '0') END AS SAI2,#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 5 THEN LPAD(TRUNC(Q.E3/60), 2, '0') || ':' || LPAD(MOD(Q.E3, 60), 2, '0') END AS ENT3,#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 6 THEN LPAD(TRUNC(Q.S3/60), 2, '0') || ':' || LPAD(MOD(Q.S3, 60), 2, '0') END AS SAI3,#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 7 THEN LPAD(TRUNC(Q.E4/60), 2, '0') || ':' || LPAD(MOD(Q.E4, 60), 2, '0') END AS ENT4,#(lf)       CASE WHEN Q.QUANT_BATIDAS >= 8 THEN LPAD(TRUNC(Q.S4/60), 2, '0') || ':' || LPAD(MOD(Q.S4, 60), 2, '0') END AS SAI4,#(lf)       LPAD(TRUNC(Q.HORAS_BASE/60), 2, '0') || ':' || LPAD(MOD(Q.HORAS_BASE, 60), 2, '0') AS HORAS_BASE,#(lf)       LPAD(TRUNC(Q.HORAS_TRAB/60), 2, '0') || ':' || LPAD(MOD(Q.HORAS_TRAB, 60), 2, '0') AS HORAS_TRAB,#(lf)       LPAD(TRUNC(Q.HORAS_EXTRAS/60), 2, '0') || ':' || LPAD(MOD(Q.HORAS_EXTRAS, 60), 2, '0') AS HORAS_EXTRAS,#(lf)       Q.VALOR_HORAS_EXTRAS,#(lf)       Q.STATUS#(lf)FROM (#(lf)    SELECT T.CODCOLIGADA, T.CODFILIAL, T.CHAPA, T.NOME, T.CODSITUACAO, T.FUNCAO, T.NOME_SECAO, T.DATAREFERENCIA, T.HORAS_BASE, T.HORAS_TRAB, T.SALARIO_HORA, T.QUANT_BATIDAS,#(lf)           T.E1, T.S1, T.E2, T.S2, T.E3, T.S3, T.E4, T.S4,#(lf)           CASE WHEN T.HORAS_TRAB > T.HORAS_BASE THEN (T.HORAS_TRAB - T.HORAS_BASE) ELSE 0 END AS HORAS_EXTRAS,#(lf)           CASE WHEN T.HORAS_TRAB > T.HORAS_BASE THEN ((((T.HORAS_TRAB - T.HORAS_BASE) / 60) * T.SALARIO_HORA) * 1.50) ELSE 0 END AS VALOR_HORAS_EXTRAS,#(lf)           CASE TO_CHAR(T.DATAREFERENCIA, 'D')#(lf)              WHEN '1' THEN 'DOM' WHEN '2' THEN 'SEG' WHEN '3' THEN 'TER' WHEN '4' THEN 'QUA' WHEN '5' THEN 'QUI' WHEN '6' THEN 'SEX' ELSE 'SAB'#(lf)           END AS DIA_DA_SEMANA,#(lf)           CASE#(lf)              WHEN T.HORAS_TRAB > 600 AND T.QUANT_BATIDAS > 2 THEN 'Trablhou mais de 10:00'#(lf)              WHEN T.HORAS_TRAB > 600 AND T.QUANT_BATIDAS = 2 THEN 'Trablhou mais de 10:00 e foi embora'#(lf)              ELSE 'OK'#(lf)           END AS STATUS,#(lf)           (SELECT J.CODHORARIO #(lf)            FROM AJORNADAFUN@RM J #(lf)            WHERE J.CODCOLIGADA = T.CODCOLIGADA #(lf)              AND J.CHAPA = T.CHAPA #(lf)              AND J.DATAMUDANCA = (SELECT MAX(K.DATAMUDANCA) FROM AJORNADAFUN@RM K WHERE K.CODCOLIGADA = J.CODCOLIGADA AND K.CHAPA = J.CHAPA AND K.DATAMUDANCA <= T.DATAREFERENCIA)) AS COD_JORNADA,#(lf)           (SELECT M.DESCRICAO #(lf)            FROM AJORNADAFUN@RM J#(lf)            JOIN AHORARIOJORNADA@RM M ON J.CODCOLIGADA = M.CODCOLIGADA AND J.CODHORARIO = M.CODHORARIO#(lf)            WHERE J.CODCOLIGADA = T.CODCOLIGADA #(lf)              AND J.CHAPA = T.CHAPA #(lf)              AND J.DATAMUDANCA = (SELECT MAX(K.DATAMUDANCA) FROM AJORNADAFUN@RM K WHERE K.CODCOLIGADA = J.CODCOLIGADA AND K.CHAPA = J.CHAPA AND K.DATAMUDANCA <= T.DATAREFERENCIA)) AS DESC_JORNADA#(lf)    FROM (#(lf)        SELECT W.CODCOLIGADA, W.CODFILIAL, W.CHAPA, W.NOME, W.CODSITUACAO, W.FUNCAO, W.NOME_SECAO, W.DATAREFERENCIA, W.SALARIO_HORA, W.QUANT_BATIDAS,#(lf)               W.E1, W.S1, W.E2, W.S2, W.E3, W.S3, W.E4, W.S4,#(lf)               H.HTRAB AS HORAS_TRAB,#(lf)               H.BASE AS HORAS_BASE#(lf)        FROM (#(lf)            SELECT X.CODCOLIGADA, X.CODFILIAL, X.CHAPA, X.NOME, X.CODSITUACAO, X.FUNCAO, X.NOME_SECAO, X.DATAREFERENCIA, X.SALARIO_HORA,#(lf)                   COUNT(X.QTDE_BATIDA) AS QUANT_BATIDAS,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 1 THEN X.BATIDA END) AS E1,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 2 THEN X.BATIDA END) AS S1,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 3 THEN X.BATIDA END) AS E2,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 4 THEN X.BATIDA END) AS S2,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 5 THEN X.BATIDA END) AS E3,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 6 THEN X.BATIDA END) AS S3,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 7 THEN X.BATIDA END) AS E4,#(lf)                   MAX(CASE WHEN X.SEQUENCIA = 8 THEN X.BATIDA END) AS S4#(lf)            FROM (#(lf)                SELECT ROW_NUMBER() OVER(PARTITION BY A.CHAPA, NVL(A.DATAREFERENCIA, A.DATA) ORDER BY A.DATA, A.BATIDA) SEQUENCIA,#(lf)                       A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, B.CODSITUACAO, D.DESCRICAO AS NOME_SECAO, C.NOME AS FUNCAO,#(lf)                       (B.SALARIO / (B.JORNADAMENSAL / 60)) AS SALARIO_HORA,#(lf)                       NVL(A.DATAREFERENCIA, A.DATA) AS DATAREFERENCIA,#(lf)                       A.BATIDA, 1 AS QTDE_BATIDA#(lf)                FROM ABATFUN@RM A#(lf)                JOIN PFUNC@RM B ON A.CODCOLIGADA = B.CODCOLIGADA AND A.CHAPA = B.CHAPA#(lf)                JOIN PFUNCAO@RM C ON B.CODCOLIGADA = C.CODCOLIGADA AND B.CODFUNCAO = C.CODIGO#(lf)                JOIN PSECAO@RM D ON B.CODCOLIGADA = D.CODCOLIGADA AND B.CODSECAO = D.CODIGO#(lf)                WHERE B.CODCOLIGADA BETWEEN 0 AND 999#(lf)                  AND B.CODFILIAL BETWEEN 0 AND 999#(lf)                  AND (A.DATA >= TRUNC(SYSDATE) - 60 OR A.DATAREFERENCIA >= TRUNC(SYSDATE) - 60)#(lf)            ) X#(lf)            GROUP BY X.CODCOLIGADA, X.CODFILIAL, X.CHAPA, X.NOME, X.CODSITUACAO, X.FUNCAO, X.NOME_SECAO, X.DATAREFERENCIA, X.SALARIO_HORA#(lf)        ) W#(lf)        JOIN AAFHTFUN@RM H ON H.CODCOLIGADA = W.CODCOLIGADA AND H.CHAPA = W.CHAPA AND H.DATA = W.DATAREFERENCIA#(lf)        WHERE H.HTRAB > 600 #(lf)    ) T#(lf)) Q#(lf)WHERE COD_JORNADA <> '0009'#(lf)ORDER BY CODCOLIGADA, CODFILIAL, CHAPA, DATAREFERENCIA"]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATAREFERENCIA", type date}, {"HORAS_TRAB", type time}, {"HORAS_EXTRAS", type time}}),
+				    
 				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
 				    #"Valor Substituído" = Table.ReplaceValue(#"Coluna Mesclada Inserida","Trablhou mais de 10:00 e foi embora","Trablhou mais de 10:00",Replacer.ReplaceText,{"STATUS"}),
 				    #"Consultas Mescladas" = Table.NestedJoin(#"Valor Substituído", {"NOME_SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
-				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO"})
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO"}),
+				    #"Coluna Mesclada Inserida1" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text)
 				in
-				    #"FPBI_DEPARTAMENTO Expandido"
+				    #"Coluna Mesclada Inserida1"
+				```
 
 	annotation PBI_NavigationStepName = Navegação
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 

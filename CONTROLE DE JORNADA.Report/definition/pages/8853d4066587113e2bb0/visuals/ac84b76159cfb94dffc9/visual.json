@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "ac84b76159cfb94dffc9",
   "position": {
-    "x": 853.647752394989,
-    "y": 23.581429624170969,
+    "x": 685.085020242915,
+    "y": 24.874493927125506,
     "z": 2001,
-    "height": 70.7442888725129,
-    "width": 345.23212969786294,
+    "height": 70.477732793522264,
+    "width": 371.04453441295544,
     "tabOrder": 2001
   },
   "visual": {
@@ -341,5 +341,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ba832ba155c67db59a90",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "DEPARTAMENTO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "28d5ee92f7b4a5c25e18",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SETOR"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a1c75dcfab3e610210c2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

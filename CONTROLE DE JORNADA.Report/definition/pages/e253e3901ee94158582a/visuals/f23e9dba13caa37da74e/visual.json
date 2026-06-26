@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "24783986a3bbc8ea77c1",
+  "name": "f23e9dba13caa37da74e",
   "position": {
-    "x": 461.33935289691493,
-    "y": 25.041384499623778,
-    "z": 3002,
-    "height": 70.308502633559058,
-    "width": 223.44620015048909,
-    "tabOrder": 3002
+    "x": 325.44129554655871,
+    "y": 95.352226720647778,
+    "z": 5004,
+    "height": 70.477732793522264,
+    "width": 366.89878542510121,
+    "tabOrder": 5004
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "dCalendario"
                     }
                   },
-                  "Property": "FILIAL"
+                  "Property": "Data"
                 }
               },
-              "queryRef": "dCODFILIAL.FILIAL",
-              "nativeQueryRef": "FILIAL",
+              "queryRef": "dCalendario.Data",
+              "nativeQueryRef": "Data",
               "active": true
             }
           ]
@@ -69,6 +69,47 @@
                   }
                 }
               }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "dCalendario",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "Data"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Ontem'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
             }
           }
         }
@@ -86,7 +127,7 @@
             "singleSelect": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -232,10 +273,28 @@
       ]
     },
     "syncGroup": {
-      "groupName": "FILIAL",
+      "groupName": "Data",
       "fieldChanges": true,
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "035176e384fe86107d4e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dCalendario"
+              }
+            },
+            "Property": "Data"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "d103fc3628d0111ecc82",
+  "name": "a363d0a0e84cae1e29e6",
   "position": {
-    "x": 461.33935289691493,
-    "y": 25.041384499623778,
-    "z": 5002,
-    "height": 70.308502633559058,
-    "width": 223.44620015048909,
-    "tabOrder": 5002
+    "x": 245.63562753036436,
+    "y": 23.838056680161944,
+    "z": 8001,
+    "height": 70.477732793522264,
+    "width": 366.89878542510121,
+    "tabOrder": 8001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,20 +20,58 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODFILIAL"
+                      "Entity": "dFilial"
+                    }
+                  },
+                  "Property": "COLIGADA"
+                }
+              },
+              "queryRef": "dFilial.COLIGADA",
+              "nativeQueryRef": "COLIGADA",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dFilial"
                     }
                   },
                   "Property": "FILIAL"
                 }
               },
-              "queryRef": "dCODFILIAL.FILIAL",
-              "nativeQueryRef": "FILIAL",
-              "active": true
+              "queryRef": "dFilial.FILIAL",
+              "nativeQueryRef": "FILIAL1",
+              "active": false
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "dFilial.COLIGADA"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "dFilial.FILIAL"
+            ],
+            "isCollapsed": true
+          }
+        ],
+        "root": {}
+      }
+    ],
     "objects": {
       "data": [
         {
@@ -232,10 +270,42 @@
       ]
     },
     "syncGroup": {
-      "groupName": "FILIAL",
+      "groupName": "COLIGADA",
       "fieldChanges": true,
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0dedd1e5e117b1e77f3e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "df2922d25b687fa83d9c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "FILIAL"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
