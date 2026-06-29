@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "5a7431dc8c32f7cfcd34",
   "position": {
-    "x": 325.83586626139817,
-    "y": 101.15501519756839,
+    "x": 325.41871921182269,
+    "y": 101.08374384236453,
     "z": 5006,
-    "height": 70.030395136778125,
-    "width": 366.68693009118545,
+    "height": 70.049261083743843,
+    "width": 367.09359605911328,
     "tabOrder": 5006
   },
   "visual": {
@@ -133,6 +133,18 @@
                                 "Value": "'Ontem'"
                               }
                             }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Mês atual'"
+                              }
+                            },
+                            {
+                              "Literal": {
+                                "Value": "'01/06/2026'"
+                              }
+                            }
                           ]
                         ]
                       }
@@ -182,6 +194,26 @@
                                   }
                                 ]
                               }
+                            ],
+                            [
+                              {
+                                "0": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'Mês atual'"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "1": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'01/06/2026'"
+                                    }
+                                  }
+                                ]
+                              }
                             ]
                           ],
                           "columns": [
@@ -215,6 +247,10 @@
                           {
                             "0": "Mês atual",
                             "1": "Ontem"
+                          },
+                          {
+                            "0": "Mês atual",
+                            "1": "01/06/2026"
                           }
                         ]
                       }
