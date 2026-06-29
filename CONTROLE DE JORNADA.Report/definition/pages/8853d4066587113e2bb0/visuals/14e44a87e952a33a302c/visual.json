@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "14e44a87e952a33a302c",
   "position": {
-    "x": 39.370529327610868,
-    "y": 116.28040057224605,
+    "x": 39.014778325123153,
+    "y": 210.14778325123152,
     "z": 0,
-    "height": 553.934191702432,
-    "width": 1216.8240343347638,
+    "height": 460.19704433497537,
+    "width": 1217.4384236453202,
     "tabOrder": 0
   },
   "visual": {
@@ -204,16 +204,16 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Medidas"
+                    "Entity": "Planilha NET 25 - Funcionários com batida"
                   }
                 },
-                "Property": "R$ HE"
+                "Property": "NOME"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
