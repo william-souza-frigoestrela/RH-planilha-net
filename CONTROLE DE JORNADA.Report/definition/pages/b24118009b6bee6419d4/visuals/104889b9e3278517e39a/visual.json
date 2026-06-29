@@ -37,34 +37,6 @@
                       "Entity": "Planilha NET- 4 – Faltas"
                     }
                   },
-                  "Property": "FUNCAO"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.FUNCAO",
-              "nativeQueryRef": "FUNCAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "SITUACAO"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.SITUACAO",
-              "nativeQueryRef": "SITUACAO"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
                   "Property": "DATA"
                 }
               },
@@ -204,47 +176,7 @@
           }
         },
         {
-          "properties": {
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 0,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "Medidas"
-                                    }
-                                  },
-                                  "Property": "Destaque Maior Variacao"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "1D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#a38600'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -515,34 +447,6 @@
           "selector": {
             "metadata": "Planilha NET- 4 – Faltas.NOME"
           }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "262.10837900530726D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Planilha NET- 4 – Faltas.FUNCAO"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "149.70937777627836D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Planilha NET- 4 – Faltas.SITUACAO"
-          }
         }
       ],
       "accessibility": [
@@ -653,34 +557,6 @@
               }
             },
             "Property": "NOME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "80d9de63a9eaf3995a37",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 4 – Faltas"
-              }
-            },
-            "Property": "FUNCAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "8cb2a050fb5df5a6629a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 4 – Faltas"
-              }
-            },
-            "Property": "SITUACAO"
           }
         },
         "type": "Categorical"

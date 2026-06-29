@@ -33,57 +33,11 @@ table 'Planilha NET- 4 – Faltas'
 
 		annotation SummarizationSetBy = Automatic
 
-	column FUNCAO
-		dataType: string
-		lineageTag: 7a375cfc-cb11-4bfe-978a-391c082bd02a
-		summarizeBy: none
-		sourceColumn: FUNCAO
-
-		annotation SummarizationSetBy = Automatic
-
 	column SECAO
 		dataType: string
 		lineageTag: c2dc880d-c710-4c9c-9202-43e768d3268a
 		summarizeBy: none
 		sourceColumn: SECAO
-
-		annotation SummarizationSetBy = Automatic
-
-	column DATAADMISSAO
-		dataType: dateTime
-		formatString: Short Date
-		lineageTag: 100e0efd-6276-42fb-9dd4-873a4b999c6b
-		summarizeBy: none
-		sourceColumn: DATAADMISSAO
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
-	column DATADEMISSAO
-		dataType: dateTime
-		formatString: Short Date
-		lineageTag: 29b1642f-c7ff-4c71-8886-b0027f14c255
-		summarizeBy: none
-		sourceColumn: DATADEMISSAO
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
-	column CODTIPO
-		dataType: string
-		lineageTag: 4e13726e-d9a1-497b-b8bb-44234bccc422
-		summarizeBy: none
-		sourceColumn: CODTIPO
-
-		annotation SummarizationSetBy = Automatic
-
-	column SITUACAO
-		dataType: string
-		lineageTag: 5524ca0c-8099-43c0-ae7e-41836a86302d
-		summarizeBy: none
-		sourceColumn: SITUACAO
 
 		annotation SummarizationSetBy = Automatic
 
@@ -154,12 +108,74 @@ table 'Planilha NET- 4 – Faltas'
 
 		annotation SummarizationSetBy = Automatic
 
+	column CODSECAO
+		dataType: string
+		lineageTag: 89198f72-b04a-4c44-9f30-1eff86084080
+		summarizeBy: none
+		sourceColumn: CODSECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column HE_50
+		dataType: string
+		lineageTag: ac8bb68e-2d50-43c2-add0-38ce51f14ae3
+		summarizeBy: none
+		sourceColumn: HE_50
+
+		annotation SummarizationSetBy = Automatic
+
+	column HE_50_VALOR
+		dataType: double
+		lineageTag: aee4784e-8b4c-43ba-a53d-c161f5ea8be4
+		summarizeBy: sum
+		sourceColumn: HE_50_VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HE_100
+		dataType: string
+		lineageTag: 90ce739c-a022-43f3-b8ed-34802ca2cb8a
+		summarizeBy: none
+		sourceColumn: HE_100
+
+		annotation SummarizationSetBy = Automatic
+
+	column HE_100_VALOR
+		dataType: double
+		lineageTag: 399cde83-f329-45e1-bce2-92bc3252c20f
+		summarizeBy: sum
+		sourceColumn: HE_100_VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HE_TOTAL
+		dataType: string
+		lineageTag: fd407c6e-9cdf-405e-989d-d51669bd5c8f
+		summarizeBy: none
+		sourceColumn: HE_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column HE_TOTAL_VALOR
+		dataType: double
+		lineageTag: 557cb5ba-8f18-42f5-bc12-62684fcfc7a3
+		summarizeBy: sum
+		sourceColumn: HE_TOTAL_VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition 'Planilha NET- 4 – Faltas' = m
 		mode: import
 		source =
 				let
-				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT A.CODCOLIGADA,#(lf)       B.CODFILIAL,#(lf)       A.CHAPA,#(lf)       B.NOME,#(lf)       D.NOME AS FUNCAO,#(lf)       C.DESCRICAO AS SECAO,#(lf)       B.DATAADMISSAO,#(lf)       B.DATADEMISSAO,#(lf)       B.CODTIPO,#(lf)       (SELECT E.DESCRICAO FROM PCODSITUACAO@RM E WHERE E.CODCLIENTE = B.CODSITUACAO) AS SITUACAO,#(lf)       A.DATA#(lf)FROM AAFHTFUN@RM A, PFUNC@RM B, PSECAO@RM C, PFUNCAO@RM D#(lf)WHERE A.CODCOLIGADA = B.CODCOLIGADA#(lf)  AND A.CHAPA       = B.CHAPA#(lf)  AND B.CODCOLIGADA = C.CODCOLIGADA#(lf)  AND B.CODSECAO    = C.CODIGO#(lf)  AND B.CODCOLIGADA = D.CODCOLIGADA#(lf)  AND B.CODFUNCAO   = D.CODIGO#(lf)  #(lf)  -- Lógica do sistema RM para aceitar ""0"" e trazer todas as estruturas#(lf)  AND A.CODCOLIGADA BETWEEN 0 AND 999#(lf)  AND B.CODFILIAL   BETWEEN 0 AND 999#(lf)  AND B.CODSECAO    BETWEEN '0' AND 'ZZZZZZZZZZZZ'#(lf)  #(lf)  -- Período dinâmico protegido (Últimos 60 dias)#(lf)  AND A.DATA BETWEEN TRUNC(SYSDATE) - 60 AND TRUNC(SYSDATE)#(lf)  #(lf)  -- Mantendo a regra original de trazer apenas registros com faltas#(lf)  AND A.FALTA       > 0#(lf)ORDER BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, A.DATA"]),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}, {"DATA", type date}}),
+				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="SELECT CODCOLIGADA,#(lf)       CODFILIAL,#(lf)       CODSECAO,#(lf)       SECAO,#(lf)       CHAPA,#(lf)       NOME,#(lf)       DATA,#(lf)       CASE WHEN LENGTH(CAST(TRUNC((HE_50/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((HE_50/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((HE_50/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((HE_50 - (TRUNC((HE_50/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((HE_50 - (TRUNC((HE_50/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((HE_50 - (TRUNC((HE_50/60), 0) * 60)) AS VARCHAR(2)) END AS HE_50,#(lf)       (((HE_50 / 60) * SAL_HORA) * 1.50) AS HE_50_VALOR,#(lf)       CASE WHEN LENGTH(CAST(TRUNC((HE_100/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((HE_100/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((HE_100/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((HE_100 - (TRUNC((HE_100/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((HE_100 - (TRUNC((HE_100/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((HE_100 - (TRUNC((HE_100/60), 0) * 60)) AS VARCHAR(2)) END AS HE_100,#(lf)       (((HE_100 / 60) * SAL_HORA) * 2.00) AS HE_100_VALOR,#(lf)       CASE WHEN LENGTH(CAST(TRUNC((HE_TOTAL/60), 0) AS VARCHAR(5))) = 2 THEN CAST(TRUNC((HE_TOTAL/60), 0) AS VARCHAR(5)) ELSE '0' || CAST(TRUNC((HE_TOTAL/60), 0) AS VARCHAR(5)) END || ':' || CASE WHEN LENGTH(CAST((HE_TOTAL - (TRUNC((HE_TOTAL/60), 0) * 60)) AS VARCHAR(2))) = 2 THEN CAST((HE_TOTAL - (TRUNC((HE_TOTAL/60), 0) * 60)) AS VARCHAR(2)) ELSE '0' || CAST((HE_TOTAL - (TRUNC((HE_TOTAL/60), 0) * 60)) AS VARCHAR(2)) END AS HE_TOTAL,#(lf)       ((((HE_50 / 60) * SAL_HORA) * 1.50) + (((HE_100 / 60) * SAL_HORA) * 2.00)) AS HE_TOTAL_VALOR#(lf)FROM (#(lf)    SELECT CODCOLIGADA,#(lf)           CODFILIAL,#(lf)           CODSECAO,#(lf)           SECAO,#(lf)           CHAPA,#(lf)           NOME,#(lf)           SAL_HORA,#(lf)           DATA,#(lf)           SUM(HE_50 + HE_COMP) AS HE_50,#(lf)           SUM(HE_100 + HE_DESC + HE_FER) AS HE_100,#(lf)           SUM(HE_50 + HE_100 + HE_DESC + HE_FER + HE_COMP) AS HE_TOTAL#(lf)    FROM (#(lf)        -- Bloco 1: Movimento Diário de Eventos (AMOVFUNDIA)#(lf)        SELECT CODCOLIGADA,#(lf)               CODFILIAL,#(lf)               CODSECAO,#(lf)               SECAO,#(lf)               CHAPA,#(lf)               NOME,#(lf)               SAL_HORA,#(lf)               DATA,#(lf)               SUM(HE_50) AS HE_50,#(lf)               SUM(HE_100) AS HE_100,#(lf)               SUM(HE_DESC) AS HE_DESC,#(lf)               SUM(HE_FER) AS HE_FER,#(lf)               SUM(HE_COMP) AS HE_COMP#(lf)        FROM (#(lf)            SELECT A.CODCOLIGADA,#(lf)                   C.CODFILIAL,#(lf)                   C.CODSECAO,#(lf)                   SUBSTR(D.DESCRICAO, 21, LENGTH(D.DESCRICAO) - 20) AS SECAO,#(lf)                   A.CHAPA,#(lf)                   C.NOME,#(lf)                   (C.SALARIO / (C.JORNADAMENSAL / 60)) AS SAL_HORA,#(lf)                   A.DATA,#(lf)                   CASE WHEN A.CODEVE = '1301' THEN A.NUMHORAS ELSE 0 END AS HE_50,#(lf)                   CASE WHEN A.CODEVE = '1304' THEN A.NUMHORAS ELSE 0 END AS HE_100,#(lf)                   0 AS HE_DESC,#(lf)                   0 AS HE_FER,#(lf)                   0 AS HE_COMP#(lf)            FROM AMOVFUNDIA@RM A, PEVENTO@RM B, PFUNC@RM C, PSECAO@RM D#(lf)            WHERE A.CODCOLIGADA = B.CODCOLIGADA#(lf)              AND A.CODEVE      = B.CODIGO#(lf)              AND A.CODCOLIGADA = C.CODCOLIGADA#(lf)              AND A.CHAPA       = C.CHAPA#(lf)              AND C.CODCOLIGADA = D.CODCOLIGADA#(lf)              AND C.CODSECAO    = D.CODIGO#(lf)              AND A.CODCOLIGADA BETWEEN 0 AND 999#(lf)              AND C.CODFILIAL BETWEEN 0 AND 999#(lf)              AND SUBSTR(C.CODSECAO, 1, 10) BETWEEN '0' AND 'ZZZZZZZZZZZZ'#(lf)              AND A.DATA BETWEEN TRUNC(SYSDATE) - 60 AND TRUNC(SYSDATE)#(lf)              AND A.CODEVE IN ('1301', '1304')#(lf)        ) Q#(lf)        GROUP BY CODCOLIGADA, CODFILIAL, CODSECAO, SECAO, CHAPA, NOME, SAL_HORA, DATA#(lf)#(lf)        UNION ALL#(lf)#(lf)        -- Bloco 2: Detalhamento do Banco de Horas (ABANCOHORFUNDETALHE)#(lf)        -- Nota: Bloco antigo do ABANCOHORFUN foi removido para evitar a duplicidade crônica de saldos.#(lf)        SELECT A.CODCOLIGADA,#(lf)               C.CODFILIAL,#(lf)               C.CODSECAO,#(lf)               SUBSTR(D.DESCRICAO, 21, LENGTH(D.DESCRICAO) - 20) AS SECAO,#(lf)               A.CHAPA,#(lf)                   C.NOME,#(lf)               (C.SALARIO / (C.JORNADAMENSAL / 60)) AS SAL_HORA,#(lf)               A.DATA,#(lf)               SUM(CASE WHEN A.CODEVENTOPONTO IN ('0018', '0026', '0047') THEN CASE WHEN (A.VALOR - A.VALORCOMPENSADO - A.VALORLANCADO) = 0 THEN A.VALOR ELSE (A.VALOR - A.VALORCOMPENSADO - A.VALORLANCADO) END ELSE 0 END) AS HE_50,#(lf)               SUM(CASE WHEN A.CODEVENTOPONTO IN ('0019', '0022', '0024', '0048', '0050') THEN CASE WHEN (A.VALOR - A.VALORCOMPENSADO - A.VALORLANCADO) = 0 THEN A.VALOR ELSE (A.VALOR - A.VALORCOMPENSADO - A.VALORLANCADO) END ELSE 0 END) AS HE_100,#(lf)               0 AS HE_DESC,#(lf)               0 AS HE_FER,#(lf)               0 AS HE_COMP#(lf)        FROM ABANCOHORFUNDETALHE@RM A, PFUNC@RM C, PSECAO@RM D#(lf)        WHERE A.CODCOLIGADA = C.CODCOLIGADA#(lf)          AND A.CHAPA       = C.CHAPA#(lf)          AND C.CODCOLIGADA = D.CODCOLIGADA#(lf)          AND C.CODSECAO    = D.CODIGO#(lf)          AND A.CODCOLIGADA BETWEEN 0 AND 999#(lf)          AND C.CODFILIAL BETWEEN 0 AND 999#(lf)          AND SUBSTR(C.CODSECAO, 1, 10) BETWEEN '0' AND 'ZZZZZZZZZZZZ'#(lf)          AND A.DATA BETWEEN TRUNC(SYSDATE) - 10 AND TRUNC(SYSDATE)#(lf)        GROUP BY A.CODCOLIGADA, C.CODFILIAL, C.CODSECAO, D.DESCRICAO, A.CHAPA, C.NOME, C.SALARIO, C.JORNADAMENSAL, A.DATA#(lf)    ) X#(lf)    GROUP BY CODCOLIGADA, CODFILIAL, CODSECAO, SECAO, CHAPA, NOME, SAL_HORA, DATA#(lf)) W#(lf)ORDER BY CODCOLIGADA, CODFILIAL, CODSECAO, CHAPA, DATA"]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATA", type date}}),
 				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
 				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
 				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"}),
