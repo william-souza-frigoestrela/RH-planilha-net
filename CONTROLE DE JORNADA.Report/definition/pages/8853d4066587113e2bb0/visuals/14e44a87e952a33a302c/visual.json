@@ -204,13 +204,13 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Planilha NET 25 - Funcionários com batida"
+                    "Entity": "Medidas"
                   }
                 },
-                "Property": "DATAREFERENCIA"
+                "Property": "R$ HE"
               }
             },
             "direction": "Descending"
