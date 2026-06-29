@@ -96,22 +96,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "planilha_NET_4__falta.funcao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
-			          "ConceptualProperty": "FUNCAO"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "funcao": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "planilha_NET_4__falta.secao": {
 			      "Definition": {
 			        "Binding": {
@@ -123,84 +107,6 @@ cultureInfo pt-BR
 			      "Terms": [
 			        {
 			          "secao": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "planilha_NET_4__falta.dataadmissao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
-			          "ConceptualProperty": "DATAADMISSAO"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dataadmissao": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "planilha_NET_4__falta.datademissao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
-			          "ConceptualProperty": "DATADEMISSAO"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "datademissao": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "planilha_NET_4__falta.codtipo": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
-			          "ConceptualProperty": "CODTIPO"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "codtipo": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "planilha_NET_4__falta.situacao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
-			          "ConceptualProperty": "SITUACAO"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "situacao": {
 			            "State": "Generated"
 			          }
 			        }
