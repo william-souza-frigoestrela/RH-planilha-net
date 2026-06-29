@@ -1,47 +1,3 @@
-relationship 77c3b3f7-2055-1b51-ca6b-7e2e521ab534
-	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.CODCOLIGADA
-	toColumn: dCODCOLIGADA.CODCOLIGADA
-
-relationship fbd138ad-dbaa-e4bf-6463-bdcda9146884
-	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.CODCOLIGADA
-	toColumn: dCODCOLIGADA.CODCOLIGADA
-
-relationship a176186f-e241-c9e0-0027-2393505c72a0
-	fromColumn: 'Planilha NET- 4 – Faltas'.CODCOLIGADA
-	toColumn: dCODCOLIGADA.CODCOLIGADA
-
-relationship 22cf0a99-6100-7a49-b985-df1a253f2d73
-	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.CODFILIAL
-	toColumn: dCODFILIAL.CODFILIAL
-
-relationship 9eef3bcd-aa08-d1de-937c-ee5618fbdca8
-	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.CODFILIAL
-	toColumn: dCODFILIAL.CODFILIAL
-
-relationship 0b4b4a19-329f-63cc-bf24-4c6ecd628049
-	fromColumn: 'Planilha NET- 4 – Faltas'.CODFILIAL
-	toColumn: dCODFILIAL.CODFILIAL
-
-relationship efda14bd-8cac-7684-cc66-c3394ea8e83b
-	fromColumn: 'Planilha NET 25 - Funcionários com batida'.CODCOLIGADA
-	toColumn: dCODCOLIGADA.CODCOLIGADA
-
-relationship 582f2b75-84af-94a3-7979-7ae19c3fe3da
-	fromColumn: 'Planilha NET 25 - Funcionários com batida'.CODFILIAL
-	toColumn: dCODFILIAL.CODFILIAL
-
-relationship AutoDetected_95d540fe-7755-4975-bc8f-f0299499670c
-	fromColumn: 'Planilha NET 18 - Hora extra dia'.CODCOLIGADA
-	toColumn: dCODCOLIGADA.CODCOLIGADA
-
-relationship AutoDetected_1b14e117-53c4-4a4d-9319-9239c66bc361
-	fromColumn: 'Planilha NET 18 - Hora extra dia'.CODFILIAL
-	toColumn: dCODFILIAL.CODFILIAL
-
-relationship c26eb914-5334-81d2-16ca-a06a37f1d513
-	fromColumn: 'Planilha NET- 4 – Faltas'.DATA
-	toColumn: dCalendario.Date
-
 relationship 768062d7-1e5b-0d5c-e401-917f31706681
 	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.SECAO
 	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
@@ -57,4 +13,36 @@ relationship 4ec9780f-e2c7-6505-1d83-f5f8b4215384
 relationship 4f06d2ed-3464-1276-2119-e017fe2e14ab
 	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.NOME_SECAO
 	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
+
+relationship c26eb914-5334-81d2-16ca-a06a37f1d513
+	fromColumn: 'Planilha NET- 4 – Faltas'.DATA
+	toColumn: dCalendario.Date
+
+relationship 99a217b1-5170-601b-09c3-866652876a26
+	fromColumn: 'Planilha NET 25 - Funcionários com batida'.DATAREFERENCIA
+	toColumn: dCalendario.Date
+
+relationship 9aa6efab-d811-bab6-3466-4e5318e3cfcb
+	fromColumn: 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'.COLIGADA_FILIAL
+	toColumn: dFilial.ID_FILIAL
+
+relationship f76befe9-1404-f9c6-5a03-d9577ac7c687
+	fromColumn: 'Planilha NET 18 - Hora extra dia'.COLIGADA_FILIAL
+	toColumn: dFilial.ID_FILIAL
+
+relationship 3b3cdce0-bb0d-0e69-6dd8-7a55845f8c80
+	fromColumn: 'Planilha NET 25 - Funcionários com batida'.COLIGADA_FILIAL
+	toColumn: dFilial.ID_FILIAL
+
+relationship d5a65778-f12e-c27e-a2fb-ce7d49c7abf4
+	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.COLIGADA_FILIAL
+	toColumn: dFilial.ID_FILIAL
+
+relationship f6304710-67d3-3dd9-a333-c7a3d772a11d
+	fromColumn: 'Planilha NET- 4 – Faltas'.COLIGADA_FILIAL
+	toColumn: dFilial.ID_FILIAL
+
+relationship 3e616d1c-e7da-9d5c-867c-c50b30d10c9f
+	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.DATAREFERENCIA
+	toColumn: dCalendario.Date
 

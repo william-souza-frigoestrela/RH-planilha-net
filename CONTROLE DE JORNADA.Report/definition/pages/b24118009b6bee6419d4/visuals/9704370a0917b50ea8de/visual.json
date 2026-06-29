@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "9704370a0917b50ea8de",
   "position": {
-    "x": 706.49963154016223,
-    "y": 25.467943994104644,
+    "x": 633.26315789473688,
+    "y": 24.874493927125506,
     "z": 3003,
-    "height": 70.7442888725129,
-    "width": 291.46647015475315,
+    "height": 70.477732793522264,
+    "width": 329.58704453441294,
     "tabOrder": 3003
   },
   "visual": {
@@ -43,7 +43,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SETOR",
               "nativeQueryRef": "SETOR",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -58,12 +58,92 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SECAO",
               "nativeQueryRef": "SECAO",
-              "active": false
+              "active": true
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.DEPARTAMENTO"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "DEPARTAMENTO"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.SETOR"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SETOR"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.SECAO"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' ADMINISTRACAO'"
+                  }
+                }
+              ],
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' ADMINISTRACAO'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
     "objects": {
       "data": [
         {
@@ -262,5 +342,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1dc0f1dc8eab707beead",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "DEPARTAMENTO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5c872c22da013dcf0f14",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SETOR"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bcf361e6da9727f7c2f3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

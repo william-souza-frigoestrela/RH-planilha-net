@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "6229aae7a24e0b4dc066",
   "position": {
-    "x": 997.80285929270121,
-    "y": 25.041384499623778,
+    "x": 710.995951417004,
+    "y": 95.352226720647778,
     "z": 4000,
-    "height": 70.308502633559058,
-    "width": 271.60270880361173,
+    "height": 70.477732793522264,
+    "width": 223.87044534412956,
     "tabOrder": 4000
   },
   "visual": {
@@ -273,5 +273,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "31d5c1397cd8b4d7f1a2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "STATUS"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

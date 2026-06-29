@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "495ccc15a1f5a2826915",
+  "name": "8857b9d302b44869cf65",
   "position": {
-    "x": 234.08866995073893,
-    "y": 24.827586206896552,
-    "z": 3001,
-    "height": 70.049261083743843,
-    "width": 226.99507389162562,
-    "tabOrder": 3001
+    "x": 325.64231738035267,
+    "y": 24.718723761544922,
+    "z": 5007,
+    "height": 70.931989924433253,
+    "width": 366.48194794290515,
+    "tabOrder": 5007
   },
   "visual": {
     "visualType": "slicer",
@@ -20,44 +20,39 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCODCOLIGADA"
+                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
                     }
                   },
                   "Property": "COLIGADA"
                 }
               },
-              "queryRef": "dCODCOLIGADA.COLIGADA",
+              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.COLIGADA",
               "nativeQueryRef": "COLIGADA",
               "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                    }
+                  },
+                  "Property": "FILIAL"
+                }
+              },
+              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.FILIAL",
+              "nativeQueryRef": "FILIAL",
+              "active": false
             }
           ]
         }
       }
     },
     "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -164,6 +159,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -231,11 +239,38 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "COLIGADA",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "85c69c11409dca3039cb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "188f5dd371f3534ae57e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "FILIAL"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

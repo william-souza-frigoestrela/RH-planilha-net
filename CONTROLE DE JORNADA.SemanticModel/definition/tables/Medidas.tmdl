@@ -14,7 +14,7 @@ table Medidas
 		formatString: 0
 		lineageTag: cf515c32-2efb-4c47-abd4-94762f1c3345
 
-	measure Total_Saldo_Positivo = ```
+	measure 'Saldo Positivo' = ```
 			
 			VAR MinutosPositivos = SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])
 			VAR Horas = TRUNC(MinutosPositivos / 60)
@@ -29,7 +29,7 @@ table Medidas
 			```
 		lineageTag: 1596ab93-a5b6-4892-9a3e-17b81aeb88a8
 
-	measure Total_Saldo_Negativo = ```
+	measure 'Saldo Negativo' = ```
 			
 			VAR MinutosNegativos = SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])
 			VAR ValorAbsoluto = ABS(MinutosNegativos)
@@ -66,6 +66,12 @@ table Medidas
 			)
 		formatString: 0
 		lineageTag: 5de009b8-83dd-4953-8577-d0b9181b9780
+
+	measure 'R$ HE' = SUMX('Planilha NET 25 - Funcionários com batida','Planilha NET 25 - Funcionários com batida'[HE_TOTAL_VALOR])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 33722f3e-864f-4bea-b06b-be9d4822a4b8
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column Column
 		isHidden

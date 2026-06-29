@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "6193c2162124950b34bb",
   "position": {
-    "x": 997.80285929270121,
-    "y": 24.078254326561325,
+    "x": 962.85020242914982,
+    "y": 24.874493927125506,
     "z": 1000,
-    "height": 70.308502633559058,
-    "width": 187.81038374717832,
+    "height": 70.477732793522264,
+    "width": 131.62753036437246,
     "tabOrder": 1000
   },
   "visual": {
@@ -232,5 +232,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "55d51e72fbf6eb02284b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 4 – Faltas"
+              }
+            },
+            "Property": "SITUACAO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

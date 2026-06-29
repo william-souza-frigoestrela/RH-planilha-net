@@ -640,5 +640,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "52daed89ac8b66193113",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 4 – Faltas"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "80d9de63a9eaf3995a37",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 4 – Faltas"
+              }
+            },
+            "Property": "FUNCAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8cb2a050fb5df5a6629a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 4 – Faltas"
+              }
+            },
+            "Property": "SITUACAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cdbbbc8d2ef5e2a36cb0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 4 – Faltas"
+              }
+            },
+            "Property": "DATA"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
