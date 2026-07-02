@@ -269,6 +269,20 @@
           "selector": {
             "metadata": "Medidas.% Variação Label PMP"
           }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Qtd faltas"
+          }
         }
       ]
     },

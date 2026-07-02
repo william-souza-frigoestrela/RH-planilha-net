@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "d46e32cc9db14969f898",
   "position": {
-    "x": 1063.152709359606,
-    "y": 23.940886699507388,
+    "x": 1028.3206751054852,
+    "y": 23.763713080168777,
     "z": 2004,
-    "height": 68.275862068965523,
-    "width": 182.66009852216749,
+    "height": 68.0506329113924,
+    "width": 217.1139240506329,
     "tabOrder": 2004
   },
   "visual": {
@@ -443,7 +443,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "434f896a7e74535d768c",
+        "name": "d262e885386da0a815ec",
         "field": {
           "Column": {
             "Expression": {
@@ -454,10 +454,48 @@
             "Property": "Data"
           }
         },
-        "type": "Categorical"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "dCalendario",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "d"
+                            }
+                          },
+                          "Property": "Data"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       },
       {
-        "name": "e6834e0f373fd6544358",
+        "name": "0cf3028cfc233c07a456",
         "field": {
           "Column": {
             "Expression": {

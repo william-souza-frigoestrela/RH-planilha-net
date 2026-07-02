@@ -430,5 +430,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3855a08ecbfd45705d0a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd_Funcionarios_Saldo_Positivo"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

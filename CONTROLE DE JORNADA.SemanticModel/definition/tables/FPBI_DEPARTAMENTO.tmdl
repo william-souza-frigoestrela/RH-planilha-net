@@ -81,7 +81,7 @@ table FPBI_DEPARTAMENTO
 		mode: import
 		source =
 				let
-				    Fonte = Oracle.Database("rm", [HierarchicalNavigation=true]),
+				    Fonte = Oracle.Database("RM", [HierarchicalNavigation=true]),
 				    RM = Fonte{[Schema="RM"]}[Data],
 				    FPBI_DEPARTAMENTO1 = RM{[Name="FPBI_DEPARTAMENTO"]}[Data]
 				in

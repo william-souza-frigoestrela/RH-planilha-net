@@ -43,7 +43,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SETOR",
               "nativeQueryRef": "SETOR",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -58,7 +58,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SECAO",
               "nativeQueryRef": "SECAO",
-              "active": true
+              "active": false
             }
           ]
         }
@@ -126,13 +126,53 @@
                   }
                 }
               ],
-              "isToggled": true,
               "children": [
                 {
                   "identityValues": [
                     {
                       "Literal": {
                         "Value": "' ADMINISTRACAO'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' GESTAO E CONTROLE'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' RECURSOS HUMANOS'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' MARKETING'"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' SAC'"
                       }
                     }
                   ],
@@ -357,7 +397,7 @@
             "Property": "DEPARTAMENTO"
           }
         },
-        "type": "Categorical"
+        "type": "Advanced"
       },
       {
         "name": "5c872c22da013dcf0f14",
@@ -371,7 +411,7 @@
             "Property": "SETOR"
           }
         },
-        "type": "Categorical"
+        "type": "Advanced"
       },
       {
         "name": "bcf361e6da9727f7c2f3",
@@ -385,7 +425,60 @@
             "Property": "SECAO"
           }
         },
-        "type": "Categorical"
+        "type": "Advanced"
+      },
+      {
+        "name": "a74c335a94f58fa4093e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd faltas"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "m"
+                            }
+                          },
+                          "Property": "Qtd faltas"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
       }
     ]
   }
