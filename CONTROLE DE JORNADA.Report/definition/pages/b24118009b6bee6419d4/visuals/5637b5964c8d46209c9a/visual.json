@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "225c5d8361cbf9e61a7d",
+  "name": "5637b5964c8d46209c9a",
   "position": {
-    "x": 266.89655172413791,
+    "x": 287.29064039408865,
     "y": 23.940886699507388,
     "z": 3005,
     "height": 70.935960591133011,
-    "width": 366.20689655172413,
+    "width": 299.70443349753697,
     "tabOrder": 3005
   },
   "visual": {
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "Planilha NET- 4 – Faltas"
                     }
                   },
                   "Property": "COLIGADA"
                 }
               },
-              "queryRef": "dFilial.COLIGADA",
+              "queryRef": "Planilha NET- 4 – Faltas.COLIGADA",
               "nativeQueryRef": "COLIGADA",
               "active": true
             },
@@ -35,14 +35,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "Planilha NET- 4 – Faltas"
                     }
                   },
                   "Property": "FILIAL"
                 }
               },
-              "queryRef": "dFilial.FILIAL",
-              "nativeQueryRef": "FILIAL1",
+              "queryRef": "Planilha NET- 4 – Faltas.FILIAL",
+              "nativeQueryRef": "FILIAL",
               "active": false
             }
           ]
@@ -57,45 +57,38 @@
         "levels": [
           {
             "queryRefs": [
-              "dFilial.COLIGADA"
+              "Planilha NET- 4 – Faltas.COLIGADA"
             ],
             "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
+                  "Property": "COLIGADA"
+                }
+              }
+            ],
             "isPinned": true
           },
           {
             "queryRefs": [
-              "dFilial.FILIAL"
+              "Planilha NET- 4 – Faltas.FILIAL"
             ],
-            "isCollapsed": true
+            "isCollapsed": true,
+            "isPinned": true
           }
         ],
         "root": {}
       }
     ],
     "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -202,6 +195,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -269,22 +275,17 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "COLIGADA",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "49125e5c2f19934c8066",
+        "name": "3d7805ab050116be1881",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "dFilial"
+                "Entity": "Planilha NET- 4 – Faltas"
               }
             },
             "Property": "COLIGADA"
@@ -293,12 +294,12 @@
         "type": "Categorical"
       },
       {
-        "name": "35e801062dc1793431de",
+        "name": "eef5cf1a423f1564b684",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "dFilial"
+                "Entity": "Planilha NET- 4 – Faltas"
               }
             },
             "Property": "FILIAL"

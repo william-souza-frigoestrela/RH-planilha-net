@@ -394,7 +394,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "3e80c026fa06de6cd84e",
+        "name": "d262e885386da0a815ec",
         "field": {
           "Column": {
             "Expression": {
@@ -405,21 +405,45 @@
             "Property": "Data"
           }
         },
-        "type": "Categorical"
-      },
-      {
-        "name": "69146690e6a55f59179c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCalendario"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "dCalendario",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "d"
+                            }
+                          },
+                          "Property": "Data"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
               }
-            },
-            "Property": "Mês nome"
-          }
-        },
-        "type": "Categorical"
+            }
+          ]
+        }
       }
     ]
   }

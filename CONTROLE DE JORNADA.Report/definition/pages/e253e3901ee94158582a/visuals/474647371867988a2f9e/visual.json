@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "COLIGADA"
                 }
               },
-              "queryRef": "dFilial.COLIGADA",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.COLIGADA",
               "nativeQueryRef": "COLIGADA",
               "active": true
             },
@@ -35,43 +35,20 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "FILIAL"
                 }
               },
-              "queryRef": "dFilial.FILIAL",
-              "nativeQueryRef": "FILIAL1",
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.FILIAL",
+              "nativeQueryRef": "FILIAL",
               "active": false
             }
           ]
         }
       }
     },
-    "expansionStates": [
-      {
-        "roles": [
-          "Values"
-        ],
-        "levels": [
-          {
-            "queryRefs": [
-              "dFilial.COLIGADA"
-            ],
-            "isCollapsed": true,
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "dFilial.FILIAL"
-            ],
-            "isCollapsed": true
-          }
-        ],
-        "root": {}
-      }
-    ],
     "objects": {
       "data": [
         {
@@ -275,37 +252,5 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "44f63f50a9f7e0d9eb18",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "COLIGADA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "bdab654f787bcd4b6f33",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "FILIAL"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

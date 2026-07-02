@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "10afe16620b70540da03",
+  "name": "882f9332abd1e843c6fa",
   "position": {
-    "x": 577.24137931034488,
-    "y": 23.054187192118228,
-    "z": 3000,
-    "height": 70.935960591133011,
-    "width": 392.807881773399,
-    "tabOrder": 3000
+    "x": 571.409282700422,
+    "y": 22.683544303797468,
+    "z": 8002,
+    "height": 70.210970464135016,
+    "width": 465.55274261603375,
+    "tabOrder": 8002
   },
   "visual": {
     "visualType": "slicer",
@@ -38,12 +38,12 @@
                       "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "SETOR"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
-              "nativeQueryRef": "SETOR",
-              "active": false
+              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
+              "nativeQueryRef": "SECAO",
+              "active": true
             },
             {
               "field": {
@@ -53,41 +53,122 @@
                       "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "SECAO"
+                  "Property": "SETOR"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
-              "nativeQueryRef": "SECAO",
-              "active": false
+              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
+              "nativeQueryRef": "SETOR",
+              "active": true
             }
           ]
         }
       }
     },
-    "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.DEPARTAMENTO"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "DEPARTAMENTO"
                 }
               }
-            }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.SECAO"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.SETOR"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
           }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' ADMINISTRACAO'"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' ADMINISTR. TRANSP, DOC/FATUR/NOTA FISCAL'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' BOUTIQUE'"
+                  }
+                }
+              ],
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' ADMINISTRATIVO BOUTIQUE'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            }
+          ]
         }
-      ],
+      }
+    ],
+    "objects": {
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -194,6 +275,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -261,17 +355,12 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "DEPARTAMENTO",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "fd4908c262c5af8b063e",
+        "name": "9b256de989770ce1fbb0",
         "field": {
           "Column": {
             "Expression": {
@@ -285,7 +374,21 @@
         "type": "Categorical"
       },
       {
-        "name": "fa3dc1e5deb46442cc04",
+        "name": "ebf8187197a839232e47",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "73fdb6ea1fd93af11eae",
         "field": {
           "Column": {
             "Expression": {
@@ -299,18 +402,102 @@
         "type": "Categorical"
       },
       {
-        "name": "38823b654d9276f8f14d",
+        "name": "00d7e9a50c5ae3c75a14",
         "field": {
-          "Column": {
+          "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
+                "Entity": "Medidas"
               }
             },
-            "Property": "SECAO"
+            "Property": "Qtd_Funcionarios_Saldo_Negativo"
           }
         },
-        "type": "Categorical"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Qtd_Funcionarios_Saldo_Negativo"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "3ac9a181b0cdf9282bfc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd_Funcionarios_Saldo_Positivo"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Qtd_Funcionarios_Saldo_Positivo"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
       }
     ]
   }

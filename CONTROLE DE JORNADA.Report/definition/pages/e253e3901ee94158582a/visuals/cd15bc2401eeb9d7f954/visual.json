@@ -416,5 +416,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "828071fd24b177087be4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd HE acima 10H"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

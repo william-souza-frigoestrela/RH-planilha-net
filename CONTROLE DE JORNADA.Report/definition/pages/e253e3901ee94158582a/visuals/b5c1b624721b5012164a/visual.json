@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "599fab0fe93c997d5c70",
+  "name": "b5c1b624721b5012164a",
   "position": {
-    "x": 362.66009852216752,
-    "y": 23.940886699507388,
-    "z": 2003,
-    "height": 70.049261083743843,
-    "width": 330.73891625615767,
-    "tabOrder": 2003
+    "x": 710.75105485232064,
+    "y": 25.924050632911392,
+    "z": 5008,
+    "height": 69.130801687763707,
+    "width": 494.71729957805906,
+    "tabOrder": 5008
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "COLIGADA"
+                  "Property": "DEPARTAMENTO"
                 }
               },
-              "queryRef": "dFilial.COLIGADA",
-              "nativeQueryRef": "COLIGADA",
+              "queryRef": "FPBI_DEPARTAMENTO.DEPARTAMENTO",
+              "nativeQueryRef": "DEPARTAMENTO",
               "active": true
             },
             {
@@ -35,14 +35,29 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "FILIAL"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "dFilial.FILIAL",
-              "nativeQueryRef": "FILIAL1",
+              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
+              "nativeQueryRef": "SECAO",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SETOR"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
+              "nativeQueryRef": "SETOR",
               "active": false
             }
           ]
@@ -57,7 +72,7 @@
         "levels": [
           {
             "queryRefs": [
-              "dFilial.COLIGADA"
+              "FPBI_DEPARTAMENTO.DEPARTAMENTO"
             ],
             "isCollapsed": true,
             "identityKeys": [
@@ -65,10 +80,10 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "COLIGADA"
+                  "Property": "DEPARTAMENTO"
                 }
               }
             ],
@@ -76,39 +91,72 @@
           },
           {
             "queryRefs": [
-              "dFilial.FILIAL"
+              "FPBI_DEPARTAMENTO.SECAO"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FPBI_DEPARTAMENTO.SETOR"
             ],
             "isCollapsed": true,
             "isPinned": true
           }
         ],
-        "root": {}
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' ADMINISTRACAO'"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' AUDITORIA'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' INDUSTRIA INDUSTRIALIZADOS'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
       }
     ],
     "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -215,6 +263,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -282,42 +343,100 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "COLIGADA",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "c1f96f92935ea0534235",
+        "name": "273f24bca644b375f4f3",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "dFilial"
+                "Entity": "FPBI_DEPARTAMENTO"
               }
             },
-            "Property": "COLIGADA"
+            "Property": "DEPARTAMENTO"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "aced74fed11cffdce2cc",
+        "name": "363c671a8ea3eeeae503",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "dFilial"
+                "Entity": "FPBI_DEPARTAMENTO"
               }
             },
-            "Property": "FILIAL"
+            "Property": "SECAO"
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "13497feb6fb3d09c314b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SETOR"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "731cc24d4db635da2933",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd HE acima 10H"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Qtd HE acima 10H"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
       }
     ]
   }
