@@ -416,5 +416,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "65c5d4c3d24789ffa9d7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "R$ HE"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

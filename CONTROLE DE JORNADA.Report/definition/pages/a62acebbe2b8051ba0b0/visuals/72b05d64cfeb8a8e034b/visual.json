@@ -409,5 +409,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b83537d6fbfe68353cd9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Negativo"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

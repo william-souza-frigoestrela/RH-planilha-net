@@ -23,6 +23,20 @@
                       "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
                     }
                   },
+                  "Property": "COLIGADA_FILIAL"
+                }
+              },
+              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.COLIGADA_FILIAL",
+              "nativeQueryRef": "COLIGADA_FILIAL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                    }
+                  },
                   "Property": "NOME"
                 }
               },
@@ -1031,6 +1045,69 @@
               }
             },
             "Property": "HORAS_EXTRAS"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c981ab52cbb44cfdd24a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Hierarquia RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Hierarquia RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "e314f3e8850dbe5589e1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "COLIGADA_FILIAL"
           }
         },
         "type": "Categorical"

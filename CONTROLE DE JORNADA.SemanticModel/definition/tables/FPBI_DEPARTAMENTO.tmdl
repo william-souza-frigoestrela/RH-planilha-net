@@ -2,24 +2,20 @@ table FPBI_DEPARTAMENTO
 	lineageTag: 987dcbc8-7389-4ffd-88d5-0e3e8705b122
 
 	column CODCOLIGADA
-		dataType: double
+		dataType: string
 		lineageTag: 72fe8f66-b90e-4bc0-a26b-675c780a87ea
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: CODCOLIGADA
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column CODFILIAL
-		dataType: double
+		dataType: string
 		lineageTag: ea86dd30-6bdf-474b-a6bc-61fcb238d473
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: CODFILIAL
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column CODIGO
 		dataType: string
@@ -77,15 +73,25 @@ table FPBI_DEPARTAMENTO
 
 		annotation SummarizationSetBy = Automatic
 
+	column COLIGADA-FILIAL
+		dataType: string
+		lineageTag: 523086b3-a82c-4952-bbf1-f292a50475cb
+		summarizeBy: none
+		sourceColumn: COLIGADA-FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
 	partition FPBI_DEPARTAMENTO = m
 		mode: import
 		source =
 				let
 				    Fonte = Oracle.Database("RM", [HierarchicalNavigation=true]),
 				    RM = Fonte{[Schema="RM"]}[Data],
-				    FPBI_DEPARTAMENTO1 = RM{[Name="FPBI_DEPARTAMENTO"]}[Data]
+				    FPBI_DEPARTAMENTO1 = RM{[Name="FPBI_DEPARTAMENTO"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(FPBI_DEPARTAMENTO1,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "COLIGADA-FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text)
 				in
-				    FPBI_DEPARTAMENTO1
+				    #"Coluna Mesclada Inserida"
 
 	annotation PBI_NavigationStepName = Navegação
 

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "ea9f2b5ce060f197108f",
+  "name": "b7d0907a98cae5350756",
   "position": {
-    "x": 254.48275862068965,
-    "y": 23.054187192118228,
-    "z": 8001,
-    "height": 70.935960591133011,
-    "width": 299.70443349753697,
-    "tabOrder": 8001
+    "x": 273.15136476426795,
+    "y": 24.350703060380479,
+    "z": 3008,
+    "height": 70.934656741108356,
+    "width": 299.61952026468157,
+    "tabOrder": 3007
   },
   "visual": {
     "visualType": "slicer",
@@ -88,7 +88,7 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "'12 - TABOADO RAÇÃO'"
+                    "Value": "'1 - FRIGOESTRELA'"
                   }
                 }
               ],
@@ -98,7 +98,17 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "'1 - FRIGOESTRELA'"
+                    "Value": "'14 - ETIVALDO GOMES FILHO'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'2 - ALIMENTOS ESTRELA'"
                   }
                 }
               ],
@@ -490,7 +500,7 @@
         "howCreated": "User"
       },
       {
-        "name": "7e2ebca2f007096bed10",
+        "name": "8ce6e7afff90a0d7afda",
         "field": {
           "Column": {
             "Expression": {
@@ -504,7 +514,7 @@
         "type": "Categorical"
       },
       {
-        "name": "cc4e4780494999febf38",
+        "name": "f28930282a3c4a27bc58",
         "field": {
           "Column": {
             "Expression": {

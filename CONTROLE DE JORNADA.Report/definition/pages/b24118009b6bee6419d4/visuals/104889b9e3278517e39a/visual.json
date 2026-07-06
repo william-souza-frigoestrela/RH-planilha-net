@@ -23,6 +23,20 @@
                       "Entity": "Planilha NET- 4 – Faltas"
                     }
                   },
+                  "Property": "COLIGADA_FILIAL"
+                }
+              },
+              "queryRef": "Planilha NET- 4 – Faltas.COLIGADA_FILIAL",
+              "nativeQueryRef": "COLIGADA_FILIAL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET- 4 – Faltas"
+                    }
+                  },
                   "Property": "NOME"
                 }
               },
@@ -574,6 +588,69 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "c1f5d684af0a3d884dce",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 4 – Faltas"
+              }
+            },
+            "Property": "COLIGADA_FILIAL"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "eedd3d69169bd20c5f05",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Hierarquia RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Hierarquia RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
       }
     ]
   }

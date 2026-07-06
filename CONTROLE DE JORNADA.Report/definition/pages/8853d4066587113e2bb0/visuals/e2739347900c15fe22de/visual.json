@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "e2739347900c15fe22de",
   "position": {
-    "x": 366.20689655172413,
-    "y": 24.827586206896552,
+    "x": 366.29249011857706,
+    "y": 25.296442687747035,
     "z": 2006,
-    "height": 70.935960591133011,
-    "width": 299.70443349753697,
+    "height": 163.92094861660078,
+    "width": 299.50988142292488,
     "tabOrder": 2006
   },
   "visual": {
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                      "Entity": "dFilial"
                     }
                   },
                   "Property": "COLIGADA"
                 }
               },
-              "queryRef": "Planilha NET 25 - Funcionários com batida.COLIGADA",
+              "queryRef": "dFilial.COLIGADA",
               "nativeQueryRef": "COLIGADA",
               "active": true
             },
@@ -35,20 +35,99 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                      "Entity": "dFilial"
                     }
                   },
                   "Property": "FILIAL"
                 }
               },
-              "queryRef": "Planilha NET 25 - Funcionários com batida.FILIAL",
+              "queryRef": "dFilial.FILIAL",
               "nativeQueryRef": "FILIAL",
-              "active": false
+              "active": true
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "dFilial.COLIGADA"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dFilial"
+                    }
+                  },
+                  "Property": "COLIGADA"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "dFilial.FILIAL"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'14 - ETIVALDO GOMES FILHO'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'2 - ALIMENTOS ESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'12 - TABOADO RAÇÃO'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
     "objects": {
       "general": [
         {
@@ -74,11 +153,18 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -244,12 +330,61 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "fe8d0043d8d408cc277b",
+        "name": "ceae6413e316e3abe04a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Slicer RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Slicer RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "cd71748a7fdb9b1a0687",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET 25 - Funcionários com batida"
+                "Entity": "dFilial"
               }
             },
             "Property": "COLIGADA"
@@ -258,12 +393,12 @@
         "type": "Categorical"
       },
       {
-        "name": "a2e0815409b16bb4de78",
+        "name": "8cd2da4d258b4d144764",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET 25 - Funcionários com batida"
+                "Entity": "dFilial"
               }
             },
             "Property": "FILIAL"

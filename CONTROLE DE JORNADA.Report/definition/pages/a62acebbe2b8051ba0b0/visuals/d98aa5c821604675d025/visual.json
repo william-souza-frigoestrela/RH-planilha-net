@@ -23,6 +23,20 @@
                       "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
+                  "Property": "COLIGADA_FILIAL"
+                }
+              },
+              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.COLIGADA_FILIAL",
+              "nativeQueryRef": "COLIGADA_FILIAL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                    }
+                  },
                   "Property": "NOME"
                 }
               },
@@ -632,6 +646,69 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "064075b29b6331f64ab1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Hierarquia RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Hierarquia RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "71275c2114979b334fb8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+              }
+            },
+            "Property": "COLIGADA_FILIAL"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
