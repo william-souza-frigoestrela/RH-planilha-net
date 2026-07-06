@@ -73,6 +73,80 @@ table Medidas
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
+	measure 'Filtro Slicer RLS' = ```
+			
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			
+			-- 1. Verifica se o usuário logado está mapeado na tabela de restrições
+			VAR _UsuarioEstaMapeado = 
+			    NOT(ISBLANK(
+			        CALCULATE(
+			            COUNTROWS('dAcessoUsuarios'), 
+			            ALL('dFilial'),
+			            'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
+			        )
+			    ))
+			
+			-- 2. Lista as filiais autorizadas para a Amanda
+			VAR _FiliaisAutorizadas = 
+			    CALCULATETABLE(
+			        VALUES('dAcessoUsuarios'[COLIGADA-FILIAL]),
+			        ALL('dFilial'),
+			        'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
+			    )
+			
+			-- 3. Captura o ID da linha que a árvore do Slicer está renderizando
+			VAR _FilialSendoDesenhada = SELECTEDVALUE('dFilial'[ID_FILIAL])
+			
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(),
+			        1, -- Usuário Master: Vê todas as opções
+			        
+			        -- Para usuário restrito: Mostra o nó pai (BLANK) ou se a filial for a autorizada
+			        IF(ISBLANK(_FilialSendoDesenhada) || _FilialSendoDesenhada IN _FiliaisAutorizadas, 1, 0)
+			    )
+			```
+		formatString: 0
+		lineageTag: 20da9c5f-d812-4499-9ff1-30a729a32d78
+
+	measure 'Filtro Hierarquia RLS' = ```
+			
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			
+			-- 1. Checa se o usuário logado está mapeado na tabela de restrições
+			VAR _UsuarioEstaMapeado = 
+			    NOT(ISBLANK(
+			        CALCULATE(
+			            COUNTROWS('dAcessoUsuarios'), 
+			            ALL('dFilial'),
+			            'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
+			        )
+			    ))
+			
+			-- 2. Captura quantas filiais existem no total para a coligada que está no contexto
+			VAR _TotalFiliaisDaColigada = CALCULATE(DISTINCTCOUNT('dFilial'[FILIAL]), ALLSELECTED('dFilial'[FILIAL]))
+			
+			-- 3. Verifica se o usuário selecionou uma quantidade menor de filiais do que o nó pai completo
+			VAR _FilialEstaSelecionadaDiretamente = 
+			    ISFILTERED('dFilial'[FILIAL]) && HASONEVALUE('dFilial'[FILIAL])
+			
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(),
+			        1, -- Usuário Master: Vê tudo sempre livremente
+			        
+			        -- Para usuário restrito (Amanda):
+			        IF(
+			            _FilialEstaSelecionadaDiretamente = TRUE(),
+			            1, -- Só retorna 1 se o nó folha (Filial) específico estiver ativamente filtrado individualmente
+			            0  -- Se marcar o Pai inteiro (todas as filiais da coligada ativas) ou limpar, bloqueia
+			        )
+			    )
+			```
+		formatString: 0
+		lineageTag: 4baf5fa0-e00b-4f70-b261-5edb9eb2be26
+
 	column Column
 		isHidden
 		formatString: 0

@@ -1,0 +1,16 @@
+role 'Acesso filial'
+	modelPermission: read
+
+	tablePermission dFilial =
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			VAR _UsuarioEstaMapeado = NOT(ISBLANK(CALCULATE(COUNTROWS('dAcessoUsuarios'), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)))
+			VAR _FiliaisAutorizadas = CALCULATETABLE(VALUES('dAcessoUsuarios'[COLIGADA-FILIAL]), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(),
+			        TRUE(),
+			        [ID_FILIAL] IN _FiliaisAutorizadas
+			    )
+
+	annotation PBI_Id = d1ff813bedf84067965da82bca2da128
+

@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                      "Entity": "dFilial"
                     }
                   },
                   "Property": "COLIGADA"
                 }
               },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.COLIGADA",
-              "nativeQueryRef": "COLIGADA",
+              "queryRef": "dFilial.COLIGADA",
+              "nativeQueryRef": "COLIGADA1",
               "active": true
             },
             {
@@ -35,20 +35,89 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                      "Entity": "dFilial"
                     }
                   },
                   "Property": "FILIAL"
                 }
               },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.FILIAL",
-              "nativeQueryRef": "FILIAL",
-              "active": false
+              "queryRef": "dFilial.FILIAL",
+              "nativeQueryRef": "FILIAL1",
+              "active": true
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "dFilial.COLIGADA"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dFilial"
+                    }
+                  },
+                  "Property": "COLIGADA"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "dFilial.FILIAL"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'14 - ETIVALDO GOMES FILHO'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'2 - ALIMENTOS ESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
     "objects": {
       "general": [
         {
@@ -64,6 +133,144 @@
                   }
                 }
               }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "dFilial",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "COLIGADA"
+                            }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "FILIAL"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'1 - FRIGOESTRELA'"
+                              }
+                            },
+                            {
+                              "Literal": {
+                                "Value": "'4 - TUPÃ'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "Annotations": {
+                      "filterExpressionMetadata": {
+                        "expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dFilial"
+                                }
+                              },
+                              "Property": "COLIGADA"
+                            }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dFilial"
+                                }
+                              },
+                              "Property": "FILIAL"
+                            }
+                          }
+                        ],
+                        "decomposedIdentities": {
+                          "values": [
+                            [
+                              {
+                                "0": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'1 - FRIGOESTRELA'"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "1": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'4 - TUPÃ'"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          ],
+                          "columns": [
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dFilial"
+                                    }
+                                  },
+                                  "Property": "COLIGADA"
+                                }
+                              }
+                            },
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dFilial"
+                                    }
+                                  },
+                                  "Property": "FILIAL"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "valueMap": [
+                          {
+                            "0": "1 - FRIGOESTRELA",
+                            "1": "4 - TUPÃ"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
             }
           }
         }
@@ -74,7 +281,7 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -244,12 +451,12 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "85c69c11409dca3039cb",
+        "name": "874c741a21ca07c53adf",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                "Entity": "dFilial"
               }
             },
             "Property": "COLIGADA"
@@ -258,18 +465,67 @@
         "type": "Categorical"
       },
       {
-        "name": "188f5dd371f3534ae57e",
+        "name": "a62304db7a66ba1cf3cd",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                "Entity": "dFilial"
               }
             },
             "Property": "FILIAL"
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "0407bd472d0c2ff12b97",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Slicer RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Slicer RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
       }
     ]
   }

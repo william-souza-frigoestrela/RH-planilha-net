@@ -23,6 +23,20 @@
                       "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
+                  "Property": "COLIGADA_FILIAL"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.COLIGADA_FILIAL",
+              "nativeQueryRef": "COLIGADA_FILIAL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
                   "Property": "NOME"
                 }
               },
@@ -204,16 +218,16 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Medidas"
+                    "Entity": "Planilha NET 25 - Funcionários com batida"
                   }
                 },
-                "Property": "R$ HE"
+                "Property": "FUNCAO"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -957,6 +971,69 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "f5ac104851da975409c8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Hierarquia RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Hierarquia RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "9a9c106697c296ba05bd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "COLIGADA_FILIAL"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

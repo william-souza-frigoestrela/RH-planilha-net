@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 142.20910336968947,
+        "x": 0,
         "y": 0
       },
       "nodes": [
@@ -24,8 +24,8 @@
         },
         {
           "location": {
-            "x": 69.524450536292647,
-            "y": 689.04261382249
+            "x": 150.702572090366,
+            "y": 700.23959610581039
           },
           "nodeIndex": "dCalendario",
           "nodeLineageTag": "ea316fd7-0e83-4318-83dd-f03bf5991763",
@@ -33,7 +33,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 9,
+          "zIndex": 7,
           "expandedHeight": 200
         },
         {
@@ -52,7 +52,7 @@
         },
         {
           "location": {
-            "x": 1255.6492884845738,
+            "x": 1084.9983644409465,
             "y": 0
           },
           "nodeIndex": "Planilha NET- 27 – Acima de 10 Horas - Valor",
@@ -65,10 +65,11 @@
         },
         {
           "location": {
-            "x": 2046.0815714355942,
-            "y": 480.9788115
+            "x": 2409.9834956435097,
+            "y": 75.088203729633108
           },
           "nodeIndex": "Medidas",
+          "nodeLineageTag": "170cedcf-a8b2-4ecf-a449-acfd70f565b4",
           "size": {
             "height": 200,
             "width": 234
@@ -77,10 +78,11 @@
         },
         {
           "location": {
-            "x": 1762.0815714355942,
+            "x": 1435.0006336853087,
             "y": 0
           },
           "nodeIndex": "Planilha NET 25 - Funcionários com batida",
+          "nodeLineageTag": "c2f08de6-f508-4102-a920-eee2f5b3d2c4",
           "size": {
             "height": 176,
             "width": 234
@@ -104,25 +106,38 @@
         },
         {
           "location": {
-            "x": 1149.0006244355939,
-            "y": 626.96474100000012
+            "x": 786.90348385904906,
+            "y": 692.70280779482653
           },
           "nodeIndex": "FPBI_DEPARTAMENTO",
           "nodeLineageTag": "987dcbc8-7389-4ffd-88d5-0e3e8705b122",
           "size": {
-            "height": 104,
+            "height": 296,
             "width": 234
           },
-          "zIndex": 7,
-          "expandedHeight": 296
+          "zIndex": 9
         },
         {
           "location": {
-            "x": 472.52215953176449,
-            "y": 658.1076314345504
+            "x": 467.78185608610818,
+            "y": 686.54945210848837
           },
           "nodeIndex": "dFilial",
           "nodeLineageTag": "d4645265-f0d2-4c4e-ba56-91f0a4cf298a",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 10,
+          "expandedHeight": 200
+        },
+        {
+          "location": {
+            "x": 461.82422142021721,
+            "y": 1047.2114879230428
+          },
+          "nodeIndex": "dAcessoUsuarios",
+          "nodeLineageTag": "93534a41-6361-47de-9943-9f61e65b8d20",
           "size": {
             "height": 200,
             "width": 234
@@ -131,7 +146,7 @@
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 63.287087723234073,
+      "zoomValue": 56.447393005377791,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

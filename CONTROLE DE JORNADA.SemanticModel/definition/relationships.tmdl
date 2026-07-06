@@ -46,3 +46,14 @@ relationship 3e616d1c-e7da-9d5c-867c-c50b30d10c9f
 	fromColumn: 'Planilha NET- 27 – Acima de 10 Horas - Valor'.DATAREFERENCIA
 	toColumn: dCalendario.Date
 
+relationship b43dc3bb-b511-e816-aee5-9dffbcc5b6b4
+	crossFilteringBehavior: bothDirections
+	fromColumn: dAcessoUsuarios.COLIGADA-FILIAL
+	toColumn: dFilial.ID_FILIAL
+
+relationship 545db0ec-e410-3c6a-2fc8-0995531a2376
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: dAcessoUsuarios.COLIGADA-FILIAL
+	toColumn: FPBI_DEPARTAMENTO.COLIGADA-FILIAL
+
