@@ -402,5 +402,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f9f58872debc0f2f4b74",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Positivo"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

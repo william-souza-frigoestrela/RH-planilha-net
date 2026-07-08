@@ -43,7 +43,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SETOR",
               "nativeQueryRef": "SETOR",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -58,7 +58,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SECAO",
               "nativeQueryRef": "SECAO",
-              "active": false
+              "active": true
             }
           ]
         }
@@ -116,7 +116,42 @@
             "isPinned": true
           }
         ],
-        "root": {}
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' INDUSTRIA INDUSTRIALIZADOS'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' TRANSPORTES'"
+                  }
+                }
+              ],
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' ALMOXARIFADO TRANSPORTES'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "objects": {
@@ -127,13 +162,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'Dropdown'"
-                }
-              }
-            },
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

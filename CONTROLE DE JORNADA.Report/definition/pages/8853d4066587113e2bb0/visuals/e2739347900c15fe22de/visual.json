@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "e2739347900c15fe22de",
   "position": {
-    "x": 366.29249011857706,
-    "y": 25.296442687747035,
+    "x": 366.68693009118545,
+    "y": 25.288753799392097,
     "z": 2006,
-    "height": 163.92094861660078,
-    "width": 299.50988142292488,
+    "height": 66.139817629179333,
+    "width": 299.57446808510639,
     "tabOrder": 2006
   },
   "visual": {
@@ -93,36 +93,6 @@
                 }
               ],
               "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'14 - ETIVALDO GOMES FILHO'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'2 - ALIMENTOS ESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'12 - TABOADO RAÇÃO'"
-                  }
-                }
-              ],
-              "isToggled": true
             }
           ]
         }
@@ -142,6 +112,144 @@
                     }
                   }
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "dFilial",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "COLIGADA"
+                            }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "FILIAL"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'1 - FRIGOESTRELA'"
+                              }
+                            },
+                            {
+                              "Literal": {
+                                "Value": "'2 - INDUSTRIA ESTRELA'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "Annotations": {
+                      "filterExpressionMetadata": {
+                        "expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dFilial"
+                                }
+                              },
+                              "Property": "COLIGADA"
+                            }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dFilial"
+                                }
+                              },
+                              "Property": "FILIAL"
+                            }
+                          }
+                        ],
+                        "decomposedIdentities": {
+                          "values": [
+                            [
+                              {
+                                "0": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'1 - FRIGOESTRELA'"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "1": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'2 - INDUSTRIA ESTRELA'"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          ],
+                          "columns": [
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dFilial"
+                                    }
+                                  },
+                                  "Property": "COLIGADA"
+                                }
+                              }
+                            },
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dFilial"
+                                    }
+                                  },
+                                  "Property": "FILIAL"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "valueMap": [
+                          {
+                            "0": "1 - FRIGOESTRELA",
+                            "1": "2 - INDUSTRIA ESTRELA"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }

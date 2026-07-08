@@ -109,16 +109,6 @@
                               },
                               "Property": "Mês nome"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "d"
-                                }
-                              },
-                              "Property": "Data"
-                            }
                           }
                         ],
                         "Values": [
@@ -126,11 +116,6 @@
                             {
                               "Literal": {
                                 "Value": "'Mês atual'"
-                              }
-                            },
-                            {
-                              "Literal": {
-                                "Value": "'Ontem'"
                               }
                             }
                           ]
@@ -149,16 +134,6 @@
                               },
                               "Property": "Mês nome"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Entity": "dCalendario"
-                                }
-                              },
-                              "Property": "Data"
-                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -169,15 +144,6 @@
                                   {
                                     "Literal": {
                                       "Value": "'Mês atual'"
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "1": [
-                                  {
-                                    "Literal": {
-                                      "Value": "'Ontem'"
                                     }
                                   }
                                 ]
@@ -196,25 +162,12 @@
                                   "Property": "Mês nome"
                                 }
                               }
-                            },
-                            {
-                              "value": {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "dCalendario"
-                                    }
-                                  },
-                                  "Property": "Data"
-                                }
-                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "Mês atual",
-                            "1": "Ontem"
+                            "0": "Mês atual"
                           }
                         ]
                       }

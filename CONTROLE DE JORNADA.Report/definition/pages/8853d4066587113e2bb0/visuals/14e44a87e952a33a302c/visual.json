@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "14e44a87e952a33a302c",
   "position": {
     "x": 39.014778325123153,
@@ -15,20 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 25 - Funcionários com batida"
-                    }
-                  },
-                  "Property": "COLIGADA_FILIAL"
-                }
-              },
-              "queryRef": "Planilha NET 25 - Funcionários com batida.COLIGADA_FILIAL",
-              "nativeQueryRef": "COLIGADA_FILIAL"
-            },
             {
               "field": {
                 "Column": {
@@ -287,13 +273,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'fitToContent'"
-                }
-              }
-            },
-            "defaultColumnWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "90D"
                 }
               }
             },
@@ -690,6 +669,20 @@
           "selector": {
             "metadata": "Planilha NET 25 - Funcionários com batida.FUNCAO"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "35.890574620524866D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planilha NET 25 - Funcionários com batida.SAI3"
+          }
         }
       ],
       "accessibility": [
@@ -1020,20 +1013,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "9a9c106697c296ba05bd",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 25 - Funcionários com batida"
-              }
-            },
-            "Property": "COLIGADA_FILIAL"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

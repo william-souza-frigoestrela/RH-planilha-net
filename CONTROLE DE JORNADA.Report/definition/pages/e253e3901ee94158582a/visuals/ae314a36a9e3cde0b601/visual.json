@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "ae314a36a9e3cde0b601",
   "position": {
     "x": 39.13497390007457,
@@ -15,20 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-                    }
-                  },
-                  "Property": "COLIGADA_FILIAL"
-                }
-              },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.COLIGADA_FILIAL",
-              "nativeQueryRef": "COLIGADA_FILIAL"
-            },
             {
               "field": {
                 "Column": {
@@ -241,7 +227,7 @@
                 "Property": "NOME"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -301,13 +287,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'fitToContent'"
-                }
-              }
-            },
-            "defaultColumnWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "90D"
                 }
               }
             },
@@ -1097,20 +1076,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "e314f3e8850dbe5589e1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "COLIGADA_FILIAL"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
