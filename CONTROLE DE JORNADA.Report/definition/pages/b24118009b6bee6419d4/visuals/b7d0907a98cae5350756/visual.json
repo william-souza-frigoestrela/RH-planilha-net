@@ -43,7 +43,7 @@
               },
               "queryRef": "dFilial.FILIAL",
               "nativeQueryRef": "FILIAL",
-              "active": true
+              "active": false
             }
           ]
         }
@@ -82,40 +82,7 @@
             "isPinned": true
           }
         ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'1 - FRIGOESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'14 - ETIVALDO GOMES FILHO'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'2 - ALIMENTOS ESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            }
-          ]
-        }
+        "root": {}
       }
     ],
     "objects": {
@@ -174,12 +141,12 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'1 - FRIGOESTRELA'"
+                                "Value": "'14 - ETIVALDO GOMES FILHO'"
                               }
                             },
                             {
                               "Literal": {
-                                "Value": "'4 - TUPÃ'"
+                                "Value": "'77 - FAZENDA TURBILHÃO'"
                               }
                             }
                           ]
@@ -217,7 +184,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'1 - FRIGOESTRELA'"
+                                      "Value": "'14 - ETIVALDO GOMES FILHO'"
                                     }
                                   }
                                 ]
@@ -226,7 +193,7 @@
                                 "1": [
                                   {
                                     "Literal": {
-                                      "Value": "'4 - TUPÃ'"
+                                      "Value": "'77 - FAZENDA TURBILHÃO'"
                                     }
                                   }
                                 ]
@@ -262,8 +229,8 @@
                         },
                         "valueMap": [
                           {
-                            "0": "1 - FRIGOESTRELA",
-                            "1": "4 - TUPÃ"
+                            "0": "14 - ETIVALDO GOMES FILHO",
+                            "1": "77 - FAZENDA TURBILHÃO"
                           }
                         ]
                       }
@@ -281,7 +248,7 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

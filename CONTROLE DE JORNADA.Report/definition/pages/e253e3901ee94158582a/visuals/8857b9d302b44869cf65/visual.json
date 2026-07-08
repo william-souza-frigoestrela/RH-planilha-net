@@ -43,7 +43,7 @@
               },
               "queryRef": "dFilial.FILIAL",
               "nativeQueryRef": "FILIAL1",
-              "active": true
+              "active": false
             }
           ]
         }
@@ -82,40 +82,7 @@
             "isPinned": true
           }
         ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'14 - ETIVALDO GOMES FILHO'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'2 - ALIMENTOS ESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'1 - FRIGOESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            }
-          ]
-        }
+        "root": {}
       }
     ],
     "objects": {

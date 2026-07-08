@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "104889b9e3278517e39a",
   "position": {
     "x": 39.203675344563557,
@@ -15,20 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
-                    }
-                  },
-                  "Property": "COLIGADA_FILIAL"
-                }
-              },
-              "queryRef": "Planilha NET- 4 – Faltas.COLIGADA_FILIAL",
-              "nativeQueryRef": "COLIGADA_FILIAL"
-            },
             {
               "field": {
                 "Column": {
@@ -133,13 +119,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'fitToContent'"
-                }
-              }
-            },
-            "defaultColumnWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "90D"
                 }
               }
             },
@@ -585,20 +564,6 @@
               }
             },
             "Property": "DATA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c1f5d684af0a3d884dce",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 4 – Faltas"
-              }
-            },
-            "Property": "COLIGADA_FILIAL"
           }
         },
         "type": "Categorical"

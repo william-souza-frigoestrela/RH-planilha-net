@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "d98aa5c821604675d025",
   "position": {
     "x": 39.203675344563557,
@@ -15,20 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-                    }
-                  },
-                  "Property": "COLIGADA_FILIAL"
-                }
-              },
-              "queryRef": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data.COLIGADA_FILIAL",
-              "nativeQueryRef": "COLIGADA_FILIAL"
-            },
             {
               "field": {
                 "Column": {
@@ -130,13 +116,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'fitToContent'"
-                }
-              }
-            },
-            "defaultColumnWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "90D"
                 }
               }
             },
@@ -695,20 +674,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "71275c2114979b334fb8",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
-              }
-            },
-            "Property": "COLIGADA_FILIAL"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
