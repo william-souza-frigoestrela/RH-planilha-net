@@ -125,28 +125,13 @@
                               },
                               "Property": "COLIGADA"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "d"
-                                }
-                              },
-                              "Property": "FILIAL"
-                            }
                           }
                         ],
                         "Values": [
                           [
                             {
                               "Literal": {
-                                "Value": "'1 - FRIGOESTRELA'"
-                              }
-                            },
-                            {
-                              "Literal": {
-                                "Value": "'4 - TUPÃ'"
+                                "Value": "'5 - OESTE GRAXARIA'"
                               }
                             }
                           ]
@@ -165,16 +150,6 @@
                               },
                               "Property": "COLIGADA"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Entity": "dFilial"
-                                }
-                              },
-                              "Property": "FILIAL"
-                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -184,16 +159,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'1 - FRIGOESTRELA'"
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "1": [
-                                  {
-                                    "Literal": {
-                                      "Value": "'4 - TUPÃ'"
+                                      "Value": "'5 - OESTE GRAXARIA'"
                                     }
                                   }
                                 ]
@@ -212,25 +178,12 @@
                                   "Property": "COLIGADA"
                                 }
                               }
-                            },
-                            {
-                              "value": {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "dFilial"
-                                    }
-                                  },
-                                  "Property": "FILIAL"
-                                }
-                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "1 - FRIGOESTRELA",
-                            "1": "4 - TUPÃ"
+                            "0": "5 - OESTE GRAXARIA"
                           }
                         ]
                       }

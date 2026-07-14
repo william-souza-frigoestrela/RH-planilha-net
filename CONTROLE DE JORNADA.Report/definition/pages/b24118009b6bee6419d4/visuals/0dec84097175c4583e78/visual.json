@@ -158,6 +158,16 @@
                               },
                               "Property": "Mês nome"
                             }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "Data"
+                            }
                           }
                         ],
                         "Values": [
@@ -165,6 +175,11 @@
                             {
                               "Literal": {
                                 "Value": "'Mês atual'"
+                              }
+                            },
+                            {
+                              "Literal": {
+                                "Value": "'11/07/2026'"
                               }
                             }
                           ]
@@ -183,6 +198,16 @@
                               },
                               "Property": "Mês nome"
                             }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dCalendario"
+                                }
+                              },
+                              "Property": "Data"
+                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -193,6 +218,15 @@
                                   {
                                     "Literal": {
                                       "Value": "'Mês atual'"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "1": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'11/07/2026'"
                                     }
                                   }
                                 ]
@@ -211,12 +245,25 @@
                                   "Property": "Mês nome"
                                 }
                               }
+                            },
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dCalendario"
+                                    }
+                                  },
+                                  "Property": "Data"
+                                }
+                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "Mês atual"
+                            "0": "Mês atual",
+                            "1": "11/07/2026"
                           }
                         ]
                       }
