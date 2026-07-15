@@ -43,12 +43,61 @@
               },
               "queryRef": "dCalendario.Data",
               "nativeQueryRef": "Data",
-              "active": false
+              "active": true
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "dCalendario.Mês nome"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dCalendario"
+                    }
+                  },
+                  "Property": "Mês nome"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "dCalendario.Data"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'Mês atual'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
     "objects": {
       "data": [
         {
@@ -109,6 +158,16 @@
                               },
                               "Property": "Mês nome"
                             }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "Data"
+                            }
                           }
                         ],
                         "Values": [
@@ -116,6 +175,11 @@
                             {
                               "Literal": {
                                 "Value": "'Mês atual'"
+                              }
+                            },
+                            {
+                              "Literal": {
+                                "Value": "'02/07/2026'"
                               }
                             }
                           ]
@@ -134,6 +198,16 @@
                               },
                               "Property": "Mês nome"
                             }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dCalendario"
+                                }
+                              },
+                              "Property": "Data"
+                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -144,6 +218,15 @@
                                   {
                                     "Literal": {
                                       "Value": "'Mês atual'"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "1": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'02/07/2026'"
                                     }
                                   }
                                 ]
@@ -162,12 +245,25 @@
                                   "Property": "Mês nome"
                                 }
                               }
+                            },
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dCalendario"
+                                    }
+                                  },
+                                  "Property": "Data"
+                                }
+                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "Mês atual"
+                            "0": "Mês atual",
+                            "1": "02/07/2026"
                           }
                         ]
                       }

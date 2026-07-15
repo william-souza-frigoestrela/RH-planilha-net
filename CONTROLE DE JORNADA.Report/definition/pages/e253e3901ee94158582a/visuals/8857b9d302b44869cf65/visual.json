@@ -43,7 +43,7 @@
               },
               "queryRef": "dFilial.FILIAL",
               "nativeQueryRef": "FILIAL1",
-              "active": false
+              "active": true
             }
           ]
         }
@@ -82,7 +82,20 @@
             "isPinned": true
           }
         ],
-        "root": {}
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
       }
     ],
     "objects": {
@@ -146,7 +159,7 @@
                             },
                             {
                               "Literal": {
-                                "Value": "'4 - TUPÃ'"
+                                "Value": "'2 - INDUSTRIA ESTRELA'"
                               }
                             }
                           ]
@@ -193,7 +206,7 @@
                                 "1": [
                                   {
                                     "Literal": {
-                                      "Value": "'4 - TUPÃ'"
+                                      "Value": "'2 - INDUSTRIA ESTRELA'"
                                     }
                                   }
                                 ]
@@ -230,7 +243,7 @@
                         "valueMap": [
                           {
                             "0": "1 - FRIGOESTRELA",
-                            "1": "4 - TUPÃ"
+                            "1": "2 - INDUSTRIA ESTRELA"
                           }
                         ]
                       }

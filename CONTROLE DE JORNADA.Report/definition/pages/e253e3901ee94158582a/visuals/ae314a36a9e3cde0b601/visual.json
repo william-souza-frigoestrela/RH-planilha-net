@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "ae314a36a9e3cde0b601",
   "position": {
     "x": 39.13497390007457,
@@ -224,10 +224,10 @@
                     "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
                   }
                 },
-                "Property": "NOME"
+                "Property": "HORAS_TRAB"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
