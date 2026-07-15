@@ -833,35 +833,8 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "f2823fbf9ce6acab8c7f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "NOME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "43f95928663840599259",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "FUNCAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "745b71431c4100a38486",
+        "ordinal": 0,
         "field": {
           "Column": {
             "Expression": {
@@ -876,6 +849,7 @@
       },
       {
         "name": "c5036e4d1e8f84b0f14f",
+        "ordinal": 1,
         "field": {
           "Column": {
             "Expression": {
@@ -889,21 +863,8 @@
         "type": "Categorical"
       },
       {
-        "name": "59a52c5345a33a188573",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "SAI1"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "6dd131072a36869d71bc",
+        "ordinal": 2,
         "field": {
           "Column": {
             "Expression": {
@@ -917,21 +878,8 @@
         "type": "Categorical"
       },
       {
-        "name": "358e30a2cbd91cd1e7bf",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "SAI2"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "cad136582c6c32399cfa",
+        "ordinal": 3,
         "field": {
           "Column": {
             "Expression": {
@@ -945,21 +893,8 @@
         "type": "Categorical"
       },
       {
-        "name": "6f62c2c32f22239cb84a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "SAI3"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "df962d031bf3b171a318",
+        "ordinal": 4,
         "field": {
           "Column": {
             "Expression": {
@@ -973,63 +908,8 @@
         "type": "Categorical"
       },
       {
-        "name": "1c7848acfba6e3f7d706",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "SAI4"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "dee2f8130d7cd1143df9",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "HORAS_BASE"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1d46406adc52f2f0b0cf",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "HORAS_TRAB"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "ea9098d8dc431bc71bb2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "HORAS_EXTRAS"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "c981ab52cbb44cfdd24a",
+        "ordinal": 5,
         "field": {
           "Measure": {
             "Expression": {
@@ -1076,7 +956,193 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "43f95928663840599259",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "FUNCAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6fb2f68d016c7c7544f8",
+        "ordinal": 7,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Slicer Departamento RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Slicer Departamento RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "dee2f8130d7cd1143df9",
+        "ordinal": 8,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "HORAS_BASE"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ea9098d8dc431bc71bb2",
+        "ordinal": 9,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "HORAS_EXTRAS"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1d46406adc52f2f0b0cf",
+        "ordinal": 10,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "HORAS_TRAB"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f2823fbf9ce6acab8c7f",
+        "ordinal": 11,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "59a52c5345a33a188573",
+        "ordinal": 12,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "SAI1"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "358e30a2cbd91cd1e7bf",
+        "ordinal": 13,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "SAI2"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6f62c2c32f22239cb84a",
+        "ordinal": 14,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "SAI3"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1c7848acfba6e3f7d706",
+        "ordinal": 15,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "SAI4"
+          }
+        },
+        "type": "Categorical"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

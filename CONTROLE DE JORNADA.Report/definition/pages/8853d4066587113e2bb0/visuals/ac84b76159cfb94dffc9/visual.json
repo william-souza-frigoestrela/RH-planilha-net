@@ -199,7 +199,7 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -357,6 +357,7 @@
     "filters": [
       {
         "name": "ba832ba155c67db59a90",
+        "ordinal": 0,
         "field": {
           "Column": {
             "Expression": {
@@ -370,35 +371,8 @@
         "type": "Categorical"
       },
       {
-        "name": "28d5ee92f7b4a5c25e18",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a1c75dcfab3e610210c2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "cbd5c9735d39af721d4d",
+        "ordinal": 1,
         "field": {
           "Measure": {
             "Expression": {
@@ -449,7 +423,88 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "a1c75dcfab3e610210c2",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ada4902ea701cccaaca5",
+        "ordinal": 3,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Slicer Departamento RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Slicer Departamento RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "28d5ee92f7b4a5c25e18",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SETOR"
+          }
+        },
+        "type": "Categorical"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

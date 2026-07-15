@@ -43,7 +43,7 @@
               },
               "queryRef": "dFilial.FILIAL",
               "nativeQueryRef": "FILIAL",
-              "active": false
+              "active": true
             }
           ]
         }
@@ -82,7 +82,20 @@
             "isPinned": true
           }
         ],
-        "root": {}
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
       }
     ],
     "objects": {
@@ -141,12 +154,12 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'14 - ETIVALDO GOMES FILHO'"
+                                "Value": "'1 - FRIGOESTRELA'"
                               }
                             },
                             {
                               "Literal": {
-                                "Value": "'77 - FAZENDA TURBILHÃO'"
+                                "Value": "'2 - INDUSTRIA ESTRELA'"
                               }
                             }
                           ]
@@ -184,7 +197,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'14 - ETIVALDO GOMES FILHO'"
+                                      "Value": "'1 - FRIGOESTRELA'"
                                     }
                                   }
                                 ]
@@ -193,7 +206,7 @@
                                 "1": [
                                   {
                                     "Literal": {
-                                      "Value": "'77 - FAZENDA TURBILHÃO'"
+                                      "Value": "'2 - INDUSTRIA ESTRELA'"
                                     }
                                   }
                                 ]
@@ -229,8 +242,8 @@
                         },
                         "valueMap": [
                           {
-                            "0": "14 - ETIVALDO GOMES FILHO",
-                            "1": "77 - FAZENDA TURBILHÃO"
+                            "0": "1 - FRIGOESTRELA",
+                            "1": "2 - INDUSTRIA ESTRELA"
                           }
                         ]
                       }

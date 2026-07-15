@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "14e44a87e952a33a302c",
   "position": {
     "x": 39.014778325123153,
@@ -28,6 +28,20 @@
               },
               "queryRef": "Planilha NET 26 - Funcionários com Jornada.NOME",
               "nativeQueryRef": "NOME"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
+                    }
+                  },
+                  "Property": "DEPARTAMENTO"
+                }
+              },
+              "queryRef": "Planilha NET 25 - Funcionários com batida.DEPARTAMENTO",
+              "nativeQueryRef": "DEPARTAMENTO"
             },
             {
               "field": {
@@ -1013,6 +1027,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "f9c4144e1b40daec36f9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "DEPARTAMENTO"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
