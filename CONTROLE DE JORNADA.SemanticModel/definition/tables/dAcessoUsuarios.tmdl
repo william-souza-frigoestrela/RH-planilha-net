@@ -49,11 +49,19 @@ table dAcessoUsuarios
 
 		annotation SummarizationSetBy = Automatic
 
+	column CODDEPARTAMENTO
+		dataType: string
+		lineageTag: 9b4abc14-f0a8-4910-9562-f3ac7728d392
+		summarizeBy: none
+		sourceColumn: CODDEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
 	partition dAcessoUsuarios = m
 		mode: import
 		source =
 				let
-				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("lZTBbuIwEIZfxeJcooKo6N46BEPdmjhyCNq26sGAod4mceUA0u61h32wvtjOhFalWnXLHjJK4uj/MjP/zN1dq9M6afXwOu2x9jRPAW9hAskQGKSgeSzwLuaSD1UiFB6a0lRLEy1sYZe+cv5iFdza23oTbIGvfRnNA37Wafda9ycf5dmr/kxMlRYoCxMh5Q0bcqakmHGhESpnPMNvdm7jgzORKXa2PoLR6TYBIVol+K8qRUkSGmlIYsGlFGwCMabBRlxrYuHhKphq4WxRuGhlQ7AumE9ZSPgSdpVLAQmwKRffm3SGKmMZJFNFpz+2hTOViWpTbfznSR2CzpuAoBlIkVw2MqkWWSwkUrQYKzZWk6ZiT8HVC4dSa1/+o2QoSepNBqe9fUT97OVZMZmLW9RLbmFM1RnoPDlMgQp4CUNywTxsMZHSLB7M0l+YwpWWcvqL120T5FjgNWiRcIaOy4ScAbuW+RhfP5rgKhs9Ftv1f6DO9hFR4ioX1Bylh9ScIUgsnlYZsIEajagxPiypMXO/Wn1BOGsIpN3vNgH1Fc+mHB/GXGToNMFi7NAUjcA/9n9tXY1mc28GoPbYYBbGm8qVpngnnbX7ryaggvX7TUDSCG45jeY01wMhL7GETZtuIGEchzbJuWRXPMszmqkJmn7fq5+mikp0+cdh7US+Kt0i+NqvNsSmgvXaSDuWrGEESBxhzilnqcA8WcrfhiuYlbFF9GRf58r8srg5Ntswd8WD8QemfIdSTb+dn+4jbQwYKHQc0/Dye8+UeQzoRPwZnh1uDjwqtgtTR75wu6+A3TZBjiTi6HFaVweDMACJn+BrOt+ZwtKqwuiPhJKZ6EIezjUmQ6LoIs0lNGuEBpyjfyaASyQVMahmf9CAWxyFJ4em+XTE0Tr3fwA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [COLIGADA = _t, CODFILIAL = _t, FILIAL = _t, NOME = _t, EMAIL = _t, #"COLIGADA-FILIAL" = _t]),
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("xZZRb9o6FMe/itXnYQGi6u7bTDDUXYiRk6CuUx9cajp3Ia6SgHb3eh/uB9sXu387rQq7os3USZPACnF0fhyf8/+ffP58Mjh5dzLCtz8ivSxfMFyyOUsmjLAFUzwSuIp4zCcyERKbeqPLW01XpjC3rrTuw7qyd87UTWUK3HYbelPhsUHPBz25fndIII+IpcikEojM5iKOP5EJJzIWSy4UuPGSp3hmZxtXWU11sTN1N8xgGBZwlEzwj+UCUX2sqWJJJHgcCzJnEZIhU66Ux2FzXelyZU1RWLo2VWVspY/iAuF13kUeC5YwknFxGZKayJSkLMmk373fFlaXmta6bNzx1H5ivQ8LWEsWi+Q8RFookUYiBkiJmSQzOQ9H91DZemUR7c5tXji7EDIAQh79UbsCkf74R5I4F1cImVyxmT+mscqT/UT8SZ6ziW+Km2qLdDZ69UXfug+6sBvjM/sfcthrIZ2ZH5kSCSfowVTES0Y+xvkMt7/qypaGfi22d79GO21X0MRFLnyhpJr4Qk1YjFNUMmVkLKdTXyRX3foi3bj1+hXI6RPEX5wNwwKE5GnG8WPGRYreEyRCtTL0BT9shztja7SffeoHXypT6ZV2urQbXTzDTntnzz3hUzs7CwtgU3bFvWqzXI1FfI6zDCX7xBLCoeck5zG54Gmeeq3NoYS2bn/rkm7Q+oc6HlBXbuyqcrVbNx7vj23UC7TOcMWmDNApMl9wshDIliz4k+gqvdamoA/mUW/6u4GvNNvqxhZftNtr0wOuT/+v9/129X7CxhI9SBT78W+LjfOIoTfxf3i67yvYKrYrXVNX2N1rzGGvhXSFQpLc+9meOsYsxiO47fd3ujDey7C67lzfXv4LJCSPlHxcNJXiMQsm47XP0U5zBotZiIjJ4C5e+wb6eLDooaPqH3blBE3CLxOMhdY4mf8dw3MSEY7VfodzFg1Ead+Ou5ApJ3ySMwVaxDLcDZh7qI+udIO4XTE/j50pGwtJLnKMMkUyTLTE27++sY42GGblG6eMF5rX2ViqGZrvyfyxYzA1t2j3xthvv2O++BbDv5feGSOZZoxMobswn8uQiaNr9Nbx4g9ePKeIqdjX5LEIl2wpuPJiCg6CB1a6KlxN70297TCauzg92kkmrcv78yqQBa1tsdNdDf61tnq0I2/xz/YDhztei+4CYbnaf19aCtiBF4beVpruLMT/IqTfH9B+f0gxSLrgEPySBJWkEkhfDxC+0drp6oVpf0AadVR+hHElnywtYTCcPMta0a/wDuNoqeE226Z5WZF/nHv6PLbazyyHapaSzKEozP85y9J8LjMvobtt3eidoxtMivJYexwMh98b8sirylvDH7ypvD5b4JEYK22fTbhMwmTBC/9GV/TWuONeeXDuZyfX1/8B", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [COLIGADA = _t, CODFILIAL = _t, FILIAL = _t, NOME = _t, EMAIL = _t, #"COLIGADA-FILIAL" = _t, CODDEPARTAMENTO = _t]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"COLIGADA", type text}, {"CODFILIAL", type text}, {"FILIAL", type text}, {"NOME", type text}, {"EMAIL", type text}})
 				in
 				    #"Tipo Alterado"

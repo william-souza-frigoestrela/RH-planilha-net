@@ -93,6 +93,16 @@
                 }
               ],
               "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'12 - TABOADO RAÇÃO'"
+                  }
+                }
+              ],
+              "isToggled": true
             }
           ]
         }
@@ -154,12 +164,12 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'1 - FRIGOESTRELA'"
+                                "Value": "'12 - TABOADO RAÇÃO'"
                               }
                             },
                             {
                               "Literal": {
-                                "Value": "'2 - INDUSTRIA ESTRELA'"
+                                "Value": "'980 - TABOADO RAÇÃO'"
                               }
                             }
                           ]
@@ -197,7 +207,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'1 - FRIGOESTRELA'"
+                                      "Value": "'12 - TABOADO RAÇÃO'"
                                     }
                                   }
                                 ]
@@ -206,7 +216,7 @@
                                 "1": [
                                   {
                                     "Literal": {
-                                      "Value": "'2 - INDUSTRIA ESTRELA'"
+                                      "Value": "'980 - TABOADO RAÇÃO'"
                                     }
                                   }
                                 ]
@@ -242,8 +252,8 @@
                         },
                         "valueMap": [
                           {
-                            "0": "1 - FRIGOESTRELA",
-                            "1": "2 - INDUSTRIA ESTRELA"
+                            "0": "12 - TABOADO RAÇÃO",
+                            "1": "980 - TABOADO RAÇÃO"
                           }
                         ]
                       }

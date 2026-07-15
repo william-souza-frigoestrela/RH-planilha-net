@@ -112,10 +112,11 @@
           "nodeIndex": "FPBI_DEPARTAMENTO",
           "nodeLineageTag": "987dcbc8-7389-4ffd-88d5-0e3e8705b122",
           "size": {
-            "height": 296,
+            "height": 128,
             "width": 234
           },
-          "zIndex": 9
+          "zIndex": 8,
+          "expandedHeight": 296
         },
         {
           "location": {
@@ -128,7 +129,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 10,
+          "zIndex": 9,
           "expandedHeight": 200
         },
         {
@@ -142,7 +143,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 10
         }
       ],
       "name": "Todas as tabelas",
