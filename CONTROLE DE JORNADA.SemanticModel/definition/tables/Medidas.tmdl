@@ -132,21 +132,101 @@ table Medidas
 			VAR _FilialEstaSelecionadaDiretamente = 
 			    ISFILTERED('dFilial'[FILIAL]) && HASONEVALUE('dFilial'[FILIAL])
 			
+			-- 4. Lista os departamentos autorizados para o usuário logado
+			VAR _DepartamentosAutorizados = 
+			    CALCULATETABLE(
+			        VALUES('dAcessoUsuarios'[CODDEPARTAMENTO]),
+			        ALL('dFilial'),
+			        'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
+			    )
+			
+			-- 5. Verifica se o usuário logado possui restrição específica de departamento (campo preenchido na dAcessoUsuarios)
+			VAR _PossuiRestricaoDeDepartamento = 
+			    NOT(ISEMPTY(
+			        FILTER(
+			            _DepartamentosAutorizados, 
+			            NOT(ISBLANK('dAcessoUsuarios'[CODDEPARTAMENTO])) && 'dAcessoUsuarios'[CODDEPARTAMENTO] <> ""
+			        )
+			    ))
+			
 			RETURN
 			    IF(
 			        _UsuarioEstaMapeado = FALSE(),
 			        1, -- Usuário Master: Vê tudo sempre livremente
 			        
-			        -- Para usuário restrito (Amanda):
+			        -- Para usuário restrito:
 			        IF(
 			            _FilialEstaSelecionadaDiretamente = TRUE(),
-			            1, -- Só retorna 1 se o nó folha (Filial) específico estiver ativamente filtrado individualmente
+			            -- Se a filial está selecionada diretamente, agora aplicamos a validação de departamento
+			            IF(
+			                _PossuiRestricaoDeDepartamento,
+			                -- Se o usuário tem restrição de depto, checa se o depto da linha atual está na lista de autorizados.
+			                -- Usamos CALCULATE com ALLSELECTED para garantir a varredura correta mesmo sem seleção no Slicer.
+			                VAR _DeptoNaLinha = SELECTEDVALUE('FPBI_DEPARTAMENTO'[CODDEPARTAMENTO])
+			                RETURN
+			                    IF(
+			                        _DeptoNaLinha IN _DepartamentosAutorizados,
+			                        1,
+			                        0
+			                    ),
+			                1 -- Se ele não tem restrição de depto (ex: Amanda), libera todos os deptos da filial
+			            ),
 			            0  -- Se marcar o Pai inteiro (todas as filiais da coligada ativas) ou limpar, bloqueia
 			        )
 			    )
 			```
 		formatString: 0
 		lineageTag: 4baf5fa0-e00b-4f70-b261-5edb9eb2be26
+
+	measure 'Filtro Slicer Departamento RLS' = ```
+			
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			
+			-- 1. Verifica se o usuário logado está mapeado na tabela de restrições
+			VAR _UsuarioEstaMapeado =
+			    NOT(ISBLANK(
+			        CALCULATE(
+			            COUNTROWS('dAcessoUsuarios'),
+			            ALL('dFilial'),
+			            'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
+			        )
+			    ))
+			
+			-- 2. Lista os departamentos autorizados para o usuario (tratando vazios)
+			VAR _DepartamentosAutorizados =
+			    CALCULATETABLE(
+			        VALUES('dAcessoUsuarios'[CODDEPARTAMENTO]),
+			        ALL('dFilial'),
+			        'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
+			    )
+			
+			-- 3. Captura o ID do departamento que a árvore do Slicer está renderizando
+			-- (Substitua 'FPBI_DEPARTAMENTO'[CODDEPARTAMENTO] pela coluna de ID de departamento usada no seu slicer)
+			VAR _DeptoSendoDesenhado = SELECTEDVALUE('FPBI_DEPARTAMENTO'[CODDEPARTAMENTO])
+			
+			-- 4. Verifica se o usuário tem alguma restrição de departamento preenchida na tabela
+			VAR _PossuiRestricaoDeDepartamento = 
+			    NOT(ISEMPTY(
+			        FILTER(_DepartamentosAutorizados, NOT(ISBLANK('dAcessoUsuarios'[CODDEPARTAMENTO])) && 'dAcessoUsuarios'[CODDEPARTAMENTO] <> "")
+			    ))
+			
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(),
+			        1, -- Usuário Master: Vê todas as opções   
+			        
+			        -- Para usuário restrito:
+			        IF(
+			            _PossuiRestricaoDeDepartamento = FALSE(),
+			            1, -- Se o usuário não tem nenhuma restrição de departamento (está null/vazio), liberamos todos
+			            
+			            -- Se ele tem restrição, mostra o nó pai da hierarquia (BLANK) ou o departamento autorizado
+			            IF(ISBLANK(_DeptoSendoDesenhado) || _DeptoSendoDesenhado IN _DepartamentosAutorizados, 1, 0)
+			        )
+			    )
+			```
+		formatString: 0
+		lineageTag: 60f5714e-3ab4-4694-8c87-67c5b98d37c2
 
 	column Column
 		isHidden

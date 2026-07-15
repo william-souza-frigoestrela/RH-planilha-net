@@ -136,6 +136,26 @@
                     }
                   ],
                   "isToggled": true
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' PORTARIA DIURNO'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "' SUPORTE INFRA ESTRUTURA'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
                 }
               ]
             },
@@ -188,7 +208,7 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -449,7 +469,7 @@
         "howCreated": "User"
       },
       {
-        "name": "72911531b199935121b7",
+        "name": "e2d1454c12fdda097103",
         "field": {
           "Measure": {
             "Expression": {
@@ -457,7 +477,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "Filtro Slicer RLS"
+            "Property": "Filtro Slicer Departamento RLS"
           }
         },
         "type": "Advanced",
@@ -482,7 +502,7 @@
                           "Source": "m"
                         }
                       },
-                      "Property": "Filtro Slicer RLS"
+                      "Property": "Filtro Slicer Departamento RLS"
                     }
                   },
                   "Right": {
