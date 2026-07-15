@@ -138,6 +138,16 @@
                               },
                               "Property": "COLIGADA"
                             }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "FILIAL"
+                            }
                           }
                         ],
                         "Values": [
@@ -167,6 +177,16 @@
                                 }
                               },
                               "Property": "COLIGADA"
+                            }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dFilial"
+                                }
+                              },
+                              "Property": "FILIAL"
                             }
                           }
                         ],
@@ -203,6 +223,18 @@
                                     }
                                   },
                                   "Property": "COLIGADA"
+                                }
+                              }
+                            },
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dFilial"
+                                    }
+                                  },
+                                  "Property": "FILIAL"
                                 }
                               }
                             }
