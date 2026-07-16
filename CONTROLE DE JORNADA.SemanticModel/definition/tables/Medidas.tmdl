@@ -228,6 +228,10 @@ table Medidas
 		formatString: 0
 		lineageTag: 60f5714e-3ab4-4694-8c87-67c5b98d37c2
 
+	measure 'Qtd HE acima 6H' = COUNTROWS('Planilha NET 24 - Acima de 6 horas sem intervalo')
+		formatString: 0
+		lineageTag: 79e4cfdc-02d8-4f88-8063-4ec5b23b850b
+
 	column Column
 		isHidden
 		formatString: 0
