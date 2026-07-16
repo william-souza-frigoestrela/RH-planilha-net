@@ -59,7 +59,7 @@ table 'Planilha NET 24 - Acima de 6 horas sem intervalo'
 
 	column DATAREFERENCIA
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: a3d83b1e-1331-43ac-83cf-fbeff36aab98
 		summarizeBy: none
 		sourceColumn: DATAREFERENCIA
