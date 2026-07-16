@@ -118,12 +118,14 @@ table 'Planilha NET 4 – Faltas'
 
 	column DATAADMISSAO
 		dataType: dateTime
-		formatString: General Date
+		formatString: Long Date
 		lineageTag: 46cd3bcf-2700-4e8d-9aa8-17d7e780796d
 		summarizeBy: none
 		sourceColumn: DATAADMISSAO
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column DATADEMISSAO
 		dataType: dateTime
@@ -161,9 +163,10 @@ table 'Planilha NET 4 – Faltas'
 				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"}),
 				    #"Coluna Mesclada Inserida1" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text),
 				    #"Consultas Mescladas1" = Table.NestedJoin(#"Coluna Mesclada Inserida1", {"COLIGADA_FILIAL"}, dFilial, {"ID_FILIAL"}, "dFilial", JoinKind.LeftOuter),
-				    #"dFilial Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "dFilial", {"COLIGADA", "FILIAL"}, {"COLIGADA", "FILIAL"})
+				    #"dFilial Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "dFilial", {"COLIGADA", "FILIAL"}, {"COLIGADA", "FILIAL"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"dFilial Expandido",{{"DATAADMISSAO", type date}})
 				in
-				    #"dFilial Expandido"
+				    #"Tipo Alterado1"
 
 	annotation PBI_NavigationStepName = Navegação
 
