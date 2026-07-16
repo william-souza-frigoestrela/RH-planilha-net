@@ -198,6 +198,97 @@
                   }
                 }
               }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "f",
+                    "Entity": "FPBI_DEPARTAMENTO",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "DEPARTAMENTO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "' INDUSTRIA IN NATURA'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "Annotations": {
+                      "filterExpressionMetadata": {
+                        "expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "FPBI_DEPARTAMENTO"
+                                }
+                              },
+                              "Property": "DEPARTAMENTO"
+                            }
+                          }
+                        ],
+                        "decomposedIdentities": {
+                          "values": [
+                            [
+                              {
+                                "0": [
+                                  {
+                                    "Literal": {
+                                      "Value": "' INDUSTRIA IN NATURA'"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          ],
+                          "columns": [
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "FPBI_DEPARTAMENTO"
+                                    }
+                                  },
+                                  "Property": "DEPARTAMENTO"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "valueMap": [
+                          {
+                            "0": " INDUSTRIA IN NATURA"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
             }
           }
         }
@@ -474,48 +565,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "36531ce6b9afd4d4bfd6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "DEPARTAMENTO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "eeb7100077e6717c9871",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "24cba8495b3812fe9206",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

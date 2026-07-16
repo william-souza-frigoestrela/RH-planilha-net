@@ -4,10 +4,10 @@
   "position": {
     "x": 273.15136476426795,
     "y": 24.350703060380479,
-    "z": 3008,
+    "z": 5000,
     "height": 70.934656741108356,
     "width": 299.61952026468157,
-    "tabOrder": 3007
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -478,34 +478,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "8ce6e7afff90a0d7afda",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "COLIGADA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f28930282a3c4a27bc58",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "FILIAL"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

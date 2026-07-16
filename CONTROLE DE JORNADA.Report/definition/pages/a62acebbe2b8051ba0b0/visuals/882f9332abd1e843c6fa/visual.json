@@ -4,10 +4,10 @@
   "position": {
     "x": 571.409282700422,
     "y": 22.683544303797468,
-    "z": 8002,
+    "z": 7000,
     "height": 70.210970464135016,
     "width": 465.55274261603375,
-    "tabOrder": 8002
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "slicer",
@@ -160,16 +160,6 @@
                   "isToggled": true
                 }
               ]
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "' INDUSTRIA IN NATURA'"
-                  }
-                }
-              ],
-              "isToggled": true
             }
           ]
         }

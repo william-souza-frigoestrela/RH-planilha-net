@@ -4,10 +4,10 @@
   "position": {
     "x": 254.48275862068965,
     "y": 23.054187192118228,
-    "z": 8001,
+    "z": 6000,
     "height": 70.935960591133011,
     "width": 299.70443349753697,
-    "tabOrder": 8001
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -480,7 +480,7 @@
         "howCreated": "User"
       },
       {
-        "name": "7e2ebca2f007096bed10",
+        "name": "59c06809e35ef1dfaeb9",
         "field": {
           "Column": {
             "Expression": {
@@ -494,7 +494,7 @@
         "type": "Categorical"
       },
       {
-        "name": "cc4e4780494999febf38",
+        "name": "49c75fb123460ecb12eb",
         "field": {
           "Column": {
             "Expression": {

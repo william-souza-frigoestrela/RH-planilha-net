@@ -908,58 +908,8 @@
         "type": "Categorical"
       },
       {
-        "name": "c981ab52cbb44cfdd24a",
-        "ordinal": 5,
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Filtro Hierarquia RLS"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "m",
-              "Entity": "Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "m"
-                        }
-                      },
-                      "Property": "Filtro Hierarquia RLS"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "1L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
         "name": "43f95928663840599259",
-        "ordinal": 6,
+        "ordinal": 5,
         "field": {
           "Column": {
             "Expression": {
@@ -973,58 +923,8 @@
         "type": "Categorical"
       },
       {
-        "name": "6fb2f68d016c7c7544f8",
-        "ordinal": 7,
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Filtro Slicer Departamento RLS"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "m",
-              "Entity": "Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "m"
-                        }
-                      },
-                      "Property": "Filtro Slicer Departamento RLS"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "1L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
         "name": "dee2f8130d7cd1143df9",
-        "ordinal": 8,
+        "ordinal": 6,
         "field": {
           "Column": {
             "Expression": {
@@ -1039,7 +939,7 @@
       },
       {
         "name": "ea9098d8dc431bc71bb2",
-        "ordinal": 9,
+        "ordinal": 7,
         "field": {
           "Column": {
             "Expression": {
@@ -1053,8 +953,58 @@
         "type": "Categorical"
       },
       {
+        "name": "aab6e6f4e5c00391c612",
+        "ordinal": 8,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "'Filtro Departamento RLS (Acima 10H)'"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "'Filtro Departamento RLS (Acima 10H)'"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
         "name": "1d46406adc52f2f0b0cf",
-        "ordinal": 10,
+        "ordinal": 9,
         "field": {
           "Column": {
             "Expression": {
@@ -1069,7 +1019,7 @@
       },
       {
         "name": "f2823fbf9ce6acab8c7f",
-        "ordinal": 11,
+        "ordinal": 10,
         "field": {
           "Column": {
             "Expression": {
@@ -1084,7 +1034,7 @@
       },
       {
         "name": "59a52c5345a33a188573",
-        "ordinal": 12,
+        "ordinal": 11,
         "field": {
           "Column": {
             "Expression": {
@@ -1099,7 +1049,7 @@
       },
       {
         "name": "358e30a2cbd91cd1e7bf",
-        "ordinal": 13,
+        "ordinal": 12,
         "field": {
           "Column": {
             "Expression": {
@@ -1114,7 +1064,7 @@
       },
       {
         "name": "6f62c2c32f22239cb84a",
-        "ordinal": 14,
+        "ordinal": 13,
         "field": {
           "Column": {
             "Expression": {
@@ -1129,7 +1079,7 @@
       },
       {
         "name": "1c7848acfba6e3f7d706",
-        "ordinal": 15,
+        "ordinal": 14,
         "field": {
           "Column": {
             "Expression": {

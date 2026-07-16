@@ -6,7 +6,14 @@ table Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Qtd faltas' = COUNTROWS('Planilha NET 4 – Faltas')
+	measure 'Qtd faltas' =
+			
+			CALCULATE(
+			    COUNTROWS('Planilha NET 4 – Faltas'),
+			    FILTER('Planilha NET 4 – Faltas',
+			    [Filtro Hierarquia RLS]=1
+			    &&[Filtro Slicer Departamento RLS]=1
+			))
 		formatString: 0
 		lineageTag: 5975bb6c-3498-478e-920d-464ebdb7c37a
 
@@ -16,7 +23,17 @@ table Medidas
 
 	measure 'Saldo Positivo' = ```
 			
-			VAR MinutosPositivos = SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])
+			VAR MinutosPositivos = 
+			CALCULATE(
+			    SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO]
+			    ),
+			    FILTER(
+			        'Planilha NET 2 – Saldo de Banco de Horas – saldo_data',
+			        [Filtro Hierarquia RLS] = 1 &&
+			        [Filtro Slicer Departamento RLS] = 1
+			    )
+			)
+			
 			VAR Horas = TRUNC(MinutosPositivos / 60)
 			VAR Minutos = MOD(MinutosPositivos, 60)
 			RETURN
@@ -31,7 +48,14 @@ table Medidas
 
 	measure 'Saldo Negativo' = ```
 			
-			VAR MinutosNegativos = SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])
+			VAR MinutosNegativos = 
+			CALCULATE(
+			    SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO]),
+			    FILTER('Planilha NET 2 – Saldo de Banco de Horas – saldo_data',
+			        [Filtro Hierarquia RLS] = 1 &&
+			        [Filtro Slicer Departamento RLS] = 1
+			    )
+			)
 			VAR ValorAbsoluto = ABS(MinutosNegativos)
 			VAR Horas = TRUNC(ValorAbsoluto / 60)
 			VAR Minutos = MOD(ValorAbsoluto, 60)
@@ -47,27 +71,59 @@ table Medidas
 
 	measure Qtd_Funcionarios_Saldo_Positivo =
 			
-			COUNTROWS(
+			CALCULATE(
+			    DISTINCTCOUNT('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
 			    FILTER(
-			        VALUES('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
-			        CALCULATE(SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])) > 0
+			        ALLSELECTED('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'),
+			        -- Condição 1: Ter saldo positivo maior que 0
+			        'Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO] > 0
+			        -- Condição 2: Respeitar a Hierarquia de RLS
+			        && [Filtro Hierarquia RLS] = 1
 			    )
 			)
 		formatString: 0
 		lineageTag: 9062065b-6272-4c94-8ae5-d37e8a6c3a3b
 
-	measure Qtd_Funcionarios_Saldo_Negativo =
+	measure Qtd_Funcionarios_Saldo_Negativo = ```
 			
-			COUNTROWS(
+			/*COUNTROWS(
 			    FILTER(
 			        VALUES('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
 			        CALCULATE(SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])) < 0
 			    )
 			)
+			*/
+			
+			
+			--Qtd_Funcionarios_Saldo_Positivo = 
+			CALCULATE(
+			    DISTINCTCOUNT('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
+			    FILTER(
+			        ALLSELECTED('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'),
+			        -- Condição 1: Ter saldo positivo maior que 0
+			        'Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_Negativo] < 0
+			        -- Condição 2: Respeitar a Hierarquia de RLS
+			        && [Filtro Hierarquia RLS] = 1
+			    )
+			)
+			```
 		formatString: 0
 		lineageTag: 5de009b8-83dd-4953-8577-d0b9181b9780
 
-	measure 'R$ HE' = SUMX('Planilha NET 25 - Funcionários com batida','Planilha NET 25 - Funcionários com batida'[HE_TOTAL_VALOR])
+	measure 'R$ HE' = ```
+			
+			SUMX(
+			    FILTER('Planilha NET 25 - Funcionários com batida',
+			            [Filtro Hierarquia RLS] = 1 &&
+			            [Filtro Slicer Departamento RLS] = 1
+			    ),
+			    'Planilha NET 25 - Funcionários com batida'[HE_TOTAL_VALOR])
+			
+			
+			
+			
+			
+			```
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 33722f3e-864f-4bea-b06b-be9d4822a4b8
 
@@ -160,16 +216,16 @@ table Medidas
 			            -- Se a filial está selecionada diretamente, agora aplicamos a validação de departamento
 			            IF(
 			                _PossuiRestricaoDeDepartamento,
-			                -- Se o usuário tem restrição de depto, checa se o depto da linha atual está na lista de autorizados.
-			                -- Usamos CALCULATE com ALLSELECTED para garantir a varredura correta mesmo sem seleção no Slicer.
-			                VAR _DeptoNaLinha = SELECTEDVALUE('FPBI_DEPARTAMENTO'[CODDEPARTAMENTO])
+			                -- ALTERAÇÃO AQUI: Captura todos os departamentos ativos no contexto atual (suporta múltiplos)
+			                VAR _DeptosNoContexto = VALUES('FPBI_DEPARTAMENTO'[CODDEPARTAMENTO])
 			                RETURN
+			                    -- Verifica se há intersecção entre os departamentos selecionados/visíveis e os autorizados
 			                    IF(
-			                        _DeptoNaLinha IN _DepartamentosAutorizados,
+			                        NOT(ISEMPTY(INTERSECT(_DeptosNoContexto, _DepartamentosAutorizados))),
 			                        1,
 			                        0
 			                    ),
-			                1 -- Se ele não tem restrição de depto (ex: Amanda), libera todos os deptos da filial
+			                1 -- Se ele não tem restrição de depto, libera todos os deptos da filial
 			            ),
 			            0  -- Se marcar o Pai inteiro (todas as filiais da coligada ativas) ou limpar, bloqueia
 			        )
@@ -231,6 +287,72 @@ table Medidas
 	measure 'Qtd HE acima 6H' = COUNTROWS('Planilha NET 24 - Acima de 6 horas sem intervalo')
 		formatString: 0
 		lineageTag: 79e4cfdc-02d8-4f88-8063-4ec5b23b850b
+
+	measure '''Filtro Departamento RLS (Faltas)''' =
+			
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			VAR _UsuarioEstaMapeado =
+			    NOT(ISBLANK(CALCULATE(COUNTROWS('dAcessoUsuarios'), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)))
+			VAR _DepartamentosAutorizados =
+			    CALCULATETABLE(VALUES('dAcessoUsuarios'[CODDEPARTAMENTO]), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)
+			VAR _PossuiRestricao =
+			    NOT(ISEMPTY(FILTER(_DepartamentosAutorizados, NOT(ISBLANK('dAcessoUsuarios'[CODDEPARTAMENTO])) && 'dAcessoUsuarios'[CODDEPARTAMENTO] <> "")))
+			VAR _DeptoDaLinha =
+			    SELECTEDVALUE('Planilha NET 4 – Faltas'[CODDEPARTAMENTO])
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(), 1,
+			        IF(
+			            _PossuiRestricao = FALSE(), 1,
+			            IF(_DeptoDaLinha IN _DepartamentosAutorizados, 1, 0)
+			        )
+			    )
+		formatString: 0
+		lineageTag: a6ec17b4-31ff-41f7-b451-5a32e4510f59
+
+	measure '''Filtro Departamento RLS (Acima 10H)''' =
+			
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			VAR _UsuarioEstaMapeado =
+			    NOT(ISBLANK(CALCULATE(COUNTROWS('dAcessoUsuarios'), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)))
+			VAR _DepartamentosAutorizados =
+			    CALCULATETABLE(VALUES('dAcessoUsuarios'[CODDEPARTAMENTO]), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)
+			VAR _PossuiRestricao =
+			    NOT(ISEMPTY(FILTER(_DepartamentosAutorizados, NOT(ISBLANK('dAcessoUsuarios'[CODDEPARTAMENTO])) && 'dAcessoUsuarios'[CODDEPARTAMENTO] <> "")))
+			VAR _DeptoDaLinha =
+			    SELECTEDVALUE('Planilha NET 27 – Acima de 10 Horas - Valor'[CODDEPARTAMENTO])
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(), 1,
+			        IF(
+			            _PossuiRestricao = FALSE(), 1,
+			            IF(_DeptoDaLinha IN _DepartamentosAutorizados, 1, 0)
+			        )
+			    )
+		formatString: 0
+		lineageTag: f2efaffc-172f-4972-bf57-abc40c8e8686
+
+	measure '''Filtro Departamento RLS (Acima 6H)''' =
+			
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			VAR _UsuarioEstaMapeado =
+			    NOT(ISBLANK(CALCULATE(COUNTROWS('dAcessoUsuarios'), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)))
+			VAR _DepartamentosAutorizados =
+			    CALCULATETABLE(VALUES('dAcessoUsuarios'[CODDEPARTAMENTO]), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)
+			VAR _PossuiRestricao =
+			    NOT(ISEMPTY(FILTER(_DepartamentosAutorizados, NOT(ISBLANK('dAcessoUsuarios'[CODDEPARTAMENTO])) && 'dAcessoUsuarios'[CODDEPARTAMENTO] <> "")))
+			VAR _DeptoDaLinha =
+			    SELECTEDVALUE('Planilha NET 24 - Acima de 6 horas sem intervalo'[CODDEPARTAMENTO])
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(), 1,
+			        IF(
+			            _PossuiRestricao = FALSE(), 1,
+			            IF(_DeptoDaLinha IN _DepartamentosAutorizados, 1, 0)
+			        )
+			    )
+		formatString: 0
+		lineageTag: 3e7596fb-cc5d-4ab4-a960-7a4bf7f9b3f8
 
 	column Column
 		isHidden

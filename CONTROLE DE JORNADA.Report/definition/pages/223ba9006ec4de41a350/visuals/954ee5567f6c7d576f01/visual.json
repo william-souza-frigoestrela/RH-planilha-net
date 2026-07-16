@@ -273,23 +273,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "73bb3fc6b7efd3737e30",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 24 - Acima de 6 horas sem intervalo"
-              }
-            },
-            "Property": "STATUS"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

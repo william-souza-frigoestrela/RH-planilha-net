@@ -6,10 +6,6 @@ relationship 1a9fdca2-3611-30e4-9106-7d9b3a850e3b
 	fromColumn: 'Planilha NET 25 - Funcionários com batida'.NOME_SECAO
 	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
 
-relationship 4ec9780f-e2c7-6505-1d83-f5f8b4215384
-	fromColumn: 'Planilha NET 4 – Faltas'.SECAO
-	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
-
 relationship 4f06d2ed-3464-1276-2119-e017fe2e14ab
 	fromColumn: 'Planilha NET 27 – Acima de 10 Horas - Valor'.NOME_SECAO
 	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
@@ -23,22 +19,27 @@ relationship 99a217b1-5170-601b-09c3-866652876a26
 	toColumn: dCalendario.Date
 
 relationship 9aa6efab-d811-bab6-3466-4e5318e3cfcb
+	isActive: false
 	fromColumn: 'Planilha NET 2 – Saldo de Banco de Horas – saldo_data'.COLIGADA_FILIAL
 	toColumn: dFilial.ID_FILIAL
 
 relationship f76befe9-1404-f9c6-5a03-d9577ac7c687
+	isActive: false
 	fromColumn: 'Planilha NET 18 - Hora extra dia'.COLIGADA_FILIAL
 	toColumn: dFilial.ID_FILIAL
 
 relationship 3b3cdce0-bb0d-0e69-6dd8-7a55845f8c80
+	isActive: false
 	fromColumn: 'Planilha NET 25 - Funcionários com batida'.COLIGADA_FILIAL
 	toColumn: dFilial.ID_FILIAL
 
 relationship d5a65778-f12e-c27e-a2fb-ce7d49c7abf4
+	isActive: false
 	fromColumn: 'Planilha NET 27 – Acima de 10 Horas - Valor'.COLIGADA_FILIAL
 	toColumn: dFilial.ID_FILIAL
 
 relationship f6304710-67d3-3dd9-a333-c7a3d772a11d
+	isActive: false
 	fromColumn: 'Planilha NET 4 – Faltas'.COLIGADA_FILIAL
 	toColumn: dFilial.ID_FILIAL
 
@@ -47,25 +48,23 @@ relationship 3e616d1c-e7da-9d5c-867c-c50b30d10c9f
 	toColumn: dCalendario.Date
 
 relationship b43dc3bb-b511-e816-aee5-9dffbcc5b6b4
-	crossFilteringBehavior: bothDirections
 	fromColumn: dAcessoUsuarios.COLIGADA-FILIAL
 	toColumn: dFilial.ID_FILIAL
-
-relationship 545db0ec-e410-3c6a-2fc8-0995531a2376
-	crossFilteringBehavior: bothDirections
-	toCardinality: many
-	fromColumn: dAcessoUsuarios.COLIGADA-FILIAL
-	toColumn: FPBI_DEPARTAMENTO.COLIGADA-FILIAL
 
 relationship 6dc59521-fa9f-fc98-a3ee-e877cef0876c
 	fromColumn: 'Planilha NET 24 - Acima de 6 horas sem intervalo'.DATAREFERENCIA
 	toColumn: dCalendario.Date
 
 relationship f1088e16-9d00-bfe5-e70b-cb796de16d8f
+	isActive: false
 	fromColumn: 'Planilha NET 24 - Acima de 6 horas sem intervalo'.COLIGADA_FILIAL
 	toColumn: dFilial.ID_FILIAL
 
 relationship 2cb794f3-ee4d-924b-2ec2-cdc96ff94866
 	fromColumn: 'Planilha NET 24 - Acima de 6 horas sem intervalo'.NOME_SECAO
 	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
+
+relationship fb9a5d4f-aa92-0f10-3c40-4253389157aa
+	fromColumn: FPBI_DEPARTAMENTO.COLIGADA-FILIAL
+	toColumn: dFilial.ID_FILIAL
 

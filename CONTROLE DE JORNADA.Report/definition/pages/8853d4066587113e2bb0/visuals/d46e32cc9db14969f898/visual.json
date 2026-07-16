@@ -4,10 +4,10 @@
   "position": {
     "x": 1028.3206751054852,
     "y": 23.763713080168777,
-    "z": 2004,
+    "z": 2000,
     "height": 68.0506329113924,
     "width": 217.1139240506329,
-    "tabOrder": 2004
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -493,20 +493,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "0cf3028cfc233c07a456",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCalendario"
-              }
-            },
-            "Property": "Mês nome"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

@@ -210,6 +210,14 @@ table 'Planilha NET 24 - Acima de 6 horas sem intervalo'
 
 		annotation SummarizationSetBy = Automatic
 
+	column CODDEPARTAMENTO
+		dataType: string
+		lineageTag: 4b396518-f260-47f2-9ae7-11f137b93786
+		summarizeBy: none
+		sourceColumn: CODDEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Planilha NET 24 - Acima de 6 horas sem intervalo' = m
 		mode: import
 		source =
@@ -219,7 +227,7 @@ table 'Planilha NET 24 - Acima de 6 horas sem intervalo'
 				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
 				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"NOME_SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
 				    #"Valor Substituído" = Table.ReplaceValue(#"Consultas Mescladas","Trablhou mais de 10:00 e foi embora","Trablhou mais de 10:00",Replacer.ReplaceText,{"STATUS"}),
-				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Valor Substituído", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO"}),
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Valor Substituído", "FPBI_DEPARTAMENTO", {"CODDEPARTAMENTO", "DEPARTAMENTO", "SETOR", "SECAO"}, {"CODDEPARTAMENTO", "DEPARTAMENTO", "SETOR", "SECAO"}),
 				    #"Coluna Mesclada Inserida1" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text),
 				    #"Consultas Mescladas1" = Table.NestedJoin(#"Coluna Mesclada Inserida1", {"COLIGADA_FILIAL"}, dFilial, {"ID_FILIAL"}, "dFilial", JoinKind.LeftOuter),
 				    #"dFilial Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "dFilial", {"COLIGADA", "FILIAL"}, {"COLIGADA", "FILIAL"}),

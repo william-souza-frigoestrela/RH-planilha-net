@@ -4,10 +4,10 @@
   "position": {
     "x": 1045.6033755274261,
     "y": 22.683544303797468,
-    "z": 4000,
+    "z": 1000,
     "height": 70.210970464135016,
     "width": 171.74683544303798,
-    "tabOrder": 4000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -232,23 +232,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3d807a6a19d92d6b4114",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
-              }
-            },
-            "Property": "CODSITUACAO"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

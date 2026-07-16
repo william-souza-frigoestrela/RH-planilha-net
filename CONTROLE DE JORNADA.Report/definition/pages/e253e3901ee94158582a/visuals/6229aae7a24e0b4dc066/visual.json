@@ -4,10 +4,10 @@
   "position": {
     "x": 711.00303951367789,
     "y": 95.319148936170222,
-    "z": 4000,
+    "z": 1000,
     "height": 70.030395136778125,
     "width": 486.32218844984806,
-    "tabOrder": 4000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -239,23 +239,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "31d5c1397cd8b4d7f1a2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "STATUS"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
