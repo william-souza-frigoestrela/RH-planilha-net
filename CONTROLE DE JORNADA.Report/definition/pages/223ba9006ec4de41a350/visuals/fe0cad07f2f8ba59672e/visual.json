@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Qtd HE acima 10H"
+                  "Property": "Qtd HE acima 6H"
                 }
               },
-              "queryRef": "Medidas.Qtd HE acima 10H",
-              "nativeQueryRef": "Qtd HE acima 10H"
+              "queryRef": "Medidas.Qtd HE acima 6H",
+              "nativeQueryRef": "Qtd HE acima 6H"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Qtd HE acima 10H"
+                "Property": "Qtd HE acima 6H"
               }
             },
             "direction": "Descending"
@@ -269,20 +269,6 @@
           "selector": {
             "metadata": "Medidas.% Variação Label PMP"
           }
-        },
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.Qtd HE acima 10H"
-          }
         }
       ]
     },
@@ -420,7 +406,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "2a405af5a218350f0331",
+        "name": "a33914cf8cc2e898a042",
         "field": {
           "Measure": {
             "Expression": {
@@ -428,7 +414,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "Qtd HE acima 10H"
+            "Property": "Qtd HE acima 6H"
           }
         },
         "type": "Advanced"
