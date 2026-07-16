@@ -1,4 +1,4 @@
-table 'Planilha NET- 4 – Faltas'
+table 'Planilha NET 4 – Faltas'
 	lineageTag: 455df675-a460-4ea2-a8d9-912076b5bf73
 
 	column CODCOLIGADA
@@ -150,7 +150,7 @@ table 'Planilha NET- 4 – Faltas'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Planilha NET- 4 – Faltas' = m
+	partition 'Planilha NET 4 – Faltas' = m
 		mode: import
 		source =
 				let

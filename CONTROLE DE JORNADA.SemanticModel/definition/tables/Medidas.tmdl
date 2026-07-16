@@ -1,22 +1,22 @@
 table Medidas
 	lineageTag: 170cedcf-a8b2-4ecf-a449-acfd70f565b4
 
-	measure 'Valor HE' = SUM('Planilha NET- 27 – Acima de 10 Horas - Valor'[VALOR_HORAS_EXTRAS])
+	measure 'Valor HE' = SUM('Planilha NET 27 – Acima de 10 Horas - Valor'[VALOR_HORAS_EXTRAS])
 		lineageTag: 67bfedd3-b7e1-4e3e-a63e-97889d28a034
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Qtd faltas' = COUNTROWS('Planilha NET- 4 – Faltas')
+	measure 'Qtd faltas' = COUNTROWS('Planilha NET 4 – Faltas')
 		formatString: 0
 		lineageTag: 5975bb6c-3498-478e-920d-464ebdb7c37a
 
-	measure 'Qtd HE acima 10H' = COUNTROWS('Planilha NET- 27 – Acima de 10 Horas - Valor')
+	measure 'Qtd HE acima 10H' = COUNTROWS('Planilha NET 27 – Acima de 10 Horas - Valor')
 		formatString: 0
 		lineageTag: cf515c32-2efb-4c47-abd4-94762f1c3345
 
 	measure 'Saldo Positivo' = ```
 			
-			VAR MinutosPositivos = SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])
+			VAR MinutosPositivos = SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])
 			VAR Horas = TRUNC(MinutosPositivos / 60)
 			VAR Minutos = MOD(MinutosPositivos, 60)
 			RETURN
@@ -31,7 +31,7 @@ table Medidas
 
 	measure 'Saldo Negativo' = ```
 			
-			VAR MinutosNegativos = SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])
+			VAR MinutosNegativos = SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])
 			VAR ValorAbsoluto = ABS(MinutosNegativos)
 			VAR Horas = TRUNC(ValorAbsoluto / 60)
 			VAR Minutos = MOD(ValorAbsoluto, 60)
@@ -49,8 +49,8 @@ table Medidas
 			
 			COUNTROWS(
 			    FILTER(
-			        VALUES('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
-			        CALCULATE(SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])) > 0
+			        VALUES('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
+			        CALCULATE(SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_POSITIVO])) > 0
 			    )
 			)
 		formatString: 0
@@ -60,8 +60,8 @@ table Medidas
 			
 			COUNTROWS(
 			    FILTER(
-			        VALUES('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
-			        CALCULATE(SUM('Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])) < 0
+			        VALUES('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[CODFILIAL-CHAPA]),
+			        CALCULATE(SUM('Planilha NET 2 – Saldo de Banco de Horas – saldo_data'[MINUTOS_SALDO_NEGATIVO])) < 0
 			    )
 			)
 		formatString: 0

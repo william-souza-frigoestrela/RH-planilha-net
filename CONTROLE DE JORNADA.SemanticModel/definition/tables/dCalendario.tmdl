@@ -211,12 +211,12 @@ table dCalendario
 		mode: import
 		source =
 				
-				VAR vAnoMin = YEAR(MIN('Planilha NET- 4 – Faltas'[DATA]))
-				VAR vAnoMax = YEAR(MAX('Planilha NET- 4 – Faltas'[DATA]))
-				VAR vMesMax = MONTH(MAX('Planilha NET- 4 – Faltas'[DATA]))
-				VAR vMesMin = MONTH(min('Planilha NET- 4 – Faltas'[DATA]))
-				var vDiaMax = DAY(MAX('Planilha NET- 4 – Faltas'[DATA]))
-				var vDiaMin = DAY(min('Planilha NET- 4 – Faltas'[DATA]))
+				VAR vAnoMin = YEAR(MIN('Planilha NET 4 – Faltas'[DATA]))
+				VAR vAnoMax = YEAR(MAX('Planilha NET 4 – Faltas'[DATA]))
+				VAR vMesMax = MONTH(MAX('Planilha NET 4 – Faltas'[DATA]))
+				VAR vMesMin = MONTH(min('Planilha NET 4 – Faltas'[DATA]))
+				var vDiaMax = DAY(MAX('Planilha NET 4 – Faltas'[DATA]))
+				var vDiaMin = DAY(min('Planilha NET 4 – Faltas'[DATA]))
 				VAR vDataInicial = DATE(vAnoMin, vMesMin, vDiaMin)
 				VAR vDataFinal = DATE(vAnoMax, vMesMax, vDiaMax)
 				RETURN

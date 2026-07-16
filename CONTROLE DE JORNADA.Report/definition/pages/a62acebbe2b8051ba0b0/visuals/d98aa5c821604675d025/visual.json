@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "d98aa5c821604675d025",
   "position": {
     "x": 39.203675344563557,
@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                      "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "NOME"
@@ -590,7 +590,7 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
               }
             },
             "Property": "NOME"
