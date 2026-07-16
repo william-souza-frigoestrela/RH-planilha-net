@@ -57,7 +57,15 @@ relationship 545db0ec-e410-3c6a-2fc8-0995531a2376
 	fromColumn: dAcessoUsuarios.COLIGADA-FILIAL
 	toColumn: FPBI_DEPARTAMENTO.COLIGADA-FILIAL
 
-relationship AutoDetected_b9ae2179-2c45-4ec5-a52f-8622f02147fb
-	fromColumn: 'Planilha NET 24 - Acima de 6 horas sem intervalo'.CODFILIAL-CHAPA
-	toColumn: 'Planilha NET 2 – Saldo de Banco de Horas – saldo_data'.CODFILIAL-CHAPA
+relationship 6dc59521-fa9f-fc98-a3ee-e877cef0876c
+	fromColumn: 'Planilha NET 24 - Acima de 6 horas sem intervalo'.DATAREFERENCIA
+	toColumn: dCalendario.Date
+
+relationship f1088e16-9d00-bfe5-e70b-cb796de16d8f
+	fromColumn: 'Planilha NET 24 - Acima de 6 horas sem intervalo'.COLIGADA_FILIAL
+	toColumn: dFilial.ID_FILIAL
+
+relationship 2cb794f3-ee4d-924b-2ec2-cdc96ff94866
+	fromColumn: 'Planilha NET 24 - Acima de 6 horas sem intervalo'.NOME_SECAO
+	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
 
