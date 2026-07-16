@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Acima 10h.svg'"
+                    "Value": "'Acima 6h.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Acima_10h3199750176736431.svg"
+                    "ItemName": "Acima_6h8998411669332924.svg"
                   }
                 }
               },
