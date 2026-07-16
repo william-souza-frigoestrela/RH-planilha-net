@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 310.02317499999975,
+        "x": 0,
         "y": 0
       },
       "nodes": [
@@ -33,7 +33,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 4
         },
         {
           "location": {
@@ -46,7 +46,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 2,
+          "zIndex": 5,
           "expandedHeight": 300
         },
         {
@@ -60,7 +60,7 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 3,
+          "zIndex": 6,
           "expandedHeight": 300
         },
         {
@@ -114,7 +114,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 0,
+          "zIndex": 1,
           "expandedHeight": 300
         },
         {
@@ -127,7 +127,7 @@
             "height": 152,
             "width": 249.944049
           },
-          "zIndex": 0,
+          "zIndex": 2,
           "expandedHeight": 300
         },
         {
@@ -137,15 +137,16 @@
           },
           "nodeIndex": "Planilha NET 27 – Acima de 10 Horas - Valor",
           "size": {
-            "height": 300,
+            "height": 152,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3,
+          "expandedHeight": 300
         },
         {
           "location": {
-            "x": 2693.9834956435097,
-            "y": 473.6057439615214
+            "x": 1733.3039521656237,
+            "y": 0
           },
           "nodeIndex": "Planilha NET 24 - Acima de 6 horas sem intervalo",
           "nodeLineageTag": "8c906ac8-aa8b-4fd4-a4e5-deecf772ee71",
@@ -153,11 +154,11 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 11
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 56.447393005377791,
+      "zoomValue": 56.447393005377833,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
