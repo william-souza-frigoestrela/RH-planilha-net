@@ -8,7 +8,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			          "ConceptualEntity": "Planilha NET 4 – Faltas"
 			        }
 			      },
 			      "State": "Generated",
@@ -29,7 +29,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.codcoligada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "CODCOLIGADA"
 			        }
 			      },
@@ -48,7 +48,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.codfilial": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "CODFILIAL"
 			        }
 			      },
@@ -67,7 +67,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.chapa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "CHAPA"
 			        }
 			      },
@@ -83,7 +83,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "NOME"
 			        }
 			      },
@@ -99,7 +99,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.secao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "SECAO"
 			        }
 			      },
@@ -115,7 +115,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "DATA"
 			        }
 			      },
@@ -208,7 +208,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.codfilialchapa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "CODFILIAL-CHAPA"
 			        }
 			      },
@@ -230,7 +230,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			        }
 			      },
 			      "State": "Generated",
@@ -252,7 +252,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.codcoligada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "CODCOLIGADA"
 			        }
 			      },
@@ -271,7 +271,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.codfilial": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "CODFILIAL"
 			        }
 			      },
@@ -290,7 +290,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.chapa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "CHAPA"
 			        }
 			      },
@@ -306,7 +306,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "NOME"
 			        }
 			      },
@@ -322,7 +322,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "SECAO"
 			        }
 			      },
@@ -341,7 +341,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.dataadmissao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "DATAADMISSAO"
 			        }
 			      },
@@ -364,7 +364,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.datademissao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "DATADEMISSAO"
 			        }
 			      },
@@ -387,7 +387,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.codtipo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "CODTIPO"
 			        }
 			      },
@@ -403,7 +403,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.codsituacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "CODSITUACAO"
 			        }
 			      },
@@ -419,7 +419,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.codfilialchapa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "CODFILIAL-CHAPA"
 			        }
 			      },
@@ -1154,7 +1154,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			        }
 			      },
 			      "State": "Generated",
@@ -1189,7 +1189,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.codcoligada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "CODCOLIGADA"
 			        }
 			      },
@@ -1208,7 +1208,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.codfilial": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "CODFILIAL"
 			        }
 			      },
@@ -1227,7 +1227,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.chapa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "CHAPA"
 			        }
 			      },
@@ -1243,7 +1243,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "NOME"
 			        }
 			      },
@@ -1259,7 +1259,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.codsituacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "CODSITUACAO"
 			        }
 			      },
@@ -1275,7 +1275,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.funcao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "FUNCAO"
 			        }
 			      },
@@ -1291,7 +1291,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.nome_secao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "NOME_SECAO"
 			        }
 			      },
@@ -1314,7 +1314,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.cod_jornada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "COD_JORNADA"
 			        }
 			      },
@@ -1337,7 +1337,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.desc_jornada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "DESC_JORNADA"
 			        }
 			      },
@@ -1370,7 +1370,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.datareferencia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "DATAREFERENCIA"
 			        }
 			      },
@@ -1393,7 +1393,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.dia_da_semana": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "DIA_DA_SEMANA"
 			        }
 			      },
@@ -1416,7 +1416,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.ent_1": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "ENT1"
 			        }
 			      },
@@ -1439,7 +1439,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.sai_1": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "SAI1"
 			        }
 			      },
@@ -1462,7 +1462,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.ent_2": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "ENT2"
 			        }
 			      },
@@ -1485,7 +1485,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.sai_2": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "SAI2"
 			        }
 			      },
@@ -1508,7 +1508,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.ent_3": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "ENT3"
 			        }
 			      },
@@ -1531,7 +1531,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.sai_3": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "SAI3"
 			        }
 			      },
@@ -1554,7 +1554,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.ent_4": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "ENT4"
 			        }
 			      },
@@ -1577,7 +1577,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.sai_4": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "SAI4"
 			        }
 			      },
@@ -1600,7 +1600,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.horas_base": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "HORAS_BASE"
 			        }
 			      },
@@ -1680,7 +1680,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.horas_trab": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "HORAS_TRAB"
 			        }
 			      },
@@ -1717,7 +1717,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.horas_extra": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "HORAS_EXTRAS"
 			        }
 			      },
@@ -1754,7 +1754,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.valor_horas_extra": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "VALOR_HORAS_EXTRAS"
 			        }
 			      },
@@ -1784,7 +1784,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.status": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "STATUS"
 			        }
 			      },
@@ -1890,7 +1890,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.codfilialchapa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "CODFILIAL-CHAPA"
 			        }
 			      },
@@ -1974,7 +1974,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.minutos_saldo_negativo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "MINUTOS_SALDO_NEGATIVO"
 			        }
 			      },
@@ -2004,7 +2004,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.minutos_saldo_positivo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "MINUTOS_SALDO_POSITIVO"
 			        }
 			      },
@@ -2034,7 +2034,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.minutos_falta": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "MINUTOS_FALTA"
 			        }
 			      },
@@ -2064,7 +2064,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.minutos_atraso": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "MINUTOS_ATRASO"
 			        }
 			      },
@@ -2094,7 +2094,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.minutos_hora_extra": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "MINUTOS_HORA_EXTRA"
 			        }
 			      },
@@ -4109,7 +4109,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.departamento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "DEPARTAMENTO"
 			        }
 			      },
@@ -4125,7 +4125,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.setor": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "SETOR"
 			        }
 			      },
@@ -4141,7 +4141,7 @@ cultureInfo pt-BR
 			    "planilha_NET_4__falta.secao_1": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 4 – Faltas",
+			          "ConceptualEntity": "Planilha NET 4 – Faltas",
 			          "ConceptualProperty": "SECAO.1"
 			        }
 			      },
@@ -4157,7 +4157,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.departamento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "DEPARTAMENTO"
 			        }
 			      },
@@ -4173,7 +4173,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.setor": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "SETOR"
 			        }
 			      },
@@ -4189,7 +4189,7 @@ cultureInfo pt-BR
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data.secao_1": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data",
+			          "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
 			          "ConceptualProperty": "SECAO.1"
 			        }
 			      },
@@ -4253,7 +4253,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.departamento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "DEPARTAMENTO"
 			        }
 			      },
@@ -4269,7 +4269,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.setor": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "SETOR"
 			        }
 			      },
@@ -4285,7 +4285,7 @@ cultureInfo pt-BR
 			    "planilha_NET_27__acima_de_10_horas__valor.secao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor",
+			          "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor",
 			          "ConceptualProperty": "SECAO"
 			        }
 			      },
@@ -4516,7 +4516,7 @@ cultureInfo pt-BR
 			  "Relationships": {
 			    "planilha_NET_27__acima_de_10_horas__valor_has_secao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4549,7 +4549,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_setor": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4582,7 +4582,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_departamento": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4714,7 +4714,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_secao_1": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4747,7 +4747,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_setor": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4780,7 +4780,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_departamento": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4813,7 +4813,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_secao_1": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4846,7 +4846,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_setor": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4879,7 +4879,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_departamento": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5275,7 +5275,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_qtd_funcionarios_saldo_negativo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5308,7 +5308,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_qtd_funcionarios_saldo_positivo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5341,7 +5341,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_total_saldo_negativo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5374,7 +5374,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_medida_total_saldo_positivo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5407,7 +5407,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_medida_qtd_HE_acima_10H": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5440,7 +5440,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_medida_qtd_faltas": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5473,7 +5473,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_medida_valor_HE": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6265,7 +6265,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_minutos_hora_extra": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6298,7 +6298,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_minutos_atraso": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6331,7 +6331,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_minutos_falta": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6364,7 +6364,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_minutos_saldo_positivo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6397,7 +6397,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_minutos_saldo_negativo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6529,7 +6529,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_codfilialchapa": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6562,7 +6562,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_status": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6595,7 +6595,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_valor_horas_extra": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6628,7 +6628,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_horas_extra": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6661,7 +6661,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_horas_trab": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6694,7 +6694,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_horas_base": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6727,7 +6727,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_sai_4": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6760,7 +6760,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_ent_4": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6793,7 +6793,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_sai_3": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6826,7 +6826,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_ent_3": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6859,7 +6859,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_sai_2": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6892,7 +6892,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_ent_2": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6925,7 +6925,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_sai_1": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6958,7 +6958,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_ent_1": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6991,7 +6991,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_dia_da_semana": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7024,7 +7024,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_datareferencia": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7057,7 +7057,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_desc_jornada": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7090,7 +7090,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_cod_jornada": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7123,7 +7123,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_nome_secao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7156,7 +7156,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_funcao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7189,7 +7189,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_codsituacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7222,7 +7222,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7255,7 +7255,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_chapa": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8212,7 +8212,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_codfilialchapa": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8245,7 +8245,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_codsituacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8278,7 +8278,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_codtipo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8311,7 +8311,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_datademissao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8344,7 +8344,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_dataadmissao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8377,7 +8377,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8410,7 +8410,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_chapa": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8443,7 +8443,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_codfilialchapa": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8476,7 +8476,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8509,7 +8509,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_situacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8542,7 +8542,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_codtipo": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8575,7 +8575,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_datademissao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8608,7 +8608,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_dataadmissao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8641,7 +8641,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_secao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8674,7 +8674,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_funcao": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8707,7 +8707,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8740,7 +8740,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_chapa": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9169,7 +9169,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_d_CODCOLIGADA": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9215,7 +9215,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_d_CODFILIAL": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9261,7 +9261,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_4__falta_has_d_calendario": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 4 – Faltas"
+			        "ConceptualEntity": "Planilha NET 4 – Faltas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9314,7 +9314,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_d_CODCOLIGADA": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9360,7 +9360,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_d_CODFILIAL": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9406,7 +9406,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET__2__saldo_de_banco_de_horas__saldo_data_has_fpbi_departamento": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+			        "ConceptualEntity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9544,7 +9544,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_d_CODCOLIGADA": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9590,7 +9590,7 @@ cultureInfo pt-BR
 			    },
 			    "planilha_NET_27__acima_de_10_horas__valor_has_d_CODFILIAL": {
 			      "Binding": {
-			        "ConceptualEntity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+			        "ConceptualEntity": "Planilha NET 27 – Acima de 10 Horas - Valor"
 			      },
 			      "State": "Generated",
 			      "Roles": {

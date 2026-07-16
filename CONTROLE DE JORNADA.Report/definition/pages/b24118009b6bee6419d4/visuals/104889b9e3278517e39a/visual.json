@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "104889b9e3278517e39a",
   "position": {
     "x": 39.203675344563557,
@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
+                      "Entity": "Planilha NET 4 – Faltas"
                     }
                   },
                   "Property": "NOME"
@@ -34,7 +34,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET- 4 – Faltas"
+                      "Entity": "Planilha NET 4 – Faltas"
                     }
                   },
                   "Property": "DATA"
@@ -53,7 +53,7 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Planilha NET- 4 – Faltas"
+                    "Entity": "Planilha NET 4 – Faltas"
                   }
                 },
                 "Property": "DATA"
@@ -546,7 +546,7 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET- 4 – Faltas"
+                "Entity": "Planilha NET 4 – Faltas"
               }
             },
             "Property": "NOME"
@@ -560,7 +560,7 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET- 4 – Faltas"
+                "Entity": "Planilha NET 4 – Faltas"
               }
             },
             "Property": "DATA"

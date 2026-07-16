@@ -1,4 +1,4 @@
-table 'Planilha NET- 27 – Acima de 10 Horas - Valor'
+table 'Planilha NET 27 – Acima de 10 Horas - Valor'
 	lineageTag: ce56e30c-6d95-4356-8022-69b6e76c8c50
 
 	column CODCOLIGADA
@@ -260,7 +260,7 @@ table 'Planilha NET- 27 – Acima de 10 Horas - Valor'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Planilha NET- 27 – Acima de 10 Horas - Valor' = m
+	partition 'Planilha NET 27 – Acima de 10 Horas - Valor' = m
 		mode: import
 		source = ```
 				let

@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                      "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
                     }
                   },
                   "Property": "STATUS"
@@ -248,7 +248,7 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET- 27 – Acima de 10 Horas - Valor"
+                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
               }
             },
             "Property": "STATUS"

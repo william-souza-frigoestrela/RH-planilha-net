@@ -1,4 +1,4 @@
-table 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'
+table 'Planilha NET 2 – Saldo de Banco de Horas – saldo_data'
 	lineageTag: f9686605-3ffa-47fb-a760-c1c755b9be1f
 
 	column CODCOLIGADA
@@ -180,7 +180,7 @@ table 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Planilha NET – 2 – Saldo de Banco de Horas – saldo_data' = m
+	partition 'Planilha NET 2 – Saldo de Banco de Horas – saldo_data' = m
 		mode: import
 		source = ```
 				let

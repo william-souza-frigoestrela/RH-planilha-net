@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                      "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "COLIGADA"
@@ -35,7 +35,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET – 2 – Saldo de Banco de Horas – saldo_data"
+                      "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
                     }
                   },
                   "Property": "FILIAL"
