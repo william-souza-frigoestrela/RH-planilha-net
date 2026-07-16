@@ -4,10 +4,10 @@
   "position": {
     "x": 610.82066869300911,
     "y": 24.316109422492403,
-    "z": 3003,
+    "z": 3000,
     "height": 71.00303951367782,
     "width": 329.726443768997,
-    "tabOrder": 3003
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -43,7 +43,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SETOR",
               "nativeQueryRef": "SETOR",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -179,16 +179,6 @@
                   "isToggled": true
                 }
               ]
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "' INDUSTRIA IN NATURA'"
-                  }
-                }
-              ],
-              "isToggled": true
             }
           ]
         }
@@ -395,48 +385,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "1dc0f1dc8eab707beead",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "DEPARTAMENTO"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5c872c22da013dcf0f14",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "bcf361e6da9727f7c2f3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "a74c335a94f58fa4093e",
         "field": {

@@ -678,72 +678,8 @@
         "howCreated": "User"
       },
       {
-        "name": "c5036e4d1e8f84b0f14f",
+        "name": "e7b6beec8abe2b152abb",
         "ordinal": 1,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "ENT1"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "6dd131072a36869d71bc",
-        "ordinal": 2,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "ENT2"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "cad136582c6c32399cfa",
-        "ordinal": 3,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "ENT3"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "df962d031bf3b171a318",
-        "ordinal": 4,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "ENT4"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "c981ab52cbb44cfdd24a",
-        "ordinal": 5,
         "field": {
           "Measure": {
             "Expression": {
@@ -751,7 +687,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "Filtro Hierarquia RLS"
+            "Property": "'Filtro Departamento RLS (Acima 6H)'"
           }
         },
         "type": "Advanced",
@@ -776,7 +712,7 @@
                           "Source": "m"
                         }
                       },
-                      "Property": "Filtro Hierarquia RLS"
+                      "Property": "'Filtro Departamento RLS (Acima 6H)'"
                     }
                   },
                   "Right": {
@@ -789,6 +725,70 @@
             }
           ]
         },
+        "howCreated": "User"
+      },
+      {
+        "name": "c5036e4d1e8f84b0f14f",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "ENT1"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "6dd131072a36869d71bc",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "ENT2"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "cad136582c6c32399cfa",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "ENT3"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "df962d031bf3b171a318",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "ENT4"
+          }
+        },
+        "type": "Categorical",
         "howCreated": "User"
       },
       {
@@ -808,58 +808,8 @@
         "howCreated": "User"
       },
       {
-        "name": "6fb2f68d016c7c7544f8",
-        "ordinal": 7,
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Filtro Slicer Departamento RLS"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "m",
-              "Entity": "Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "m"
-                        }
-                      },
-                      "Property": "Filtro Slicer Departamento RLS"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "1L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
         "name": "dee2f8130d7cd1143df9",
-        "ordinal": 8,
+        "ordinal": 7,
         "field": {
           "Column": {
             "Expression": {
@@ -875,7 +825,7 @@
       },
       {
         "name": "ea9098d8dc431bc71bb2",
-        "ordinal": 9,
+        "ordinal": 8,
         "field": {
           "Column": {
             "Expression": {
@@ -891,7 +841,7 @@
       },
       {
         "name": "1d46406adc52f2f0b0cf",
-        "ordinal": 10,
+        "ordinal": 9,
         "field": {
           "Column": {
             "Expression": {
@@ -907,7 +857,7 @@
       },
       {
         "name": "f2823fbf9ce6acab8c7f",
-        "ordinal": 11,
+        "ordinal": 10,
         "field": {
           "Column": {
             "Expression": {
@@ -923,7 +873,7 @@
       },
       {
         "name": "59a52c5345a33a188573",
-        "ordinal": 12,
+        "ordinal": 11,
         "field": {
           "Column": {
             "Expression": {
@@ -939,7 +889,7 @@
       },
       {
         "name": "358e30a2cbd91cd1e7bf",
-        "ordinal": 13,
+        "ordinal": 12,
         "field": {
           "Column": {
             "Expression": {
@@ -955,7 +905,7 @@
       },
       {
         "name": "6f62c2c32f22239cb84a",
-        "ordinal": 14,
+        "ordinal": 13,
         "field": {
           "Column": {
             "Expression": {
@@ -971,7 +921,7 @@
       },
       {
         "name": "1c7848acfba6e3f7d706",
-        "ordinal": 15,
+        "ordinal": 14,
         "field": {
           "Column": {
             "Expression": {
@@ -986,7 +936,8 @@
         "howCreated": "User"
       },
       {
-        "name": "37a3424130914f3e422b",
+        "name": "fe63cbe933c64debd936",
+        "ordinal": 15,
         "field": {
           "Column": {
             "Expression": {
@@ -1000,7 +951,8 @@
         "type": "Categorical"
       },
       {
-        "name": "e2ed01eaef647ec03e5f",
+        "name": "f125d23246607973431c",
+        "ordinal": 16,
         "field": {
           "Column": {
             "Expression": {
@@ -1014,7 +966,8 @@
         "type": "Categorical"
       },
       {
-        "name": "a2b2f6121b90369451bc",
+        "name": "3f2021ba77067c56934c",
+        "ordinal": 17,
         "field": {
           "Column": {
             "Expression": {
@@ -1028,7 +981,8 @@
         "type": "Categorical"
       },
       {
-        "name": "5c44fa51cad91709f0ae",
+        "name": "2d40196efe5df35d3af2",
+        "ordinal": 18,
         "field": {
           "Column": {
             "Expression": {
@@ -1042,7 +996,8 @@
         "type": "Categorical"
       },
       {
-        "name": "262b1570fa1ccd64a306",
+        "name": "e7c7f39627fc8f9eee69",
+        "ordinal": 19,
         "field": {
           "Column": {
             "Expression": {
@@ -1056,7 +1011,8 @@
         "type": "Categorical"
       },
       {
-        "name": "ebd3189113449eade285",
+        "name": "8501580c49c465c821f3",
+        "ordinal": 20,
         "field": {
           "Column": {
             "Expression": {
@@ -1070,7 +1026,8 @@
         "type": "Categorical"
       },
       {
-        "name": "a8df48eed0914a2e0868",
+        "name": "aa4d70205fa9d090627b",
+        "ordinal": 21,
         "field": {
           "Column": {
             "Expression": {
@@ -1084,7 +1041,8 @@
         "type": "Categorical"
       },
       {
-        "name": "698f61580f0093f9e447",
+        "name": "8e61740a28677eafbf6d",
+        "ordinal": 22,
         "field": {
           "Column": {
             "Expression": {
@@ -1098,7 +1056,8 @@
         "type": "Categorical"
       },
       {
-        "name": "726e3aed775622f4c243",
+        "name": "77a2533bc7296c5fc1f8",
+        "ordinal": 23,
         "field": {
           "Column": {
             "Expression": {
@@ -1112,7 +1071,8 @@
         "type": "Categorical"
       },
       {
-        "name": "4e71ed94c88aaceb8617",
+        "name": "edefcff7ac25c90fcdf0",
+        "ordinal": 24,
         "field": {
           "Column": {
             "Expression": {

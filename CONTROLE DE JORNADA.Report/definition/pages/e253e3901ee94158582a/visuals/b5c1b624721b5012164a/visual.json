@@ -4,10 +4,10 @@
   "position": {
     "x": 710.75105485232064,
     "y": 25.924050632911392,
-    "z": 5008,
+    "z": 6000,
     "height": 69.130801687763707,
     "width": 494.71729957805906,
-    "tabOrder": 5008
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -377,48 +377,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "273f24bca644b375f4f3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "DEPARTAMENTO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "363c671a8ea3eeeae503",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "13497feb6fb3d09c314b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "731cc24d4db635da2933",
         "field": {

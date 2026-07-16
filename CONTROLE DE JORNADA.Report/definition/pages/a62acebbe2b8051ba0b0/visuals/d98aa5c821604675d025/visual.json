@@ -585,48 +585,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "3cfd6c36f3eb44f555c1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
-              }
-            },
-            "Property": "NOME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "cbaab6229d8a824355f9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Saldo Positivo"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5e0cce9240cbe103181b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Saldo Negativo"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "064075b29b6331f64ab1",
         "field": {
           "Measure": {
@@ -674,6 +632,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "df38cbe8a057ca2a7926",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "14414cae878bc354fb1e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Positivo"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "18fa09c15e7239eeab5a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Negativo"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

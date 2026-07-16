@@ -4,10 +4,10 @@
   "position": {
     "x": 710.15659955257274,
     "y": 104.99627143922446,
-    "z": 8000,
+    "z": 5000,
     "height": 81.133482475764353,
     "width": 199.49291573452649,
-    "tabOrder": 8000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -430,23 +430,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3855a08ecbfd45705d0a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Qtd_Funcionarios_Saldo_Positivo"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

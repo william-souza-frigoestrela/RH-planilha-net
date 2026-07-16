@@ -4,10 +4,10 @@
   "position": {
     "x": 325.64231738035267,
     "y": 24.718723761544922,
-    "z": 5007,
+    "z": 5000,
     "height": 70.931989924433253,
     "width": 366.48194794290515,
-    "tabOrder": 5007
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -440,34 +440,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "874c741a21ca07c53adf",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "COLIGADA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a62304db7a66ba1cf3cd",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "FILIAL"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "0407bd472d0c2ff12b97",
         "field": {

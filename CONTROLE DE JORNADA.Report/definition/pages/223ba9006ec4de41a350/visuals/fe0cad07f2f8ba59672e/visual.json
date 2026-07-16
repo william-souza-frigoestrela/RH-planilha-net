@@ -319,7 +319,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Func acima 10 HE'"
+                  "Value": "'Func acima 6 Hrs'"
                 }
               }
             }
@@ -402,23 +402,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a33914cf8cc2e898a042",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Qtd HE acima 6H"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

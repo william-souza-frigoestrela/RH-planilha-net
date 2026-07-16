@@ -4,10 +4,10 @@
   "position": {
     "x": 39.13497390007457,
     "y": 105.95078299776287,
-    "z": 5000,
+    "z": 2000,
     "height": 81.133482475764353,
     "width": 194.72035794183446,
-    "tabOrder": 5000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -402,23 +402,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f9f58872debc0f2f4b74",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Saldo Positivo"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

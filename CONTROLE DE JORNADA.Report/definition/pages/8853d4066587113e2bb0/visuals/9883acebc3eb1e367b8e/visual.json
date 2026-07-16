@@ -4,10 +4,10 @@
   "position": {
     "x": 46.995073891625616,
     "y": 106.4039408866995,
-    "z": 2005,
+    "z": 3000,
     "height": 83.349753694581281,
     "width": 180,
-    "tabOrder": 2005
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -416,23 +416,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "65c5d4c3d24789ffa9d7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "R$ HE"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

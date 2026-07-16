@@ -493,20 +493,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "7d9136f9fad8eb2907cc",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCalendario"
-              }
-            },
-            "Property": "Mês nome"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
