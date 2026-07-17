@@ -288,7 +288,7 @@ table Medidas
 		formatString: 0
 		lineageTag: 79e4cfdc-02d8-4f88-8063-4ec5b23b850b
 
-	measure '''Filtro Departamento RLS (Faltas)''' =
+	measure 'Filtro Departamento RLS (Faltas)' =
 			
 			VAR _UsuarioLogado = USERPRINCIPALNAME()
 			VAR _UsuarioEstaMapeado =
@@ -310,7 +310,7 @@ table Medidas
 		formatString: 0
 		lineageTag: a6ec17b4-31ff-41f7-b451-5a32e4510f59
 
-	measure '''Filtro Departamento RLS (Acima 10H)''' =
+	measure 'Filtro Departamento RLS (Acima 10H)' =
 			
 			VAR _UsuarioLogado = USERPRINCIPALNAME()
 			VAR _UsuarioEstaMapeado =
@@ -332,7 +332,7 @@ table Medidas
 		formatString: 0
 		lineageTag: f2efaffc-172f-4972-bf57-abc40c8e8686
 
-	measure '''Filtro Departamento RLS (Acima 6H)''' =
+	measure 'Filtro Departamento RLS (Acima 6H)' =
 			
 			VAR _UsuarioLogado = USERPRINCIPALNAME()
 			VAR _UsuarioEstaMapeado =
@@ -353,6 +353,35 @@ table Medidas
 			    )
 		formatString: 0
 		lineageTag: 3e7596fb-cc5d-4ab4-a960-7a4bf7f9b3f8
+
+	measure 'Filtro RLS Faltas Filial Depto' =
+			
+			VAR _UsuarioLogado = USERPRINCIPALNAME()
+			VAR _UsuarioEstaMapeado =
+			    NOT(ISBLANK(CALCULATE(COUNTROWS('dAcessoUsuarios'), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)))
+			VAR _FiliaisAutorizadas =
+			    CALCULATETABLE(VALUES('dAcessoUsuarios'[COLIGADA-FILIAL]), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)
+			VAR _DepartamentosAutorizados =
+			    CALCULATETABLE(VALUES('dAcessoUsuarios'[CODDEPARTAMENTO]), ALL('dFilial'), 'dAcessoUsuarios'[EMAIL] = _UsuarioLogado)
+			VAR _PossuiRestricaoDepto =
+			    NOT(ISEMPTY(FILTER(_DepartamentosAutorizados, NOT(ISBLANK('dAcessoUsuarios'[CODDEPARTAMENTO])) && 'dAcessoUsuarios'[CODDEPARTAMENTO] <> "")))
+			VAR _FilialDaLinha = SELECTEDVALUE('Planilha NET 4 – Faltas'[COLIGADA_FILIAL])
+			VAR _DeptoDaLinha  = SELECTEDVALUE('Planilha NET 4 – Faltas'[CODDEPARTAMENTO])
+			RETURN
+			    IF(
+			        _UsuarioEstaMapeado = FALSE(), 1,
+			        VAR _FilialOk = _FilialDaLinha IN _FiliaisAutorizadas
+			        VAR _DeptoOk  = IF(_PossuiRestricaoDepto, _DeptoDaLinha IN _DepartamentosAutorizados, TRUE())
+			        RETURN
+			            IF(_FilialOk && _DeptoOk, 1, 0)
+			    )
+		formatString: 0
+		lineageTag: 91f14fd4-8c48-47db-93b7-54868c952028
+
+	measure Medida
+		lineageTag: 5a0748fd-5a54-47b4-8d0f-822cd5f3502e
+
+		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
 
 	column Column
 		isHidden

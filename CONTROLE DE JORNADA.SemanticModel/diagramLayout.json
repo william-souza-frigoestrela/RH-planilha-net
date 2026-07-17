@@ -74,7 +74,7 @@
             "height": 296,
             "width": 234
           },
-          "zIndex": 6
+          "zIndex": 11
         },
         {
           "location": {
@@ -87,7 +87,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 11,
+          "zIndex": 9,
           "expandedHeight": 200
         },
         {
@@ -101,7 +101,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 6
         },
         {
           "location": {
@@ -111,10 +111,10 @@
           "nodeIndex": "Planilha NET 4 – Faltas",
           "nodeLineageTag": "455df675-a460-4ea2-a8d9-912076b5bf73",
           "size": {
-            "height": 176,
+            "height": 152,
             "width": 234
           },
-          "zIndex": 9,
+          "zIndex": 10,
           "expandedHeight": 300
         },
         {
@@ -141,7 +141,7 @@
             "height": 152,
             "width": 234
           },
-          "zIndex": 10,
+          "zIndex": 8,
           "expandedHeight": 300
         },
         {
@@ -155,7 +155,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 7
         }
       ],
       "name": "Todas as tabelas",

@@ -68,3 +68,7 @@ relationship fb9a5d4f-aa92-0f10-3c40-4253389157aa
 	fromColumn: FPBI_DEPARTAMENTO.COLIGADA-FILIAL
 	toColumn: dFilial.ID_FILIAL
 
+relationship 44874139-50da-26a0-0014-efbd26051c43
+	fromColumn: 'Planilha NET 4 – Faltas'.SECAO
+	toColumn: FPBI_DEPARTAMENTO.DESCRICAO
+

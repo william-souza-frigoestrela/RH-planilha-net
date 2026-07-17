@@ -687,7 +687,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "'Filtro Departamento RLS (Acima 6H)'"
+            "Property": "Filtro Departamento RLS (Acima 6H)"
           }
         },
         "type": "Advanced",
@@ -712,7 +712,7 @@
                           "Source": "m"
                         }
                       },
-                      "Property": "'Filtro Departamento RLS (Acima 6H)'"
+                      "Property": "Filtro Departamento RLS (Acima 6H)"
                     }
                   },
                   "Right": {

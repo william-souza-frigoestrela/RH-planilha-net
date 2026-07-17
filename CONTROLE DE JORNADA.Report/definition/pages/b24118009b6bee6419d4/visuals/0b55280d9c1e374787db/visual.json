@@ -416,5 +416,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9dbcc2a0ece02ea8e41c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd faltas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -43,7 +43,7 @@
               },
               "queryRef": "dFilial.FILIAL",
               "nativeQueryRef": "FILIAL",
-              "active": true
+              "active": false
             }
           ]
         }
@@ -82,20 +82,7 @@
             "isPinned": true
           }
         ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'1 - FRIGOESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            }
-          ]
-        }
+        "root": {}
       }
     ],
     "objects": {
@@ -138,28 +125,13 @@
                               },
                               "Property": "COLIGADA"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "d"
-                                }
-                              },
-                              "Property": "FILIAL"
-                            }
                           }
                         ],
                         "Values": [
                           [
                             {
                               "Literal": {
-                                "Value": "'1 - FRIGOESTRELA'"
-                              }
-                            },
-                            {
-                              "Literal": {
-                                "Value": "'2 - INDUSTRIA ESTRELA'"
+                                "Value": "'5 - OESTE GRAXARIA'"
                               }
                             }
                           ]
@@ -178,16 +150,6 @@
                               },
                               "Property": "COLIGADA"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Entity": "dFilial"
-                                }
-                              },
-                              "Property": "FILIAL"
-                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -197,16 +159,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'1 - FRIGOESTRELA'"
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "1": [
-                                  {
-                                    "Literal": {
-                                      "Value": "'2 - INDUSTRIA ESTRELA'"
+                                      "Value": "'5 - OESTE GRAXARIA'"
                                     }
                                   }
                                 ]
@@ -225,25 +178,12 @@
                                   "Property": "COLIGADA"
                                 }
                               }
-                            },
-                            {
-                              "value": {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "dFilial"
-                                    }
-                                  },
-                                  "Property": "FILIAL"
-                                }
-                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "1 - FRIGOESTRELA",
-                            "1": "2 - INDUSTRIA ESTRELA"
+                            "0": "5 - OESTE GRAXARIA"
                           }
                         ]
                       }
@@ -478,6 +418,34 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "962af12308473fa699d6",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5362856344fdc838134c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "FILIAL"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
