@@ -539,108 +539,8 @@
         "type": "Categorical"
       },
       {
-        "name": "eedd3d69169bd20c5f05",
-        "ordinal": 1,
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Filtro Hierarquia RLS"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "m",
-              "Entity": "Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "m"
-                        }
-                      },
-                      "Property": "Filtro Hierarquia RLS"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "1L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
-        "name": "ac612359626604be5b76",
-        "ordinal": 2,
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Filtro Slicer Departamento RLS"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "m",
-              "Entity": "Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "m"
-                        }
-                      },
-                      "Property": "Filtro Slicer Departamento RLS"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "1L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
         "name": "20dd66fb71ff7cafae0f",
-        "ordinal": 3,
+        "ordinal": 1,
         "field": {
           "Column": {
             "Expression": {
@@ -654,8 +554,24 @@
         "type": "Categorical"
       },
       {
-        "name": "27dddb7a567e9b96e5dc",
-        "ordinal": 4,
+        "name": "22ab178da07624e34ac7",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 4 – Faltas"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "c55cc0a05ce744404526",
+        "ordinal": 3,
         "field": {
           "Measure": {
             "Expression": {
@@ -663,7 +579,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "'Filtro Departamento RLS (Faltas)'"
+            "Property": "Filtro Departamento RLS (Faltas)"
           }
         },
         "type": "Advanced",
@@ -688,7 +604,7 @@
                           "Source": "m"
                         }
                       },
-                      "Property": "'Filtro Departamento RLS (Faltas)'"
+                      "Property": "Filtro Departamento RLS (Faltas)"
                     }
                   },
                   "Right": {
@@ -701,22 +617,6 @@
             }
           ]
         },
-        "howCreated": "User"
-      },
-      {
-        "name": "22ab178da07624e34ac7",
-        "ordinal": 5,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 4 – Faltas"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical",
         "howCreated": "User"
       }
     ],

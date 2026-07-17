@@ -486,6 +486,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "8c7209fa8f5ac55887c2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "DEPARTAMENTO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "87cafeffbd90e77adb41",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SETOR"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4642cff3fbfbf6f39213",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

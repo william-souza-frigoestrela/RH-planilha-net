@@ -88,7 +88,7 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "'1 - FRIGOESTRELA'"
+                    "Value": "'2 - ALIMENTOS ESTRELA'"
                   }
                 }
               ],
@@ -154,12 +154,12 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'1 - FRIGOESTRELA'"
+                                "Value": "'2 - ALIMENTOS ESTRELA'"
                               }
                             },
                             {
                               "Literal": {
-                                "Value": "'2 - INDUSTRIA ESTRELA'"
+                                "Value": "'104 - SÃO LUIZ GONZAGA'"
                               }
                             }
                           ]
@@ -197,7 +197,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'1 - FRIGOESTRELA'"
+                                      "Value": "'2 - ALIMENTOS ESTRELA'"
                                     }
                                   }
                                 ]
@@ -206,7 +206,7 @@
                                 "1": [
                                   {
                                     "Literal": {
-                                      "Value": "'2 - INDUSTRIA ESTRELA'"
+                                      "Value": "'104 - SÃO LUIZ GONZAGA'"
                                     }
                                   }
                                 ]
@@ -242,8 +242,8 @@
                         },
                         "valueMap": [
                           {
-                            "0": "1 - FRIGOESTRELA",
-                            "1": "2 - INDUSTRIA ESTRELA"
+                            "0": "2 - ALIMENTOS ESTRELA",
+                            "1": "104 - SÃO LUIZ GONZAGA"
                           }
                         ]
                       }
