@@ -37,6 +37,20 @@
                       "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
                     }
                   },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "Planilha NET 27 – Acima de 10 Horas - Valor.SECAO",
+              "nativeQueryRef": "SECAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+                    }
+                  },
                   "Property": "FUNCAO"
                 }
               },
@@ -1088,6 +1102,20 @@
               }
             },
             "Property": "SAI4"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "87c49de67f68ff564874",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+              }
+            },
+            "Property": "SECAO"
           }
         },
         "type": "Categorical"

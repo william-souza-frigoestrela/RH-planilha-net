@@ -37,6 +37,20 @@
                       "Entity": "Planilha NET 24 - Acima de 6 horas sem intervalo"
                     }
                   },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "Planilha NET 24 - Acima de 6 horas sem intervalo.SECAO",
+              "nativeQueryRef": "SECAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planilha NET 24 - Acima de 6 horas sem intervalo"
+                    }
+                  },
                   "Property": "FUNCAO"
                 }
               },
@@ -1081,6 +1095,20 @@
               }
             },
             "Property": "HORAS_TRAB"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bf20443be71aaa2684e7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 24 - Acima de 6 horas sem intervalo"
+              }
+            },
+            "Property": "SECAO"
           }
         },
         "type": "Categorical"
