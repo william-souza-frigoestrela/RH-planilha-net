@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "f402a0d32ed5bd5169b0",
   "position": {
-    "x": 1045.6033755274261,
-    "y": 22.683544303797468,
+    "x": 990.15197568389067,
+    "y": 23.343465045592705,
     "z": 1000,
-    "height": 70.210970464135016,
-    "width": 171.74683544303798,
+    "height": 71.00303951367782,
+    "width": 172.15805471124619,
     "tabOrder": 1000
   },
   "visual": {
@@ -232,5 +232,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "805e2fbdb5c3de9bb044",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
+              }
+            },
+            "Property": "CODSITUACAO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
