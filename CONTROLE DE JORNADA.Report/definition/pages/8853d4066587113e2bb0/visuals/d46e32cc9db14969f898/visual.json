@@ -262,6 +262,13 @@
                   }
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mês, Data'"
+                }
+              }
             }
           }
         }
