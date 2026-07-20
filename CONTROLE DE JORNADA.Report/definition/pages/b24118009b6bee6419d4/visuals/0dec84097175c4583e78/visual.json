@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "0dec84097175c4583e78",
   "position": {
-    "x": 971.82266009852219,
-    "y": 24.827586206896552,
+    "x": 940.54711246200611,
+    "y": 25.288753799392097,
     "z": 4000,
-    "height": 70.935960591133011,
-    "width": 283.74384236453204,
+    "height": 70.030395136778125,
+    "width": 213.00911854103344,
     "tabOrder": 4000
   },
   "visual": {
@@ -266,7 +266,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Mês, Data'"
+                  "Value": "'MÊS, DATA'"
                 }
               }
             }
@@ -455,7 +455,7 @@
         }
       },
       {
-        "name": "a2d042b105e883e0350e",
+        "name": "daa0d2bc66d561517a8d",
         "field": {
           "Column": {
             "Expression": {

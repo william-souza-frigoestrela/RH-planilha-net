@@ -1,10 +1,10 @@
 table Atualização
-	lineageTag: d57dc3ae-c8c9-4136-8301-fc88c5575a92
+	lineageTag: 7d66e5fc-1d40-4b1f-b4e3-fe7d2dc46bed
 
 	column 'Data e hora certa'
 		dataType: dateTime
 		formatString: General Date
-		lineageTag: b643455a-f10b-470a-95be-a817f9b8d995
+		lineageTag: 437a6a9c-9441-4196-be4e-4266e94638a9
 		summarizeBy: none
 		sourceColumn: Data e hora certa
 

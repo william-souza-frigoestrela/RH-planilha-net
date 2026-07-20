@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "9883acebc3eb1e367b8e",
+  "name": "fb9fa9a7069a318d09a4",
   "position": {
-    "x": 46.995073891625616,
-    "y": 106.4039408866995,
-    "z": 3000,
-    "height": 83.349753694581281,
-    "width": 180,
-    "tabOrder": 3000
+    "x": 1113.677811550152,
+    "y": 0,
+    "z": 4001,
+    "height": 60.30395136778116,
+    "width": 166.32218844984803,
+    "tabOrder": 4001
   },
   "visual": {
     "visualType": "cardVisual",
@@ -17,17 +17,22 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Atualização"
+                        }
+                      },
+                      "Property": "Data e hora certa"
                     }
                   },
-                  "Property": "R$ HE"
+                  "Function": 3
                 }
               },
-              "queryRef": "Medidas.R$ HE",
-              "nativeQueryRef": "R$ HE"
+              "queryRef": "Min(Atualização.Data e hora certa)",
+              "nativeQueryRef": "Data e hora certa"
             }
           ]
         }
@@ -36,16 +41,21 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "Medidas"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Atualização"
+                      }
+                    },
+                    "Property": "Data e hora certa"
                   }
                 },
-                "Property": "R$ HE"
+                "Function": 3
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
@@ -113,16 +123,16 @@
         },
         {
           "properties": {
-            "labelDisplayUnits": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "8D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Medidas.R$ HE"
+            "metadata": "Min(Atualização.Data e hora certa)"
           }
         }
       ],
@@ -196,6 +206,34 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ultima atualização'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(Atualização.Data e hora certa)"
           }
         }
       ],
@@ -293,7 +331,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -420,15 +458,20 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1ef3cc80712371057d6d",
+        "name": "2e338266dd0b3d373cc9",
         "field": {
-          "Measure": {
+          "Aggregation": {
             "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Atualização"
+                  }
+                },
+                "Property": "Data e hora certa"
               }
             },
-            "Property": "R$ HE"
+            "Function": 3
           }
         },
         "type": "Advanced"

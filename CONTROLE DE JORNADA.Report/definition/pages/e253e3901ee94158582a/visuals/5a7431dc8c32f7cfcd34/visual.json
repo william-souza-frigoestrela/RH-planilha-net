@@ -266,7 +266,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Mês, Data'"
+                  "Value": "'MÊS, DATA'"
                 }
               }
             }
@@ -455,7 +455,7 @@
         }
       },
       {
-        "name": "3c9c9c8d901b420914b7",
+        "name": "83649e768b6e102bca4e",
         "field": {
           "Column": {
             "Expression": {
