@@ -262,6 +262,13 @@
                   }
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'MÊS, DATA'"
+                }
+              }
             }
           }
         }
@@ -446,6 +453,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "cd120b5e8049d0189705",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dCalendario"
+              }
+            },
+            "Property": "Mês nome"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
