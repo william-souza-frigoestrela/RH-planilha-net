@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "fe0cad07f2f8ba59672e",
+  "name": "4d5e94cbe33159cb061d",
   "position": {
-    "x": 39.13497390007457,
-    "y": 101.17822520507085,
-    "z": 2000,
-    "height": 87.8150633855332,
-    "width": 191.85682326621924,
-    "tabOrder": 2000
+    "x": 1113.677811550152,
+    "y": 0,
+    "z": 4001,
+    "height": 60.30395136778116,
+    "width": 166.32218844984803,
+    "tabOrder": 4001
   },
   "visual": {
     "visualType": "cardVisual",
@@ -17,17 +17,22 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Atualização"
+                        }
+                      },
+                      "Property": "Data e hora certa"
                     }
                   },
-                  "Property": "Qtd HE acima 6H"
+                  "Function": 3
                 }
               },
-              "queryRef": "Medidas.Qtd HE acima 6H",
-              "nativeQueryRef": "Qtd HE acima 6H"
+              "queryRef": "Min(Atualização.Data e hora certa)",
+              "nativeQueryRef": "Data e hora certa"
             }
           ]
         }
@@ -36,16 +41,21 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "Medidas"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Atualização"
+                      }
+                    },
+                    "Property": "Data e hora certa"
                   }
                 },
-                "Property": "Qtd HE acima 6H"
+                "Function": 3
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
@@ -122,6 +132,34 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ultima atualização'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(Atualização.Data e hora certa)"
           }
         }
       ],
@@ -228,7 +266,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "8D"
                 }
               }
             },
@@ -279,7 +317,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -319,7 +357,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Func acima 6 Hrs'"
+                  "Value": "'Ultima atualização'"
                 }
               }
             }
@@ -406,15 +444,20 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "01dee3f902e202263de3",
+        "name": "ceb087f70d9450681dc1",
         "field": {
-          "Measure": {
+          "Aggregation": {
             "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Atualização"
+                  }
+                },
+                "Property": "Data e hora certa"
               }
             },
-            "Property": "Qtd HE acima 6H"
+            "Function": 3
           }
         },
         "type": "Advanced"
