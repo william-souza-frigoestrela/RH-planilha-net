@@ -38,11 +38,11 @@
                       "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "SECAO"
+                  "Property": "SETOR"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
-              "nativeQueryRef": "SECAO",
+              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
+              "nativeQueryRef": "SETOR",
               "active": true
             },
             {
@@ -53,12 +53,12 @@
                       "Entity": "FPBI_DEPARTAMENTO"
                     }
                   },
-                  "Property": "SETOR"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "FPBI_DEPARTAMENTO.SETOR",
-              "nativeQueryRef": "SETOR",
-              "active": false
+              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
+              "nativeQueryRef": "SECAO",
+              "active": true
             }
           ]
         }
@@ -91,6 +91,25 @@
           },
           {
             "queryRefs": [
+              "FPBI_DEPARTAMENTO.SETOR"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SETOR"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
               "FPBI_DEPARTAMENTO.SECAO"
             ],
             "isCollapsed": true,
@@ -107,13 +126,6 @@
               }
             ],
             "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "FPBI_DEPARTAMENTO.SETOR"
-            ],
-            "isCollapsed": true,
-            "isPinned": true
           }
         ],
         "root": {
@@ -126,32 +138,13 @@
                   }
                 }
               ],
+              "isToggled": true,
               "children": [
                 {
                   "identityValues": [
                     {
                       "Literal": {
-                        "Value": "' AUDITORIA'"
-                      }
-                    }
-                  ],
-                  "isToggled": true
-                },
-                {
-                  "identityValues": [
-                    {
-                      "Literal": {
-                        "Value": "' PORTARIA DIURNO'"
-                      }
-                    }
-                  ],
-                  "isToggled": true
-                },
-                {
-                  "identityValues": [
-                    {
-                      "Literal": {
-                        "Value": "' SUPORTE INFRA ESTRUTURA'"
+                        "Value": "' GESTAO E CONTROLE'"
                       }
                     }
                   ],
@@ -490,20 +483,6 @@
         "type": "Categorical"
       },
       {
-        "name": "f98b9313e34ed50b0cdc",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "0fdd6cea323000071799",
         "field": {
           "Column": {
@@ -513,6 +492,20 @@
               }
             },
             "Property": "SETOR"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cf6e5fcad76b5adc1bed",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
           }
         },
         "type": "Categorical"
