@@ -88,7 +88,7 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "'2 - ALIMENTOS ESTRELA'"
+                    "Value": "null"
                   }
                 }
               ],
@@ -99,6 +99,36 @@
                 {
                   "Literal": {
                     "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'2 - ALIMENTOS ESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'12 - TABOADO RAÇÃO'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'14 - ETIVALDO GOMES FILHO'"
                   }
                 }
               ],
@@ -495,6 +525,34 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "fd8c3ca88ae2b00042b0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a766ce2aca1c01c08ac0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "FILIAL"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

@@ -131,11 +131,9 @@ table Medidas
 
 	measure 'Filtro Slicer RLS' = ```
 			
-			
 			VAR _UsuarioLogado = USERPRINCIPALNAME()
 			
 			-- 1. Verifica se o usuário logado está mapeado na tabela de restrições
-			
 			VAR _UsuarioEstaMapeado =
 			    NOT(ISBLANK(
 			        CALCULATE(
@@ -144,25 +142,31 @@ table Medidas
 			            'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
 			        )
 			    ))
-			-- 2. Lista as filiais autorizadas para a Amanda
+			
+			-- 2. Lista TODAS as filiais/coligadas autorizadas para o usuário (suporta N linhas na tabela de acesso)
 			VAR _FiliaisAutorizadas =
 			    CALCULATETABLE(
-			        VALUES('dAcessoUsuarios'[COLIGADA-FILIAL]),
+			        VALUES('dAcessoUsuarios'[COLIGADA-FILIAL]), -- Certifique-se de usar a chave correspondente da filial
 			        ALL('dFilial'),
 			        'dAcessoUsuarios'[EMAIL] = _UsuarioLogado
 			    )
 			
-			-- 3. Captura o ID da linha que a árvore do Slicer está renderizando
-			VAR _FilialSendoDesenhada = SELECTEDVALUE('dFilial'[ID_FILIAL])
+			-- 3. Captura o conjunto de filiais que o visual/slicer está renderizando no nó atual
+			VAR _FiliaisNoContexto = VALUES('dFilial'[ID_FILIAL]) 
+			-- NOTA: Altere 'dFilial'[COLIGADA-FILIAL] acima para a mesma coluna usada na _FiliaisAutorizadas 
+			-- (ex: ID_FILIAL se for o código correspondente)
+			
+			-- 4. Verifica se a filial renderizada está na lista de autorizadas
+			VAR _PossuiAcesso = NOT(ISEMPTY(INTERSECT(_FiliaisNoContexto, _FiliaisAutorizadas)))
+			
 			RETURN
 			    IF(
 			        _UsuarioEstaMapeado = FALSE(),
-			        1, -- Usuário Master: Vê todas as opções   
-			         -- Para usuário restrito: Mostra o nó pai (BLANK) ou se a filial for a autorizada
-			        IF(ISBLANK(_FilialSendoDesenhada) || _FilialSendoDesenhada IN _FiliaisAutorizadas, 1, 0)
+			        1, -- Usuário Master: Vê tudo livremente
+			        
+			        -- Para usuário restrito: Mostra se tiver acesso a qualquer uma das filiais autorizadas
+			        IF(_PossuiAcesso, 1, 0)
 			    )
-			
-			
 			```
 		formatString: 0
 		lineageTag: 20da9c5f-d812-4499-9ff1-30a729a32d78

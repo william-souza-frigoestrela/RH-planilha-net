@@ -58,7 +58,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SECAO",
               "nativeQueryRef": "SECAO",
-              "active": false
+              "active": true
             }
           ]
         }
@@ -126,12 +126,33 @@
                   }
                 }
               ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' INDUSTRIA INDIRETA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' COMERCIAL'"
+                  }
+                }
+              ],
+              "isToggled": true,
               "children": [
                 {
                   "identityValues": [
                     {
                       "Literal": {
-                        "Value": "' ALMOXARIFADO TRANSPORTES'"
+                        "Value": "' COMERCIAL'"
                       }
                     }
                   ],
@@ -143,7 +164,7 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "' INDUSTRIA INDIRETA'"
+                    "Value": "' ADMINISTRACAO'"
                   }
                 }
               ],
