@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "9704370a0917b50ea8de",
   "position": {
-    "x": 610.82066869300911,
-    "y": 24.316109422492403,
+    "x": 576.36363636363626,
+    "y": 24.545454545454543,
     "z": 3000,
-    "height": 71.00303951367782,
-    "width": 329.726443768997,
+    "height": 70.9090909090909,
+    "width": 330,
     "tabOrder": 3000
   },
   "visual": {
@@ -486,48 +486,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "8c7209fa8f5ac55887c2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "DEPARTAMENTO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "87cafeffbd90e77adb41",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "4642cff3fbfbf6f39213",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

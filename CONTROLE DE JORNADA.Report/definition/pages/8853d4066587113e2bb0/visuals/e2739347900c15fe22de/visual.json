@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "e2739347900c15fe22de",
   "position": {
     "x": 366.68693009118545,
@@ -93,6 +93,16 @@
                 }
               ],
               "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
             }
           ]
         }
@@ -154,12 +164,12 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'2 - ALIMENTOS ESTRELA'"
+                                "Value": "'1 - FRIGOESTRELA'"
                               }
                             },
                             {
                               "Literal": {
-                                "Value": "'104 - SÃO LUIZ GONZAGA'"
+                                "Value": "'1 - ADM ESTRELA'"
                               }
                             }
                           ]
@@ -197,7 +207,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'2 - ALIMENTOS ESTRELA'"
+                                      "Value": "'1 - FRIGOESTRELA'"
                                     }
                                   }
                                 ]
@@ -206,7 +216,7 @@
                                 "1": [
                                   {
                                     "Literal": {
-                                      "Value": "'104 - SÃO LUIZ GONZAGA'"
+                                      "Value": "'1 - ADM ESTRELA'"
                                     }
                                   }
                                 ]
@@ -242,8 +252,8 @@
                         },
                         "valueMap": [
                           {
-                            "0": "2 - ALIMENTOS ESTRELA",
-                            "1": "104 - SÃO LUIZ GONZAGA"
+                            "0": "1 - FRIGOESTRELA",
+                            "1": "1 - ADM ESTRELA"
                           }
                         ]
                       }
@@ -485,34 +495,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "17d7f3e05a737846ae2a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "COLIGADA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "3d69074110eced1da0a7",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "FILIAL"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

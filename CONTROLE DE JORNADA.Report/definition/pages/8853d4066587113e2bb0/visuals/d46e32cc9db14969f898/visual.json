@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "d46e32cc9db14969f898",
   "position": {
-    "x": 948.32826747720367,
-    "y": 23.343465045592705,
+    "x": 917.27272727272725,
+    "y": 23.636363636363633,
     "z": 2000,
-    "height": 68.085106382978722,
-    "width": 216.89969604863222,
+    "height": 68.181818181818173,
+    "width": 194.54545454545453,
     "tabOrder": 2000
   },
   "visual": {
@@ -453,20 +453,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "ec4506db2de8987ca00b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCalendario"
-              }
-            },
-            "Property": "Mês nome"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
