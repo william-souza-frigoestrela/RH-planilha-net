@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "ac84b76159cfb94dffc9",
   "position": {
-    "x": 684.741641337386,
-    "y": 25.288753799392097,
+    "x": 664.5454545454545,
+    "y": 25.454545454545453,
     "z": 1000,
-    "height": 70.030395136778125,
-    "width": 252.88753799392097,
+    "height": 70,
+    "width": 252.72727272727272,
     "tabOrder": 1000
   },
   "visual": {
@@ -43,7 +43,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SETOR",
               "nativeQueryRef": "SETOR",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -138,6 +138,16 @@
                   "isToggled": true
                 }
               ]
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' INDUSTRIA INDIRETA'"
+                  }
+                }
+              ],
+              "isToggled": true
             }
           ]
         }

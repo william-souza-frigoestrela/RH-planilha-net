@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "f4008157ff4dd7144348",
   "position": {
     "x": 38.90577507598784,
@@ -1095,20 +1095,6 @@
               }
             },
             "Property": "HORAS_TRAB"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "bf20443be71aaa2684e7",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 24 - Acima de 6 horas sem intervalo"
-              }
-            },
-            "Property": "SECAO"
           }
         },
         "type": "Categorical"

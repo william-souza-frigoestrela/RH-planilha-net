@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "63cd11b46baeb5900958",
   "position": {
-    "x": 1113.677811550152,
+    "x": 1123.6363636363635,
     "y": 0,
-    "z": 5001,
-    "height": 60.30395136778116,
-    "width": 166.32218844984803,
-    "tabOrder": 5001
+    "z": 6000,
+    "height": 60.909090909090907,
+    "width": 156.36363636363635,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -454,28 +454,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "952b33ce06c001140e10",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Atualização"
-                  }
-                },
-                "Property": "Data e hora certa"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

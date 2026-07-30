@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "ae314a36a9e3cde0b601",
   "position": {
     "x": 39.13497390007457,
@@ -1102,20 +1102,6 @@
               }
             },
             "Property": "SAI4"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "87c49de67f68ff564874",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-              }
-            },
-            "Property": "SECAO"
           }
         },
         "type": "Categorical"
