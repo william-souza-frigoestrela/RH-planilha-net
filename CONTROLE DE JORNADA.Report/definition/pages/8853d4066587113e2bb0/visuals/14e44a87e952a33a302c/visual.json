@@ -182,20 +182,6 @@
               },
               "queryRef": "Planilha NET 25 - Funcionários com batida.ATRASO",
               "nativeQueryRef": "ATRASO"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "R$ HE"
-                }
-              },
-              "queryRef": "Medidas.HE Total",
-              "nativeQueryRef": "R$ HE"
             }
           ]
         }
@@ -982,20 +968,6 @@
           }
         },
         "type": "Categorical"
-      },
-      {
-        "name": "e39cf6acebc0d70a99a2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "R$ HE"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

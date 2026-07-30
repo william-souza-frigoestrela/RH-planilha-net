@@ -1,0 +1,72 @@
+table dAcessoUsuarios
+	lineageTag: 93534a41-6361-47de-9943-9f61e65b8d20
+
+	column COLIGADA
+		dataType: string
+		lineageTag: 61029d6e-492e-4414-a1b6-0d4e6af8f6ab
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: 6c67f783-1160-48a8-9081-cb8d43837548
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column FILIAL
+		dataType: string
+		lineageTag: b9bf5df3-191f-49f2-b5ee-9f683f482649
+		summarizeBy: none
+		sourceColumn: FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 3939d34d-2fc0-459b-8500-48a6d4b348de
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMAIL
+		dataType: string
+		lineageTag: c787b63d-1cc5-406d-9420-d18fdbfe55f6
+		summarizeBy: none
+		sourceColumn: EMAIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA-FILIAL
+		dataType: string
+		lineageTag: c72cb7c8-15ed-4f9a-aace-43b0a0ec38d0
+		summarizeBy: none
+		sourceColumn: COLIGADA-FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODDEPARTAMENTO
+		dataType: string
+		lineageTag: 9b4abc14-f0a8-4910-9562-f3ac7728d392
+		summarizeBy: none
+		sourceColumn: CODDEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dAcessoUsuarios = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("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", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [COLIGADA = _t, CODFILIAL = _t, FILIAL = _t, NOME = _t, EMAIL = _t, #"COLIGADA-FILIAL" = _t, CODDEPARTAMENTO = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"COLIGADA", type text}, {"CODFILIAL", type text}, {"FILIAL", type text}, {"NOME", type text}, {"EMAIL", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

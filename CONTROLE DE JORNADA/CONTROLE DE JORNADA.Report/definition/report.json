@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU05",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU05",
+          "path": "BaseThemes/CY26SU05.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Acima_10h3199750176736431.svg",
+          "path": "Acima_10h3199750176736431.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Acima_6h8998411669332924.svg",
+          "path": "Acima_6h8998411669332924.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Faltas_por_dia8617312476285367.svg",
+          "path": "Faltas_por_dia8617312476285367.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Funcionario_com_jornada16570719049761395.svg",
+          "path": "Funcionario_com_jornada16570719049761395.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Saldo_de_BH252352072472935.svg",
+          "path": "Saldo_de_BH252352072472935.svg",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}
