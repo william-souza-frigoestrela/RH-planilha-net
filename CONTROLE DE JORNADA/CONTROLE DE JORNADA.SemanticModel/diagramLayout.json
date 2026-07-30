@@ -1,0 +1,183 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 150.702572090366,
+            "y": 700.23959610581039
+          },
+          "nodeIndex": "dCalendario",
+          "nodeLineageTag": "ea316fd7-0e83-4318-83dd-f03bf5991763",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 5,
+          "expandedHeight": 200
+        },
+        {
+          "location": {
+            "x": 2409.9834956435097,
+            "y": 75.088203729633108
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "170cedcf-a8b2-4ecf-a449-acfd70f565b4",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1435.0006336853087,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET 25 - Funcionários com batida",
+          "nodeLineageTag": "c2f08de6-f508-4102-a920-eee2f5b3d2c4",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 3,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 771.10789143559418,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET 18 - Hora extra dia",
+          "nodeLineageTag": "bbdde433-ebda-4a69-9e83-9f8b97fd04ac",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 863.08060685904888,
+            "y": 683.84500279482654
+          },
+          "nodeIndex": "FPBI_DEPARTAMENTO",
+          "nodeLineageTag": "987dcbc8-7389-4ffd-88d5-0e3e8705b122",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 437.6653190861083,
+            "y": 686.54945210848837
+          },
+          "nodeIndex": "dFilial",
+          "nodeLineageTag": "d4645265-f0d2-4c4e-ba56-91f0a4cf298a",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 9,
+          "expandedHeight": 200
+        },
+        {
+          "location": {
+            "x": 465.36734342021725,
+            "y": 1087.9573909230428
+          },
+          "nodeIndex": "dAcessoUsuarios",
+          "nodeLineageTag": "93534a41-6361-47de-9943-9f61e65b8d20",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET 4 – Faltas",
+          "nodeLineageTag": "455df675-a460-4ea2-a8d9-912076b5bf73",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 10,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 389.74341999999939,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data",
+          "nodeLineageTag": "f9686605-3ffa-47fb-a760-c1c755b9be1f",
+          "size": {
+            "height": 152,
+            "width": 249.944049
+          },
+          "zIndex": 1,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 1084.9983644409465,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET 27 – Acima de 10 Horas - Valor",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 8,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 1733.3039521656237,
+            "y": 0
+          },
+          "nodeIndex": "Planilha NET 24 - Acima de 6 horas sem intervalo",
+          "nodeLineageTag": "8c906ac8-aa8b-4fd4-a4e5-deecf772ee71",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 2693.9834956435097,
+            "y": 591.9786954615214
+          },
+          "nodeIndex": "Atualização",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 56.447393005377833,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

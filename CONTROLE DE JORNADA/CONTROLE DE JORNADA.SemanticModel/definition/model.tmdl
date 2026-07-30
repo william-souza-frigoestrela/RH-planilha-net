@@ -1,0 +1,37 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		fastCombine
+		legacyRedirects
+		returnErrorValuesAsNull
+
+/// Erros nas consultas que foram carregadas em 25/06/2026 08:24:13.
+queryGroup 'Erros na Consulta - 25/06/2026 08:24:13'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Planilha NET 4 – Faltas","Planilha NET 2 – Saldo de Banco de Horas – saldo_data","Planilha NET 25 - Funcionários com batida","Planilha NET 27 – Acima de 10 Horas - Valor","Planilha NET 18 - Hora extra dia","FPBI_DEPARTAMENTO","dFilial","dAcessoUsuarios","Planilha NET 24 - Acima de 6 horas sem intervalo","Atualização"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'Planilha NET 4 – Faltas'
+ref table 'Planilha NET 2 – Saldo de Banco de Horas – saldo_data'
+ref table 'Planilha NET 25 - Funcionários com batida'
+ref table dCalendario
+ref table 'Planilha NET 27 – Acima de 10 Horas - Valor'
+ref table Medidas
+ref table 'Planilha NET 18 - Hora extra dia'
+ref table FPBI_DEPARTAMENTO
+ref table dFilial
+ref table dAcessoUsuarios
+ref table 'Planilha NET 24 - Acima de 6 horas sem intervalo'
+ref table Atualização
+
+ref role 'Acesso filial'
+
+ref cultureInfo pt-BR
+

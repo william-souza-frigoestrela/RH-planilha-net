@@ -1,0 +1,216 @@
+table 'Planilha NET 2 – Saldo de Banco de Horas – saldo_data'
+	lineageTag: f9686605-3ffa-47fb-a760-c1c755b9be1f
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 9ca8a656-b649-4afe-9fd2-ee34856fe515
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: c237510c-eebe-48eb-bc5a-9a05a8cc7d0d
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 21240331-2aaa-4ac4-a5aa-46f4b8e34303
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: d6cd5eb1-f83b-4947-866b-ef780f594f4b
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 031a3d13-6f1d-4554-aee4-4cefebcf3a23
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAADMISSAO
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 9b5273b0-65b3-42b8-83cf-73d8a1b3ee8e
+		summarizeBy: none
+		sourceColumn: DATAADMISSAO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DATADEMISSAO
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 7be58ca1-cd42-4d4b-a9c8-b31bdc700458
+		summarizeBy: none
+		sourceColumn: DATADEMISSAO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CODTIPO
+		dataType: string
+		lineageTag: ec5aba71-e865-478e-b357-24214e3c3ab8
+		summarizeBy: none
+		sourceColumn: CODTIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSITUACAO
+		dataType: string
+		lineageTag: ac6faf5b-1e43-47a6-b594-b095e1cc4f0b
+		summarizeBy: none
+		sourceColumn: CODSITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL-CHAPA
+		dataType: string
+		lineageTag: d7408187-ca22-4bb8-9301-f5b98a5fcebd
+		summarizeBy: none
+		sourceColumn: CODFILIAL-CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MINUTOS_HORA_EXTRA
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d768c72-2602-4e15-b121-51114f5948a1
+		summarizeBy: sum
+		sourceColumn: MINUTOS_HORA_EXTRA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MINUTOS_ATRASO
+		dataType: int64
+		formatString: 0
+		lineageTag: 20351441-9b51-4799-9e74-b5665e1714a0
+		summarizeBy: sum
+		sourceColumn: MINUTOS_ATRASO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MINUTOS_FALTA
+		dataType: int64
+		formatString: 0
+		lineageTag: dfdc45b6-e2b5-4a58-9339-9fecdd485783
+		summarizeBy: sum
+		sourceColumn: MINUTOS_FALTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MINUTOS_SALDO_POSITIVO
+		dataType: int64
+		formatString: 0
+		lineageTag: eaf5d02a-9569-4f82-af60-bb3cda384451
+		summarizeBy: sum
+		sourceColumn: MINUTOS_SALDO_POSITIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MINUTOS_SALDO_NEGATIVO
+		dataType: int64
+		formatString: 0
+		lineageTag: 419798a7-d83c-4f57-938b-47dde3dca4f3
+		summarizeBy: sum
+		sourceColumn: MINUTOS_SALDO_NEGATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 7ff61bfc-fb36-4a73-9179-557da198d20e
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: 94b1a11c-b546-4535-85df-42c7f8903770
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SECAO.1'
+		dataType: string
+		lineageTag: c2a152c4-68a3-4291-b328-a259ed38c508
+		summarizeBy: none
+		sourceColumn: SECAO.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA_FILIAL
+		dataType: string
+		lineageTag: 89d9e6ea-d96f-47a8-ab93-110d7165e744
+		summarizeBy: none
+		sourceColumn: COLIGADA_FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA
+		dataType: string
+		lineageTag: 7cb17702-2224-4c5f-9c22-e86dd88014a3
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FILIAL
+		dataType: string
+		lineageTag: eaa6cd72-b0a9-46a2-84b7-4e4eecad5d38
+		summarizeBy: none
+		sourceColumn: FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Planilha NET 2 – Saldo de Banco de Horas – saldo_data' = m
+		mode: import
+		source = ```
+				let
+				    Fonte = Oracle.Database("datavale", [HierarchicalNavigation=true, Query="#(lf)        -- buscando saldo de bh atualizado até d-1 e trazendo desligados dos ultimos 60 dias#(lf)#(lf)        SELECT CODCOLIGADA, CODFILIAL, CHAPA, NOME, SECAO,#(lf)               DATAADMISSAO, DATADEMISSAO, CODTIPO, CODSITUACAO,#(lf)               #(lf)               -- Trazendo os valores brutos em minutos inteiros para permitir somas brutas no BI#(lf)               HORA_EXTRA AS MINUTOS_HORA_EXTRA,#(lf)               ATRASO AS MINUTOS_ATRASO,#(lf)               FALTA AS MINUTOS_FALTA,#(lf)               #(lf)               -- Separando o Saldo Geral Bruto em Minutos Positivos e Negativos#(lf)               CASE WHEN SALDO_GERAL >= 0 THEN SALDO_GERAL ELSE 0 END AS MINUTOS_SALDO_POSITIVO,#(lf)               CASE WHEN SALDO_GERAL < 0  THEN SALDO_GERAL ELSE 0 END AS MINUTOS_SALDO_NEGATIVO#(lf)        FROM (#(lf)            SELECT A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, C.DESCRICAO AS SECAO,#(lf)                   B.DATAADMISSAO, B.DATADEMISSAO, B.CODTIPO, B.CODSITUACAO,#(lf)                   SUM(A.EXTRAFAIXA1 + A.EXTRAFAIXA2 + A.EXTRAFAIXA3 + A.EXTRAFAIXA4 + A.EXTRAFAIXA5 + A.EXTRACOMP1 + A.EXTRACOMP2 + A.EXTRADESC1 + A.EXTRADESC2 + A.EXTRAFER1 + A.EXTRAFER2) AS HORA_EXTRA,#(lf)                   SUM(A.ATRASO) AS ATRASO,#(lf)                   SUM(A.FALTA) AS FALTA,#(lf)                   SUM(A.EXTRAFAIXA1 + A.EXTRAFAIXA2 + A.EXTRAFAIXA3 + A.EXTRAFAIXA4 + A.EXTRAFAIXA5 + A.EXTRACOMP1 + A.EXTRACOMP2 + A.EXTRADESC1 + A.EXTRADESC2 + A.EXTRAFER1 + A.EXTRAFER2 - A.FALTA - A.ATRASO) AS SALDO_GERAL#(lf)            FROM ABANCOHORFUN@RM A, PFUNC@RM B, PSECAO@RM C#(lf)            WHERE A.CODCOLIGADA = B.CODCOLIGADA#(lf)              AND A.CHAPA       = B.CHAPA#(lf)              AND B.CODCOLIGADA = C.CODCOLIGADA#(lf)              AND B.CODSECAO    = C.CODIGO#(lf)              #(lf)              -- Lógica do sistema RM para aceitar '0' e trazer todas as estruturas#(lf)              AND A.CODCOLIGADA BETWEEN 0 AND 999#(lf)              AND B.CODFILIAL   BETWEEN 0 AND 999#(lf)              #(lf)              -- Regra para demitidos (traz ativos ou quem foi demitido nos últimos 60 dias)#(lf)              AND (B.CODSITUACAO  <> 'D'#(lf)              OR  (B.CODSITUACAO   = 'D'#(lf)              AND  B.DATADEMISSAO >= TRUNC(SYSDATE) - 60 ))#(lf)              #(lf)              -- Traz todo o saldo acumulado no passado até o dia de ontem (D-1)#(lf)              AND A.DATA <= TRUNC(SYSDATE) - 1#(lf)              #(lf)              -- Filtro de chapa aberto dinamicamente para quem já estava admitido até ontem#(lf)              AND A.CHAPA IN (SELECT H.CHAPA#(lf)                              FROM PFUNC@RM H#(lf)                              WHERE H.CODCOLIGADA = B.CODCOLIGADA#(lf)                                AND H.CHAPA       = B.CHAPA#(lf)                                AND H.CODSITUACAO = B.CODSITUACAO#(lf)                                AND H.DATAADMISSAO <= TRUNC(SYSDATE) - 1)#(lf)            GROUP BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, B.NOME, C.DESCRICAO, B.DATAADMISSAO, B.DATADEMISSAO, B.CODTIPO, B.CODSITUACAO#(lf)        ) #(lf)        ORDER BY CODCOLIGADA, CODFILIAL, CHAPA#(lf)    "]),
+				
+				
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{
+				        {"CODCOLIGADA", type text}, 
+				        {"CODFILIAL", type text}, 
+				        {"CHAPA", type text}, 
+				        {"DATAADMISSAO", type date}, 
+				        {"DATADEMISSAO", type date}, 
+				        {"MINUTOS_HORA_EXTRA", Int64.Type}, 
+				        {"MINUTOS_ATRASO", Int64.Type}, 
+				        {"MINUTOS_FALTA", Int64.Type}, 
+				        {"MINUTOS_SALDO_POSITIVO", Int64.Type}, 
+				        {"MINUTOS_SALDO_NEGATIVO", Int64.Type}
+				    }),
+				
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"DEPARTAMENTO", "SETOR", "SECAO"}, {"DEPARTAMENTO", "SETOR", "SECAO.1"}),
+				    #"Coluna Mesclada Inserida1" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"Coluna Mesclada Inserida1", {"COLIGADA_FILIAL"}, dFilial, {"ID_FILIAL"}, "dFilial", JoinKind.LeftOuter),
+				    #"dFilial Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "dFilial", {"COLIGADA", "FILIAL"}, {"COLIGADA", "FILIAL"})
+				in
+				    #"dFilial Expandido"
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

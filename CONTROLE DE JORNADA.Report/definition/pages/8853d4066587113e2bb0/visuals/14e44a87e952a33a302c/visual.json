@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "14e44a87e952a33a302c",
   "position": {
-    "x": 0,
-    "y": 260,
+    "x": 39.090909090909086,
+    "y": 219.99999999999997,
     "z": 0,
     "height": 460.19704433497537,
     "width": 1217.4384236453202,
@@ -28,20 +28,6 @@
               },
               "queryRef": "Planilha NET 26 - Funcionários com Jornada.NOME",
               "nativeQueryRef": "NOME"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 25 - Funcionários com batida"
-                    }
-                  },
-                  "Property": "NOME_SECAO"
-                }
-              },
-              "queryRef": "Planilha NET 25 - Funcionários com batida.NOME_SECAO",
-              "nativeQueryRef": "NOME_SECAO"
             },
             {
               "field": {
@@ -196,20 +182,6 @@
               },
               "queryRef": "Planilha NET 25 - Funcionários com batida.ATRASO",
               "nativeQueryRef": "ATRASO"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "R$ HE"
-                }
-              },
-              "queryRef": "Medidas.HE Total",
-              "nativeQueryRef": "R$ HE"
             }
           ]
         }
@@ -828,6 +800,174 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "4e70194435869cb087aa",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "aea800826c019043ba92",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "FUNCAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "250ce51c20a506b4b25c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "DATAREFERENCIA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6ff5781d8c0410e3ec0d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "ENT1"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a4ed9864313d8723a46b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "SAI1"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "68d346be869a8d00d036",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "ENT2"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f565ec9a5a484d0acdb9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "SAI2"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3b1553ca0e831c03b84e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "ENT3"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9203991ded881009612a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "SAI3"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "219b2f3300522210125e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "HORAS_TRAB"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1da42818441268d60ab6",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "HORA_EXTRA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "89d91dada2c8908e8113",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 25 - Funcionários com batida"
+              }
+            },
+            "Property": "ATRASO"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

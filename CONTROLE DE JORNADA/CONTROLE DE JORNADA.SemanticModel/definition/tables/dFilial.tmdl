@@ -1,0 +1,114 @@
+table dFilial
+	lineageTag: d4645265-f0d2-4c4e-ba56-91f0a4cf298a
+
+	column ID_FILIAL
+		dataType: string
+		lineageTag: f05e11f5-ad61-427b-916d-c1127a2a7c4b
+		summarizeBy: none
+		sourceColumn: ID_FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 41958ac7-3007-40f1-b23a-be495d1c8618
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA
+		dataType: string
+		lineageTag: 6934c446-40fe-44c1-b319-8133f6120ee5
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: 04a0a8f9-e417-451d-b3ff-f07359286939
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column FILIAL
+		dataType: string
+		lineageTag: 9a39e871-2bd2-4771-b66d-2a0ae5fe013e
+		summarizeBy: none
+		sourceColumn: FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dFilial = m
+		mode: import
+		source = ```
+				let
+				    Fonte = Table.FromRows({
+				        // COLIGADA 1 - FRIGOESTRELA
+				        {"1-1", "1", "1 - FRIGOESTRELA", "1", "1 - ADM ESTRELA"},
+				        {"1-2", "1", "1 - FRIGOESTRELA", "2", "2 - INDUSTRIA ESTRELA"},
+				        {"1-4", "1", "1 - FRIGOESTRELA", "4", "4 - TUPÃ"},
+				        {"1-8", "1", "1 - FRIGOESTRELA", "8", "8 - BOUTIQUE ESTRELA"},
+				        {"1-12", "1", "1 - FRIGOESTRELA", "12", "12 - RONDONOPOLIS"},
+				        {"1-18", "1", "1 - FRIGOESTRELA", "18", "18 - VALINHOS"},
+				        {"1-20", "1", "1 - FRIGOESTRELA", "20", "20 - SERRA"},
+				        {"1-27", "1", "1 - FRIGOESTRELA", "27", "27 - SÃO PAULO"},
+				        {"1-29", "1", "1 - FRIGOESTRELA", "29", "29 - BOUTIQUE SJRP"},
+				        {"1-31", "1", "1 - FRIGOESTRELA", "31", "31 - OUTROS FILIAL 31"},
+				        {"1-104", "1", "1 - FRIGOESTRELA", "104", "104 - SÃO LUIZ GONZAGA"},
+				        {"1-105", "1", "1 - FRIGOESTRELA", "105", "105 - IJUI"},
+				
+				        // COLIGADA 2 - ALIMENTOS ESTRELA
+				        {"2-100", "2", "2 - ALIMENTOS ESTRELA", "100", "100 - ALIMENTOS ESTRELA"},
+				        {"2-104", "2", "2 - ALIMENTOS ESTRELA", "104", "104 - SÃO LUIZ GONZAGA"},
+				        {"2-105", "2", "2 - ALIMENTOS ESTRELA", "105", "105 - IJUI"},
+				        {"2-107", "2", "2 - ALIMENTOS ESTRELA", "107", "107 - OUTROS FILIAL 107"},
+				
+				        // COLIGADA 3 - VADÃO TRANSPORTE
+				        {"3-6", "3", "3 - VADÃO TRANSPORTE", "6", "6 - VADÃO TRANSPORTE"},
+				
+				        // COLIGADA 4 - RADIO ALVORADA
+				        {"4-69", "4", "4 - RADIO ALVORADA", "69", "69 - RADIO ALVORADA"},
+				
+				        // COLIGADA 5 - OESTE GRAXARIA
+				        {"5-72", "5", "5 - OESTE GRAXARIA", "72", "72 - OESTE GRAXARIA"},
+				
+				        // COLIGADA 6 - ESTRELA MERCANTIL
+				        {"6-200", "6", "6 - ESTRELA MERCANTIL", "200", "200 - ESTRELA MERCANTIL"},
+				
+				        // COLIGADA 10 - AGROPECUARIA TURBILHAO
+				        {"10-985", "10", "10 - AGROPECUARIA TURBILHAO", "985", "985 - AGROPECUARIA TURBILHAO"},
+				        {"10-997", "10", "10 - AGROPECUARIA TURBILHAO", "997", "997 - AGROPECUARIA TURBILHÃO"},
+				        {"10-94", "10", "10 - AGROPECUARIA TURBILHAO", "94", "94 - VEREDA"},
+				        {"10-99", "10", "10 - AGROPECUARIA TURBILHAO", "99", "99 - VALE DO SOL"},
+				        {"10-75", "10", "10 - AGROPECUARIA TURBILHAO", "75", "75 - CHACARA RECREIO"},
+				        {"10-77", "10", "10 - AGROPECUARIA TURBILHAO", "77", "77 - FAZENDA TURBILHÃO"},
+				        {"10-78", "10", "10 - AGROPECUARIA TURBILHAO", "78", "78 - FAZENDA VITÓRIA"},
+				        {"10-79", "10", "10 - AGROPECUARIA TURBILHAO", "79", "79 - FAZENDA VISTA ALEGRE"},
+				        {"10-80", "10", "10 - AGROPECUARIA TURBILHAO", "80", "80 - CHACARA BOIADEIRO"},
+				        {"10-83", "10", "10 - AGROPECUARIA TURBILHAO", "83", "83 - FAZENDA TABOADO"},
+				        {"10-89", "10", "10 - AGROPECUARIA TURBILHAO", "89", "89 - JOIA DA PONTE"},
+				        {"10-91", "10", "10 - AGROPECUARIA TURBILHAO", "91", "91 - SITIO SOL"},
+				
+				        // COLIGADA 12 - TABOADO RAÇÃO
+				        {"12-980", "12", "12 - TABOADO RAÇÃO", "980", "980 - TABOADO RAÇÃO"},
+				        
+				        // COLIGADA 14 - ETIVALDO GOMES FILHO
+				        {"14-77", "14", "14 - ETIVALDO GOMES FILHO", "77", "77 - FAZENDA TURBILHÃO"},
+				        {"14-83", "14", "14 - ETIVALDO GOMES FILHO", "83", "83 - FAZENDA TABOADO"},
+				        {"14-0", "14", "14 - ETIVALDO GOMES FILHO", "0", "OUTROS"},
+				
+				        // OUTRAS COLIGADAS
+				        {"13-0", "13", "13 - ETIVALDO VADAO GOMES", "0", "OUTROS"},
+				        {"15-0", "15", "15 - ICARA MOLINA GOMES", "0", "OUTROS"}
+				    }, type table [ID_FILIAL = text, CODCOLIGADA = text, COLIGADA = text, CODFILIAL = text, FILIAL = text])
+				in
+				    Fonte
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

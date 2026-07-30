@@ -1,0 +1,182 @@
+table 'Planilha NET 4 – Faltas'
+	lineageTag: 455df675-a460-4ea2-a8d9-912076b5bf73
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: c04a9fc0-b8e2-462d-b990-cad778bc7553
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: 972c371c-dcb1-46c5-9a5a-bd2d803e3351
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: f52bbc5b-fcb8-4a29-a97e-588fe4ba6607
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: aa26fdff-7a9e-4848-957c-c8535e267a7a
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: c2dc880d-c710-4c9c-9202-43e768d3268a
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 03408e2f-354f-4147-b105-bd880669eca0
+		summarizeBy: none
+		sourceColumn: DATA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CODFILIAL-CHAPA
+		dataType: string
+		lineageTag: b615ad3c-19b2-4778-bf33-e2bef49bdb3e
+		summarizeBy: none
+		sourceColumn: CODFILIAL-CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: d6f577e3-bf2f-42ce-887e-130d98a710f7
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: 9218b608-0060-4916-850e-3d15102268bc
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SECAO.1'
+		dataType: string
+		lineageTag: d091c8c0-5c72-48f2-a692-09434d1e53cc
+		summarizeBy: none
+		sourceColumn: SECAO.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA_FILIAL
+		dataType: string
+		lineageTag: ca14e34f-63d0-4931-a7c3-1b92d6ad5d82
+		summarizeBy: none
+		sourceColumn: COLIGADA_FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA
+		dataType: string
+		lineageTag: bacc0220-3d56-4a9b-8a80-8c0d0ba45cbb
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FILIAL
+		dataType: string
+		lineageTag: a410661f-4440-48bf-83c4-2c5796a83b1a
+		summarizeBy: none
+		sourceColumn: FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: 7a17e89b-0051-4e41-aab5-d52dcb7e33eb
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAADMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 46cd3bcf-2700-4e8d-9aa8-17d7e780796d
+		summarizeBy: none
+		sourceColumn: DATAADMISSAO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DATADEMISSAO
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8f2976ff-32ce-4022-9aea-0119433a7dcf
+		summarizeBy: none
+		sourceColumn: DATADEMISSAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODTIPO
+		dataType: string
+		lineageTag: 978029b3-ba5d-4300-8060-2ae763ee58da
+		summarizeBy: none
+		sourceColumn: CODTIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: e5fa0e48-63d9-4c02-925e-cf638171fabf
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODDEPARTAMENTO
+		dataType: string
+		lineageTag: b70caa24-59f3-4335-9590-d690bae036c4
+		summarizeBy: none
+		sourceColumn: CODDEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Planilha NET 4 – Faltas' = m
+		mode: import
+		source =
+				let
+				    Fonte = Oracle.Database("RM", [HierarchicalNavigation=true, Query="SELECT A.CODCOLIGADA,#(lf)       B.CODFILIAL,#(lf)       A.CHAPA,#(lf)       B.NOME,#(lf)       D.NOME AS FUNCAO,#(lf)       C.DESCRICAO AS SECAO,#(lf)       B.DATAADMISSAO,#(lf)       B.DATADEMISSAO,#(lf)       B.CODTIPO,#(lf)       (SELECT E.DESCRICAO FROM RM.PCODSITUACAO E WHERE E.CODCLIENTE = B.CODSITUACAO) AS SITUACAO,#(lf)       A.DATA#(lf)FROM RM.AAFHTFUN A, #(lf)     RM.PFUNC B, #(lf)     RM.PSECAO C, #(lf)     RM.PFUNCAO D#(lf)WHERE A.CODCOLIGADA = B.CODCOLIGADA#(lf)  AND A.CHAPA       = B.CHAPA#(lf)  AND B.CODCOLIGADA = C.CODCOLIGADA#(lf)  AND B.CODSECAO    = C.CODIGO#(lf)  AND B.CODCOLIGADA = D.CODCOLIGADA#(lf)  AND B.CODFUNCAO   = D.CODIGO#(lf)  AND A.DATA >= TRUNC(SYSDATE) - 60#(lf)  AND A.FALTA       > 0#(lf)ORDER BY A.CODCOLIGADA, B.CODFILIAL, A.CHAPA, A.DATA"]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}, {"DATA", type date}}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "CODFILIAL-CHAPA", each Text.Combine({[CODFILIAL], [CHAPA]}, "-"), type text),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Mesclada Inserida", {"SECAO"}, FPBI_DEPARTAMENTO, {"DESCRICAO"}, "FPBI_DEPARTAMENTO", JoinKind.LeftOuter),
+				    #"FPBI_DEPARTAMENTO Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "FPBI_DEPARTAMENTO", {"CODDEPARTAMENTO", "DEPARTAMENTO", "SETOR", "SECAO"}, {"CODDEPARTAMENTO", "DEPARTAMENTO", "SETOR", "SECAO.1"}),
+				    #"Coluna Mesclada Inserida1" = Table.AddColumn(#"FPBI_DEPARTAMENTO Expandido", "COLIGADA_FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"Coluna Mesclada Inserida1", {"COLIGADA_FILIAL"}, dFilial, {"ID_FILIAL"}, "dFilial", JoinKind.LeftOuter),
+				    #"dFilial Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "dFilial", {"COLIGADA", "FILIAL"}, {"COLIGADA", "FILIAL"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"dFilial Expandido",{{"DATAADMISSAO", type date}})
+				in
+				    #"Tipo Alterado1"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Exception
+

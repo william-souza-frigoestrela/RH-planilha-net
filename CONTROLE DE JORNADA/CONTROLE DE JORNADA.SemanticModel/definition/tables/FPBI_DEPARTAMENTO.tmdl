@@ -1,0 +1,99 @@
+table FPBI_DEPARTAMENTO
+	lineageTag: 987dcbc8-7389-4ffd-88d5-0e3e8705b122
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 72fe8f66-b90e-4bc0-a26b-675c780a87ea
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFILIAL
+		dataType: string
+		lineageTag: ea86dd30-6bdf-474b-a6bc-61fcb238d473
+		summarizeBy: none
+		sourceColumn: CODFILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODIGO
+		dataType: string
+		lineageTag: 5f4b8924-cc9f-496a-8df3-87684151d77a
+		summarizeBy: none
+		sourceColumn: CODIGO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESCRICAO
+		dataType: string
+		lineageTag: afe41156-3c03-4cf9-85b4-a12443834849
+		summarizeBy: none
+		sourceColumn: DESCRICAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODDEPARTAMENTO
+		dataType: string
+		lineageTag: f93aa74f-d47e-4137-8c3e-0e6e34ed8823
+		summarizeBy: none
+		sourceColumn: CODDEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSETOR
+		dataType: string
+		lineageTag: ce340007-9b00-496e-8c5a-90663d5378ac
+		summarizeBy: none
+		sourceColumn: CODSETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 5e37c2e3-4cfb-4dd0-841a-9ea66657dd32
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: 9ea82a83-12eb-4c92-963c-3ada9d93376e
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 667dca4d-b827-4864-9300-8697520560d2
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA-FILIAL
+		dataType: string
+		lineageTag: 523086b3-a82c-4952-bbf1-f292a50475cb
+		summarizeBy: none
+		sourceColumn: COLIGADA-FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FPBI_DEPARTAMENTO = m
+		mode: import
+		source =
+				let
+				    Fonte = Oracle.Database("RM", [HierarchicalNavigation=true]),
+				    RM = Fonte{[Schema="RM"]}[Data],
+				    FPBI_DEPARTAMENTO1 = RM{[Name="FPBI_DEPARTAMENTO"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(FPBI_DEPARTAMENTO1,{{"CODCOLIGADA", type text}, {"CODFILIAL", type text}}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Tipo Alterado", "COLIGADA-FILIAL", each Text.Combine({[CODCOLIGADA], [CODFILIAL]}, "-"), type text)
+				in
+				    #"Coluna Mesclada Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
