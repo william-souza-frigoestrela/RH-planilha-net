@@ -93,6 +93,16 @@
                 }
               ],
               "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
             }
           ]
         }
