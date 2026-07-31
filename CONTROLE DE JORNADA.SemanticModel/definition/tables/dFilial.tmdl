@@ -103,12 +103,13 @@ table dFilial
 				        // OUTRAS COLIGADAS
 				        {"13-0", "13", "13 - ETIVALDO VADAO GOMES", "0", "OUTROS"},
 				        {"15-0", "15", "15 - ICARA MOLINA GOMES", "0", "OUTROS"}
-				    }, type table [ID_FILIAL = text, CODCOLIGADA = text, COLIGADA = text, CODFILIAL = text, FILIAL = text])
+				    }, type table [ID_FILIAL = text, CODCOLIGADA = text, COLIGADA = text, CODFILIAL = text, FILIAL = text]),
+				    #"Linhas Filtradas" = Table.SelectRows(Fonte, each ([ID_FILIAL] <> "1-104"))
 				in
-				    Fonte
+				    #"Linhas Filtradas"
 				```
 
 	annotation PBI_NavigationStepName = Navegação
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 
