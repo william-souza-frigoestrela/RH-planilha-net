@@ -235,7 +235,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "' IN NATURA AREA FRIA'"
+                                      "Value": "' INDUSTRIA IN NATURA'"
                                     }
                                   }
                                 ]
@@ -246,7 +246,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "' INDUSTRIA IN NATURA'"
+                                      "Value": "' IN NATURA AREA FRIA'"
                                     }
                                   }
                                 ]
@@ -270,10 +270,10 @@
                         },
                         "valueMap": [
                           {
-                            "0": " IN NATURA AREA FRIA"
+                            "0": " INDUSTRIA IN NATURA"
                           },
                           {
-                            "0": " INDUSTRIA IN NATURA"
+                            "0": " IN NATURA AREA FRIA"
                           }
                         ]
                       }
