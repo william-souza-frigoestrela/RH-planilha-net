@@ -20,6 +20,34 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "CODCOLIGADA"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.CODCOLIGADA",
+              "nativeQueryRef": "CODCOLIGADA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "CODFILIAL"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.CODFILIAL",
+              "nativeQueryRef": "CODFILIAL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
                       "Entity": "Planilha NET 4 – Faltas"
                     }
                   },
@@ -28,6 +56,20 @@
               },
               "queryRef": "Planilha NET- 4 – Faltas.NOME",
               "nativeQueryRef": "NOME"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FPBI_DEPARTAMENTO"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "FPBI_DEPARTAMENTO.SECAO",
+              "nativeQueryRef": "SECAO"
             },
             {
               "field": {
@@ -423,6 +465,20 @@
           "selector": {
             "metadata": "Planilha NET- 4 – Faltas.NOME"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "338.18538599301405D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "FPBI_DEPARTAMENTO.SECAO"
+          }
         }
       ],
       "accessibility": [
@@ -618,6 +674,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "b20b18f954ac040938e8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "CODCOLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "741b877481b900ad4202",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "CODFILIAL"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5db9a8a4d9203714da06",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
       }
     ],
     "filterSortOrder": "Custom"
