@@ -93,26 +93,6 @@
                 }
               ],
               "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'1 - FRIGOESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'12 - TABOADO RAÇÃO'"
-                  }
-                }
-              ],
-              "isToggled": true
             }
           ]
         }
