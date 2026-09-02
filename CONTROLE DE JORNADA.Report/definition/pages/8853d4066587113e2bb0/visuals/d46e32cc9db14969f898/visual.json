@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "d46e32cc9db14969f898",
   "position": {
     "x": 1061.8181818181818,
@@ -93,6 +93,16 @@
                 }
               ],
               "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'agosto'"
+                  }
+                }
+              ],
+              "isToggled": true
             }
           ]
         }
@@ -158,13 +168,28 @@
                               },
                               "Property": "Mês nome"
                             }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "Data"
+                            }
                           }
                         ],
                         "Values": [
                           [
                             {
                               "Literal": {
-                                "Value": "'Mês atual'"
+                                "Value": "'agosto'"
+                              }
+                            },
+                            {
+                              "Literal": {
+                                "Value": "'01/08/2026'"
                               }
                             }
                           ]
@@ -183,6 +208,16 @@
                               },
                               "Property": "Mês nome"
                             }
+                          },
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "dCalendario"
+                                }
+                              },
+                              "Property": "Data"
+                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -192,7 +227,16 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'Mês atual'"
+                                      "Value": "'agosto'"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "1": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'01/08/2026'"
                                     }
                                   }
                                 ]
@@ -211,12 +255,25 @@
                                   "Property": "Mês nome"
                                 }
                               }
+                            },
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "dCalendario"
+                                    }
+                                  },
+                                  "Property": "Data"
+                                }
+                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "Mês atual"
+                            "0": "agosto",
+                            "1": "01/08/2026"
                           }
                         ]
                       }

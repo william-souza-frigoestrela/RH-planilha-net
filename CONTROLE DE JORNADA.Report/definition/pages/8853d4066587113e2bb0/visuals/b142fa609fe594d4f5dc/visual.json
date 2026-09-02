@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "9883acebc3eb1e367b8e",
+  "name": "b142fa609fe594d4f5dc",
   "position": {
-    "x": 46.995073891625616,
-    "y": 106.4039408866995,
-    "z": 3000,
+    "x": 267.47720364741645,
+    "y": 106.99088145896657,
+    "z": 5001,
     "height": 83.349753694581281,
     "width": 180,
-    "tabOrder": 3000
+    "tabOrder": 5001
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "R$ HE"
+                  "Property": "Funciorario com ponto"
                 }
               },
-              "queryRef": "Medidas.R$ HE",
-              "nativeQueryRef": "R$ HE"
+              "queryRef": "Medidas.Funciorario com ponto",
+              "nativeQueryRef": "Funciorario com ponto"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "R$ HE"
+                "Property": "Funciorario com ponto"
               }
             },
             "direction": "Descending"
@@ -109,20 +109,6 @@
           },
           "selector": {
             "metadata": "Medidas.% Variação Label PMP"
-          }
-        },
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.R$ HE"
           }
         }
       ],
@@ -420,7 +406,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "08ed42460320da59daeb",
+        "name": "1756203e5d7a4fcaf875",
         "field": {
           "Measure": {
             "Expression": {
@@ -428,7 +414,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "R$ HE"
+            "Property": "Funciorario com ponto"
           }
         },
         "type": "Advanced"
