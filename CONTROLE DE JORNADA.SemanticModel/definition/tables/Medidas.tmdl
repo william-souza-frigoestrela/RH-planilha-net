@@ -410,6 +410,24 @@ table Medidas
 
 		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
 
+	measure 'Funciorario com ponto' =
+			
+			CALCULATE(
+			    COUNT('Planilha NET 25 - Funcionários com batida'[HORAS_TRAB]),
+			    'Planilha NET 25 - Funcionários com batida'[HORAS_TRAB]<>"00:00"
+			)
+		formatString: 0
+		lineageTag: 403d5277-e4a3-4f8d-9fc2-0e285461ad61
+
+	measure 'Funciorario com HE' =
+			
+			CALCULATE(
+			    COUNT('Planilha NET 25 - Funcionários com batida'[HORA_EXTRA]),
+			    'Planilha NET 25 - Funcionários com batida'[HORA_EXTRA]<>"00:00"
+			)
+		formatString: 0
+		lineageTag: 1781593f-6487-4c06-a4d7-a05d7e59be3e
+
 	column Column
 		isHidden
 		formatString: 0

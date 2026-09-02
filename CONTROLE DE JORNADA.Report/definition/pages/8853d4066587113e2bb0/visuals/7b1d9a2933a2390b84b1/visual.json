@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "9883acebc3eb1e367b8e",
+  "name": "7b1d9a2933a2390b84b1",
   "position": {
-    "x": 46.995073891625616,
-    "y": 106.4039408866995,
-    "z": 3000,
+    "x": 1053.3738601823709,
+    "y": 106.01823708206688,
+    "z": 5002,
     "height": 83.349753694581281,
     "width": 180,
-    "tabOrder": 3000
+    "tabOrder": 5002
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "R$ HE"
+                  "Property": "Funciorario com HE"
                 }
               },
-              "queryRef": "Medidas.R$ HE",
-              "nativeQueryRef": "R$ HE"
+              "queryRef": "Medidas.Funciorario com he",
+              "nativeQueryRef": "Funciorario com HE"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "R$ HE"
+                "Property": "Funciorario com HE"
               }
             },
             "direction": "Descending"
@@ -122,7 +122,7 @@
             }
           },
           "selector": {
-            "metadata": "Medidas.R$ HE"
+            "metadata": "Medidas.Funciorario com he"
           }
         }
       ],
@@ -333,7 +333,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total HE'"
+                  "Value": "'Funcionarios com HE'"
                 }
               }
             }
@@ -420,7 +420,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "08ed42460320da59daeb",
+        "name": "9966c9cac5b72e72016e",
         "field": {
           "Measure": {
             "Expression": {
@@ -428,7 +428,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "R$ HE"
+            "Property": "Funciorario com HE"
           }
         },
         "type": "Advanced"
