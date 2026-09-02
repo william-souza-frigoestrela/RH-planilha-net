@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "7b1d9a2933a2390b84b1",
   "position": {
-    "x": 486.32218844984806,
-    "y": 106.99088145896657,
+    "x": 1053.3738601823709,
+    "y": 106.01823708206688,
     "z": 5002,
     "height": 83.349753694581281,
     "width": 180,
@@ -109,6 +109,20 @@
           },
           "selector": {
             "metadata": "Medidas.% Variação Label PMP"
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Funciorario com he"
           }
         }
       ],
@@ -319,7 +333,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total HE'"
+                  "Value": "'Funcionarios com HE'"
                 }
               }
             }

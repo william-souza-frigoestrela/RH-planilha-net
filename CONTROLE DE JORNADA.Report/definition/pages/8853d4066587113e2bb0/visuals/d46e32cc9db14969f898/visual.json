@@ -93,16 +93,6 @@
                 }
               ],
               "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'agosto'"
-                  }
-                }
-              ],
-              "isToggled": true
             }
           ]
         }
@@ -168,28 +158,13 @@
                               },
                               "Property": "Mês nome"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "d"
-                                }
-                              },
-                              "Property": "Data"
-                            }
                           }
                         ],
                         "Values": [
                           [
                             {
                               "Literal": {
-                                "Value": "'agosto'"
-                              }
-                            },
-                            {
-                              "Literal": {
-                                "Value": "'01/08/2026'"
+                                "Value": "'Mês atual'"
                               }
                             }
                           ]
@@ -208,16 +183,6 @@
                               },
                               "Property": "Mês nome"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Entity": "dCalendario"
-                                }
-                              },
-                              "Property": "Data"
-                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -227,16 +192,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'agosto'"
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "1": [
-                                  {
-                                    "Literal": {
-                                      "Value": "'01/08/2026'"
+                                      "Value": "'Mês atual'"
                                     }
                                   }
                                 ]
@@ -255,25 +211,12 @@
                                   "Property": "Mês nome"
                                 }
                               }
-                            },
-                            {
-                              "value": {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "dCalendario"
-                                    }
-                                  },
-                                  "Property": "Data"
-                                }
-                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "agosto",
-                            "1": "01/08/2026"
+                            "0": "Mês atual"
                           }
                         ]
                       }
