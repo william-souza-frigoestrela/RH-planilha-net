@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "f402a0d32ed5bd5169b0",
   "position": {
     "x": 1072.7272727272727,
@@ -232,23 +232,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d513283dd78e49a60a21",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
-              }
-            },
-            "Property": "CODSITUACAO"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

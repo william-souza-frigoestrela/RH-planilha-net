@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "ae314a36a9e3cde0b601",
   "position": {
     "x": 39.090909090909086,
@@ -208,42 +208,11 @@
                   "Property": "HORAS_TRAB"
                 }
               },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.HORAS_TRAB",
+              "queryRef": "Planilha NET 27 – Acima de 10 Horas - Valor.HORAS_TRAB",
               "nativeQueryRef": "HORAS_TRAB"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-                    }
-                  },
-                  "Property": "HORAS_EXTRAS"
-                }
-              },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.HORAS_EXTRAS",
-              "nativeQueryRef": "HORAS_EXTRAS"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
-                  }
-                },
-                "Property": "HORAS_TRAB"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -964,7 +933,8 @@
             "Property": "HORAS_EXTRAS"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "howCreated": "User"
       },
       {
         "name": "aab6e6f4e5c00391c612",
@@ -1107,7 +1077,7 @@
         "type": "Categorical"
       },
       {
-        "name": "dca6c57f054be1a10e07",
+        "name": "71e72c54919203500644",
         "field": {
           "Column": {
             "Expression": {

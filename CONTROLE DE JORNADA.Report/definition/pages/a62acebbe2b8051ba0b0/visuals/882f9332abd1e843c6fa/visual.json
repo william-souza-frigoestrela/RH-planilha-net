@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "882f9332abd1e843c6fa",
   "position": {
     "x": 570.90909090909088,
@@ -58,7 +58,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SECAO",
               "nativeQueryRef": "SECAO",
-              "active": true
+              "active": false
             }
           ]
         }
@@ -130,28 +130,6 @@
         ],
         "root": {
           "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "' ADMINISTRACAO'"
-                  }
-                }
-              ],
-              "isToggled": true,
-              "children": [
-                {
-                  "identityValues": [
-                    {
-                      "Literal": {
-                        "Value": "' GESTAO E CONTROLE'"
-                      }
-                    }
-                  ],
-                  "isToggled": true
-                }
-              ]
-            },
             {
               "identityValues": [
                 {

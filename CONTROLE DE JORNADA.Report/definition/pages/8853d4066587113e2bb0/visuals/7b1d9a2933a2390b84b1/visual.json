@@ -4,10 +4,10 @@
   "position": {
     "x": 1053.3738601823709,
     "y": 106.01823708206688,
-    "z": 5002,
+    "z": 7000,
     "height": 83.349753694581281,
     "width": 180,
-    "tabOrder": 5002
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -416,23 +416,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9966c9cac5b72e72016e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Funciorario com HE"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
