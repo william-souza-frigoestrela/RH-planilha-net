@@ -453,20 +453,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "cd53e532155d76a129e5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCalendario"
-              }
-            },
-            "Property": "Mês nome"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

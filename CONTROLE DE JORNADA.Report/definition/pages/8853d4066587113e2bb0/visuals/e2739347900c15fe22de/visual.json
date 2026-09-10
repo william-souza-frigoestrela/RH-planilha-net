@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "e2739347900c15fe22de",
   "position": {
     "x": 366.68693009118545,
@@ -357,34 +357,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "fd8c3ca88ae2b00042b0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "COLIGADA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a766ce2aca1c01c08ac0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "FILIAL"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

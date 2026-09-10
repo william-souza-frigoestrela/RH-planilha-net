@@ -58,7 +58,7 @@
               },
               "queryRef": "FPBI_DEPARTAMENTO.SECAO",
               "nativeQueryRef": "SECAO",
-              "active": false
+              "active": true
             }
           ]
         }
@@ -126,6 +126,7 @@
                   }
                 }
               ],
+              "isToggled": true,
               "children": [
                 {
                   "identityValues": [

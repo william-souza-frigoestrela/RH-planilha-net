@@ -4,10 +4,10 @@
   "position": {
     "x": 551.48936170212767,
     "y": 106.01823708206688,
-    "z": 5001,
+    "z": 6000,
     "height": 83.349753694581281,
     "width": 180,
-    "tabOrder": 5001
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -416,23 +416,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "1756203e5d7a4fcaf875",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Funciorario com ponto"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

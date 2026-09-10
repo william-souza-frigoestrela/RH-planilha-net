@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "ad2ff9c4ce51d64b8185",
   "position": {
     "x": 710.90909090909088,
@@ -467,48 +467,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "80ef7266ed90c78da9a3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "DEPARTAMENTO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "0fdd6cea323000071799",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SETOR"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "cf6e5fcad76b5adc1bed",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FPBI_DEPARTAMENTO"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
