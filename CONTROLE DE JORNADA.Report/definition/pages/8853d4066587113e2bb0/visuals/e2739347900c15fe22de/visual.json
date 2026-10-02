@@ -93,6 +93,26 @@
                 }
               ],
               "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'2 - ALIMENTOS ESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'1 - FRIGOESTRELA'"
+                  }
+                }
+              ],
+              "isToggled": true
             }
           ]
         }
