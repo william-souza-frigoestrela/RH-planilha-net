@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "ac84b76159cfb94dffc9",
   "position": {
     "x": 664.5454545454545,
@@ -155,6 +155,16 @@
                 {
                   "Literal": {
                     "Value": "' INDUSTRIA INDIRETA'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "' COMERCIAL'"
                   }
                 }
               ],
