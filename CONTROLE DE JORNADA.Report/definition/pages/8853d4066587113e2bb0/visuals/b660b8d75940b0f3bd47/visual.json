@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "e2739347900c15fe22de",
+  "name": "b660b8d75940b0f3bd47",
   "position": {
-    "x": 366.68693009118545,
-    "y": 25.288753799392097,
-    "z": 4000,
+    "x": 666.26139817629178,
+    "y": 91.428571428571431,
+    "z": 7001,
     "height": 66.139817629179333,
-    "width": 299.57446808510639,
-    "tabOrder": 4000
+    "width": 590.39513677811556,
+    "tabOrder": 7001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,29 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dFilial"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "COLIGADA"
+                  "Property": "NOME"
                 }
               },
-              "queryRef": "dFilial.COLIGADA",
-              "nativeQueryRef": "COLIGADA",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dFilial"
-                    }
-                  },
-                  "Property": "FILIAL"
-                }
-              },
-              "queryRef": "dFilial.FILIAL",
-              "nativeQueryRef": "FILIAL",
+              "queryRef": "Planilha NET 25 - Funcionários com batida.NOME",
+              "nativeQueryRef": "NOME",
               "active": true
             }
           ]
@@ -57,65 +42,13 @@
         "levels": [
           {
             "queryRefs": [
-              "dFilial.COLIGADA"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dFilial"
-                    }
-                  },
-                  "Property": "COLIGADA"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "dFilial.FILIAL"
+              "Planilha NET 25 - Funcionários com batida.NOME"
             ],
             "isCollapsed": true,
             "isPinned": true
           }
         ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "null"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'2 - ALIMENTOS ESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'1 - FRIGOESTRELA'"
-                  }
-                }
-              ],
-              "isToggled": true
-            }
-          ]
-        }
+        "root": {}
       }
     ],
     "objects": {
@@ -131,6 +64,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -369,29 +309,15 @@
         "howCreated": "User"
       },
       {
-        "name": "c3d7cac2e6ffb8074c1c",
+        "name": "4f6b1e9bdfc81604a948",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "dFilial"
+                "Entity": "Planilha NET 25 - Funcionários com batida"
               }
             },
-            "Property": "COLIGADA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "490d9e780d76aece3682",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dFilial"
-              }
-            },
-            "Property": "FILIAL"
+            "Property": "NOME"
           }
         },
         "type": "Categorical"
