@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "6229aae7a24e0b4dc066",
+  "name": "1da3964be114ffb88eda",
   "position": {
-    "x": 1025.1671732522798,
+    "x": 692.52279635258367,
     "y": 95.319148936170222,
-    "z": 1000,
-    "height": 70.030395136778125,
-    "width": 225.6534954407295,
-    "tabOrder": 1000
+    "z": 8002,
+    "height": 66.139817629179333,
+    "width": 332.64437689969606,
+    "tabOrder": 8002
   },
   "visual": {
     "visualType": "slicer",
@@ -23,48 +23,38 @@
                       "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
                     }
                   },
-                  "Property": "STATUS"
+                  "Property": "NOME"
                 }
               },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.STATUS",
-              "nativeQueryRef": "STATUS",
+              "queryRef": "Planilha NET 27 – Acima de 10 Horas - Valor.NOME",
+              "nativeQueryRef": "NOME1",
               "active": true
             }
           ]
         }
       }
     },
-    "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            },
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Planilha NET 27 – Acima de 10 Horas - Valor.NOME"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
           }
-        }
-      ],
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -74,6 +64,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -86,11 +83,18 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -171,6 +175,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -243,7 +260,56 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "240417cce6654836acd5",
+        "name": "ceae6413e316e3abe04a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Slicer RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Slicer RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "16e8d7884db9857c0d02",
         "field": {
           "Column": {
             "Expression": {
@@ -251,7 +317,7 @@
                 "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
               }
             },
-            "Property": "STATUS"
+            "Property": "NOME"
           }
         },
         "type": "Categorical"

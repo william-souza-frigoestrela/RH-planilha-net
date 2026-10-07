@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "72b05d64cfeb8a8e034b",
   "position": {
-    "x": 373.214019388516,
-    "y": 105.95078299776287,
+    "x": 373.49544072948328,
+    "y": 186.74772036474164,
     "z": 3000,
     "height": 81.133482475764353,
     "width": 197.58389261744966,
@@ -409,5 +409,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cda68fcfedf88a273b4c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Negativo"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

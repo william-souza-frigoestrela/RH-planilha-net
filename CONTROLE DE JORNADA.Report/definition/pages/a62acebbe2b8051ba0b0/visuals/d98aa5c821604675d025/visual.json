@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "d98aa5c821604675d025",
   "position": {
-    "x": 39.090909090909086,
-    "y": 218.18181818181816,
+    "x": 38.90577507598784,
+    "y": 297.629179331307,
     "z": 0,
-    "height": 439.99999999999994,
-    "width": 1194.5454545454545,
+    "height": 360.85106382978722,
+    "width": 1194.4072948328269,
     "tabOrder": 0
   },
   "visual": {
@@ -674,6 +674,90 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "229049212757e39b479a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
+              }
+            },
+            "Property": "CODCOLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0dab7b602ab6e30b1a40",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
+              }
+            },
+            "Property": "CODFILIAL"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c96989f60f1fae5f4872",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6aac335264a34cb62652",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 2 – Saldo de Banco de Horas – saldo_data"
+              }
+            },
+            "Property": "SECAO.1"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fe60a335fe8815ff71a7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Positivo"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8ca32f3baff1aa007ced",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Negativo"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

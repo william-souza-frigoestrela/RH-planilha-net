@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "769cb4f5985c8fbe6055",
   "position": {
-    "x": 39.13497390007457,
-    "y": 105.95078299776287,
+    "x": 38.90577507598784,
+    "y": 186.74772036474164,
     "z": 2000,
     "height": 81.133482475764353,
     "width": 194.72035794183446,
@@ -402,5 +402,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a7dd20b56d853950684f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Saldo Positivo"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

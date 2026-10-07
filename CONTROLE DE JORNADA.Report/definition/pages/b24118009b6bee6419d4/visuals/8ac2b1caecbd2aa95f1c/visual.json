@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "8ac2b1caecbd2aa95f1c",
   "position": {
-    "x": 287.30797912005966,
-    "y": 106.90529455630127,
+    "x": 286.93009118541033,
+    "y": 150.75987841945289,
     "z": 2000,
-    "height": 158.44891871737511,
-    "width": 955.46607009694264,
+    "height": 114.77203647416414,
+    "width": 956.10942249240122,
     "tabOrder": 2000
   },
   "visual": {
@@ -370,6 +370,34 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "6efd39f10b293e15a007",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dCalendario"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "114fcfb3d92f071016e9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd faltas"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

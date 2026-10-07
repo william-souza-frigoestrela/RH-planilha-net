@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "6229aae7a24e0b4dc066",
+  "name": "b660b8d75940b0f3bd47",
   "position": {
-    "x": 1025.1671732522798,
-    "y": 95.319148936170222,
-    "z": 1000,
-    "height": 70.030395136778125,
-    "width": 225.6534954407295,
-    "tabOrder": 1000
+    "x": 666.26139817629178,
+    "y": 91.428571428571431,
+    "z": 7001,
+    "height": 66.139817629179333,
+    "width": 590.39513677811556,
+    "tabOrder": 7001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,51 +20,41 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+                      "Entity": "Planilha NET 25 - Funcionários com batida"
                     }
                   },
-                  "Property": "STATUS"
+                  "Property": "NOME"
                 }
               },
-              "queryRef": "Planilha NET- 27 – Acima de 10 Horas - Valor.STATUS",
-              "nativeQueryRef": "STATUS",
+              "queryRef": "Planilha NET 25 - Funcionários com batida.NOME",
+              "nativeQueryRef": "NOME",
               "active": true
             }
           ]
         }
       }
     },
-    "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            },
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Planilha NET 25 - Funcionários com batida.NOME"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
           }
-        }
-      ],
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
       "general": [
         {
           "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "outlineColor": {
               "solid": {
                 "color": {
@@ -74,6 +64,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -86,11 +83,18 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -171,6 +175,19 @@
             }
           }
         }
+      ],
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -243,15 +260,64 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "240417cce6654836acd5",
+        "name": "ceae6413e316e3abe04a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Filtro Slicer RLS"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Filtro Slicer RLS"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "4f6b1e9bdfc81604a948",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Planilha NET 27 – Acima de 10 Horas - Valor"
+                "Entity": "Planilha NET 25 - Funcionários com batida"
               }
             },
-            "Property": "STATUS"
+            "Property": "NOME"
           }
         },
         "type": "Categorical"
