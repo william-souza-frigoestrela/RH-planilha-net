@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "104889b9e3278517e39a",
   "position": {
     "x": 39.090909090909086,
@@ -674,6 +674,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "fe3941f5ae84a0490842",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "CODCOLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a7c50cc997e590733da9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "CODFILIAL"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bb2048d4bd641a6e44b0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FPBI_DEPARTAMENTO"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
       }
     ],
     "filterSortOrder": "Custom"

@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "0b55280d9c1e374787db",
   "position": {
-    "x": 39.13497390007457,
-    "y": 101.17822520507085,
+    "x": 38.90577507598784,
+    "y": 167.29483282674772,
     "z": 1000,
     "height": 81.133482475764353,
     "width": 216.67412378821777,
@@ -416,5 +416,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "76e080167480870c85f3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd faltas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

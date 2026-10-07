@@ -1,125 +1,61 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "8ac2b1caecbd2aa95f1c",
+  "name": "bdbbf30eb26ebb8a4e36",
   "position": {
-    "x": 286.93009118541033,
-    "y": 150.75987841945289,
-    "z": 2000,
-    "height": 114.77203647416414,
-    "width": 956.10942249240122,
-    "tabOrder": 2000
+    "x": 273.31306990881461,
+    "y": 84.620060790273556,
+    "z": 6001,
+    "height": 66.139817629179333,
+    "width": 299.57446808510639,
+    "tabOrder": 6001
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "slicer",
     "query": {
       "queryState": {
-        "Category": {
+        "Values": {
           "projections": [
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCalendario"
+                      "Entity": "Planilha NET 4 – Faltas"
                     }
                   },
-                  "Property": "Date"
+                  "Property": "NOME"
                 }
               },
-              "queryRef": "dCalendario.Date",
-              "nativeQueryRef": "Date",
+              "queryRef": "Planilha NET 4 – Faltas.NOME",
+              "nativeQueryRef": "NOME",
               "active": true
             }
           ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Qtd faltas"
-                }
-              },
-              "queryRef": "Medidas.Qtd faltas",
-              "nativeQueryRef": "Qtd faltas"
-            }
-          ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "dCalendario"
-                  }
-                },
-                "Property": "Date"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
-    "objects": {
-      "legend": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "showTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
-                    }
-                  }
-                }
-              }
-            },
-            "legendMarkerRendering": {
-              "expr": {
-                "Literal": {
-                  "Value": "'markerOnly'"
-                }
-              }
-            }
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Planilha NET 4 – Faltas.NOME"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
           }
-        }
-      ],
-      "categoryAxis": [
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
+      "general": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "labelColor": {
+            "outlineColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -131,90 +67,68 @@
                 }
               }
             },
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "axisType": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Categorical'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.6
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.Gastos com impostos"
-          }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 8,
-                      "Percent": 0.6
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.Gastos impostos LY"
-          }
-        }
-      ],
-      "labels": [
-        {
-          "properties": {
-            "show": {
+            "selfFilterEnabled": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "pendingChangesIcon": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             },
@@ -222,8 +136,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
                     }
                   }
                 }
@@ -232,26 +147,42 @@
           }
         }
       ],
-      "seriesLabels": [
+      "items": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B1327'"
+                    }
+                  }
                 }
               }
             }
           }
         }
       ],
-      "lineStyles": [
+      "data": [
         {
           "properties": {
-            "areaShow": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'Dropdown'"
                 }
               }
             }
@@ -267,17 +198,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
-                    }
-                  }
                 }
               }
             }
@@ -316,6 +236,23 @@
             }
           }
         }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "foreground": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B1327'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -323,7 +260,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "98f2f1ce2403143806b8",
+        "name": "ceae6413e316e3abe04a",
         "field": {
           "Measure": {
             "Expression": {
@@ -331,7 +268,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "Filtro Departamento RLS (Faltas)"
+            "Property": "Filtro Slicer RLS"
           }
         },
         "type": "Advanced",
@@ -356,7 +293,7 @@
                           "Source": "m"
                         }
                       },
-                      "Property": "Filtro Departamento RLS (Faltas)"
+                      "Property": "Filtro Slicer RLS"
                     }
                   },
                   "Right": {
@@ -372,32 +309,18 @@
         "howCreated": "User"
       },
       {
-        "name": "6efd39f10b293e15a007",
+        "name": "cd0f409f3896e4fd0761",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "dCalendario"
+                "Entity": "Planilha NET 4 – Faltas"
               }
             },
-            "Property": "Date"
+            "Property": "NOME"
           }
         },
         "type": "Categorical"
-      },
-      {
-        "name": "114fcfb3d92f071016e9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Qtd faltas"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
