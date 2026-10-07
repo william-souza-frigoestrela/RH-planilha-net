@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "2b7371ed86c21d0f6371",
   "position": {
-    "x": 1045.1901565995527,
-    "y": 105.95078299776287,
+    "x": 1045.5927051671733,
+    "y": 186.74772036474164,
     "z": 4000,
     "height": 81.133482475764353,
     "width": 199.49291573452649,
@@ -416,5 +416,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5bcf27bbfb3cdaf82b87",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Qtd_Funcionarios_Saldo_Negativo"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
