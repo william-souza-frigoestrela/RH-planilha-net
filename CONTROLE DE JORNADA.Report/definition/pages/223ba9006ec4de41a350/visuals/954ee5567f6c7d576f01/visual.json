@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "954ee5567f6c7d576f01",
   "position": {
-    "x": 710.90909090909088,
-    "y": 95.454545454545453,
+    "x": 1004.7416413373861,
+    "y": 95.319148936170222,
     "z": 1000,
-    "height": 70,
-    "width": 402.72727272727269,
+    "height": 70.030395136778125,
+    "width": 234.40729483282675,
     "tabOrder": 1000
   },
   "visual": {
@@ -273,5 +273,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9561ec1df3d739be8d2b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Planilha NET 24 - Acima de 6 horas sem intervalo"
+              }
+            },
+            "Property": "STATUS"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

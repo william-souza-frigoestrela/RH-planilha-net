@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "0632dfdd6a183040d36d",
   "position": {
-    "x": 325.64231738035267,
-    "y": 24.718723761544922,
+    "x": 325.83586626139817,
+    "y": 24.316109422492403,
     "z": 5000,
-    "height": 70.931989924433253,
-    "width": 366.48194794290515,
+    "height": 71.00303951367782,
+    "width": 292.7659574468085,
     "tabOrder": 5000
   },
   "visual": {
@@ -350,6 +350,34 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "8f15a13d73e8eff72f45",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5f11aa4a3c1efd25f576",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dFilial"
+              }
+            },
+            "Property": "FILIAL"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
